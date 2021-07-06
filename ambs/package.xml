@@ -8,6 +8,8 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
+  <exec_depend>ambs_msgs</exec_depend>
+  <exec_depend>ambs_core</exec_depend>
 
   <export>
     <metapackage/>
