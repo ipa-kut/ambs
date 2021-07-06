@@ -16,7 +16,7 @@ int main(int argc, char **argv)
   control_outputs["done"] = "/done";
 
 
-  ambs_base test_obj = ambs_base(control_inputs, control_outputs, nh);
+  ambs_base::AmbsBase test_obj = ambs_base::AmbsBase(control_inputs, control_outputs, nh);
 
   ROS_INFO("Hello World");
   ros::spin();

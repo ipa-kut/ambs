@@ -2,7 +2,10 @@
 #include <string>
 #include "ambs_base/ambs_base.hpp"
 
-ambs_base::ambs_base(std::map<std::string, std::string> control_input_interface,
+namespace ambs_base
+{
+
+AmbsBase::AmbsBase(std::map<std::string, std::string> control_input_interface,
                      std::map<std::string, std::string> control_output_interface,
                      ros::NodeHandle nh):
   control_input_interface_(control_input_interface),
@@ -21,7 +24,7 @@ ambs_base::ambs_base(std::map<std::string, std::string> control_input_interface,
     subscribers_.at(getPosOfInputKey(input.first)) =
         nh_.subscribe<ambs_msgs::BoolStamped>(input.second, subscriber_queue_size_,
                                               boost::bind(
-                                                &ambs_base::callbacksForAllControlInterfaces, this, _1, input.first));
+                                                &AmbsBase::callbacksForAllControlInterfaces, this, _1, input.first));
   }
 
   for (auto output : control_output_interface_)
@@ -53,26 +56,26 @@ ambs_base::ambs_base(std::map<std::string, std::string> control_input_interface,
   // TESTING ONLY
 }
 
-uint64_t ambs_base::getPosOfInputKey(std::string key)
+uint64_t AmbsBase::getPosOfInputKey(std::string key)
 {
   return static_cast<uint64_t>(std::distance(control_input_interface_.begin(),
                                                   control_input_interface_.find(key)));
 }
 
-uint64_t ambs_base::getPosOfOutputKey(std::string key)
+uint64_t AmbsBase::getPosOfOutputKey(std::string key)
 {
   return static_cast<uint64_t>(std::distance(control_output_interface_.begin(),
                                                   control_output_interface_.find(key)));
 }
 
-ambs_msgs::BoolStamped ambs_base::getNewBoolStampedMsg(bool data)
+ambs_msgs::BoolStamped AmbsBase::getNewBoolStampedMsg(bool data)
 {
   ambs_msgs::BoolStamped msg;
   msg.data = data;
   return msg;
 }
 
-bool ambs_base::getInputFlag(std::string key)
+bool AmbsBase::getInputFlag(std::string key)
 {
   mutexes_.at(getPosOfInputKey(key)).lock();
   bool result = flagged_variables_.at(getPosOfInputKey(key));
@@ -80,14 +83,16 @@ bool ambs_base::getInputFlag(std::string key)
   return result;
 }
 
-void ambs_base::pubOutputFlag(std::string key, bool data)
+void AmbsBase::pubOutputFlag(std::string key, bool data)
 {
   publishers_.at(getPosOfOutputKey(key)).publish(getNewBoolStampedMsg(data));
 }
 
-void ambs_base::callbacksForAllControlInterfaces(const ambs_msgs::BoolStamped::ConstPtr &msg, std::string key)
+void AmbsBase::callbacksForAllControlInterfaces(const ambs_msgs::BoolStamped::ConstPtr &msg, std::string key)
 {
   mutexes_.at(getPosOfInputKey(key)).lock();
   flagged_variables_.at(getPosOfInputKey(key)) = msg->data;
   mutexes_.at(getPosOfInputKey(key)).unlock();
 }
+
+}  // namespace ambs_base

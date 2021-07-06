@@ -7,13 +7,15 @@
 #include <ros/ros.h>
 #include "ambs_msgs/BoolStamped.h"
 
-class ambs_base
+namespace ambs_base {
+
+class AmbsBase
 {
 public:
-  ambs_base(std::map<std::string, std::string> control_input_interface,
-            std::map<std::string, std::string> control_output_interface,
-            ros::NodeHandle nh
-            );
+  AmbsBase(std::map<std::string, std::string> control_input_interface,
+           std::map<std::string, std::string> control_output_interface,
+           ros::NodeHandle nh
+           );
 private:
   std::map<std::string, std::string> control_input_interface_;
   std::map<std::string, std::string> control_output_interface_;
@@ -33,4 +35,5 @@ private:
   void callbacksForAllControlInterfaces(const ambs_msgs::BoolStamped::ConstPtr& msg, std::string key);
 };
 
+}
 #endif // AMBS_BASE_HPP
