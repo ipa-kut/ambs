@@ -14,6 +14,7 @@ int main(int argc, char **argv)
 
   std::map<std::string, std::string> control_outputs;
   control_outputs["done"] = "/done";
+  control_outputs["result"] = "/result";
 
 
   ambs_base::AmbsBase test_obj = ambs_base::AmbsBase(control_inputs, control_outputs, nh);

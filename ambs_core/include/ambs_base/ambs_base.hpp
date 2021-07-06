@@ -9,6 +9,23 @@
 
 namespace ambs_base {
 
+template <typename T>
+struct AmbsInterface
+{
+  AmbsInterface() {};
+  AmbsInterface(std::string key,
+                std::string topic_name):
+    key_(key),
+    topic_name_(topic_name)
+  {}
+  std::string key_;
+  std::string topic_name_;
+  T value_;
+  ros::Subscriber sub_;
+  ros::Publisher pub_;
+  uint64_t index_;
+};
+
 class AmbsBase
 {
 public:
@@ -17,18 +34,12 @@ public:
            ros::NodeHandle nh
            );
 private:
-  std::map<std::string, std::string> control_input_interface_;
-  std::map<std::string, std::string> control_output_interface_;
-  std::vector<ros::Subscriber> subscribers_;
-  std::vector<ros::Publisher> publishers_;
   std::deque<boost::mutex> mutexes_;
-  std::vector<bool> flagged_variables_;
+  std::map<std::string, AmbsInterface<bool>> control_interfaces_;
   ros::NodeHandle nh_;
-  unsigned int subscriber_queue_size_ = 10;
-  unsigned int publisher_queue_size_ = 10;
+  const unsigned int subscriber_queue_size_ = 10;
+  const unsigned int publisher_queue_size_ = 10;
 
-  uint64_t getPosOfInputKey(std::string key);
-  uint64_t getPosOfOutputKey(std::string key);
   ambs_msgs::BoolStamped getNewBoolStampedMsg(bool data);
   bool getInputFlag(std::string key);
   void pubOutputFlag(std::string key, bool data);

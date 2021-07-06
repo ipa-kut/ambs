@@ -8,39 +8,41 @@ namespace ambs_base
 AmbsBase::AmbsBase(std::map<std::string, std::string> control_input_interface,
                      std::map<std::string, std::string> control_output_interface,
                      ros::NodeHandle nh):
-  control_input_interface_(control_input_interface),
-  control_output_interface_(control_output_interface),
   nh_(nh)
 {
-  mutexes_.resize(control_input_interface_.size());
-  subscribers_.resize(control_input_interface_.size());
-  publishers_.resize(control_input_interface_.size());
-  flagged_variables_.resize(control_input_interface_.size());
+  mutexes_.resize(control_input_interface.size());
 
-  for (auto input : control_input_interface_)
+  for (auto input : control_input_interface)
   {
-    ROS_INFO_STREAM("Input iface " << input.first << " : "
-                    << input.second << " @pos: " << getPosOfInputKey(input.first));
-    subscribers_.at(getPosOfInputKey(input.first)) =
+    AmbsInterface<bool> interface(input.first, input.second);
+    interface.index_ = static_cast<uint64_t>(std::distance(control_input_interface.begin(),
+                                                           control_input_interface.find(input.first)));
+    interface.sub_ =
         nh_.subscribe<ambs_msgs::BoolStamped>(input.second, subscriber_queue_size_,
                                               boost::bind(
                                                 &AmbsBase::callbacksForAllControlInterfaces, this, _1, input.first));
+        control_interfaces_[input.first] = interface;
+        ROS_INFO_STREAM("Input iface " << input.first << " : "
+                        << input.second << " @pos: " << interface.index_);
   }
 
-  for (auto output : control_output_interface_)
+  for (auto output : control_output_interface)
   {
-    ROS_INFO_STREAM("Input iface " << output.first << " : "
-                    << output.second << " @pos: " << getPosOfOutputKey(output.first));
-    publishers_.at(getPosOfOutputKey(output.first)) =
+    AmbsInterface<bool> interface(output.first, output.second);
+    interface.index_ = static_cast<uint64_t>(std::distance(control_output_interface.begin(),
+                                                           control_output_interface.find(output.first)));
+    interface.pub_ =
         nh_.advertise<ambs_msgs::BoolStamped>((output.second), publisher_queue_size_);
+    control_interfaces_[output.first] = interface;
+    ROS_INFO_STREAM("Output iface " << output.first << " : "
+                    << output.second << " @pos: " << interface.index_);
   }
-
 
   // TESTING ONLY
   ros::Rate rate(100);
   while (ros::ok())
   {
-    for (auto input : control_input_interface_)
+    for (auto input : control_input_interface)
     {
       ROS_INFO_STREAM("Key: " << input.first << " FlagVal: " << getInputFlag(input.first));
       ros::spinOnce();
@@ -56,18 +58,6 @@ AmbsBase::AmbsBase(std::map<std::string, std::string> control_input_interface,
   // TESTING ONLY
 }
 
-uint64_t AmbsBase::getPosOfInputKey(std::string key)
-{
-  return static_cast<uint64_t>(std::distance(control_input_interface_.begin(),
-                                                  control_input_interface_.find(key)));
-}
-
-uint64_t AmbsBase::getPosOfOutputKey(std::string key)
-{
-  return static_cast<uint64_t>(std::distance(control_output_interface_.begin(),
-                                                  control_output_interface_.find(key)));
-}
-
 ambs_msgs::BoolStamped AmbsBase::getNewBoolStampedMsg(bool data)
 {
   ambs_msgs::BoolStamped msg;
@@ -77,22 +67,22 @@ ambs_msgs::BoolStamped AmbsBase::getNewBoolStampedMsg(bool data)
 
 bool AmbsBase::getInputFlag(std::string key)
 {
-  mutexes_.at(getPosOfInputKey(key)).lock();
-  bool result = flagged_variables_.at(getPosOfInputKey(key));
-  mutexes_.at(getPosOfInputKey(key)).unlock();
+  mutexes_.at(control_interfaces_[key].index_).lock();
+  bool result = control_interfaces_[key].value_;
+  mutexes_.at(control_interfaces_[key].index_).unlock();
   return result;
 }
 
 void AmbsBase::pubOutputFlag(std::string key, bool data)
 {
-  publishers_.at(getPosOfOutputKey(key)).publish(getNewBoolStampedMsg(data));
+  control_interfaces_[key].pub_.publish(getNewBoolStampedMsg(data));
 }
 
 void AmbsBase::callbacksForAllControlInterfaces(const ambs_msgs::BoolStamped::ConstPtr &msg, std::string key)
 {
-  mutexes_.at(getPosOfInputKey(key)).lock();
-  flagged_variables_.at(getPosOfInputKey(key)) = msg->data;
-  mutexes_.at(getPosOfInputKey(key)).unlock();
+  mutexes_.at(control_interfaces_[key].index_).lock();
+  control_interfaces_[key].value_ = msg->data;
+  mutexes_.at(control_interfaces_[key].index_).unlock();
 }
 
 }  // namespace ambs_base
