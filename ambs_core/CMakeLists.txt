@@ -9,8 +9,8 @@ find_package(catkin REQUIRED COMPONENTS
     roslint
 )
 
-
 catkin_package(
+  LIBRARIES ambs_interface_lib
   INCLUDE_DIRS include
   CATKIN_DEPENDS ambs_msgs
   DEPENDS std_msgs
@@ -21,10 +21,15 @@ include_directories(
  ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(test_base src/test_base.cpp
-                         src/ambs_base/ambs_base.cpp
-               )
-target_link_libraries(test_base ${catkin_LIBRARIES} ${Boost_LIBRARIES})
+add_library(ambs_interface_lib
+    src/ambs_base/ambs_base.cpp
+    )
+add_dependencies(ambs_interface_lib ${catkin_EXPORTED_TARGETS})
+target_link_libraries(ambs_interface_lib ${catkin_LIBRARIES})
+
+add_executable(test_base src/test_base.cpp)
+target_link_libraries(test_base
+    ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 add_dependencies(test_base ${catkin_EXPORTED_TARGETS})
 
 set(ROSLINT_CPP_OPTS "--filter=-legal/copyright")
