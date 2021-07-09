@@ -1,36 +1,29 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(ambs_core)
 
+add_compile_options(-std=c++17)
 
 find_package(catkin REQUIRED COMPONENTS
     roscpp
     ambs_msgs
     std_msgs
+    geometry_msgs
     roslint
+    tf
+    tf_conversions
+    angles
 )
 
 catkin_package(
-  LIBRARIES ambs_interface_lib
   INCLUDE_DIRS include
   CATKIN_DEPENDS ambs_msgs
-  DEPENDS std_msgs
+  DEPENDS std_msgs geometry_msgs
 )
 
 include_directories(
  include
  ${catkin_INCLUDE_DIRS}
 )
-
-add_library(ambs_interface_lib
-    src/ambs_base/ambs_base.cpp
-    )
-add_dependencies(ambs_interface_lib ${catkin_EXPORTED_TARGETS})
-target_link_libraries(ambs_interface_lib ${catkin_LIBRARIES})
-
-add_executable(test_base src/test_base.cpp)
-target_link_libraries(test_base
-    ${catkin_LIBRARIES} ${Boost_LIBRARIES})
-add_dependencies(test_base ${catkin_EXPORTED_TARGETS})
 
 set(ROSLINT_CPP_OPTS "--filter=-legal/copyright")
 roslint_cpp()

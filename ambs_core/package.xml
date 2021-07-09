@@ -17,7 +17,10 @@
   <depend>roscpp</depend>
   <depend>std_msgs</depend>
   <depend>ambs_msgs</depend>
-
+  <depend>tf</depend>
+  <depend>tf_conversions</depend>
+  <depend>geometry_msgs</depend>
+  <depend>angles</depend>
 
   <export>
   </export>
