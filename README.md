@@ -1,11 +1,18 @@
-# ambs
+# AMBS
 Automated Modular Benchamrking System - Successor to the ARAIG Test Stack
 
+## Package descriptions
 
-## Build Tips
+### ambs_msgs
 
-In QTCreator, from the left pane select "Projects".   
-Edit your build kit settings. By default this should be using "Desktop" kit, seen in the left view. Select "Build" from there.   
-Under "Build Settings" in the main view, expand "Build Steps".   
-Next to "CMake Arguments" add the following text: ` --make-args roslint`   
-Henceforth all regular builds from QTCreator will also run roslint.   
+Contains msgs, srvs & actions.
+### ambs_core
+
+Core package contains base classes for use by others
+
+## Linting
+
+First add roslint to CMakeLists.txt & package.xml of all packages that need to be linted (see `ambs_core` for example)
+Then, to run lint, for example for the `ambs_core` package:
+
+`catkin_make roslint_ambs_core`
