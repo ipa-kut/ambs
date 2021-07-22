@@ -2,17 +2,22 @@ cmake_minimum_required(VERSION 3.0.2)
 project(ambs_pluginlib)
 
 find_package(catkin REQUIRED COMPONENTS
-  nodelet
-  roscpp
+  ambs_components
   ambs_core
   ambs_msgs
-  ambs_components
+  nodelet
+  roscpp
   roslint
 )
 
 catkin_package(
    LIBRARIES ambs_calculators ambs_runners
-   CATKIN_DEPENDS nodelet roscpp ambs_msgs ambs_core ambs_components
+   CATKIN_DEPENDS
+    ambs_components
+    ambs_core
+    ambs_msgs
+    nodelet
+    roscpp
 )
 
 include_directories(
@@ -45,8 +50,8 @@ set(ROSLINT_CPP_OPTS "--filter=-legal/copyright")
 roslint_cpp()
 
 install(TARGETS ambs_calculators
-                ambs_runners
                 ambs_interpreters
+                ambs_runners
         DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION})
 
 install(DIRECTORY plugins

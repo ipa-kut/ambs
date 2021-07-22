@@ -2,7 +2,7 @@
 <package format="2">
   <name>ambs_pluginlib</name>
   <version>0.1.0</version>
-  <description>The ambs_pluginlib package</description>
+  <description>Contains nodelets</description>
 
   <maintainer email="tejas.kumar.shastha@ipa.fraunhofer.de">ipa-kut</maintainer>
   <license>Apache 2.0</license>
