@@ -1,0 +1,5 @@
+<map id="AMBSBooleanInterface" name="AMBSBooleanInterface">
+<area shape="rect" id="node1" title="A bool specialisation of AMBSTemplatedInterface. Offers two extra functions." alt="" coords="32,95,191,121"/>
+<area shape="rect" id="node3" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html" title="A standard boolean AMBSTemplatedInterface interface for calculators." alt="" coords="5,169,217,196"/>
+<area shape="rect" id="node2" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html" title=" " alt="" coords="10,5,213,47"/>
+</map>

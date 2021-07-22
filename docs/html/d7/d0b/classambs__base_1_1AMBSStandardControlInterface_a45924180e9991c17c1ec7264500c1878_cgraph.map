@@ -1,0 +1,4 @@
+<map id="publishDone" name="publishDone">
+<area shape="rect" id="node1" title="Publish TRUE on the DONE port." alt="" coords="5,5,100,32"/>
+<area shape="rect" id="node2" href="$d7/d0b/classambs__base_1_1AMBSStandardControlInterface.html#ac7ff1e64d12fa17333b3abb625e79405" title="Create a new BoolStamped type message." alt="" coords="148,5,323,32"/>
+</map>

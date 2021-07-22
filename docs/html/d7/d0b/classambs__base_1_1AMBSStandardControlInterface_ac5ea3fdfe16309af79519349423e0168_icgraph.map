@@ -1,0 +1,6 @@
+<map id="waitForStop" name="waitForStop">
+<area shape="rect" id="node1" title="Wait for TRUE on the STOP port." alt="" coords="248,78,340,105"/>
+<area shape="rect" id="node2" href="$d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node3" href="$de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="11,71,194,112"/>
+<area shape="rect" id="node4" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="11,136,194,177"/>
+</map>

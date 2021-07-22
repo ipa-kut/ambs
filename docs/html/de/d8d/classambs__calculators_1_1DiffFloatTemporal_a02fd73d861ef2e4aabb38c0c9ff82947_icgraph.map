@@ -1,0 +1,4 @@
+<map id="init" name="init">
+<area shape="rect" id="node1" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="104,5,143,32"/>
+<area shape="rect" id="node2" href="$db/d6f/test__calc_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
+</map>

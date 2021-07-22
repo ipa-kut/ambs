@@ -1,0 +1,4 @@
+<map id="startRunner" name="startRunner">
+<area shape="rect" id="node1" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="5,5,96,32"/>
+<area shape="rect" id="node2" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a967f9a0a5cfaa49ba54b5fe00c08b132" title=" " alt="" coords="144,5,231,32"/>
+</map>

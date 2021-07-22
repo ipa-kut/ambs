@@ -1,0 +1,8 @@
+<map id="waitForTrueOnPort" name="waitForTrueOnPort">
+<area shape="rect" id="node1" title="Wait for TRUE on a port." alt="" coords="397,63,529,90"/>
+<area shape="rect" id="node2" href="$d7/d0b/classambs__base_1_1AMBSStandardControlInterface.html#af47f16fe31601c5d5e626cd142652025" title="Wait for TRUE on the RESET port." alt="" coords="249,63,349,90"/>
+<area shape="rect" id="node5" href="$d7/d0b/classambs__base_1_1AMBSStandardControlInterface.html#ace715edd7e8eecf2e23e8bc52e21eda6" title="Wait for TRUE on the START port." alt="" coords="253,13,346,39"/>
+<area shape="rect" id="node6" href="$d7/d0b/classambs__base_1_1AMBSStandardControlInterface.html#a8efaeec444722a31335fecb992152479" title="Wait for TRUE on the STOP port." alt="" coords="253,114,345,141"/>
+<area shape="rect" id="node3" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overloads AMBSBaseCalculator::executeCB()" alt="" coords="5,5,201,47"/>
+<area shape="rect" id="node4" href="$de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overloads AMBSBaseCalculator::executeCB()" alt="" coords="12,71,195,112"/>
+</map>

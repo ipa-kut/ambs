@@ -1,0 +1,6 @@
+<map id="publishDone" name="publishDone">
+<area shape="rect" id="node1" title="Publish TRUE on the DONE port." alt="" coords="249,78,344,105"/>
+<area shape="rect" id="node2" href="$d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="6,5,201,47"/>
+<area shape="rect" id="node3" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,71,201,112"/>
+<area shape="rect" id="node4" href="$de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="12,136,195,177"/>
+</map>

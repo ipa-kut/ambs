@@ -1,0 +1,4 @@
+<map id="initialise_calc" name="initialise_calc">
+<area shape="rect" id="node1" title="Actual initialisation function, simply calls the standard_control_ init." alt="" coords="203,5,303,32"/>
+<area shape="rect" id="node2" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a9bd5d1229a90f907a1f5fd27020a0f0e" title="Constructor. Calls initialise_calc()" alt="" coords="5,5,155,32"/>
+</map>

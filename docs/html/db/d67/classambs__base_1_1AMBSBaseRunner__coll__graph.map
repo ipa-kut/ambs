@@ -1,0 +1,5 @@
+<map id="AMBSBaseRunner" name="AMBSBaseRunner">
+<area shape="rect" id="node1" title="The virtual base class for all runners to inherit from." alt="" coords="41,185,173,212"/>
+<area shape="rect" id="node2" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html" title="A bool specialisation of AMBSTemplatedInterface. Offers two extra functions." alt="" coords="27,96,186,123"/>
+<area shape="rect" id="node3" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html" title=" " alt="" coords="5,5,208,47"/>
+</map>

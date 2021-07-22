@@ -1,0 +1,13 @@
+<map id="contructNewBoolStamped" name="contructNewBoolStamped">
+<area shape="rect" id="node1" title="Create a new BoolStamped type message." alt="" coords="781,279,956,306"/>
+<area shape="rect" id="node2" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a45924180e9991c17c1ec7264500c1878" title="Publish TRUE on the DONE port." alt="" coords="497,119,733,160"/>
+<area shape="rect" id="node6" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a1c7c141283496076d1689b09c128f390" title=" " alt="" coords="243,201,449,243"/>
+<area shape="rect" id="node8" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a574496e1966eec1bdd39a5bab7f44117" title=" " alt="" coords="512,239,719,280"/>
+<area shape="rect" id="node9" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#ad8770edaeff5709344d43ecc25d59818" title="Publish test results." alt="" coords="512,304,719,345"/>
+<area shape="rect" id="node10" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a911a471d55770719e68bebd652685255" title="Publish test results." alt="" coords="243,319,449,360"/>
+<area shape="rect" id="node11" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a4d711578fec3cad592d7f66c5419bd50" title="Publish test results." alt="" coords="512,421,719,463"/>
+<area shape="rect" id="node3" href="$d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="249,5,443,47"/>
+<area shape="rect" id="node4" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="248,71,444,112"/>
+<area shape="rect" id="node5" href="$de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="255,136,437,177"/>
+<area shape="rect" id="node7" href="$d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="5,289,195,331"/>
+</map>

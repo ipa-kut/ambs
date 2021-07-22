@@ -1,0 +1,8 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,119,56,145"/>
+<area shape="rect" id="node2" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a9afa149dc8c8b88b27677d374cde3acd" title="Initialisation decoupled from constructor for convenince." alt="" coords="104,13,340,54"/>
+<area shape="rect" id="node4" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a1cb5f202aac93bfc4d77dccb396bf143" title="Prints the member fields of the AMBSPorts object of all ports." alt="" coords="124,78,320,119"/>
+<area shape="rect" id="node5" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#af8173f556899e5af6e228ced6c0009fb" title="Reset inernal buffer message of all ports." alt="" coords="124,143,320,185"/>
+<area shape="rect" id="node6" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a720d11b3d464d5603f65300bd4bf4f53" title="Sets the internal message value of a port. DOES NOT PUBLISH." alt="" coords="124,209,320,250"/>
+<area shape="rect" id="node3" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="388,5,584,61"/>
+</map>

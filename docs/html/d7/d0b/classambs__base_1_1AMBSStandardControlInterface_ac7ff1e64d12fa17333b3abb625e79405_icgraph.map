@@ -1,0 +1,7 @@
+<map id="contructNewBoolStamped" name="contructNewBoolStamped">
+<area shape="rect" id="node1" title="Create a new BoolStamped type message." alt="" coords="392,78,567,105"/>
+<area shape="rect" id="node2" href="$d7/d0b/classambs__base_1_1AMBSStandardControlInterface.html#a45924180e9991c17c1ec7264500c1878" title="Publish TRUE on the DONE port." alt="" coords="249,78,344,105"/>
+<area shape="rect" id="node3" href="$d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="6,5,201,47"/>
+<area shape="rect" id="node4" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,71,201,112"/>
+<area shape="rect" id="node5" href="$de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="12,136,195,177"/>
+</map>
