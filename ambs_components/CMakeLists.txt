@@ -21,6 +21,7 @@ include_directories(
 
 add_library(ambs_components
    src/interpreters/command_interpreters/velocity_interpreter.cpp
+   src/interpreters/location_interpreters/odom_interpreter.cpp
  )
 add_dependencies(ambs_components ${catkin_EXPORTED_TARGETS})
 target_link_libraries(ambs_components ${catkin_LIBRARIES})

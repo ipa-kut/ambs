@@ -8,5 +8,13 @@
         </description>
     </class>
 
+    <class name="ambs_interpreters/OdomInterpreterNodelet"
+    type="ambs_interpreters::OdomInterpreterNodelet"
+    base_class_type="nodelet::Nodelet">
+        <description>
+        Nodelet to focus odom into pose and twist_linear_x
+        </description>
+    </class>
+
 </library>
 
