@@ -34,5 +34,11 @@ add_library(ambs_runners
 add_dependencies(ambs_runners ${catkin_EXPORTED_TARGETS})
 target_link_libraries(ambs_runners ${catkin_LIBRARIES})
 
+add_library(ambs_interpreters
+   src/interpreters/command_interpreters/velocity_interpreter_nodelet.cpp
+ )
+add_dependencies(ambs_interpreters ${catkin_EXPORTED_TARGETS})
+target_link_libraries(ambs_interpreters ${catkin_LIBRARIES})
+
 set(ROSLINT_CPP_OPTS "--filter=-legal/copyright")
 roslint_cpp()

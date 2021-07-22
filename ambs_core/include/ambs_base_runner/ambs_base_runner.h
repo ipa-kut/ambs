@@ -228,11 +228,13 @@ void AMBSBaseRunner::testCompleted()
 
 void AMBSBaseRunner::startRobot()
 {
+  signal_interface_.publishMsgOnPort(STOP_ROBOT_, signal_interface_.contructNewBoolStamped(false));
   signal_interface_.publishMsgOnPort(START_ROBOT_, signal_interface_.contructNewBoolStamped(true));
 }
 
 void AMBSBaseRunner::stopRobot()
 {
+  signal_interface_.publishMsgOnPort(START_ROBOT_, signal_interface_.contructNewBoolStamped(false));
   signal_interface_.publishMsgOnPort(STOP_ROBOT_, signal_interface_.contructNewBoolStamped(true));
 }
 

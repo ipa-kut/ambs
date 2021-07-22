@@ -1,0 +1,12 @@
+<library path="lib/libambs_interpreters">
+
+    <class name="ambs_interpreters/CommandVelocityInterpreterNodelet"
+    type="ambs_interpreters::CommandVelocityInterpreterNodelet"
+    base_class_type="nodelet::Nodelet">
+        <description>
+        Nodelet to convert bool control messages into cmd_vel messages
+        </description>
+    </class>
+
+</library>
+
