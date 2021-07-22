@@ -27,3 +27,6 @@ include_directories(
 
 set(ROSLINT_CPP_OPTS "--filter=-legal/copyright")
 roslint_cpp()
+
+install(DIRECTORY include/
+        DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION})

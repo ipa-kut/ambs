@@ -21,3 +21,8 @@ generate_messages(
 catkin_package(
   CATKIN_DEPENDS std_msgs
 )
+
+install(
+  DIRECTORY msg/
+  DESTINATION msg
+)

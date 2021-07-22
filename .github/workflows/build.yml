@@ -10,7 +10,6 @@ jobs:
           required-ros-distributions: melodic
       - uses: ros-tooling/action-ros-ci@v0.2
         with:
-          package-name: ambs
           target-ros1-distro: melodic
       - name: Lint_core
         run: |

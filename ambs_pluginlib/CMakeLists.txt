@@ -43,3 +43,14 @@ target_link_libraries(ambs_interpreters ${catkin_LIBRARIES})
 
 set(ROSLINT_CPP_OPTS "--filter=-legal/copyright")
 roslint_cpp()
+
+install(TARGETS ambs_calculators
+                ambs_runners
+                ambs_interpreters
+        DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION})
+
+install(DIRECTORY plugins
+        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+
+install(DIRECTORY launch
+        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
