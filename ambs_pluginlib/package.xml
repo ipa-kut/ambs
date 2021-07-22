@@ -22,5 +22,6 @@
   <export>
      <nodelet plugin="${prefix}/plugins/calculator_plugins.xml"/>
      <nodelet plugin="${prefix}/plugins/runner_plugins.xml"/>
+     <nodelet plugin="${prefix}/plugins/interpreter_plugins.xml"/>
   </export>
 </package>

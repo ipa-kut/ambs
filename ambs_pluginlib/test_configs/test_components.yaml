@@ -13,3 +13,7 @@ runners:
     acceleration_timeout: 10
     verification_timeout: 2
     decceleration_timeout: 2
+
+interpreters:
+  test_velocity_interpreter:
+    velocity_x: 1.0

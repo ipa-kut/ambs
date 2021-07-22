@@ -11,12 +11,19 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
   INCLUDE_DIRS include
   CATKIN_DEPENDS ambs_msgs ambs_core
+  LIBRARIES ambs_components
 )
 
 include_directories(
   include
   ${catkin_INCLUDE_DIRS}
 )
+
+add_library(ambs_components
+   src/interpreters/command_interpreters/velocity_interpreter.cpp
+ )
+add_dependencies(ambs_components ${catkin_EXPORTED_TARGETS})
+target_link_libraries(ambs_components ${catkin_LIBRARIES})
 
 set(ROSLINT_CPP_OPTS "--filter=-legal/copyright,-whitespace/braces")
 roslint_cpp()
