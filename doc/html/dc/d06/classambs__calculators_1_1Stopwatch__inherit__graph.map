@@ -1,0 +1,4 @@
+<map id="Stopwatch" name="Stopwatch">
+<area shape="rect" id="node1" title="Compute difference in Time between start and stop, taken from messages directly." alt="" coords="38,80,122,107"/>
+<area shape="rect" id="node2" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html" title="The VIRTUAL base class for all calculators to inherit from." alt="" coords="5,5,155,32"/>
+</map>

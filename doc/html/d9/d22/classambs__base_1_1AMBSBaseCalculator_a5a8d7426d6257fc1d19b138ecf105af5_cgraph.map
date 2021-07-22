@@ -1,0 +1,6 @@
+<map id="initialiseCalc" name="initialiseCalc">
+<area shape="rect" id="node1" title="Actual initialisation function, simply calls the standard_control_ init." alt="" coords="5,20,101,47"/>
+<area shape="rect" id="node2" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a9afa149dc8c8b88b27677d374cde3acd" title="Initialisation decoupled from constructor for convenince." alt="" coords="149,13,385,54"/>
+<area shape="rect" id="node3" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5ce528127b32bf89ce47767cf90f32a8" title=" " alt="" coords="433,13,667,54"/>
+<area shape="rect" id="node4" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="715,5,911,61"/>
+</map>

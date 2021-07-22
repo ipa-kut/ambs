@@ -1,0 +1,4 @@
+<map id="createLoggingFolder" name="createLoggingFolder">
+<area shape="rect" id="node1" title="Check if param path exists, create it otherwise, then create next logging folder." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node2" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#af9fce1b0f9e44464e1616bde818ddf62" title="Counts the number of subdirectories in a path." alt="" coords="192,5,332,32"/>
+</map>

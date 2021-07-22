@@ -1,0 +1,7 @@
+<map id="AMBSBaseRunner" name="AMBSBaseRunner">
+<area shape="rect" id="node1" title="Constructor. Calls initialiseRunner()" alt="" coords="5,35,137,61"/>
+<area shape="rect" id="node2" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a12b4ea7bfffdc0a9ab45f2a1de7d50fc" title="Actual initialisation function." alt="" coords="185,35,296,61"/>
+<area shape="rect" id="node3" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a6d3f3a18d02e55a0751aaa7cd478b815" title="Check if param path exists, create it otherwise, then create next logging folder." alt="" coords="373,5,511,32"/>
+<area shape="rect" id="node5" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="344,57,540,98"/>
+<area shape="rect" id="node4" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#af9fce1b0f9e44464e1616bde818ddf62" title="Counts the number of subdirectories in a path." alt="" coords="588,5,728,32"/>
+</map>

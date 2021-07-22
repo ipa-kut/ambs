@@ -18,6 +18,10 @@ Contains header files defining classes for all components, uses `ambs_core`
 
 Contains the actual nodelet implementations, which implements classes defined in `ambs_components`   
 Contains also launch files to quickly test nodelets.   
+
+## Code Documentation
+
+See the Doxygen [doc](doc/html/index.html) for detailed descriptions and hierarchy overview.
 ## Linting
 
 First add roslint to CMakeLists.txt & package.xml of all packages that need to be linted (see `ambs_core` for example)

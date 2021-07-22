@@ -1,0 +1,5 @@
+<map id="resetAllPorts" name="resetAllPorts">
+<area shape="rect" id="node1" title="Reset internal buffers of all ports." alt="" coords="5,5,103,32"/>
+<area shape="rect" id="node2" href="$d7/d0b/classambs__base_1_1AMBSStandardControlInterface.html#a5f1078de282573c969fcdb4e1e3c1435" title="Reset internal buffer of a specific port." alt="" coords="151,5,225,32"/>
+<area shape="rect" id="node3" href="$d7/d0b/classambs__base_1_1AMBSStandardControlInterface.html#ac7ff1e64d12fa17333b3abb625e79405" title="Create a new BoolStamped type message." alt="" coords="273,5,448,32"/>
+</map>

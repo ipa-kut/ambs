@@ -1,0 +1,9 @@
+<map id="init" name="init">
+<area shape="rect" id="node1" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,111,44,138"/>
+<area shape="rect" id="node2" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a2ce63b7c990f2c030b6cd2afcff95624" title="Actual initialisation function." alt="" coords="92,71,299,112"/>
+<area shape="rect" id="node6" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a4b4b82770c8ec00850f56bde466ff543" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="92,136,299,177"/>
+<area shape="rect" id="node3" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a6d3f3a18d02e55a0751aaa7cd478b815" title="Check if param path exists, create it otherwise, then create next logging folder." alt="" coords="347,5,553,47"/>
+<area shape="rect" id="node5" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="352,71,548,112"/>
+<area shape="rect" id="node4" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#af9fce1b0f9e44464e1616bde818ddf62" title="Counts the number of subdirectories in a path." alt="" coords="601,5,808,47"/>
+<area shape="rect" id="node7" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a967f9a0a5cfaa49ba54b5fe00c08b132" title=" " alt="" coords="347,136,553,177"/>
+</map>

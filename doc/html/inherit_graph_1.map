@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html" title="The virtual base class for all runners to inherit from." alt="" coords="5,5,137,32"/>
+<area shape="rect" id="node2" href="$d7/d68/classambs__runners_1_1Test1Braking.html" title="Test 1 braking starts a robot and stops after it reaches max vel or times out." alt="" coords="185,5,284,32"/>
+</map>
