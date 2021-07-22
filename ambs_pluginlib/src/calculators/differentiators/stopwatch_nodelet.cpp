@@ -2,7 +2,7 @@
 #include <pluginlib/class_list_macros.h>
 #include <string>
 
-#include "ambs_calculators/differentiators/stopwatch.h"
+#include "ambs_components/ambs_calculators/differentiators/stopwatch.h"
 
 namespace ambs_calculators
 {

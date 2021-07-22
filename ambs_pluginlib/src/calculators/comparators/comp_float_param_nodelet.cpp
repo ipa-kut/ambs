@@ -2,7 +2,7 @@
 #include <pluginlib/class_list_macros.h>
 #include <string>
 
-#include "ambs_calculators/comparators/float_param_comparator.h"
+#include "ambs_components/ambs_calculators/comparators/float_param_comparator.h"
 
 namespace ambs_calculators
 {

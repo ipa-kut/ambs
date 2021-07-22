@@ -1,7 +1,7 @@
 #include <string>
 #include <vector>
 
-#include "ambs_interpreters/command_interpreters/velocity_interpreter.h"
+#include "ambs_components/ambs_interpreters/command_interpreters/velocity_interpreter.h"
 
 namespace ambs_interpreters {
 

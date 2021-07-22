@@ -32,5 +32,8 @@ target_link_libraries(ambs_components ${catkin_LIBRARIES})
 set(ROSLINT_CPP_OPTS "--filter=-legal/copyright,-whitespace/braces")
 roslint_cpp()
 
-install(DIRECTORY include/
+install(DIRECTORY include/${PROJECT_NAME}/
         DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION})
+
+install(TARGETS ambs_components
+        DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION})
