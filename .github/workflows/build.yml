@@ -34,4 +34,8 @@ jobs:
         run: |
           cd ~/catkin_ws/src
           catkin build --no-deps ambs_components --make-args roslint
+      - name: Lint_pluginlib
+        run: |
+          cd ~/catkin_ws/src
+          catkin build --no-deps ambs_pluginlib --make-args roslint
 

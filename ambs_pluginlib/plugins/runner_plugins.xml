@@ -1,0 +1,12 @@
+<library path="lib/libambs_runners">
+
+    <class name="ambs_runners/Test1BrakingNodelet"
+    type="ambs_runners::Test1BrakingNodelet"
+    base_class_type="nodelet::Nodelet">
+        <description>
+        Nodelet to run Test1 braking test
+        </description>
+    </class>
+
+</library>
+
