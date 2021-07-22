@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['bool_5finputs_5f_260',['bool_inputs_',['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a6ba7c018b569d85c311b2c1fbc8088bf',1,'ambs_base::AMBSBaseRunner']]],
-  ['bool_5foutputs_5f_261',['bool_outputs_',['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a0720b9c54f3f98123c2309d844d8db29',1,'ambs_base::AMBSBaseRunner']]]
+  ['activate_5f_311',['ACTIVATE_',['../d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a1b9858cf9b0c8d9242e9f23480e2c95c',1,'ambs_interpreters::CommandVelocityInterpreter']]]
 ];

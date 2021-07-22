@@ -25,16 +25,7 @@
 var NAVTREE =
 [
   [ "Automated Modular Benchmarking System", "index.html", [
-    [ "AMBS", "d0/d30/md_README.html", [
-      [ "Package descriptions", "d0/d30/md_README.html#autotoc_md1", [
-        [ "ambs_msgs", "d0/d30/md_README.html#autotoc_md2", null ],
-        [ "ambs_core", "d0/d30/md_README.html#autotoc_md3", null ],
-        [ "ambs_components", "d0/d30/md_README.html#autotoc_md4", null ],
-        [ "ambs_plugliblin", "d0/d30/md_README.html#autotoc_md5", null ]
-      ] ],
-      [ "Code Documentation", "d0/d30/md_README.html#autotoc_md6", null ],
-      [ "Linting", "d0/d30/md_README.html#autotoc_md7", null ]
-    ] ],
+    [ "AMBS", "index.html", null ],
     [ "Todo List", "dd/da0/todo.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -48,7 +39,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
@@ -66,7 +57,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d7/d68/classambs__runners_1_1Test1Braking.html#a29f13e1f8837802f0b0345d68ecbd8fb"
+"d6/daa/classambs__base_1_1AMBSBaseRunner.html#ac61767211902f2e6474299e7543fba46",
+"df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

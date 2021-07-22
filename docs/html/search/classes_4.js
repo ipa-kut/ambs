@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['test1braking_169',['Test1Braking',['../d7/d68/classambs__runners_1_1Test1Braking.html',1,'ambs_runners']]],
-  ['test1brakingnodelet_170',['Test1BrakingNodelet',['../dd/d5c/classambs__runners_1_1Test1BrakingNodelet.html',1,'ambs_runners']]]
+  ['stopwatch_203',['Stopwatch',['../d0/d7e/classambs__calculators_1_1Stopwatch.html',1,'ambs_calculators']]],
+  ['stopwatchnodelet_204',['StopwatchNodelet',['../db/d86/classambs__calculators_1_1StopwatchNodelet.html',1,'ambs_calculators']]]
 ];

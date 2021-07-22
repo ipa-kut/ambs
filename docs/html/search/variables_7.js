@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['msg_5f_281',['msg_',['../d7/d71/structambs__base_1_1AMBSPort.html#a9af50947dca5f6aefb45be779676125e',1,'ambs_base::AMBSPort']]],
-  ['msg_5fptr_282',['msg_ptr',['../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a1cd043ced63c2cdd99da9549ea60fe5f',1,'ambs_base::AMBSTemplatedInterface']]],
-  ['mutexes_5f_283',['mutexes_',['../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adfa8e5a1f2a9cfeed5dadac37a9dbe4b',1,'ambs_base::AMBSTemplatedInterface']]]
+  ['log_5ffolder_5fpath_5f_336',['log_folder_path_',['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a118b31aaa3ed37941920eba6f422cf76',1,'ambs_base::AMBSBaseRunner']]],
+  ['log_5fpath_5f_337',['log_path_',['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a87ea78bb08ae6e6909c2d48fbe2a904b',1,'ambs_base::AMBSBaseRunner']]]
 ];

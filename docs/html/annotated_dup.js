@@ -18,6 +18,12 @@ var annotated_dup =
       [ "Stopwatch", "d0/d7e/classambs__calculators_1_1Stopwatch.html", "d0/d7e/classambs__calculators_1_1Stopwatch" ],
       [ "StopwatchNodelet", "db/d86/classambs__calculators_1_1StopwatchNodelet.html", "db/d86/classambs__calculators_1_1StopwatchNodelet" ]
     ] ],
+    [ "ambs_interpreters", "d1/d70/namespaceambs__interpreters.html", [
+      [ "CommandVelocityInterpreter", "d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html", "d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter" ],
+      [ "CommandVelocityInterpreterNodelet", "df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet.html", "df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet" ],
+      [ "OdomInterpreter", "d5/daa/classambs__interpreters_1_1OdomInterpreter.html", "d5/daa/classambs__interpreters_1_1OdomInterpreter" ],
+      [ "OdomInterpreterNodelet", "d7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet.html", "d7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet" ]
+    ] ],
     [ "ambs_runners", "d9/dc8/namespaceambs__runners.html", [
       [ "Test1Braking", "d7/d68/classambs__runners_1_1Test1Braking.html", "d7/d68/classambs__runners_1_1Test1Braking" ],
       [ "Test1BrakingNodelet", "dd/d5c/classambs__runners_1_1Test1BrakingNodelet.html", "dd/d5c/classambs__runners_1_1Test1BrakingNodelet" ]

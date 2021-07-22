@@ -731,7 +731,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6d3f3a18d02e55a0751aaa7cd478b815';
-        sec-mem-ref-line = '265';
+        sec-mem-ref-line = '267';
         sec-mem-ref-name = 'AMBSBaseRunner::createLoggingFolder';
     };
       sec-mem-referenceto = {
@@ -812,6 +812,11 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-line = '42';
         sec-mem-ref-name = 'AMBSBaseRunner::START_ROBOT_';
     };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1abe4df9f0f7103f35f7e347dd20f7af51';
+        sec-mem-ref-line = '43';
+        sec-mem-ref-name = 'AMBSBaseRunner::STOP_ROBOT_';
+    };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'dd/dd3/test1__braking_8h_1acc239077cecc1069d9306ceda27a8e88';
         sec-mem-ref-line = '54';
@@ -882,6 +887,11 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6625c2a4e03a55a9c34fa1bc4f19d640';
         sec-mem-ref-line = '33';
         sec-mem-ref-name = 'AMBSBaseRunner::signal_interface_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a4c63945b6a95163d6197e88e3a27f7bd';
+        sec-mem-ref-line = '42';
+        sec-mem-ref-name = 'AMBSBaseRunner::START_ROBOT_';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1abe4df9f0f7103f35f7e347dd20f7af51';
@@ -1259,7 +1269,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6d3f3a18d02e55a0751aaa7cd478b815';
-        sec-mem-ref-line = '265';
+        sec-mem-ref-line = '267';
         sec-mem-ref-name = 'AMBSBaseRunner::createLoggingFolder';
     };
     }; /* sec-member */
@@ -1305,12 +1315,12 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6d3f3a18d02e55a0751aaa7cd478b815';
-        sec-mem-ref-line = '265';
+        sec-mem-ref-line = '267';
         sec-mem-ref-name = 'AMBSBaseRunner::createLoggingFolder';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ab677e11cb7da0bae588e0bf9afa10c43';
-        sec-mem-ref-line = '299';
+        sec-mem-ref-line = '301';
         sec-mem-ref-name = 'AMBSBaseRunner::getResolvedParam';
     };
       sec-mem-referencedby = {
@@ -1348,7 +1358,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6d3f3a18d02e55a0751aaa7cd478b815';
-        sec-mem-ref-line = '265';
+        sec-mem-ref-line = '267';
         sec-mem-ref-name = 'AMBSBaseRunner::createLoggingFolder';
     };
       sec-mem-referencedby = {
@@ -1358,7 +1368,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ab677e11cb7da0bae588e0bf9afa10c43';
-        sec-mem-ref-line = '299';
+        sec-mem-ref-line = '301';
         sec-mem-ref-name = 'AMBSBaseRunner::getResolvedParam';
     };
       sec-mem-referencedby = {
@@ -1404,7 +1414,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6d3f3a18d02e55a0751aaa7cd478b815';
-        sec-mem-ref-line = '265';
+        sec-mem-ref-line = '267';
         sec-mem-ref-name = 'AMBSBaseRunner::createLoggingFolder';
     };
     }; /* sec-member */
@@ -1546,7 +1556,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a574496e1966eec1bdd39a5bab7f44117';
-        sec-mem-ref-line = '234';
+        sec-mem-ref-line = '235';
         sec-mem-ref-name = 'AMBSBaseRunner::stopRobot';
     };
       sec-mem-referencedby = {
@@ -1610,6 +1620,11 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-line = '229';
         sec-mem-ref-name = 'AMBSBaseRunner::startRobot';
     };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a574496e1966eec1bdd39a5bab7f44117';
+        sec-mem-ref-line = '235';
+        sec-mem-ref-name = 'AMBSBaseRunner::stopRobot';
+    };
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'variable';
@@ -1658,8 +1673,13 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a1c7c141283496076d1689b09c128f390';
+        sec-mem-ref-line = '229';
+        sec-mem-ref-name = 'AMBSBaseRunner::startRobot';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a574496e1966eec1bdd39a5bab7f44117';
-        sec-mem-ref-line = '234';
+        sec-mem-ref-line = '235';
         sec-mem-ref-name = 'AMBSBaseRunner::stopRobot';
     };
     }; /* sec-member */
@@ -1780,7 +1800,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6d3f3a18d02e55a0751aaa7cd478b815';
-        sec-mem-ref-line = '265';
+        sec-mem-ref-line = '267';
         sec-mem-ref-name = 'AMBSBaseRunner::createLoggingFolder';
     };
     }; /* sec-member */
@@ -1810,7 +1830,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1af9fce1b0f9e44464e1616bde818ddf62';
-        sec-mem-ref-line = '244';
+        sec-mem-ref-line = '246';
         sec-mem-ref-name = 'AMBSBaseRunner::countSubDirectories';
     };
       sec-mem-referenceto = {
@@ -2119,7 +2139,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a574496e1966eec1bdd39a5bab7f44117';
-        sec-mem-ref-line = '234';
+        sec-mem-ref-line = '235';
         sec-mem-ref-name = 'AMBSBaseRunner::stopRobot';
     };
       sec-mem-referencedby = {
@@ -3278,6 +3298,11 @@ _EnD_oF_dEf_TeXt_;
 @param port_name The name of the topic of the port
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1af955dafbd2caaf93213592477dd71ce1';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::executeCB';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'dd/dd3/test1__braking_8h_1acc239077cecc1069d9306ceda27a8e88';
         sec-mem-ref-line = '54';
         sec-mem-ref-name = 'Test1Braking::executeCB';
@@ -3359,6 +3384,11 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-id = 'da/d1c/ambs__base__interface_8hpp_1a9f014b4e188b7a3e3033ce3eefb44414';
         sec-mem-ref-line = '32';
         sec-mem-ref-name = 'AMBSPort< T >::topic_name_';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::init';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
@@ -3448,7 +3478,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a574496e1966eec1bdd39a5bab7f44117';
-        sec-mem-ref-line = '234';
+        sec-mem-ref-line = '235';
         sec-mem-ref-name = 'AMBSBaseRunner::stopRobot';
     };
       sec-mem-referencedby = {
@@ -3484,6 +3514,11 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1af955dafbd2caaf93213592477dd71ce1';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::executeCB';
+    };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a9daeb45ab1c8723c550216193bc640d4';
         sec-mem-ref-line = '96';
@@ -6109,6 +6144,1437 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
 }; /* class */
 class = {
+  cp-id     = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter';
+  cp-name   = 'ambs_interpreters::CommandVelocityInterpreter';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1aa4c724fd1f32cbfa5bddc885ed0a5efd';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'CommandVelocityInterpreter';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1a78d68307cf14ddac124999ab4fb168e9';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'CommandVelocityInterpreter';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ros::NodeHandle
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'nh';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'node_name';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '39';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1a02fd73d861ef2e4aabb38c0c9ff82947';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'init';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '41';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1a1b9858cf9b0c8d9242e9f23480e2c95c';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::ACTIVATE_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1ae25d0d51621eb2a73be3cb89b3799890';
+        sec-mem-ref-line = '55';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::CMD_VEL_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1a2f97fe4b21ab15b7f4c093f3c1710eb9';
+        sec-mem-ref-line = '48';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::control_interface_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1a9d53ac1e2f73b81ef5d2177a4df6ec40';
+        sec-mem-ref-line = '54';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::DEACTIVATE_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1af8e0a1958b899749cfd2c9ba641e44f1';
+        sec-mem-ref-line = '58';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::default_velocity_x_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1ab90e87f4774e82d8f97062cdbc6978fc';
+        sec-mem-ref-line = '45';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::execute_timer_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1af955dafbd2caaf93213592477dd71ce1';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::executeCB';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d1c/ambs__base__interface_8hpp_1ac55ed2cfd175f6e71ebe460eeb643b40';
+        sec-mem-ref-line = '261';
+        sec-mem-ref-name = 'AMBSTemplatedInterface< T >::init';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1a1300297c252ff1dc5ceea58a274d4db5';
+        sec-mem-ref-line = '44';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::nh_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1a69e220bdafb7c66b63cee0187bfc8bcb';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::node_name_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1aa159a432955dea7efb05205839250d8d';
+        sec-mem-ref-line = '57';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::PARAM_VEL_X_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1ae8a60142e41a71a0c7c0428abb9b681c';
+        sec-mem-ref-line = '60';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::pub_rate_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1a29e8878c4356122238563b39022d22fc';
+        sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::pub_vel_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1a4c63945b6a95163d6197e88e3a27f7bd';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::START_ROBOT_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1abe4df9f0f7103f35f7e347dd20f7af51';
+        sec-mem-ref-line = '52';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::STOP_ROBOT_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1acc1ebe446e462b1224bfbc13ac8dabc3';
+        sec-mem-ref-line = '49';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::velocity_x_';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1a122727e6b4ef8e5fb2c12f114ae74e93';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+geometry_msgs::Twist
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'constructNewTwistWithX';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '63';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1af955dafbd2caaf93213592477dd71ce1';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::executeCB';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1af955dafbd2caaf93213592477dd71ce1';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'executeCB';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const ros::TimerEvent &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'event';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '62';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1a1b9858cf9b0c8d9242e9f23480e2c95c';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::ACTIVATE_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a122727e6b4ef8e5fb2c12f114ae74e93';
+        sec-mem-ref-line = '72';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::constructNewTwistWithX';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1a2f97fe4b21ab15b7f4c093f3c1710eb9';
+        sec-mem-ref-line = '48';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::control_interface_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1a9d53ac1e2f73b81ef5d2177a4df6ec40';
+        sec-mem-ref-line = '54';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::DEACTIVATE_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d1c/ambs__base__interface_8hpp_1ada64638f460eb73b2fdec44ef26236b1';
+        sec-mem-ref-line = '118';
+        sec-mem-ref-name = 'AMBSTemplatedInterface< T >::getPortMsg';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1a69e220bdafb7c66b63cee0187bfc8bcb';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::node_name_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1a29e8878c4356122238563b39022d22fc';
+        sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::pub_vel_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d1c/ambs__base__interface_8hpp_1af8173f556899e5af6e228ced6c0009fb';
+        sec-mem-ref-line = '311';
+        sec-mem-ref-name = 'AMBSTemplatedInterface< T >::resetAllPorts';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1a4c63945b6a95163d6197e88e3a27f7bd';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::START_ROBOT_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1abe4df9f0f7103f35f7e347dd20f7af51';
+        sec-mem-ref-line = '52';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::STOP_ROBOT_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d3d/velocity__interpreter_8h_1acc1ebe446e462b1224bfbc13ac8dabc3';
+        sec-mem-ref-line = '49';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::velocity_x_';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::init';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1a1b9858cf9b0c8d9242e9f23480e2c95c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ACTIVATE_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "in_activate"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '53';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1af955dafbd2caaf93213592477dd71ce1';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::executeCB';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1ae25d0d51621eb2a73be3cb89b3799890';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'CMD_VEL_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "out_cmd_vel"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '55';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1a2f97fe4b21ab15b7f4c093f3c1710eb9';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+ambs_base::AMBSBooleanInterface
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'control_interface_';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '48';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1af955dafbd2caaf93213592477dd71ce1';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::executeCB';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1a9d53ac1e2f73b81ef5d2177a4df6ec40';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'DEACTIVATE_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "in_deactivate"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '54';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1af955dafbd2caaf93213592477dd71ce1';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::executeCB';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1af8e0a1958b899749cfd2c9ba641e44f1';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'default_velocity_x_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0.8
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '58';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1ab90e87f4774e82d8f97062cdbc6978fc';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+ros::Timer
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'execute_timer_';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '45';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1a1300297c252ff1dc5ceea58a274d4db5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+ros::NodeHandle
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'nh_';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '44';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1a69e220bdafb7c66b63cee0187bfc8bcb';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'node_name_';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '47';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1af955dafbd2caaf93213592477dd71ce1';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::executeCB';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1aa159a432955dea7efb05205839250d8d';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'PARAM_VEL_X_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "velocity_x"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '57';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1ae8a60142e41a71a0c7c0428abb9b681c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'pub_rate_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 20
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '60';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1a29e8878c4356122238563b39022d22fc';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+ros::Publisher
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'pub_vel_';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '46';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1af955dafbd2caaf93213592477dd71ce1';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::executeCB';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1a6162d98346db18283f44230636f19153';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'queue_size';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 10
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '59';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1a4c63945b6a95163d6197e88e3a27f7bd';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'START_ROBOT_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "in_start_robot"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '51';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1af955dafbd2caaf93213592477dd71ce1';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::executeCB';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1abe4df9f0f7103f35f7e347dd20f7af51';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'STOP_ROBOT_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "in_stop_robot"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '52';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1af955dafbd2caaf93213592477dd71ce1';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::executeCB';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter_1acc1ebe446e462b1224bfbc13ac8dabc3';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'velocity_x_';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+      sec-mem-desc-line = '49';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1af955dafbd2caaf93213592477dd71ce1';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::executeCB';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'CommandVelocityInterpreter::init';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+  cp-fileline  = '35';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Class to convert velocity commands from runner into cmd_vel messages.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Ports:
+Inputs - Activate, Start, Stop, Deactivate
+Outputs - Cmd_vel
+
+Functionality:
+All input ports have an internal buffer that saves latest value.
+Interpreter always works off of latest buffer value.
+Start & Stop are matched pair, needing to be only one True and one False to work.
+Starts deactivated state.
+
+Operation:
+Set Activate=True to enable interpreter
+If Activated, and if neither Start nor Stop is True, send no velocity
+If Activated, set (Start=True then Stop=False) to start sending parametrised velocity
+If Activated, set (Start=False then Stop=True) to start sending 0 velocity
+If Activated, set Deactivate=True to disable interpreter, send no velocity, clear all buffers &
+     go back to deactivated state.
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 3;
+        node-label = 'AMBSTemplatedInterface< ambs_msgs::BoolStamped >';
+        node-link = {
+          node-link-id = 'd3/d0c/classambs__base_1_1AMBSTemplatedInterface';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'CommandVelocityInterpreter';
+        node-link = {
+          node-link-id = 'd4/df1/classambs__interpreters_1_1CommandVelocityInterpreter';
+        };
+        node-child = {
+          child-id = '2';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+control_interface_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'AMBSBooleanInterface';
+        node-link = {
+          node-link-id = 'd6/dc2/classambs__base_1_1AMBSBooleanInterface';
+        };
+        node-child = {
+          child-id = '3';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet';
+  cp-name   = 'ambs_interpreters::CommandVelocityInterpreterNodelet';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'd7/d81/classnodelet_1_1Nodelet';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet_1a91efce3fb7d4977d179eaafd7d9e8a67';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'CommandVelocityInterpreterNodelet';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/interpreters/command_interpreters/velocity_interpreter_nodelet.cpp';
+      sec-mem-desc-line = '13';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet_1a4213d7530a4d6c1f5db2fed6a7064bc0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~CommandVelocityInterpreterNodelet';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/interpreters/command_interpreters/velocity_interpreter_nodelet.cpp';
+      sec-mem-desc-line = '14';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet_1a9450a15087a143d9db53ff89c172595f';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'onInit';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/interpreters/command_interpreters/velocity_interpreter_nodelet.cpp';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'db/d52/velocity__interpreter__nodelet_8cpp_1a89d39f14e2655447a9e283846cc4fe02';
+        sec-mem-ref-line = '28';
+        sec-mem-ref-name = 'CommandVelocityInterpreterNodelet::class_object';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet_1a89d39f14e2655447a9e283846cc4fe02';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+boost::shared_ptr< CommandVelocityInterpreter >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'class_object';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/interpreters/command_interpreters/velocity_interpreter_nodelet.cpp';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'db/d52/velocity__interpreter__nodelet_8cpp_1a9450a15087a143d9db53ff89c172595f';
+        sec-mem-ref-line = '16';
+        sec-mem-ref-name = 'CommandVelocityInterpreterNodelet::onInit';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/interpreters/command_interpreters/velocity_interpreter_nodelet.cpp';
+  cp-fileline  = '10';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'CommandVelocityInterpreterNodelet';
+        node-link = {
+          node-link-id = 'df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'Nodelet';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'CommandVelocityInterpreterNodelet';
+        node-link = {
+          node-link-id = 'df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'Nodelet';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'd5/daa/classambs__interpreters_1_1OdomInterpreter';
+  cp-name   = 'ambs_interpreters::OdomInterpreter';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd5/daa/classambs__interpreters_1_1OdomInterpreter_1a698e99b6ec0e0c1f99680d2520924dfb';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'OdomInterpreter';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/location_interpreters/odom_interpreter.h';
+      sec-mem-desc-line = '27';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd5/daa/classambs__interpreters_1_1OdomInterpreter_1a6a330946d0c797da51e0ec06e46b9c33';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'OdomInterpreter';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ros::NodeHandle
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'nh';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'node_name';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/location_interpreters/odom_interpreter.h';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd5/daa/classambs__interpreters_1_1OdomInterpreter_1a02fd73d861ef2e4aabb38c0c9ff82947';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'init';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/location_interpreters/odom_interpreter.h';
+      sec-mem-desc-line = '29';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/dde/odom__interpreter_8h_1a1300297c252ff1dc5ceea58a274d4db5';
+        sec-mem-ref-line = '32';
+        sec-mem-ref-name = 'OdomInterpreter::nh_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/dde/odom__interpreter_8h_1a69e220bdafb7c66b63cee0187bfc8bcb';
+        sec-mem-ref-line = '36';
+        sec-mem-ref-name = 'OdomInterpreter::node_name_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/dde/odom__interpreter_8h_1a2af7913c9111adfbfd854e429f2e4fd0';
+        sec-mem-ref-line = '38';
+        sec-mem-ref-name = 'OdomInterpreter::ODOM_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd9/df9/odom__interpreter_8cpp_1a0f7dedd2e5334a362026d702d3c372f2';
+        sec-mem-ref-line = '25';
+        sec-mem-ref-name = 'OdomInterpreter::odomCB';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/dde/odom__interpreter_8h_1a9243d54851443d7c442b6efbc3f0614a';
+        sec-mem-ref-line = '39';
+        sec-mem-ref-name = 'OdomInterpreter::POSE_STAMPED_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/dde/odom__interpreter_8h_1a479c311c04e59ed63e2069103794eae1';
+        sec-mem-ref-line = '34';
+        sec-mem-ref-name = 'OdomInterpreter::pub_lin_x_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/dde/odom__interpreter_8h_1a1bb4255e27e3c2ecfc764eee15d1e04a';
+        sec-mem-ref-line = '33';
+        sec-mem-ref-name = 'OdomInterpreter::pub_pose_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/dde/odom__interpreter_8h_1ac4778fc1580a4e9e48fbf4b09d62b468';
+        sec-mem-ref-line = '42';
+        sec-mem-ref-name = 'OdomInterpreter::queue_size';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/dde/odom__interpreter_8h_1ac0677db50d27c239e0aff93283f003c5';
+        sec-mem-ref-line = '35';
+        sec-mem-ref-name = 'OdomInterpreter::sub_odom_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/dde/odom__interpreter_8h_1ab5d9e9812c1befc43adf7af33e29d05b';
+        sec-mem-ref-line = '40';
+        sec-mem-ref-name = 'OdomInterpreter::TWIST_LINEARX_';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd5/daa/classambs__interpreters_1_1OdomInterpreter_1a0f7dedd2e5334a362026d702d3c372f2';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'odomCB';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const nav_msgs::OdometryConstPtr
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'msg';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/location_interpreters/odom_interpreter.h';
+      sec-mem-desc-line = '44';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/dde/odom__interpreter_8h_1a479c311c04e59ed63e2069103794eae1';
+        sec-mem-ref-line = '34';
+        sec-mem-ref-name = 'OdomInterpreter::pub_lin_x_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/dde/odom__interpreter_8h_1a1bb4255e27e3c2ecfc764eee15d1e04a';
+        sec-mem-ref-line = '33';
+        sec-mem-ref-name = 'OdomInterpreter::pub_pose_';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/df9/odom__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '17';
+        sec-mem-ref-name = 'OdomInterpreter::init';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd5/daa/classambs__interpreters_1_1OdomInterpreter_1a1300297c252ff1dc5ceea58a274d4db5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+ros::NodeHandle
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'nh_';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/location_interpreters/odom_interpreter.h';
+      sec-mem-desc-line = '32';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/df9/odom__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '17';
+        sec-mem-ref-name = 'OdomInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd5/daa/classambs__interpreters_1_1OdomInterpreter_1a69e220bdafb7c66b63cee0187bfc8bcb';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'node_name_';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/location_interpreters/odom_interpreter.h';
+      sec-mem-desc-line = '36';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/df9/odom__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '17';
+        sec-mem-ref-name = 'OdomInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd5/daa/classambs__interpreters_1_1OdomInterpreter_1a2af7913c9111adfbfd854e429f2e4fd0';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ODOM_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "odom"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/location_interpreters/odom_interpreter.h';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/df9/odom__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '17';
+        sec-mem-ref-name = 'OdomInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd5/daa/classambs__interpreters_1_1OdomInterpreter_1a9243d54851443d7c442b6efbc3f0614a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'POSE_STAMPED_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "pose"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/location_interpreters/odom_interpreter.h';
+      sec-mem-desc-line = '39';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/df9/odom__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '17';
+        sec-mem-ref-name = 'OdomInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd5/daa/classambs__interpreters_1_1OdomInterpreter_1a479c311c04e59ed63e2069103794eae1';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+ros::Publisher
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'pub_lin_x_';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/location_interpreters/odom_interpreter.h';
+      sec-mem-desc-line = '34';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/df9/odom__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '17';
+        sec-mem-ref-name = 'OdomInterpreter::init';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/df9/odom__interpreter_8cpp_1a0f7dedd2e5334a362026d702d3c372f2';
+        sec-mem-ref-line = '25';
+        sec-mem-ref-name = 'OdomInterpreter::odomCB';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd5/daa/classambs__interpreters_1_1OdomInterpreter_1a1bb4255e27e3c2ecfc764eee15d1e04a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+ros::Publisher
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'pub_pose_';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/location_interpreters/odom_interpreter.h';
+      sec-mem-desc-line = '33';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/df9/odom__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '17';
+        sec-mem-ref-name = 'OdomInterpreter::init';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/df9/odom__interpreter_8cpp_1a0f7dedd2e5334a362026d702d3c372f2';
+        sec-mem-ref-line = '25';
+        sec-mem-ref-name = 'OdomInterpreter::odomCB';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd5/daa/classambs__interpreters_1_1OdomInterpreter_1ac4778fc1580a4e9e48fbf4b09d62b468';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const unsigned int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'queue_size';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 10
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/location_interpreters/odom_interpreter.h';
+      sec-mem-desc-line = '42';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/df9/odom__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '17';
+        sec-mem-ref-name = 'OdomInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd5/daa/classambs__interpreters_1_1OdomInterpreter_1ac0677db50d27c239e0aff93283f003c5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+ros::Subscriber
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'sub_odom_';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/location_interpreters/odom_interpreter.h';
+      sec-mem-desc-line = '35';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/df9/odom__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '17';
+        sec-mem-ref-name = 'OdomInterpreter::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd5/daa/classambs__interpreters_1_1OdomInterpreter_1ab5d9e9812c1befc43adf7af33e29d05b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TWIST_LINEARX_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "twist_linear_x"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/location_interpreters/odom_interpreter.h';
+      sec-mem-desc-line = '40';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/df9/odom__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '17';
+        sec-mem-ref-name = 'OdomInterpreter::init';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/location_interpreters/odom_interpreter.h';
+  cp-fileline  = '24';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Used primarily in simulation testing environment instead of focusers with topic_tools/transform to
+extract Pose of robot and Linear X velocity.
+Advantage is potential to publish odom data from a nodelet for testing rather than taking from gazebo.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Ports:
+Inputs - Odom
+Outputs - Pose_stamped, twist_linear_x
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'd7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet';
+  cp-name   = 'ambs_interpreters::OdomInterpreterNodelet';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'd7/d81/classnodelet_1_1Nodelet';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet_1a5e823f74ea1f118665fe96954684ee67';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'OdomInterpreterNodelet';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/interpreters/location_interpreters/odom_interpreter_nodelet.cpp';
+      sec-mem-desc-line = '13';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet_1a70776b391008aa418c7f9b28c7b7afb7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~OdomInterpreterNodelet';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/interpreters/location_interpreters/odom_interpreter_nodelet.cpp';
+      sec-mem-desc-line = '14';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet_1a9450a15087a143d9db53ff89c172595f';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'onInit';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/interpreters/location_interpreters/odom_interpreter_nodelet.cpp';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd4/dc8/odom__interpreter__nodelet_8cpp_1a6c46573fb818058e4e98a0a7a09b41e4';
+        sec-mem-ref-line = '28';
+        sec-mem-ref-name = 'OdomInterpreterNodelet::class_object';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet_1a6c46573fb818058e4e98a0a7a09b41e4';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+boost::shared_ptr< OdomInterpreter >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'class_object';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/interpreters/location_interpreters/odom_interpreter_nodelet.cpp';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd4/dc8/odom__interpreter__nodelet_8cpp_1a9450a15087a143d9db53ff89c172595f';
+        sec-mem-ref-line = '16';
+        sec-mem-ref-name = 'OdomInterpreterNodelet::onInit';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/interpreters/location_interpreters/odom_interpreter_nodelet.cpp';
+  cp-fileline  = '10';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'OdomInterpreterNodelet';
+        node-link = {
+          node-link-id = 'd7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'Nodelet';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'OdomInterpreterNodelet';
+        node-link = {
+          node-link-id = 'd7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'Nodelet';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
   cp-id     = 'd7/d68/classambs__runners_1_1Test1Braking';
   cp-name   = 'ambs_runners::Test1Braking';
   cp-ref     = {
@@ -6260,7 +7726,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a574496e1966eec1bdd39a5bab7f44117';
-        sec-mem-ref-line = '234';
+        sec-mem-ref-line = '235';
         sec-mem-ref-name = 'AMBSBaseRunner::stopRobot';
     };
       sec-mem-referenceto = {
@@ -6945,6 +8411,18 @@ class = {
   };
   cp-ref     = {
     ref-type = derived;
+    ref-id   = 'df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'd7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
     ref-id   = 'dd/d5c/classambs__runners_1_1Test1BrakingNodelet';
     ref-prot = public;
     ref-virt = non-virtual;
@@ -7008,6 +8486,28 @@ _EnD_oF_dEf_TeXt_;
       }; /* node */
       node = {
         node-id    = 6;
+        node-label = 'CommandVelocityInterpreterNodelet';
+        node-link = {
+          node-link-id = 'df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 7;
+        node-label = 'OdomInterpreterNodelet';
+        node-link = {
+          node-link-id = 'd7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 8;
         node-label = 'Test1BrakingNodelet';
         node-link = {
           node-link-id = 'dd/d5c/classambs__runners_1_1Test1BrakingNodelet';
@@ -7069,9 +8569,57 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
 }; /* file */
 file = {
+  file-id   = 'da/d3d/velocity__interpreter_8h';
+  file-name = 'velocity_interpreter.h';
+  file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd7/dde/odom__interpreter_8h';
+  file-name = 'odom_interpreter.h';
+  file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/location_interpreters/odom_interpreter.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
   file-id   = 'dd/dd3/test1__braking_8h';
   file-name = 'test1_braking.h';
   file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_runners/test1_braking.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd3/d5b/velocity__interpreter_8cpp';
+  file-name = 'velocity_interpreter.cpp';
+  file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/interpreters/command_interpreters/velocity_interpreter.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd9/df9/odom__interpreter_8cpp';
+  file-name = 'odom_interpreter.cpp';
+  file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/interpreters/location_interpreters/odom_interpreter.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 
@@ -7357,6 +8905,90 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
 }; /* file */
 file = {
+  file-id   = 'db/d52/velocity__interpreter__nodelet_8cpp';
+  file-name = 'velocity_interpreter_nodelet.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'db/d52/velocity__interpreter__nodelet_8cpp_1aa932591539bf86d601711c4dfe0dc06a';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'PLUGINLIB_EXPORT_CLASS';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ambs_interpreters::CommandVelocityInterpreterNodelet
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+nodelet::Nodelet
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/interpreters/command_interpreters/velocity_interpreter_nodelet.cpp';
+      func-mem-desc-line = '33';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/interpreters/command_interpreters/velocity_interpreter_nodelet.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd4/dc8/odom__interpreter__nodelet_8cpp';
+  file-name = 'odom_interpreter_nodelet.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'd4/dc8/odom__interpreter__nodelet_8cpp_1a15267b33785bc32a2b1a1c3603542fc3';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'PLUGINLIB_EXPORT_CLASS';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ambs_interpreters::OdomInterpreterNodelet
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+nodelet::Nodelet
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/interpreters/location_interpreters/odom_interpreter_nodelet.cpp';
+      func-mem-desc-line = '33';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/interpreters/location_interpreters/odom_interpreter_nodelet.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
   file-id   = 'd5/df8/test1__braking__nodelet_8cpp';
   file-name = 'test1_braking_nodelet.cpp';
     func = {
@@ -7390,6 +9022,18 @@ _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     };
   file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/runners/test1_braking_nodelet.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd4/d84/docs_2README_8md';
+  file-name = 'README.md';
+  file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/docs/README.md';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 
@@ -7463,6 +9107,18 @@ _EnD_oF_dEf_TeXt_;
     ns-name = 'ambs_calculators';
   ns-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_calculators/comparators/float_param_comparator.h';
   ns-fileline  = '11';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'd1/d70/namespaceambs__interpreters';
+    ns-name = 'ambs_interpreters';
+  ns-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_interpreters/command_interpreters/velocity_interpreter.h';
+  ns-fileline  = '12';
   ns-briefdesc = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;

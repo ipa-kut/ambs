@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['nh_5f_284',['nh_',['../d4/db3/classambs__calculators_1_1CompFloatParam.html#a1300297c252ff1dc5ceea58a274d4db5',1,'ambs_calculators::CompFloatParam::nh_()'],['../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#a1300297c252ff1dc5ceea58a274d4db5',1,'ambs_calculators::DiffFloatTemporal::nh_()'],['../d0/d7e/classambs__calculators_1_1Stopwatch.html#a1300297c252ff1dc5ceea58a274d4db5',1,'ambs_calculators::Stopwatch::nh_()'],['../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a1300297c252ff1dc5ceea58a274d4db5',1,'ambs_base::AMBSBaseCalculator::nh_()'],['../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a1300297c252ff1dc5ceea58a274d4db5',1,'ambs_base::AMBSTemplatedInterface::nh_()'],['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a1300297c252ff1dc5ceea58a274d4db5',1,'ambs_base::AMBSBaseRunner::nh_()']]],
-  ['node_5fname_5f_285',['node_name_',['../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a69e220bdafb7c66b63cee0187bfc8bcb',1,'ambs_base::AMBSBaseCalculator::node_name_()'],['../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb',1,'ambs_base::AMBSTemplatedInterface::node_name_()'],['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a69e220bdafb7c66b63cee0187bfc8bcb',1,'ambs_base::AMBSBaseRunner::node_name_()']]]
+  ['msg_5f_338',['msg_',['../d7/d71/structambs__base_1_1AMBSPort.html#a9af50947dca5f6aefb45be779676125e',1,'ambs_base::AMBSPort']]],
+  ['msg_5fptr_339',['msg_ptr',['../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a1cd043ced63c2cdd99da9549ea60fe5f',1,'ambs_base::AMBSTemplatedInterface']]],
+  ['mutexes_5f_340',['mutexes_',['../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adfa8e5a1f2a9cfeed5dadac37a9dbe4b',1,'ambs_base::AMBSTemplatedInterface']]]
 ];

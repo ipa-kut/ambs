@@ -11,6 +11,8 @@ var hierarchy =
     ] ],
     [ "AMBSPort< T >", "d7/d71/structambs__base_1_1AMBSPort.html", null ],
     [ "AMBSTemplatedInterface< T >", "d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html", null ],
+    [ "CommandVelocityInterpreter", "d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html", null ],
+    [ "OdomInterpreter", "d5/daa/classambs__interpreters_1_1OdomInterpreter.html", null ],
     [ "AMBSTemplatedInterface< ambs_msgs::BoolStamped >", "d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html", [
       [ "AMBSBooleanInterface", "d6/dc2/classambs__base_1_1AMBSBooleanInterface.html", [
         [ "AMBSDefaultCalculatorInterface", "dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html", null ]
@@ -21,6 +23,8 @@ var hierarchy =
       [ "DiffFloatTemporalNodelet", "db/de1/classambs__calculators_1_1DiffFloatTemporalNodelet.html", null ],
       [ "DiffPoseTemporalNodelet", "df/d4e/classambs__calculators_1_1DiffPoseTemporalNodelet.html", null ],
       [ "StopwatchNodelet", "db/d86/classambs__calculators_1_1StopwatchNodelet.html", null ],
+      [ "CommandVelocityInterpreterNodelet", "df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet.html", null ],
+      [ "OdomInterpreterNodelet", "d7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet.html", null ],
       [ "Test1BrakingNodelet", "dd/d5c/classambs__runners_1_1Test1BrakingNodelet.html", null ]
     ] ]
 ];
