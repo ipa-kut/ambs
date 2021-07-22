@@ -1,0 +1,15 @@
+calculators:
+  test_comp_param_node: # node name
+    param: 0.0
+    tolerance: 0.5
+
+  test_comp_float_temporal:
+    thresh_position: 0.5
+    thresh_yaw_degrees: 10
+
+runners:
+  test_test1_braking:
+    stabilization_timeout: 0.5
+    acceleration_timeout: 10
+    verification_timeout: 2
+    decceleration_timeout: 2

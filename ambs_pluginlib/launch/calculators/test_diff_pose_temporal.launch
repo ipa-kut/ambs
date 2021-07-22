@@ -1,0 +1,17 @@
+<launch>
+
+  <group ns="ambs">
+
+    <rosparam command="load" file="$(find ambs_pluginlib)/test_configs/test_components.yaml" />
+
+    <node pkg="nodelet" type="nodelet" name="base_nodelet_manager" args="manager"  output="screen">
+        <param name="num_worker_threads" value="32" />
+    </node>
+
+    <node pkg="nodelet" type="nodelet" name="test_diff_pose_temporal"
+        args="load ambs_calculators/DiffPoseTemporalNodelet base_nodelet_manager">
+    </node>
+
+  </group>
+
+</launch>

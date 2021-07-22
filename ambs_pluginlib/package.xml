@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ambs_pluginlib</name>
+  <version>0.1.0</version>
+  <description>The ambs_pluginlib package</description>
+
+  <maintainer email="tejas.kumar.shastha@ipa.fraunhofer.de">ipa-kut</maintainer>
+  <license>Apache 2.0</license>
+
+  <author email="tejas.kumar.shastha@ipa.fraunhofer.de">ipa-kut</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roslint</build_depend>
+
+  <depend>roscpp</depend>
+  <depend>nodelet</depend>
+  <depend>ambs_msgs</depend>
+  <depend>ambs_core</depend>
+  <depend>ambs_components</depend>
+
+  <export>
+     <nodelet plugin="${prefix}/plugins/calculator_plugins.xml"/>
+     <nodelet plugin="${prefix}/plugins/runner_plugins.xml"/>
+  </export>
+</package>
