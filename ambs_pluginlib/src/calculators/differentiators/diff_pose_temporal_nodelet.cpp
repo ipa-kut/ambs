@@ -2,7 +2,7 @@
 #include <pluginlib/class_list_macros.h>
 #include <string>
 
-#include "ambs_calculators/differentiators/diff_pose_temporal.h"
+#include "ambs_components/ambs_calculators/differentiators/diff_pose_temporal.h"
 
 namespace ambs_calculators
 {

@@ -2,7 +2,7 @@
 #include <pluginlib/class_list_macros.h>
 #include <string>
 
-#include "ambs_interpreters/location_interpreters/odom_interpreter.h"
+#include "ambs_components/ambs_interpreters/location_interpreters/odom_interpreter.h"
 
 namespace ambs_interpreters
 {

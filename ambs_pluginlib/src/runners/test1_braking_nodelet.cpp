@@ -2,7 +2,7 @@
 #include <pluginlib/class_list_macros.h>
 #include <string>
 
-#include "ambs_runners/test1_braking.h"
+#include "ambs_components/ambs_runners/test1_braking.h"
 
 namespace ambs_runners
 {

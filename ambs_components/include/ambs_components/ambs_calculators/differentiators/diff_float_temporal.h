@@ -4,8 +4,8 @@
 #include <string>
 #include <vector>
 
-#include "ambs_base_calculator/ambs_base_calculator.hpp"
-#include "ambs_base_interface/ambs_base_interface.hpp"
+#include "ambs_core/ambs_base_calculator/ambs_base_calculator.hpp"
+#include "ambs_core/ambs_base_interface/ambs_base_interface.hpp"
 #include "std_msgs/Float64.h"
 
 namespace ambs_calculators

@@ -2,7 +2,7 @@
 #include <pluginlib/class_list_macros.h>
 #include <string>
 
-#include "ambs_interpreters/command_interpreters/velocity_interpreter.h"
+#include "ambs_components/ambs_interpreters/command_interpreters/velocity_interpreter.h"
 
 namespace ambs_interpreters
 {

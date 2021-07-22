@@ -8,7 +8,7 @@
 #include <std_msgs/Float64.h>
 
 #include "ambs_msgs/BoolStamped.h"
-#include "ambs_base_interface/ambs_boolean_interface.hpp"
+#include "ambs_core/ambs_base_interface/ambs_boolean_interface.hpp"
 
 namespace ambs_interpreters {
 

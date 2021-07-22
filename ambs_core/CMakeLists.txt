@@ -4,20 +4,24 @@ project(ambs_core)
 add_compile_options(-std=c++17)
 
 find_package(catkin REQUIRED COMPONENTS
-    roscpp
     ambs_msgs
-    std_msgs
+    angles
     geometry_msgs
+    roscpp
     roslint
+    std_msgs
     tf
     tf_conversions
-    angles
 )
 
 catkin_package(
   INCLUDE_DIRS include
-  CATKIN_DEPENDS ambs_msgs
-  DEPENDS std_msgs geometry_msgs
+  CATKIN_DEPENDS
+    ambs_msgs
+    geometry_msgs
+    roscpp
+    std_msgs
+    tf
 )
 
 include_directories(
@@ -27,3 +31,6 @@ include_directories(
 
 set(ROSLINT_CPP_OPTS "--filter=-legal/copyright")
 roslint_cpp()
+
+install(DIRECTORY include/${PROJECT_NAME}/
+        DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION})

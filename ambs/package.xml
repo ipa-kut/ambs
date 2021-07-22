@@ -2,7 +2,7 @@
 <package format="2">
   <name>ambs</name>
   <version>0.1.0</version>
-  <description>The ambs metapackage</description>
+  <description>Automated Modular Benchmarking System</description>
   <maintainer email="tejas.kumar.shastha@ipa.fraunhofer.de">tejas</maintainer>
   <license>Apache 2.0</license>
 
