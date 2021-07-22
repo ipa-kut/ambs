@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="nodelet" type="nodelet" name="base_nodelet_manager" args="manager"  output="screen">
+        <param name="num_worker_threads" value="32" />
+    </node>
+
+    <node pkg="nodelet" type="nodelet" name="diff_float_temporal"
+        args="load ambs_calculators/DiffFloatTemporalNodelet base_nodelet_manager">
+    </node>
+
+</launch>

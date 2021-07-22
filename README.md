@@ -14,6 +14,10 @@ Core package contains base classes for use by others
 
 Contains header files defining classes for all components, uses `ambs_core`
 
+### ambs_plugliblin
+
+Contains the actual nodelet implementations, which implements classes defined in `ambs_components`   
+Contains also launch files to quickly test nodelets.   
 ## Linting
 
 First add roslint to CMakeLists.txt & package.xml of all packages that need to be linted (see `ambs_core` for example)
