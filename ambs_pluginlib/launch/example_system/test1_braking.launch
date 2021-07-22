@@ -1,0 +1,94 @@
+<!-- WARNING: THIS IS AN EXAMPLE ONLY, DOES NOT RUN!! -->
+<launch>
+    <group ns="ambs">
+
+    <!-- User has to set logging destination and robot name here, or pass it from terminal -->
+    <arg name="dest_dir" default="$(env HOME)/ARAIG" />
+    <arg name="bot_name" default="test_bot" />
+
+    <!-- Required params from config yaml -->
+    <rosparam command="load" file="$(find ambs_pluginlib)/test_configs/test1_braking.yaml" />
+    <rosparam param="/ambs/log_folder_root" subst_value="True">$(arg dest_dir)</rosparam>
+    <rosparam param="/ambs/robot_name" subst_value="True">$(arg bot_name)</rosparam>
+
+    <!-- Nodelet manager, same for all systems -->
+    <node pkg="nodelet" type="nodelet" name="base_nodelet_manager" args="manager"  output="screen">
+        <param name="num_worker_threads" value="32" />
+    </node>
+
+    <!-- Runner -->
+    <node pkg="nodelet" type="nodelet" name="nodelet_test1_braking"
+        args="load ambs_runners/Test1BrakingNodelet base_nodelet_manager">
+        <remap from="/in_start_test" to="event/ui/start_test" />
+        <remap from="/in_reset_test" to="event/ui/reset_test" />
+        <remap from="/in_rosbag_began" to="event/calc/rosbag_began" />
+        <remap from="/out_start_robot" to="event/runner/start_robot" />
+        <remap from="/out_stop_robot" to="event/runner/stop_robot" />
+        <remap from="/out_test_completed" to="event/runner/test_completed" />
+        <remap from="/out_test_succeeded" to="event/runner/test_succeeded" />
+        <remap from="/out_test_failed" to="event/runner/test_failed" />
+        <remap from="/robot_is_stationary" to="event/calc/robot_is_stationary" />
+        <remap from="/robot_has_max_vel" to="event/calc/robot_has_max_vel" />
+    </node>
+
+    <!-- Interpreters NOT IMPLEMENTED YET-->
+    <node pkg="nodelet" type="nodelet" name="nodelet_velocity_interpreter"
+        args="load ambs_runners/Test1BrakingNodelet base_nodelet_manager">
+        <remap from="/in_start" to="event/ui/start_test" />
+        <remap from="/in_stop" to="event/runner/test_completed" />
+        <remap from="/in_reset" to="event/ui/reset_test" />
+        <remap from="/in_start_robot" to="event/runner/start_robot" />
+        <remap from="/in_stop_robot" to="event/runner/stop_robot" />
+        <remap from="/out_cmd_vel" to="$(arg bot_name)/cmd_vel" />
+    </node>
+
+    <node pkg="nodelet" type="nodelet" name="nodelet_marvel_interpreter"
+        args="load ambs_runners/Test1BrakingNodelet base_nodelet_manager">
+        <remap from="/in_start" to="event/ui/start_test" />
+        <remap from="/in_stop" to="event/runner/test_completed" />
+        <remap from="/in_reset" to="event/ui/reset_test" />
+        <remap from="/in_marvel" to="hedge_pose_a" />
+        <remap from="/out_pose" to="data/interpreter/location/robot" />
+    </node>
+
+    <!-- Calculators -->
+    <node pkg="nodelet" type="nodelet" name="nodelet_robot_is_stationary"
+        args="load ambs_calculators/CompFloatParamNodelet base_nodelet_manager">
+        <remap from="/in_start" to="event/ui/start_test" />
+        <remap from="/in_stop" to="event/runner/test_completed" />
+        <remap from="/in_reset" to="event/ui/reset_test" />
+        <remap from="/in_float" to="data/robot/odom/twist/linear_x" />
+        <remap from="/out_done" to="event/calc/robot_is_stationary" />
+    </node>
+
+    <node pkg="nodelet" type="nodelet" name="nodelet_robot_has_max_vel"
+        args="load ambs_calculators/CompFloatParamNodelet base_nodelet_manager">
+        <remap from="/in_start" to="event/ui/start_test" />
+        <remap from="/in_stop" to="event/runner/test_completed" />
+        <remap from="/in_reset" to="event/ui/reset_test" />
+        <remap from="/in_float" to="data/robot/odom/twist/linear_x" />
+        <remap from="/out_done" to="event/calc/robot_has_max_vel" />
+    </node>
+
+    <node pkg="nodelet" type="nodelet" name="nodelet_braking_time"
+        args="load ambs_calculators/StopwatchNodelet base_nodelet_manager">
+        <remap from="/in_start" to="event/runner/stop_robot" />
+        <remap from="/in_stop" to="event/calc/robot_is_stationary" />
+        <remap from="/in_reset" to="event/ui/reset_test" />
+        <remap from="/out_float" to="data/calc/braking_time" />
+    </node>
+
+    <node pkg="nodelet" type="nodelet" name="nodelet_braking time"
+        args="load ambs_calculators/DiffPoseTemporalNodelet base_nodelet_manager">
+        <remap from="/in_start" to="event/runner/stop_robot" />
+        <remap from="/in_stop" to="event/calc/robot_is_stationary" />
+        <remap from="/in_reset" to="event/ui/reset_test" />
+        <remap from="/in_pose" to="data/interpreter/location/robot" />
+        <remap from="/out_diff_position" to="data/calc/braking_distance" />
+    </node>
+
+    <!-- LOGGERS Not yet designed -->
+
+    </group>
+</launch>
+<!-- WARNING: THIS IS AN EXAMPLE ONLY, DOES NOT RUN!! -->
