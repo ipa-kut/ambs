@@ -1,0 +1,8 @@
+<map id="init" name="init">
+<area shape="rect" id="node1" title="Initialisation decoupled from constructor for convenince." alt="" coords="549,78,588,105"/>
+<area shape="rect" id="node2" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a5a8d7426d6257fc1d19b138ecf105af5" title="Actual initialisation function, simply calls the standard_control_ init." alt="" coords="277,5,501,47"/>
+<area shape="rect" id="node4" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a12b4ea7bfffdc0a9ab45f2a1de7d50fc" title="Actual initialisation function." alt="" coords="286,71,493,112"/>
+<area shape="rect" id="node6" href="$d8/d78/test__base_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="364,137,415,163"/>
+<area shape="rect" id="node3" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a9bd5d1229a90f907a1f5fd27020a0f0e" title="Constructor. Calls initialiseCalc()" alt="" coords="5,5,229,47"/>
+<area shape="rect" id="node5" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a508b47e134946a6a8d46ae9fe943cef6" title="Constructor. Calls initialiseRunner()" alt="" coords="14,71,221,112"/>
+</map>

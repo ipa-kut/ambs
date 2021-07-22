@@ -1,0 +1,5 @@
+<map id="testCompleted" name="testCompleted">
+<area shape="rect" id="node1" title="Publish test results." alt="" coords="5,46,112,73"/>
+<area shape="rect" id="node2" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#ac7ff1e64d12fa17333b3abb625e79405" title="Create a new BoolStamped type message." alt="" coords="160,5,393,47"/>
+<area shape="rect" id="node3" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aabf915c783f55403b189d83e619643fd" title="Publish a message on a port." alt="" coords="179,71,375,112"/>
+</map>

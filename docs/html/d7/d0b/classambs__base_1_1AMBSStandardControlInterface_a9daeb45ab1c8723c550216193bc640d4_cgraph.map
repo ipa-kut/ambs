@@ -1,0 +1,6 @@
+<map id="waitForReset" name="waitForReset">
+<area shape="rect" id="node1" title="Wait for TRUE on the RESET port." alt="" coords="5,31,105,57"/>
+<area shape="rect" id="node2" href="$d7/d0b/classambs__base_1_1AMBSStandardControlInterface.html#af8173f556899e5af6e228ced6c0009fb" title="Reset internal buffers of all ports." alt="" coords="171,5,268,32"/>
+<area shape="rect" id="node3" href="$d7/d0b/classambs__base_1_1AMBSStandardControlInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="153,56,285,83"/>
+<area shape="rect" id="node4" href="$d7/d0b/classambs__base_1_1AMBSStandardControlInterface.html#a5f1078de282573c969fcdb4e1e3c1435" title="Reset internal buffer of a specific port." alt="" coords="333,56,408,83"/>
+</map>

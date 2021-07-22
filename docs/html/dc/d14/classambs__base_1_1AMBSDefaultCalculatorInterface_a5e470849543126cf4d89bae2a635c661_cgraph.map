@@ -1,0 +1,4 @@
+<map id="waitForTrueOnPort" name="waitForTrueOnPort">
+<area shape="rect" id="node1" title="Wait for TRUE on a port." alt="" coords="5,5,137,32"/>
+<area shape="rect" id="node2" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a5f1078de282573c969fcdb4e1e3c1435" title="Reset internal buffer of a specific port." alt="" coords="185,5,260,32"/>
+</map>

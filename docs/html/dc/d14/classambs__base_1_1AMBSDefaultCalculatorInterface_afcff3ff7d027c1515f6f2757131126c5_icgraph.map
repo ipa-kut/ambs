@@ -1,0 +1,4 @@
+<map id="getStopMsg" name="getStopMsg">
+<area shape="rect" id="node1" title="Get the message received by the STOP_ port." alt="" coords="249,13,341,39"/>
+<area shape="rect" id="node2" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,5,201,47"/>
+</map>

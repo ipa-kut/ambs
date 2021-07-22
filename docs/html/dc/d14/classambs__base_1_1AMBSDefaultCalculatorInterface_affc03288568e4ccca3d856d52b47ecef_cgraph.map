@@ -1,0 +1,4 @@
+<map id="printDefaultPorts" name="printDefaultPorts">
+<area shape="rect" id="node1" title="Print internal buffer values of all ports." alt="" coords="5,20,125,47"/>
+<area shape="rect" id="node2" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="173,5,369,61"/>
+</map>

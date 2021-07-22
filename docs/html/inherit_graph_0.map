@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html" title="The VIRTUAL base class for all calculators to inherit from." alt="" coords="5,81,155,108"/>
+<area shape="rect" id="node2" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html" title="Compare float from topic vs a param and output true when nearly equal." alt="" coords="204,5,328,32"/>
+<area shape="rect" id="node3" href="$de/d8d/classambs__calculators_1_1DiffFloatTemporal.html" title="Compute difference in a float value from a topic between start and stop." alt="" coords="203,56,329,83"/>
+<area shape="rect" id="node4" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html" title="Compute difference in a pose value from a topic between start and stop." alt="" coords="203,107,329,133"/>
+<area shape="rect" id="node5" href="$d0/d7e/classambs__calculators_1_1Stopwatch.html" title="Compute difference in Time between start and stop, taken from messages directly." alt="" coords="224,157,308,184"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="AMBSBaseCalculator" name="AMBSBaseCalculator">
+<area shape="rect" id="node1" title="Constructor." alt="" coords="5,20,155,47"/>
+<area shape="rect" id="node2" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a9afa149dc8c8b88b27677d374cde3acd" title="Initialisation decoupled from constructor for convenince." alt="" coords="203,13,439,54"/>
+<area shape="rect" id="node3" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="487,5,683,61"/>
+</map>

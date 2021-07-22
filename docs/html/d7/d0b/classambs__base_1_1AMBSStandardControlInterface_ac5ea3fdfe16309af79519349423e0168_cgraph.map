@@ -1,0 +1,5 @@
+<map id="waitForStop" name="waitForStop">
+<area shape="rect" id="node1" title="Wait for TRUE on the STOP port." alt="" coords="5,5,97,32"/>
+<area shape="rect" id="node2" href="$d7/d0b/classambs__base_1_1AMBSStandardControlInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="145,5,277,32"/>
+<area shape="rect" id="node3" href="$d7/d0b/classambs__base_1_1AMBSStandardControlInterface.html#a5f1078de282573c969fcdb4e1e3c1435" title="Reset internal buffer of a specific port." alt="" coords="325,5,400,32"/>
+</map>
