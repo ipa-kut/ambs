@@ -10,6 +10,7 @@
 
   <exec_depend>ambs_msgs</exec_depend>
   <exec_depend>ambs_core</exec_depend>
+  <exec_depend>ambs_components</exec_depend>
 
   <export>
     <metapackage/>

@@ -30,4 +30,8 @@ jobs:
         run: |
           cd ~/catkin_ws/src
           catkin build --no-deps ambs_core --make-args roslint
+      - name: Lint_components
+        run: |
+          cd ~/catkin_ws/src
+          catkin build --no-deps ambs_components --make-args roslint
 
