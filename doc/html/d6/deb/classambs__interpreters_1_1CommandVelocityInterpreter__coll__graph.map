@@ -1,0 +1,5 @@
+<map id="CommandVelocityInterpreter" name="CommandVelocityInterpreter">
+<area shape="rect" id="node1" title="Class to convert velocity commands from runner into cmd_vel messages." alt="" coords="13,185,201,212"/>
+<area shape="rect" id="node2" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html" title="A bool specialisation of AMBSTemplatedInterface. Offers two extra functions." alt="" coords="27,96,186,123"/>
+<area shape="rect" id="node3" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html" title=" " alt="" coords="5,5,208,47"/>
+</map>

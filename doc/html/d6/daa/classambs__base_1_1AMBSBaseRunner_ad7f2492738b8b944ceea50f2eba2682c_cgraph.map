@@ -1,0 +1,6 @@
+<map id="waitForStart" name="waitForStart">
+<area shape="rect" id="node1" title="Wait for TRUE on the START port." alt="" coords="5,60,99,87"/>
+<area shape="rect" id="node2" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="147,53,380,94"/>
+<area shape="rect" id="node3" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="428,5,624,61"/>
+<area shape="rect" id="node4" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="428,85,624,141"/>
+</map>

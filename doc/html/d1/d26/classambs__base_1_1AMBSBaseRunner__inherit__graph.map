@@ -1,0 +1,4 @@
+<map id="AMBSBaseRunner" name="AMBSBaseRunner">
+<area shape="rect" id="node1" title="The virtual base class for all runners to inherit from." alt="" coords="5,5,137,32"/>
+<area shape="rect" id="node2" href="$d7/d68/classambs__runners_1_1Test1Braking.html" title="Test 1 braking starts a robot and stops after it reaches max vel or times out." alt="" coords="22,80,121,107"/>
+</map>

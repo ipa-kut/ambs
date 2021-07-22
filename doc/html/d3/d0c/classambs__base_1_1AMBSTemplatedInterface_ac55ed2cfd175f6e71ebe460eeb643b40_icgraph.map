@@ -1,0 +1,6 @@
+<map id="init" name="init">
+<area shape="rect" id="node1" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="504,46,543,73"/>
+<area shape="rect" id="node2" href="$d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="243,5,456,47"/>
+<area shape="rect" id="node3" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a2ce63b7c990f2c030b6cd2afcff95624" title="Actual initialisation function." alt="" coords="246,71,453,112"/>
+<area shape="rect" id="node4" href="$d7/d68/classambs__runners_1_1Test1Braking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,71,195,112"/>
+</map>

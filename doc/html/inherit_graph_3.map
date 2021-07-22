@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html" title=" " alt="" coords="5,5,208,47"/>
+<area shape="rect" id="node2" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html" title="A bool specialisation of AMBSTemplatedInterface. Offers two extra functions." alt="" coords="256,13,415,39"/>
+<area shape="rect" id="node3" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html" title="A standard boolean AMBSTemplatedInterface interface for calculators." alt="" coords="463,13,675,39"/>
+</map>

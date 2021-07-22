@@ -1,0 +1,8 @@
+<map id="getPortMsg" name="getPortMsg">
+<area shape="rect" id="node1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="521,115,611,141"/>
+<area shape="rect" id="node2" href="$d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#af955dafbd2caaf93213592477dd71ce1" title=" " alt="" coords="276,5,464,61"/>
+<area shape="rect" id="node4" href="$d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="17,107,207,149"/>
+<area shape="rect" id="node5" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#aaa1d167d92a6a76b7e15e89c46808a0b" title="Returns the first port in list that has a true message, or if timer expires." alt="" coords="267,137,473,178"/>
+<area shape="rect" id="node6" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#abb5bd2798f3e0e6535fe8178525a9d22" title="Returns the first port in list that has a false message, or if timer expires." alt="" coords="267,202,473,243"/>
+<area shape="rect" id="node3" href="$d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="5,13,219,54"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="init" name="init">
+<area shape="rect" id="node1" title=" " alt="" coords="5,93,44,120"/>
+<area shape="rect" id="node2" href="$d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#af955dafbd2caaf93213592477dd71ce1" title=" " alt="" coords="147,64,233,91"/>
+<area shape="rect" id="node6" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="92,115,288,157"/>
+<area shape="rect" id="node3" href="$d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a122727e6b4ef8e5fb2c12f114ae74e93" title=" " alt="" coords="349,5,519,32"/>
+<area shape="rect" id="node4" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="336,57,532,98"/>
+<area shape="rect" id="node5" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#af8173f556899e5af6e228ced6c0009fb" title="Reset inernal buffer message of all ports." alt="" coords="336,122,532,163"/>
+</map>
