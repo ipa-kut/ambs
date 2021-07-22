@@ -10,6 +10,10 @@ Contains msgs, srvs & actions.
 
 Core package contains base classes for use by others
 
+### ambs_components
+
+Contains header files defining classes for all components, uses `ambs_core`
+
 ## Linting
 
 First add roslint to CMakeLists.txt & package.xml of all packages that need to be linted (see `ambs_core` for example)
