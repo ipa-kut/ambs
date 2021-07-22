@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-#include "ambs_base_interface/ambs_boolean_interface.hpp"
+#include "ambs_core/ambs_base_interface/ambs_boolean_interface.hpp"
 #include "ambs_msgs/BoolStamped.h"
 #include "boost/filesystem.hpp"
 

@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-#include "ambs_base_runner/ambs_base_runner.h"
+#include "ambs_core/ambs_base_runner/ambs_base_runner.h"
 
 namespace ambs_runners
 {

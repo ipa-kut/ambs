@@ -1,7 +1,7 @@
 #ifndef AMBSBASEBOOLEANINTERFACE_HPP
 #define AMBSBASEBOOLEANINTERFACE_HPP
 
-#include "ambs_base_interface/ambs_base_interface.hpp"
+#include "ambs_core/ambs_base_interface/ambs_base_interface.hpp"
 #include "ambs_msgs/BoolStamped.h"
 
 namespace ambs_base {

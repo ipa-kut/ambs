@@ -4,9 +4,9 @@
 #include <string>
 #include <vector>
 
-#include "ambs_base_calculator/ambs_base_calculator.hpp"
-#include "ambs_base_interface/ambs_base_interface.hpp"
-#include "ambs_helper/helper.h"
+#include "ambs_core/ambs_base_calculator/ambs_base_calculator.hpp"
+#include "ambs_core/ambs_base_interface/ambs_base_interface.hpp"
+#include "ambs_core/ambs_helper/helper.h"
 #include <std_msgs/Float64.h>
 #include <geometry_msgs/PoseStamped.h>
 

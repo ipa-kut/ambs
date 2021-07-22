@@ -1,8 +1,8 @@
 #ifndef AMBS_BASE_CALCULATOR_HPP
 #define AMBS_BASE_CALCULATOR_HPP
 
-#include "ambs_base_interface/ambs_base_interface.hpp"
-#include "ambs_base_calculator/ambs_default_calculator_interface.hpp"
+#include "ambs_core/ambs_base_interface/ambs_base_interface.hpp"
+#include "ambs_core/ambs_base_calculator/ambs_default_calculator_interface.hpp"
 #include "ambs_msgs/BoolStamped.h"
 #include <std_msgs/Header.h>
 
