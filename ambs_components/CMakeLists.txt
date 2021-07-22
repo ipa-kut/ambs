@@ -4,13 +4,16 @@ project(ambs_components)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   ambs_msgs
+  nav_msgs
+  std_msgs
+  geometry_msgs
   ambs_core
   roslint
 )
 
 catkin_package(
   INCLUDE_DIRS include
-  CATKIN_DEPENDS ambs_msgs ambs_core
+  CATKIN_DEPENDS ambs_msgs ambs_core nav_msgs std_msgs geometry_msgs
   LIBRARIES ambs_components
 )
 
