@@ -15,7 +15,8 @@
         <remap from="/in_stop" to="stop_calc" />
         <remap from="/in_reset" to="reset_calc" />
         <remap from="/in_float" to="calc_float" />
-        <remap from="/out_done" to="comparison_true" />
+        <remap from="/out_done" to="calc_done" />
+        <remap from="/out_comparison" to="calc_result" />
     </node>
 
     </group>

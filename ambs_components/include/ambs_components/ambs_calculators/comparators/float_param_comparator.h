@@ -31,8 +31,10 @@ public:
 private:
   void executeCB(const ros::TimerEvent& event) override;
   ros::NodeHandle nh_;
+  ambs_base::AMBSBooleanInterface bool_interface_;
   ambs_base::AMBSTemplatedInterface<std_msgs::Float64> float_interface_;
   std_msgs::Float64 result_msg_;
+  const std::string COMPARISON_ = "/out_comparison";
   const std::string IN_FLOAT_ = "/in_float";  ///< Input float topic
   const std::string PARAM_ = "param";
   const std::string TOLERANCE_ = "tolerance";
@@ -56,6 +58,10 @@ void CompFloatParam::init()
   std::vector<std::string> float_inputs{IN_FLOAT_};
   std::vector<std::string> float_outputs;
   float_interface_.init(float_inputs, float_outputs, nh_, node_name_);
+
+  std::vector<std::string> bool_inputs;
+  std::vector<std::string> bool_outputs{COMPARISON_};
+  bool_interface_.init(bool_inputs, bool_outputs, nh_, node_name_);
 
   startCalculator();
 }
@@ -96,17 +102,19 @@ void CompFloatParam::executeCB(const ros::TimerEvent& event)
        if (!is_published)
        {
          ROS_INFO_STREAM(node_name_ << ": Comparison TRUE");
-         default_control_.publishDone();
+         bool_interface_.publishMsgOnPort(COMPARISON_, default_control_.constructNewBoolStamped(true));
          is_published = true;
        }
      }
      else if (is_published)
      {
        ROS_INFO_STREAM(node_name_ << ": Comparison FALSE");
+       bool_interface_.publishMsgOnPort(COMPARISON_, default_control_.constructNewBoolStamped(false));
        is_published = false;
      }
   }
 
+  default_control_.publishDone();
   default_control_.waitForReset();
   float_interface_.resetAllPorts();
 

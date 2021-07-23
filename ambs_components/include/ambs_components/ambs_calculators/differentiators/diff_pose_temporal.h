@@ -90,18 +90,13 @@ void DiffPoseTemporal::executeCB(const ros::TimerEvent& event)
   printPose(stop_pose);
   ROS_INFO(" ");
 
-//  double delta_x = std::abs(start_pose.pose.position.x - stop_pose.pose.position.x);
-//  double delta_y = std::abs(start_pose.pose.position.y - stop_pose.pose.position.y);
-
-//  diff_orientation_msg.data = ambs_base::getYawDegreesFromQuaternion(start_pose.pose.orientation) -
-//      ambs_base::getYawDegreesFromQuaternion(stop_pose.pose.orientation);
-//  diff_pos_msg.data = std::sqrt((delta_x*delta_x) + (delta_y*delta_y));
   diff_pos_msg.data = ambs_helper::getTranslationDiffFromPoses(start_pose, stop_pose);
   diff_orientation_msg.data = ambs_helper::getYawDiffFromPoses(start_pose, stop_pose);
 
   ROS_INFO_STREAM(node_name_ << ": Diff Pos: " << diff_pos_msg.data << " Diff Ori: " << diff_orientation_msg.data);
   float_interface_.publishMsgOnPort(DIFF_POSITION_, diff_pos_msg);
   float_interface_.publishMsgOnPort(DIFF_ORIENTATION, diff_orientation_msg);
+  default_control_.publishDone();
 
   default_control_.waitForReset();
   float_interface_.resetAllPorts();

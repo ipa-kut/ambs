@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <group ns="ambs">
+
+    <node pkg="nodelet" type="nodelet" name="base_nodelet_manager" args="manager"  output="screen">
+        <param name="num_worker_threads" value="32" />
+    </node>
+
+    <node pkg="nodelet" type="nodelet" name="diff_pose_temporal_nodelet"
+        args="load ambs_calculators/DiffPoseTemporalNodelet base_nodelet_manager">
+        <remap from="/in_start" to="start_calc" />
+        <remap from="/in_stop" to="stop_calc" />
+        <remap from="/in_reset" to="reset_calc" />
+        <remap from="/out_done" to="calc_done" />
+        <remap from="/in_pose" to="pose_to_diff" />
+        <remap from="/out_diff_position" to="translation_diff" />
+        <remap from="/out_diff_orientation" to="orientation_diff" />
+    </node>
+
+    <test test-name="gtest_diff_pose_temporal_tester" pkg="ambs_tests"
+        type="test_diff_pose_temporal" name="gtest_diff_pose_temporal_tester">
+        <remap from="/out_start" to="start_calc" />
+        <remap from="/out_stop" to="stop_calc" />
+        <remap from="/out_reset" to="reset_calc" />
+        <remap from="/in_done" to="calc_done" />
+        <remap from="/out_pose" to="pose_to_diff" />
+        <remap from="/in_diff_position" to="translation_diff" />
+        <remap from="/in_diff_orientation" to="orientation_diff" />
+    </test>
+
+    </group>
+</launch>

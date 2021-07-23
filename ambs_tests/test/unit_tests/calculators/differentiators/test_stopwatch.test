@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <group ns="ambs">
+
+    <node pkg="nodelet" type="nodelet" name="base_nodelet_manager" args="manager"  output="screen">
+        <param name="num_worker_threads" value="32" />
+    </node>
+
+    <node pkg="nodelet" type="nodelet" name="stopwatch_nodelet"
+        args="load ambs_calculators/StopwatchNodelet base_nodelet_manager">
+        <remap from="/in_start" to="start_calc" />
+        <remap from="/in_stop" to="stop_calc" />
+        <remap from="/in_reset" to="reset_calc" />
+        <remap from="/out_done" to="calc_done" />
+        <remap from="/out_float" to="diff_time" />
+    </node>
+
+    <test test-name="gtest_stopwatch_tester" pkg="ambs_tests"
+        type="test_stopwatch" name="gtest_stopwatch_tester">
+        <remap from="/out_start" to="start_calc" />
+        <remap from="/out_stop" to="stop_calc" />
+        <remap from="/out_reset" to="reset_calc" />
+        <remap from="/in_done" to="calc_done" />
+        <remap from="/in_float" to="diff_time" />
+    </test>
+
+    </group>
+</launch>
