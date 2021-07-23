@@ -196,7 +196,7 @@ std::string AMBSBaseRunner::timedLoopSequenceOnPorts(std::vector<std::string> *p
  */
 void AMBSBaseRunner::startRunner()
 {
-  execute_timer_ = nh_.createTimer(ros::Duration(1.0), boost::bind(&AMBSBaseRunner::executeCB, this, _1));
+  execute_timer_ = nh_.createTimer(ros::Duration(0.1), boost::bind(&AMBSBaseRunner::executeCB, this, _1));
 }
 
 /**
