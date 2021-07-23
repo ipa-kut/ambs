@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wait_5floop_5frate_389',['wait_loop_rate',['../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#aa007662072f7d7aed6e44a30b80412e2',1,'ambs_base::AMBSBooleanInterface']]]
+  ['velocity_5fx_5f_460',['velocity_x_',['../d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#acc1ebe446e462b1224bfbc13ac8dabc3',1,'ambs_interpreters::CommandVelocityInterpreter']]]
 ];

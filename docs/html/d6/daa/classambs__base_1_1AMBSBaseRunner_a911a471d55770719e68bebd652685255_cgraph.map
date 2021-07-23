@@ -1,6 +1,6 @@
 <map id="testFailed" name="testFailed">
 <area shape="rect" id="node1" title="Publish test results." alt="" coords="5,54,84,81"/>
-<area shape="rect" id="node2" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#ac7ff1e64d12fa17333b3abb625e79405" title="Create a new BoolStamped type message." alt="" coords="287,5,520,47"/>
+<area shape="rect" id="node2" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3" title="Create a new BoolStamped type message." alt="" coords="287,5,520,47"/>
 <area shape="rect" id="node3" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aabf915c783f55403b189d83e619643fd" title="Publish a message on a port." alt="" coords="305,80,501,121"/>
 <area shape="rect" id="node4" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#ad8770edaeff5709344d43ecc25d59818" title="Publish test results." alt="" coords="132,54,239,81"/>
 </map>

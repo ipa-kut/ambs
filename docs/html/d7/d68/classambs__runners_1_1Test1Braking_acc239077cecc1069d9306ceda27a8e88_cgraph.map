@@ -8,7 +8,7 @@
 <area shape="rect" id="node10" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#aaa1d167d92a6a76b7e15e89c46808a0b" title="Returns the first port in list that has a true message, or if timer expires." alt="" coords="140,83,347,125"/>
 <area shape="rect" id="node11" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a9daeb45ab1c8723c550216193bc640d4" title="Wait for TRUE on the RESET port." alt="" coords="140,214,347,255"/>
 <area shape="rect" id="node15" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#ad7f2492738b8b944ceea50f2eba2682c" title="Wait for TRUE on the START port." alt="" coords="140,149,347,190"/>
-<area shape="rect" id="node4" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#ac7ff1e64d12fa17333b3abb625e79405" title="Create a new BoolStamped type message." alt="" coords="676,466,909,507"/>
+<area shape="rect" id="node4" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3" title="Create a new BoolStamped type message." alt="" coords="676,466,909,507"/>
 <area shape="rect" id="node5" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aabf915c783f55403b189d83e619643fd" title="Publish a message on a port." alt="" coords="695,401,891,442"/>
 <area shape="rect" id="node8" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#ad8770edaeff5709344d43ecc25d59818" title="Publish test results." alt="" coords="408,317,615,358"/>
 <area shape="rect" id="node12" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#af8173f556899e5af6e228ced6c0009fb" title="Reset inernal buffer message of all ports." alt="" coords="413,199,609,241"/>

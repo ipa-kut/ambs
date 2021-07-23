@@ -26,5 +26,11 @@ var hierarchy =
       [ "CommandVelocityInterpreterNodelet", "df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet.html", null ],
       [ "OdomInterpreterNodelet", "d7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet.html", null ],
       [ "Test1BrakingNodelet", "dd/d5c/classambs__runners_1_1Test1BrakingNodelet.html", null ]
+    ] ],
+    [ "Test", null, [
+      [ "TestCompFloatParam", "db/dd0/classTestCompFloatParam.html", null ],
+      [ "TestDiffFloatTemporal", "df/dd0/classTestDiffFloatTemporal.html", null ],
+      [ "TestDiffPoseTemporal", "da/d9b/classTestDiffPoseTemporal.html", null ],
+      [ "TestStopwatch", "d1/d43/classTestStopwatch.html", null ]
     ] ]
 ];
