@@ -204,8 +204,8 @@ void AMBSBaseRunner::startRunner()
  */
 void AMBSBaseRunner::testSucceeded()
 {
-  signal_interface_.publishMsgOnPort(TEST_FAILED_, signal_interface_.contructNewBoolStamped(false));
-  signal_interface_.publishMsgOnPort(TEST_SUCCEEDED_, signal_interface_.contructNewBoolStamped(true));
+  signal_interface_.publishMsgOnPort(TEST_FAILED_, signal_interface_.constructNewBoolStamped(false));
+  signal_interface_.publishMsgOnPort(TEST_SUCCEEDED_, signal_interface_.constructNewBoolStamped(true));
 }
 
 /**
@@ -213,8 +213,8 @@ void AMBSBaseRunner::testSucceeded()
  */
 void AMBSBaseRunner::testFailed()
 {
-  signal_interface_.publishMsgOnPort(TEST_FAILED_, signal_interface_.contructNewBoolStamped(true));
-  signal_interface_.publishMsgOnPort(TEST_SUCCEEDED_, signal_interface_.contructNewBoolStamped(false));
+  signal_interface_.publishMsgOnPort(TEST_FAILED_, signal_interface_.constructNewBoolStamped(true));
+  signal_interface_.publishMsgOnPort(TEST_SUCCEEDED_, signal_interface_.constructNewBoolStamped(false));
   testCompleted();
 }
 
@@ -223,19 +223,19 @@ void AMBSBaseRunner::testFailed()
  */
 void AMBSBaseRunner::testCompleted()
 {
-  signal_interface_.publishMsgOnPort(TEST_COMPLETED_, signal_interface_.contructNewBoolStamped(true));
+  signal_interface_.publishMsgOnPort(TEST_COMPLETED_, signal_interface_.constructNewBoolStamped(true));
 }
 
 void AMBSBaseRunner::startRobot()
 {
-  signal_interface_.publishMsgOnPort(STOP_ROBOT_, signal_interface_.contructNewBoolStamped(false));
-  signal_interface_.publishMsgOnPort(START_ROBOT_, signal_interface_.contructNewBoolStamped(true));
+  signal_interface_.publishMsgOnPort(STOP_ROBOT_, signal_interface_.constructNewBoolStamped(false));
+  signal_interface_.publishMsgOnPort(START_ROBOT_, signal_interface_.constructNewBoolStamped(true));
 }
 
 void AMBSBaseRunner::stopRobot()
 {
-  signal_interface_.publishMsgOnPort(START_ROBOT_, signal_interface_.contructNewBoolStamped(false));
-  signal_interface_.publishMsgOnPort(STOP_ROBOT_, signal_interface_.contructNewBoolStamped(true));
+  signal_interface_.publishMsgOnPort(START_ROBOT_, signal_interface_.constructNewBoolStamped(false));
+  signal_interface_.publishMsgOnPort(STOP_ROBOT_, signal_interface_.constructNewBoolStamped(true));
 }
 
 /**

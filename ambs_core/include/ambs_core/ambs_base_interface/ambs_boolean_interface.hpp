@@ -19,7 +19,7 @@ public:
                        std::vector<std::string> extended_bool_outputs);
   virtual ~AMBSBooleanInterface() {}
 
-  ambs_msgs::BoolStamped contructNewBoolStamped(bool data);
+  ambs_msgs::BoolStamped constructNewBoolStamped(bool data);
   ambs_msgs::BoolStamped waitForTrueOnPort(std::string port);
 
 private:
@@ -46,7 +46,7 @@ inline AMBSBooleanInterface::AMBSBooleanInterface(ros::NodeHandle nh,
  * @param[in] data The data to be held by the new msg
  * @returns msg The message to be returned
  */
-inline ambs_msgs::BoolStamped AMBSBooleanInterface::contructNewBoolStamped(bool data)
+inline ambs_msgs::BoolStamped AMBSBooleanInterface::constructNewBoolStamped(bool data)
 {
   ambs_msgs::BoolStamped msg;
   msg.data  = data;
