@@ -85,7 +85,7 @@ inline ambs_msgs::BoolStamped AMBSDefaultCalculatorInterface::waitForReset()
  */
 inline void AMBSDefaultCalculatorInterface::publishDone()
 {
-  publishMsgOnPort(DONE_, contructNewBoolStamped(true));
+  publishMsgOnPort(DONE_, constructNewBoolStamped(true));
 }
 
 /**

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <launch>
     <group ns="ambs">
 
@@ -10,7 +11,11 @@
 
     <node pkg="nodelet" type="nodelet" name="test_comp_param_node"
         args="load ambs_calculators/CompFloatParamNodelet base_nodelet_manager">
-        <remap from="/out_done" to="/comparison_true" />
+        <remap from="/in_start" to="start_calc" />
+        <remap from="/in_stop" to="stop_calc" />
+        <remap from="/in_reset" to="reset_calc" />
+        <remap from="/in_float" to="calc_float" />
+        <remap from="/out_done" to="comparison_true" />
     </node>
 
     </group>
