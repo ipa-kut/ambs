@@ -5,6 +5,8 @@ var classambs__calculators_1_1CompFloatParam =
     [ "CompFloatParam", "d4/db3/classambs__calculators_1_1CompFloatParam.html#aa50f48eba26acdb3825d9abb2217c576", null ],
     [ "executeCB", "d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88", null ],
     [ "init", "d4/db3/classambs__calculators_1_1CompFloatParam.html#a02fd73d861ef2e4aabb38c0c9ff82947", null ],
+    [ "bool_interface_", "d4/db3/classambs__calculators_1_1CompFloatParam.html#a74a08d2b7318dbb1a7a60dd24bbc2c91", null ],
+    [ "COMPARISON_", "d4/db3/classambs__calculators_1_1CompFloatParam.html#a9c3c40210fdfec3e750ebc68d1dc6571", null ],
     [ "float_interface_", "d4/db3/classambs__calculators_1_1CompFloatParam.html#a7d88421a9f9a3b6dd1faf952b39e4fac", null ],
     [ "IN_FLOAT_", "d4/db3/classambs__calculators_1_1CompFloatParam.html#acf2317d8b071e789006424e98e2dedba", null ],
     [ "nh_", "d4/db3/classambs__calculators_1_1CompFloatParam.html#a1300297c252ff1dc5ceea58a274d4db5", null ],

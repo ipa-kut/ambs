@@ -1,5 +1,5 @@
 <map id="publishDone" name="publishDone">
 <area shape="rect" id="node1" title="Publish TRUE on the DONE port." alt="" coords="5,50,100,77"/>
-<area shape="rect" id="node2" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#ac7ff1e64d12fa17333b3abb625e79405" title="Create a new BoolStamped type message." alt="" coords="148,5,381,47"/>
+<area shape="rect" id="node2" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3" title="Create a new BoolStamped type message." alt="" coords="148,5,381,47"/>
 <area shape="rect" id="node3" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aabf915c783f55403b189d83e619643fd" title="Publish a message on a port." alt="" coords="151,71,378,127"/>
 </map>

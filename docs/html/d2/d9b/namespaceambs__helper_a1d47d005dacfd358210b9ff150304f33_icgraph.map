@@ -1,0 +1,6 @@
+<map id="getYawDegreesFromQuaternion" name="getYawDegreesFromQuaternion">
+<area shape="rect" id="node1" title=" " alt="" coords="467,35,675,61"/>
+<area shape="rect" id="node2" href="$d2/d9b/namespaceambs__helper.html#a0e6c5a124bfe1e7b1886fddac2cc7b58" title=" " alt="" coords="250,5,405,32"/>
+<area shape="rect" id="node4" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a8dbde0632f95aa0029f70e512b02d672" title="Print pose values. Debug only." alt="" coords="236,57,419,98"/>
+<area shape="rect" id="node3" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,27,188,69"/>
+</map>

@@ -1,12 +1,17 @@
 <map id="executeCB" name="executeCB">
-<area shape="rect" id="node1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,109,92,136"/>
-<area shape="rect" id="node2" href="$d7/d6f/namespaceambs__base.html#a16a6981e9f994eca54ff4e69b543620f" title=" " alt="" coords="445,7,636,48"/>
-<area shape="rect" id="node3" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a8dbde0632f95aa0029f70e512b02d672" title="Print pose values. Debug only." alt="" coords="219,50,297,77"/>
-<area shape="rect" id="node4" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a9daeb45ab1c8723c550216193bc640d4" title="Wait for TRUE on the RESET port." alt="" coords="140,102,376,143"/>
-<area shape="rect" id="node9" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ad7f2492738b8b944ceea50f2eba2682c" title="Wait for TRUE on the START port." alt="" coords="140,167,376,208"/>
-<area shape="rect" id="node10" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac5ea3fdfe16309af79519349423e0168" title="Wait for TRUE on the STOP port." alt="" coords="140,232,376,274"/>
-<area shape="rect" id="node5" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#af8173f556899e5af6e228ced6c0009fb" title="Reset inernal buffer message of all ports." alt="" coords="443,90,639,146"/>
-<area shape="rect" id="node6" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="424,171,657,212"/>
-<area shape="rect" id="node7" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="705,124,901,180"/>
-<area shape="rect" id="node8" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="705,204,901,260"/>
+<area shape="rect" id="node1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,195,92,222"/>
+<area shape="rect" id="node2" href="$d2/d9b/namespaceambs__helper.html#a6f280a22d46d2ffb8d296cd972e9fa9b" title=" " alt="" coords="165,5,351,47"/>
+<area shape="rect" id="node3" href="$d2/d9b/namespaceambs__helper.html#a0e6c5a124bfe1e7b1886fddac2cc7b58" title=" " alt="" coords="159,71,357,112"/>
+<area shape="rect" id="node5" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a8dbde0632f95aa0029f70e512b02d672" title="Print pose values. Debug only." alt="" coords="219,137,297,163"/>
+<area shape="rect" id="node6" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a45924180e9991c17c1ec7264500c1878" title="Publish TRUE on the DONE port." alt="" coords="140,188,376,229"/>
+<area shape="rect" id="node9" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a9daeb45ab1c8723c550216193bc640d4" title="Wait for TRUE on the RESET port." alt="" coords="140,253,376,295"/>
+<area shape="rect" id="node14" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ad7f2492738b8b944ceea50f2eba2682c" title="Wait for TRUE on the START port." alt="" coords="140,319,376,360"/>
+<area shape="rect" id="node15" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac5ea3fdfe16309af79519349423e0168" title="Wait for TRUE on the STOP port." alt="" coords="140,384,376,425"/>
+<area shape="rect" id="node4" href="$d2/d9b/namespaceambs__helper.html#a1d47d005dacfd358210b9ff150304f33" title=" " alt="" coords="442,60,639,101"/>
+<area shape="rect" id="node7" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3" title="Create a new BoolStamped type message." alt="" coords="424,125,657,167"/>
+<area shape="rect" id="node8" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aabf915c783f55403b189d83e619643fd" title="Publish a message on a port." alt="" coords="427,191,654,247"/>
+<area shape="rect" id="node10" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#af8173f556899e5af6e228ced6c0009fb" title="Reset inernal buffer message of all ports." alt="" coords="443,271,639,327"/>
+<area shape="rect" id="node11" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="424,352,657,393"/>
+<area shape="rect" id="node12" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="705,305,901,361"/>
+<area shape="rect" id="node13" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="705,385,901,441"/>
 </map>

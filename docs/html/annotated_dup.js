@@ -27,5 +27,9 @@ var annotated_dup =
     [ "ambs_runners", "d9/dc8/namespaceambs__runners.html", [
       [ "Test1Braking", "d7/d68/classambs__runners_1_1Test1Braking.html", "d7/d68/classambs__runners_1_1Test1Braking" ],
       [ "Test1BrakingNodelet", "dd/d5c/classambs__runners_1_1Test1BrakingNodelet.html", "dd/d5c/classambs__runners_1_1Test1BrakingNodelet" ]
-    ] ]
+    ] ],
+    [ "TestCompFloatParam", "db/dd0/classTestCompFloatParam.html", "db/dd0/classTestCompFloatParam" ],
+    [ "TestDiffFloatTemporal", "df/dd0/classTestDiffFloatTemporal.html", "df/dd0/classTestDiffFloatTemporal" ],
+    [ "TestDiffPoseTemporal", "da/d9b/classTestDiffPoseTemporal.html", "da/d9b/classTestDiffPoseTemporal" ],
+    [ "TestStopwatch", "d1/d43/classTestStopwatch.html", "d1/d43/classTestStopwatch" ]
 ];
