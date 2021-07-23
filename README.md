@@ -25,6 +25,13 @@ See the Doxygen [docs](https://ipa-kut.github.io/ambs/html/index.html) for detai
 ## Linting
 
 First add roslint to CMakeLists.txt & package.xml of all packages that need to be linted (see `ambs_core` for example)
-Then, to run lint, for example for the `ambs_core` package:
+Then, to run lint, for example for the `ambs_core` package:   
 
 `catkin_make roslint_ambs_core`
+
+## Testing
+
+To build tests: `catkin_make tests`   
+To build & run tests: `catkin_make run_tests`   
+To run individual tests verbosely: `rostest ambs_tests test_XXX.test --text`   
+

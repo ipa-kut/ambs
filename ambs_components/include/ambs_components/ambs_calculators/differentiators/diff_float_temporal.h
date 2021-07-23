@@ -67,12 +67,12 @@ void DiffFloatTemporal::executeCB(const ros::TimerEvent& event)
   (void) event;
   default_control_.waitForStart();
   double start_float = float_interface_.getPortMsg(IN_FLOAT_).data;
-  ROS_INFO_STREAM(node_name_ << ": Starting int stored: " << start_float);
+  ROS_INFO_STREAM(node_name_ << ": Starting float stored: " << start_float);
   ROS_INFO(" ");
 
   default_control_.waitForStop();
   double stop_float = float_interface_.getPortMsg(IN_FLOAT_).data;
-  ROS_INFO_STREAM(node_name_ << ": Stopping int stored: " << stop_float);
+  ROS_INFO_STREAM(node_name_ << ": Stopping float stored: " << stop_float);
   ROS_INFO(" ");
 
   double diff_float = stop_float - start_float;

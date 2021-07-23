@@ -28,7 +28,6 @@ public:
   void printDefaultPorts();
   void initDefaultInterface(ros::NodeHandle nh, std::string node_name);
 
-
 private:
   const std::string START_ = "/in_start"; ///< The START port
   const std::string STOP_ = "/in_stop"; ///< The STOP port
