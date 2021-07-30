@@ -8,5 +8,6 @@ var namespaces_dup =
       [ "getYawDiffFromPoses", "d2/d9b/namespaceambs__helper.html#a0e6c5a124bfe1e7b1886fddac2cc7b58", null ]
     ] ],
     [ "ambs_interpreters", "d1/d70/namespaceambs__interpreters.html", "d1/d70/namespaceambs__interpreters" ],
+    [ "ambs_loggers", "d1/dad/namespaceambs__loggers.html", "d1/dad/namespaceambs__loggers" ],
     [ "ambs_runners", "d9/dc8/namespaceambs__runners.html", "d9/dc8/namespaceambs__runners" ]
 ];

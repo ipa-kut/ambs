@@ -90,6 +90,8 @@ $(document).ready(function(){initNavTree('d9/db5/test__diff__float__temporal_8cp
 <div class="contents">
 <div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
 <code>#include &lt;ros/ros.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;std_msgs/Float64.h&gt;</code><br />
 <code>#include &quot;ambs_msgs/BoolStamped.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../">ambs_core/ambs_base_interface/ambs_boolean_interface.hpp</a>&quot;</code><br />
@@ -100,20 +102,22 @@ Include dependency graph for test_diff_float_temporal.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d0/d33/test__diff__float__temporal_8cpp__incl.png" border="0" usemap="#aambs__tests_2test_2unit__tests_2calculators_2differentiators_2test__diff__float__temporal_8cpp" alt=""/></div>
 <map name="aambs__tests_2test_2unit__tests_2calculators_2differentiators_2test__diff__float__temporal_8cpp" id="aambs__tests_2test_2unit__tests_2calculators_2differentiators_2test__diff__float__temporal_8cpp">
-<area shape="rect" title=" " alt="" coords="247,5,455,61"/>
+<area shape="rect" title=" " alt="" coords="303,5,511,61"/>
 <area shape="rect" title=" " alt="" coords="5,124,100,151"/>
-<area shape="rect" title=" " alt="" coords="211,317,284,344"/>
-<area shape="rect" title=" " alt="" coords="176,124,313,151"/>
-<area shape="rect" title=" " alt="" coords="221,228,407,255"/>
-<area shape="rect" href="../../da/d76/ambs__boolean__interface_8hpp.html" title=" " alt="" coords="389,109,556,165"/>
-<area shape="rect" href="../../da/d1c/ambs__base__interface_8hpp.html" title=" " alt="" coords="431,213,589,269"/>
-<area shape="rect" href="../../d4/da1/helper_8h.html" title=" " alt="" coords="705,117,869,158"/>
-<area shape="rect" title=" " alt="" coords="380,317,427,344"/>
-<area shape="rect" title=" " alt="" coords="451,317,569,344"/>
-<area shape="rect" title=" " alt="" coords="594,317,701,344"/>
-<area shape="rect" title=" " alt="" coords="613,228,777,255"/>
-<area shape="rect" title=" " alt="" coords="801,228,995,255"/>
-<area shape="rect" title=" " alt="" coords="1019,228,1132,255"/>
+<area shape="rect" title=" " alt="" coords="292,317,365,344"/>
+<area shape="rect" title=" " alt="" coords="176,124,231,151"/>
+<area shape="rect" title=" " alt="" coords="255,124,314,151"/>
+<area shape="rect" title=" " alt="" coords="339,124,476,151"/>
+<area shape="rect" title=" " alt="" coords="383,228,570,255"/>
+<area shape="rect" href="../../da/d76/ambs__boolean__interface_8hpp.html" title=" " alt="" coords="552,109,719,165"/>
+<area shape="rect" href="../../da/d1c/ambs__base__interface_8hpp.html" title=" " alt="" coords="594,213,751,269"/>
+<area shape="rect" href="../../d4/da1/helper_8h.html" title=" " alt="" coords="887,117,1051,158"/>
+<area shape="rect" title=" " alt="" coords="543,317,589,344"/>
+<area shape="rect" title=" " alt="" coords="613,317,732,344"/>
+<area shape="rect" title=" " alt="" coords="757,317,863,344"/>
+<area shape="rect" title=" " alt="" coords="776,228,940,255"/>
+<area shape="rect" title=" " alt="" coords="964,228,1157,255"/>
+<area shape="rect" title=" " alt="" coords="1181,228,1295,255"/>
 </map>
 </div>
 </div>
@@ -162,16 +166,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>{</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    testing::InitGoogleTest(&amp;argc, argv);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    ros::init(argc, argv, <span class="stringliteral">&quot;test_POSE_param_comp&quot;</span>);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    ros::AsyncSpinner spinner(1);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    spinner.start();</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordtype">int</span> ret = RUN_ALL_TESTS();</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    spinner.stop();</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
+<div class="fragment"><div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>{</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    testing::InitGoogleTest(&amp;argc, argv);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    ros::init(argc, argv, <span class="stringliteral">&quot;test_POSE_param_comp&quot;</span>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    ros::AsyncSpinner spinner(1);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    spinner.start();</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordtype">int</span> ret = RUN_ALL_TESTS();</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    spinner.stop();</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -200,32 +204,32 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  ros::NodeHandle nh;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  init(nh);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  ros::Duration(spawn_time_/2).sleep();</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  control_iface.publishMsgOnPort(RESET_, control_iface.constructNewBoolStamped(<span class="keyword">true</span>));</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  ros::Duration(spawn_time_/2).sleep();</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  std_msgs::Float64 start_float;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  start_float.data = -145.2433;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  float_interface_.publishMsgOnPort(FLOAT_OUT_, start_float);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  ros::Duration(response_time_).sleep();</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  control_iface.publishMsgOnPort(START_, control_iface.constructNewBoolStamped(<span class="keyword">true</span>));</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  ros::Duration(response_time_).sleep();</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  std_msgs::Float64 stop_float;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  stop_float.data = -83456.435456;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  float_interface_.publishMsgOnPort(FLOAT_OUT_, stop_float);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  ros::Duration(response_time_).sleep();</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  control_iface.publishMsgOnPort(STOP_, control_iface.constructNewBoolStamped(<span class="keyword">true</span>));</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  ros::Duration(response_time_).sleep();</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  EXPECT_FLOAT_EQ(float_interface_.getPortMsg(FLOAT_IN_).data,</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                  stop_float.data - start_float.data);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  EXPECT_TRUE(control_iface.getPortMsg(DONE_).data);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
+<div class="fragment"><div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  ros::NodeHandle nh;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  init(nh);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  ros::Duration(spawn_time_/2).sleep();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  control_iface.publishMsgOnPort(RESET_, control_iface.constructNewBoolStamped(<span class="keyword">true</span>));</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  ros::Duration(spawn_time_/2).sleep();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  std_msgs::Float64 start_float;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  start_float.data = -145.2433;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  float_interface_.publishMsgOnPort(FLOAT_OUT_, start_float);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  ros::Duration(response_time_).sleep();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  control_iface.publishMsgOnPort(START_, control_iface.constructNewBoolStamped(<span class="keyword">true</span>));</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  ros::Duration(response_time_).sleep();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  std_msgs::Float64 stop_float;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  stop_float.data = -83456.435456;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  float_interface_.publishMsgOnPort(FLOAT_OUT_, stop_float);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  ros::Duration(response_time_).sleep();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  control_iface.publishMsgOnPort(STOP_, control_iface.constructNewBoolStamped(<span class="keyword">true</span>));</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  ros::Duration(response_time_).sleep();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  EXPECT_FLOAT_EQ(float_interface_.getPortMsg(FLOAT_IN_).data,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                  stop_float.data - start_float.data);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  EXPECT_TRUE(control_iface.getPortMsg(DONE_).data);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -254,31 +258,31 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  ros::NodeHandle nh;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  init(nh);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="comment">// Waiting for tested nodelet to come up</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  ros::Duration(spawn_time_).sleep();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  std_msgs::Float64 start_float;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  start_float.data = 1.23;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  float_interface_.publishMsgOnPort(FLOAT_OUT_, start_float);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  ros::Duration(response_time_).sleep();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  control_iface.publishMsgOnPort(START_, control_iface.constructNewBoolStamped(<span class="keyword">true</span>));</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  ros::Duration(response_time_).sleep();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  std_msgs::Float64 stop_float;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  stop_float.data = 8.435;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  float_interface_.publishMsgOnPort(FLOAT_OUT_, stop_float);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  ros::Duration(response_time_).sleep();</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  control_iface.publishMsgOnPort(STOP_, control_iface.constructNewBoolStamped(<span class="keyword">true</span>));</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  ros::Duration(response_time_).sleep();</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  EXPECT_FLOAT_EQ(float_interface_.getPortMsg(FLOAT_IN_).data,</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                  stop_float.data - start_float.data);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  EXPECT_TRUE(control_iface.getPortMsg(DONE_).data);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
+<div class="fragment"><div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  ros::NodeHandle nh;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  init(nh);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="comment">// Waiting for tested nodelet to come up</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  ros::Duration(spawn_time_).sleep();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  std_msgs::Float64 start_float;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  start_float.data = 1.23;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  float_interface_.publishMsgOnPort(FLOAT_OUT_, start_float);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  ros::Duration(response_time_).sleep();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  control_iface.publishMsgOnPort(START_, control_iface.constructNewBoolStamped(<span class="keyword">true</span>));</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  ros::Duration(response_time_).sleep();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  std_msgs::Float64 stop_float;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  stop_float.data = 8.435;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  float_interface_.publishMsgOnPort(FLOAT_OUT_, stop_float);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  ros::Duration(response_time_).sleep();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  control_iface.publishMsgOnPort(STOP_, control_iface.constructNewBoolStamped(<span class="keyword">true</span>));</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  ros::Duration(response_time_).sleep();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  EXPECT_FLOAT_EQ(float_interface_.getPortMsg(FLOAT_IN_).data,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                  stop_float.data - start_float.data);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  EXPECT_TRUE(control_iface.getPortMsg(DONE_).data);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

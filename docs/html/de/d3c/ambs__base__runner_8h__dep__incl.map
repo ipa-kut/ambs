@@ -1,5 +1,7 @@
 <map id="ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h" name="ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h">
-<area shape="rect" id="node1" title=" " alt="" coords="10,5,178,61"/>
-<area shape="rect" id="node2" href="$dd/dd3/test1__braking_8h.html" title=" " alt="" coords="5,109,183,165"/>
-<area shape="rect" id="node3" href="$d5/df8/test1__braking__nodelet_8cpp.html" title=" " alt="" coords="19,213,169,269"/>
+<area shape="rect" id="node1" title=" " alt="" coords="110,5,278,61"/>
+<area shape="rect" id="node2" href="$d6/d70/empty__runner_8h.html" title=" " alt="" coords="5,109,183,165"/>
+<area shape="rect" id="node4" href="$dd/dd3/test1__braking_8h.html" title=" " alt="" coords="207,109,384,165"/>
+<area shape="rect" id="node3" href="$d8/d0e/empty__runner__nodelet_8cpp.html" title=" " alt="" coords="18,213,170,269"/>
+<area shape="rect" id="node5" href="$d5/df8/test1__braking__nodelet_8cpp.html" title=" " alt="" coords="220,213,371,269"/>
 </map>

@@ -1,11 +1,12 @@
 <map id="init" name="init">
-<area shape="rect" id="node1" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="504,209,543,235"/>
-<area shape="rect" id="node2" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="251,5,447,47"/>
-<area shape="rect" id="node3" href="$d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="243,71,456,112"/>
-<area shape="rect" id="node4" href="$df/dd0/classTestDiffFloatTemporal.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="273,136,425,177"/>
-<area shape="rect" id="node5" href="$da/d9b/classTestDiffPoseTemporal.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="273,201,426,243"/>
-<area shape="rect" id="node6" href="$d1/d43/classTestStopwatch.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="282,267,417,294"/>
-<area shape="rect" id="node7" href="$db/dd0/classTestCompFloatParam.html#a2901c089ab1d0565c9e2269b574fa597" title=" " alt="" coords="274,319,425,360"/>
-<area shape="rect" id="node8" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a2ce63b7c990f2c030b6cd2afcff95624" title="Actual initialisation function." alt="" coords="246,384,453,425"/>
-<area shape="rect" id="node9" href="$d7/d68/classambs__runners_1_1Test1Braking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,384,195,425"/>
+<area shape="rect" id="node1" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="507,209,545,235"/>
+<area shape="rect" id="node2" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="254,5,450,47"/>
+<area shape="rect" id="node3" href="$d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="245,71,459,112"/>
+<area shape="rect" id="node4" href="$df/dd0/classTestDiffFloatTemporal.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="276,136,428,177"/>
+<area shape="rect" id="node5" href="$da/d9b/classTestDiffPoseTemporal.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="275,201,429,243"/>
+<area shape="rect" id="node6" href="$d1/d43/classTestStopwatch.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="285,267,419,294"/>
+<area shape="rect" id="node7" href="$db/dd0/classTestCompFloatParam.html#a2901c089ab1d0565c9e2269b574fa597" title=" " alt="" coords="277,319,427,360"/>
+<area shape="rect" id="node8" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a2ce63b7c990f2c030b6cd2afcff95624" title="Actual initialisation function." alt="" coords="249,384,455,425"/>
+<area shape="rect" id="node9" href="$d4/da7/classambs__runners_1_1EmptyRunner.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,351,197,392"/>
+<area shape="rect" id="node10" href="$d7/d68/classambs__runners_1_1Test1Braking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="7,416,196,457"/>
 </map>
