@@ -3,10 +3,11 @@
 
 #include <string>
 #include <vector>
+#include <std_msgs/Float64.h>
 
 #include "ambs_core/ambs_base_calculator/ambs_base_calculator.hpp"
 #include "ambs_core/ambs_base_interface/ambs_base_interface.hpp"
-#include "std_msgs/Float64.h"
+#include "ambs_components/ambs_loggers/debug_logger.h"
 
 namespace ambs_calculators
 {
@@ -33,6 +34,7 @@ private:
   ambs_base::AMBSTemplatedInterface<std_msgs::Float64> float_interface_;
   std_msgs::Float64 result_msg_;
   const std::string OUT_FLOAT_ = "/out_float";  ///< Output float topic
+  ambs_loggers::DebugLogger debug_logger_;
 };
 
 
@@ -53,6 +55,7 @@ void Stopwatch::init()
   std::vector<std::string> float_inputs{};
   std::vector<std::string> float_outputs{OUT_FLOAT_};
   float_interface_.init(float_inputs, float_outputs, nh_, node_name_);
+  debug_logger_.init(nh_, node_name_);
 
   startCalculator();
 }
@@ -63,30 +66,25 @@ void Stopwatch::init()
  */
 void Stopwatch::executeCB(const ros::TimerEvent& event)
 {
-  (void) event;
   ros::Time start_time = default_control_.waitForStart().header.stamp;
   ROS_INFO_STREAM(node_name_ << ": Got start time: " << start_time);
-  ROS_INFO(" ");
 
   ros::Time stop_time = default_control_.waitForStop().header.stamp;
   ROS_INFO_STREAM(node_name_ << ": Got stop time: " << stop_time);
-  ROS_INFO(" ");
 
   ros::Duration difference = stop_time - start_time;
   ROS_INFO_STREAM(node_name_ << ": Difference: " << difference);
-  ROS_INFO(" ");
 
   result_msg_.data = difference.toSec();
   float_interface_.publishMsgOnPort(OUT_FLOAT_, result_msg_);
+
+  debug_logger_.logInfo(std::to_string(result_msg_.data));
 
   default_control_.publishDone();
   default_control_.waitForReset();
   float_interface_.resetAllPorts();
 
   ROS_INFO_STREAM(node_name_ << ": Restarting calculator");
-  ROS_INFO(" ");
-  ROS_INFO("-----------------------------------------------------------");
-  ROS_INFO(" ");
 }
 
 

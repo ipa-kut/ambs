@@ -49,7 +49,6 @@ inline ambs_msgs::BoolStamped AMBSDefaultCalculatorInterface::waitForStart()
 {
   ROS_INFO_STREAM(node_name_ << ": Wait for Start");
   ambs_msgs::BoolStamped msg = waitForTrueOnPort(START_);
-  ROS_INFO_STREAM(node_name_ << ": Got Start");
   return msg;
 }
 
@@ -59,9 +58,7 @@ inline ambs_msgs::BoolStamped AMBSDefaultCalculatorInterface::waitForStart()
  */
 inline ambs_msgs::BoolStamped AMBSDefaultCalculatorInterface::waitForStop()
 {
-  ROS_INFO_STREAM(node_name_ <<  ": Wait for Stop");
   ambs_msgs::BoolStamped msg = waitForTrueOnPort(STOP_);
-  ROS_INFO_STREAM(node_name_ << ": Got Stop");
   return msg;
 }
 

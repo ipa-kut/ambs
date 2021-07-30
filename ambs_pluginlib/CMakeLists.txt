@@ -34,6 +34,7 @@ add_dependencies(ambs_calculators ${catkin_EXPORTED_TARGETS})
 target_link_libraries(ambs_calculators ${catkin_LIBRARIES})
 
 add_library(ambs_runners
+   src/runners/empty_runner_nodelet.cpp
    src/runners/test1_braking_nodelet.cpp
  )
 add_dependencies(ambs_runners ${catkin_EXPORTED_TARGETS})
