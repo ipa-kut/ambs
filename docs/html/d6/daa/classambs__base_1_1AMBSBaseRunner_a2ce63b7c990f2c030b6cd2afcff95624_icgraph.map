@@ -1,4 +1,5 @@
 <map id="initialiseBaseRunner" name="initialiseBaseRunner">
-<area shape="rect" id="node1" title="Actual initialisation function." alt="" coords="243,13,384,39"/>
-<area shape="rect" id="node2" href="$d7/d68/classambs__runners_1_1Test1Braking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,5,195,47"/>
+<area shape="rect" id="node1" title="Actual initialisation function." alt="" coords="245,46,387,73"/>
+<area shape="rect" id="node2" href="$d4/da7/classambs__runners_1_1EmptyRunner.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,5,197,47"/>
+<area shape="rect" id="node3" href="$d7/d68/classambs__runners_1_1Test1Braking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="7,71,196,112"/>
 </map>

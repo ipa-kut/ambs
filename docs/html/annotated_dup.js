@@ -24,7 +24,12 @@ var annotated_dup =
       [ "OdomInterpreter", "d5/daa/classambs__interpreters_1_1OdomInterpreter.html", "d5/daa/classambs__interpreters_1_1OdomInterpreter" ],
       [ "OdomInterpreterNodelet", "d7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet.html", "d7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet" ]
     ] ],
+    [ "ambs_loggers", "d1/dad/namespaceambs__loggers.html", [
+      [ "DebugLogger", "d4/d68/classambs__loggers_1_1DebugLogger.html", "d4/d68/classambs__loggers_1_1DebugLogger" ]
+    ] ],
     [ "ambs_runners", "d9/dc8/namespaceambs__runners.html", [
+      [ "EmptyRunner", "d4/da7/classambs__runners_1_1EmptyRunner.html", "d4/da7/classambs__runners_1_1EmptyRunner" ],
+      [ "EmptyRunnerNodelet", "d8/d6a/classambs__runners_1_1EmptyRunnerNodelet.html", "d8/d6a/classambs__runners_1_1EmptyRunnerNodelet" ],
       [ "Test1Braking", "d7/d68/classambs__runners_1_1Test1Braking.html", "d7/d68/classambs__runners_1_1Test1Braking" ],
       [ "Test1BrakingNodelet", "dd/d5c/classambs__runners_1_1Test1BrakingNodelet.html", "dd/d5c/classambs__runners_1_1Test1BrakingNodelet" ]
     ] ],

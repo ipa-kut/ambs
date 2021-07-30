@@ -1,5 +1,6 @@
 <map id="init" name="init">
-<area shape="rect" id="node1" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="5,13,44,39"/>
-<area shape="rect" id="node2" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ae75e799bea3344778673b0378e7d01a2" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="92,5,316,47"/>
-<area shape="rect" id="node3" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a967f9a0a5cfaa49ba54b5fe00c08b132" title=" " alt="" coords="364,5,588,47"/>
+<area shape="rect" id="node1" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="5,46,44,73"/>
+<area shape="rect" id="node2" href="$d4/d68/classambs__loggers_1_1DebugLogger.html#a471027d91ef8e611350304d529d21af3" title=" " alt="" coords="110,5,298,47"/>
+<area shape="rect" id="node3" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ae75e799bea3344778673b0378e7d01a2" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="92,71,316,112"/>
+<area shape="rect" id="node4" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a967f9a0a5cfaa49ba54b5fe00c08b132" title=" " alt="" coords="364,71,588,112"/>
 </map>
