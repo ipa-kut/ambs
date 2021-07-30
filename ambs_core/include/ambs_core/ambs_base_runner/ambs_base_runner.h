@@ -1,5 +1,5 @@
-#ifndef AMBS_BASE_RUNNER_AMBS_BASE_RUNNER_H
-#define AMBS_BASE_RUNNER_AMBS_BASE_RUNNER_H
+#ifndef AMBS_CORE_AMBS_BASE_RUNNER_AMBS_BASE_RUNNER_H
+#define AMBS_CORE_AMBS_BASE_RUNNER_AMBS_BASE_RUNNER_H
 
 #include <iostream>
 #include <fstream>
@@ -143,7 +143,7 @@ inline bool AMBSBaseRunner::initialiseBaseRunner(ros::NodeHandle nh,
 
   log_path_ = log_root + "/" + robot_name;
   bool result = createLoggingFolder(log_path_);
-  if(result)
+  if (result)
   {
     std::ofstream debug_file;
     debug_file.open(log_folder_path_ + "/debug.csv", std::ios_base::app);
@@ -158,7 +158,6 @@ inline bool AMBSBaseRunner::initialiseBaseRunner(ros::NodeHandle nh,
   {
     ros::shutdown();
   }
-
 }
 
 /**
@@ -168,7 +167,9 @@ inline bool AMBSBaseRunner::initialiseBaseRunner(ros::NodeHandle nh,
  * @param rate Scan rate. Higher is faster but more taxing. Possible point of optimisation.
  * @return
  */
-inline std::string AMBSBaseRunner::timedLoopFallbackOnPorts(std::vector<std::string> *ports, double time, double rate = 10)
+inline std::string AMBSBaseRunner::timedLoopFallbackOnPorts(std::vector<std::string> *ports,
+                                                            double time,
+                                                            double rate = 10)
 {
   ros::Time start = ros::Time::now();
   ros::Rate loop(rate);
@@ -194,7 +195,9 @@ inline std::string AMBSBaseRunner::timedLoopFallbackOnPorts(std::vector<std::str
  * @param rate Scan rate. Higher is faster but more taxing. Possible point of optimisation.
  * @return
  */
-inline std::string AMBSBaseRunner::timedLoopSequenceOnPorts(std::vector<std::string> *ports, double time, double rate = 10)
+inline std::string AMBSBaseRunner::timedLoopSequenceOnPorts(std::vector<std::string> *ports,
+                                                            double time,
+                                                            double rate = 10)
 {
   ros::Time start = ros::Time::now();
   ros::Rate loop(rate);
@@ -349,4 +352,4 @@ inline T AMBSBaseRunner::getResolvedParam(std::string param_name)
 
 }  // namespace ambs_base
 
-#endif  // AMBS_BASE_RUNNER_AMBS_BASE_RUNNER_H
+#endif  // AMBS_CORE_AMBS_BASE_RUNNER_AMBS_BASE_RUNNER_H

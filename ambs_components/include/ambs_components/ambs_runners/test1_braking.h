@@ -1,5 +1,5 @@
-#ifndef AMBS_RUNNERS_TEST1_BRAKING_H
-#define AMBS_RUNNERS_TEST1_BRAKING_H
+#ifndef AMBS_COMPONENTS_AMBS_RUNNERS_TEST1_BRAKING_H
+#define AMBS_COMPONENTS_AMBS_RUNNERS_TEST1_BRAKING_H
 
 #include <string>
 #include <vector>
@@ -123,4 +123,4 @@ void Test1Braking::init()
 
 }  // namespace ambs_runners
 
-#endif  // AMBS_RUNNERS_TEST1_BRAKING_H
+#endif  // AMBS_COMPONENTS_AMBS_RUNNERS_TEST1_BRAKING_H
