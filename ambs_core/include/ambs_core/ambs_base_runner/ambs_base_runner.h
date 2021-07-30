@@ -1,8 +1,11 @@
 #ifndef AMBS_BASE_RUNNER_AMBS_BASE_RUNNER_H
 #define AMBS_BASE_RUNNER_AMBS_BASE_RUNNER_H
 
+#include <iostream>
+#include <fstream>
 #include <string>
 #include <vector>
+#include <diagnostic_msgs/DiagnosticArray.h>
 
 #include "ambs_core/ambs_base_interface/ambs_boolean_interface.hpp"
 #include "ambs_msgs/BoolStamped.h"
@@ -44,6 +47,7 @@ protected:
   const std::string TEST_COMPLETED_ = "out_test_completed";
   const std::string TEST_SUCCEEDED_ = "out_test_succeeded";
   const std::string TEST_FAILED_ = "out_test_failed";
+  const std::string DEBUG_TOPIC = "/ambs/debug_messages";
 
   ambs_msgs::BoolStamped waitForStart();
   ambs_msgs::BoolStamped waitForReset();
@@ -64,11 +68,13 @@ protected:
 
 private:
   ros::Timer execute_timer_;
+  ros::Subscriber debug_sub_;
   std::vector<std::string> bool_inputs_{START_TEST_, RESET_TEST_, ROSBAG_BEGAN_};
   std::vector<std::string> bool_outputs_{START_ROBOT_, STOP_ROBOT_, TEST_COMPLETED_, TEST_SUCCEEDED_, TEST_FAILED_};
 
   bool createLoggingFolder(std::string path);
   int countSubDirectories(std::string path);
+  void debugCallback(const diagnostic_msgs::DiagnosticArrayConstPtr& msg);
 };
 
 
@@ -80,7 +86,7 @@ private:
  * @brief Wait for TRUE on the START port
  * @return The msg that set TRUE
  */
-ambs_msgs::BoolStamped AMBSBaseRunner::waitForStart()
+inline ambs_msgs::BoolStamped AMBSBaseRunner::waitForStart()
 {
   ROS_INFO_STREAM(node_name_ << ": Wait for Start");
   ambs_msgs::BoolStamped msg = signal_interface_.waitForTrueOnPort(START_TEST_);
@@ -93,7 +99,7 @@ ambs_msgs::BoolStamped AMBSBaseRunner::waitForStart()
  * @brief Wait for TRUE on the RESET port
  * @return The msg that set TRUE
  */
-ambs_msgs::BoolStamped AMBSBaseRunner::waitForReset()
+inline ambs_msgs::BoolStamped AMBSBaseRunner::waitForReset()
 {
   ROS_INFO_STREAM(node_name_ <<  ": Wait for Reset");
   ambs_msgs::BoolStamped msg = signal_interface_.waitForTrueOnPort(RESET_TEST_);
@@ -109,7 +115,7 @@ ambs_msgs::BoolStamped AMBSBaseRunner::waitForReset()
  *
  * @param nh NodeHandle received from the nodelet manager
  */
-bool AMBSBaseRunner::initialiseBaseRunner(ros::NodeHandle nh,
+inline bool AMBSBaseRunner::initialiseBaseRunner(ros::NodeHandle nh,
                                              std::string node_name,
                                              std::vector<std::string> extended_bool_inputs,
                                              std::vector<std::string> extended_bool_outputs)
@@ -136,7 +142,23 @@ bool AMBSBaseRunner::initialiseBaseRunner(ros::NodeHandle nh,
   }
 
   log_path_ = log_root + "/" + robot_name;
-  return createLoggingFolder(log_path_);
+  bool result = createLoggingFolder(log_path_);
+  if(result)
+  {
+    std::ofstream debug_file;
+    debug_file.open(log_folder_path_ + "/debug.csv", std::ios_base::app);
+    debug_file << "TIMESTAMP " << " , " <<
+                  "NODE" << " , " <<
+                  "LOG LEVEL " << " , " <<
+                  "MESSAGE "<< " , " << std::endl;
+    debug_file.close();
+    debug_sub_ = nh_.subscribe(DEBUG_TOPIC, 1000, &AMBSBaseRunner::debugCallback, this);
+  }
+  else
+  {
+    ros::shutdown();
+  }
+
 }
 
 /**
@@ -146,7 +168,7 @@ bool AMBSBaseRunner::initialiseBaseRunner(ros::NodeHandle nh,
  * @param rate Scan rate. Higher is faster but more taxing. Possible point of optimisation.
  * @return
  */
-std::string AMBSBaseRunner::timedLoopFallbackOnPorts(std::vector<std::string> *ports, double time, double rate = 10)
+inline std::string AMBSBaseRunner::timedLoopFallbackOnPorts(std::vector<std::string> *ports, double time, double rate = 10)
 {
   ros::Time start = ros::Time::now();
   ros::Rate loop(rate);
@@ -172,7 +194,7 @@ std::string AMBSBaseRunner::timedLoopFallbackOnPorts(std::vector<std::string> *p
  * @param rate Scan rate. Higher is faster but more taxing. Possible point of optimisation.
  * @return
  */
-std::string AMBSBaseRunner::timedLoopSequenceOnPorts(std::vector<std::string> *ports, double time, double rate = 10)
+inline std::string AMBSBaseRunner::timedLoopSequenceOnPorts(std::vector<std::string> *ports, double time, double rate = 10)
 {
   ros::Time start = ros::Time::now();
   ros::Rate loop(rate);
@@ -194,7 +216,7 @@ std::string AMBSBaseRunner::timedLoopSequenceOnPorts(std::vector<std::string> *p
 /**
  * @brief Starts the timer thread. MUST BE EXPLICITLY CALLED.
  */
-void AMBSBaseRunner::startRunner()
+inline void AMBSBaseRunner::startRunner()
 {
   execute_timer_ = nh_.createTimer(ros::Duration(0.1), boost::bind(&AMBSBaseRunner::executeCB, this, _1));
 }
@@ -202,7 +224,7 @@ void AMBSBaseRunner::startRunner()
 /**
  * @brief Publish test results
  */
-void AMBSBaseRunner::testSucceeded()
+inline void AMBSBaseRunner::testSucceeded()
 {
   signal_interface_.publishMsgOnPort(TEST_FAILED_, signal_interface_.constructNewBoolStamped(false));
   signal_interface_.publishMsgOnPort(TEST_SUCCEEDED_, signal_interface_.constructNewBoolStamped(true));
@@ -211,7 +233,7 @@ void AMBSBaseRunner::testSucceeded()
 /**
  * @brief Publish test results
  */
-void AMBSBaseRunner::testFailed()
+inline void AMBSBaseRunner::testFailed()
 {
   signal_interface_.publishMsgOnPort(TEST_FAILED_, signal_interface_.constructNewBoolStamped(true));
   signal_interface_.publishMsgOnPort(TEST_SUCCEEDED_, signal_interface_.constructNewBoolStamped(false));
@@ -221,18 +243,18 @@ void AMBSBaseRunner::testFailed()
 /**
  * @brief Publish test results
  */
-void AMBSBaseRunner::testCompleted()
+inline void AMBSBaseRunner::testCompleted()
 {
   signal_interface_.publishMsgOnPort(TEST_COMPLETED_, signal_interface_.constructNewBoolStamped(true));
 }
 
-void AMBSBaseRunner::startRobot()
+inline void AMBSBaseRunner::startRobot()
 {
   signal_interface_.publishMsgOnPort(STOP_ROBOT_, signal_interface_.constructNewBoolStamped(false));
   signal_interface_.publishMsgOnPort(START_ROBOT_, signal_interface_.constructNewBoolStamped(true));
 }
 
-void AMBSBaseRunner::stopRobot()
+inline void AMBSBaseRunner::stopRobot()
 {
   signal_interface_.publishMsgOnPort(START_ROBOT_, signal_interface_.constructNewBoolStamped(false));
   signal_interface_.publishMsgOnPort(STOP_ROBOT_, signal_interface_.constructNewBoolStamped(true));
@@ -243,7 +265,7 @@ void AMBSBaseRunner::stopRobot()
  * @param path Path to check
  * @return int The number of directories
  */
-int AMBSBaseRunner::countSubDirectories(std::string path)
+inline int AMBSBaseRunner::countSubDirectories(std::string path)
 {
   int count = 0;
   boost::filesystem::directory_iterator end_itr;
@@ -260,11 +282,27 @@ int AMBSBaseRunner::countSubDirectories(std::string path)
 }
 
 /**
+ * @brief Callback function for debug topic. Log all messages to file in test folder. Has
+ * a globally resolved constant topic name.
+ * @param msg The diagnostic message to be logged to file
+ */
+inline void AMBSBaseRunner::debugCallback(const diagnostic_msgs::DiagnosticArrayConstPtr &msg)
+{
+  std::ofstream debug_file;
+  debug_file.open(log_folder_path_ + "/debug.csv", std::ios_base::app);
+  debug_file << msg->header.stamp << " , " <<
+                msg->status[0].name << " , " <<
+                std::to_string(msg->status[0].level) << " , " <<
+                msg->status[0].message << " , " << std::endl;
+  debug_file.close();
+}
+
+/**
  * @brief Check if param path exists, create it otherwise, then create next logging folder.
  * @param path Root path to create logging folder in
  * @return bool If logging folder was succesfully created
  */
-bool AMBSBaseRunner::createLoggingFolder(std::string path)
+inline bool AMBSBaseRunner::createLoggingFolder(std::string path)
 {
   if (!boost::filesystem::exists(path))
   {
@@ -298,7 +336,7 @@ bool AMBSBaseRunner::createLoggingFolder(std::string path)
  * example: getResolvedParam<std::vector<double>>("some_param")
  */
 template<typename T>
-T AMBSBaseRunner::getResolvedParam(std::string param_name)
+inline T AMBSBaseRunner::getResolvedParam(std::string param_name)
 {
   std::string resolved_name = "/ambs/runners/" + node_name_ + "/" + param_name;
   T param_value;

@@ -8,5 +8,13 @@
         </description>
     </class>
 
+    <class name="ambs_runners/EmptyRunnerNodelet"
+    type="ambs_runners::EmptyRunnerNodelet"
+    base_class_type="nodelet::Nodelet">
+        <description>
+        Nodelet to run an empty runner with no logic
+        </description>
+    </class>
+
 </library>
 
