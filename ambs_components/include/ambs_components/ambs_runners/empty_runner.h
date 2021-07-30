@@ -1,5 +1,5 @@
-#ifndef EMPTY_RUNNER_H
-#define EMPTY_RUNNER_H
+#ifndef AMBS_COMPONENTS_AMBS_RUNNERS_EMPTY_RUNNER_H
+#define AMBS_COMPONENTS_AMBS_RUNNERS_EMPTY_RUNNER_H
 
 #include <string>
 #include <vector>
@@ -40,7 +40,6 @@ private:
  */
 void EmptyRunner::executeCB(const ros::TimerEvent& event)
 {
-
 }
 
 /**
@@ -56,8 +55,7 @@ void EmptyRunner::init()
   startRunner();
 }
 
-
 }  // namespace ambs_runners
 
 
-#endif // EMPTY_RUNNER_H
+#endif  // AMBS_COMPONENTS_AMBS_RUNNERS_EMPTY_RUNNER_H

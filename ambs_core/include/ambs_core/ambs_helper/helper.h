@@ -1,5 +1,5 @@
-#ifndef AMBS_HELPER_HELPER_H
-#define AMBS_HELPER_HELPER_H
+#ifndef AMBS_CORE_AMBS_HELPER_HELPER_H
+#define AMBS_CORE_AMBS_HELPER_HELPER_H
 
 #include <tf/transform_datatypes.h>
 #include <geometry_msgs/Quaternion.h>
@@ -35,4 +35,4 @@ double getYawDiffFromPoses(geometry_msgs::PoseStamped start_pose, geometry_msgs:
 
 }  // namespace ambs_helper
 
-#endif  // AMBS_HELPER_HELPER_H
+#endif  // AMBS_CORE_AMBS_HELPER_HELPER_H

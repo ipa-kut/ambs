@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
 #include <ros/ros.h>
+#include <string>
+#include <vector>
 #include <std_msgs/Float64.h>
 
 #include "ambs_msgs/BoolStamped.h"
@@ -12,12 +14,12 @@ class TestDiffFloatTemporal : public testing::Test
 public:
   TestDiffFloatTemporal() {}
 
-  const std::string START_="/out_start";
-  const std::string STOP_="/out_stop";
-  const std::string RESET_="/out_reset";
-  const std::string DONE_="/in_done";
-  const std::string FLOAT_IN_="/in_float";
-  const std::string FLOAT_OUT_="/out_float";
+  const std::string START_ = "/out_start";
+  const std::string STOP_ = "/out_stop";
+  const std::string RESET_ = "/out_reset";
+  const std::string DONE_ = "/in_done";
+  const std::string FLOAT_IN_ = "/in_float";
+  const std::string FLOAT_OUT_ = "/out_float";
   const double response_time_ = 0.2;
   const double spawn_time_ = 2;
 
@@ -31,7 +33,6 @@ public:
   ros::NodeHandle nh_;
 
   void init(ros::NodeHandle nh);
-
 };
 
 
@@ -39,8 +40,8 @@ void TestDiffFloatTemporal::init(ros::NodeHandle nh)
 {
   nh_ = nh;
 
-  control_iface.init(bool_inputs_, bool_outputs_, nh_,ros::this_node::getName());
-  float_interface_.init(float_inputs_, float_outputs_, nh_,ros::this_node::getName());
+  control_iface.init(bool_inputs_, bool_outputs_, nh_, ros::this_node::getName());
+  float_interface_.init(float_inputs_, float_outputs_, nh_, ros::this_node::getName());
 }
 
 TEST_F(TestDiffFloatTemporal, test_float_diff_once)

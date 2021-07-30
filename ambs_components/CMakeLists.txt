@@ -4,6 +4,7 @@ project(ambs_components)
 find_package(catkin REQUIRED COMPONENTS
     ambs_core
     ambs_msgs
+    diagnostic_msgs
     geometry_msgs
     nav_msgs
     roscpp
@@ -16,6 +17,7 @@ catkin_package(
   CATKIN_DEPENDS
     ambs_core
     ambs_msgs
+    diagnostic_msgs
     geometry_msgs
     nav_msgs
     roscpp

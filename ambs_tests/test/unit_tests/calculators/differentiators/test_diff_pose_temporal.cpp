@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
 #include <ros/ros.h>
+#include <string>
+#include <vector>
 #include <geometry_msgs/PoseStamped.h>
 #include <std_msgs/Float64.h>
 
@@ -13,13 +15,13 @@ class TestDiffPoseTemporal : public testing::Test
 public:
   TestDiffPoseTemporal() {}
 
-  const std::string START_="/out_start";
-  const std::string STOP_="/out_stop";
-  const std::string RESET_="/out_reset";
-  const std::string DONE_="/in_done";
-  const std::string POSE_="/out_pose";
-  const std::string TRANSLATION_="/in_diff_position";
-  const std::string ORIENTATION_="/in_diff_orientation";
+  const std::string START_ = "/out_start";
+  const std::string STOP_ = "/out_stop";
+  const std::string RESET_ = "/out_reset";
+  const std::string DONE_ = "/in_done";
+  const std::string POSE_ = "/out_pose";
+  const std::string TRANSLATION_ = "/in_diff_position";
+  const std::string ORIENTATION_ = "/in_diff_orientation";
   const double response_time_ = 0.2;
   const double spawn_time_ = 2;
 
@@ -36,7 +38,6 @@ public:
   ros::NodeHandle nh_;
 
   void init(ros::NodeHandle nh);
-
 };
 
 
@@ -44,9 +45,9 @@ void TestDiffPoseTemporal::init(ros::NodeHandle nh)
 {
   nh_ = nh;
 
-  control_iface.init(bool_inputs_, bool_outputs_, nh_,ros::this_node::getName());
-  pose_interface_.init(pose_inputs_, pose_outputs_, nh_,ros::this_node::getName());
-  float_interface_.init(float_inputs_, float_outputs_, nh_,ros::this_node::getName());
+  control_iface.init(bool_inputs_, bool_outputs_, nh_, ros::this_node::getName());
+  pose_interface_.init(pose_inputs_, pose_outputs_, nh_, ros::this_node::getName());
+  float_interface_.init(float_inputs_, float_outputs_, nh_, ros::this_node::getName());
 }
 
 TEST_F(TestDiffPoseTemporal, test_translation_diff_once)
@@ -79,7 +80,7 @@ TEST_F(TestDiffPoseTemporal, test_translation_diff_once)
   control_iface.publishMsgOnPort(STOP_, control_iface.constructNewBoolStamped(true));
   ros::Duration(response_time_).sleep();
 
-  EXPECT_FLOAT_EQ(float_interface_.getPortMsg(TRANSLATION_).data,1.4142135);
+  EXPECT_FLOAT_EQ(float_interface_.getPortMsg(TRANSLATION_).data, 1.4142135);
   EXPECT_TRUE(control_iface.getPortMsg(DONE_).data);
 }
 
@@ -107,7 +108,7 @@ TEST_F(TestDiffPoseTemporal, test_orientation_diff)
   control_iface.publishMsgOnPort(START_, control_iface.constructNewBoolStamped(true));
   ros::Duration(response_time_).sleep();
 
-  msg.pose.orientation.z = 0.7071068; // 90 degrees
+  msg.pose.orientation.z = 0.7071068;  // 90 degrees
   msg.pose.orientation.w = 0.7071068;
 
   pose_interface_.publishMsgOnPort(POSE_, msg);
@@ -115,7 +116,7 @@ TEST_F(TestDiffPoseTemporal, test_orientation_diff)
   control_iface.publishMsgOnPort(STOP_, control_iface.constructNewBoolStamped(true));
   ros::Duration(response_time_).sleep();
 
-  EXPECT_FLOAT_EQ(float_interface_.getPortMsg(ORIENTATION_).data,90);
+  EXPECT_FLOAT_EQ(float_interface_.getPortMsg(ORIENTATION_).data, 90);
   EXPECT_TRUE(control_iface.getPortMsg(DONE_).data);
 }
 

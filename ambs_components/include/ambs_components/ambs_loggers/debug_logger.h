@@ -1,5 +1,7 @@
-#ifndef DEBUG_LOGGER_H
-#define DEBUG_LOGGER_H
+#ifndef AMBS_COMPONENTS_AMBS_LOGGERS_DEBUG_LOGGER_H
+#define AMBS_COMPONENTS_AMBS_LOGGERS_DEBUG_LOGGER_H
+
+#include <string>
 
 #include <ros/ros.h>
 #include <diagnostic_msgs/DiagnosticArray.h>
@@ -8,14 +10,29 @@
 
 namespace ambs_loggers {
 
+/**
+ * @brief Components may use objects of this class to send debug logging messages to the runner.
+ */
 class DebugLogger
 {
 public:
   DebugLogger() {}
 
   void init(ros::NodeHandle nh, std::string node_name);
+  /**
+   * @brief Log message with level 2
+   * @param message Message to log
+   */
   void logError(std::string message);
+  /**
+   * @brief Log message with level 0
+   * @param message Message to log
+   */
   void logInfo(std::string message);
+  /**
+   * @brief Log message with level 1
+   * @param message Message to log
+   */
   void logWarn(std::string message);
 
 private:
@@ -30,4 +47,4 @@ private:
 }  // namespace ambs_loggers
 
 
-#endif // DEBUG_LOGGER_H
+#endif  // AMBS_COMPONENTS_AMBS_LOGGERS_DEBUG_LOGGER_H

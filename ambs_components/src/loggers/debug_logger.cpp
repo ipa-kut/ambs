@@ -1,9 +1,10 @@
+#include <string>
+
 #include <diagnostic_msgs/DiagnosticStatus.h>
 
 #include "ambs_components/ambs_loggers/debug_logger.h"
 
 namespace ambs_loggers {
-
 
 void DebugLogger::init(ros::NodeHandle nh, std::string node_name)
 {
