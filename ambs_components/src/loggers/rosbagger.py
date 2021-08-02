@@ -80,28 +80,25 @@ class Rosbagger(BaseLogger):
         self.begin_write_pub.publish(self.buildNewBoolStamped(False))
         rospy.Subscriber("begin_write", String, self.rosbag_begin_cb)
 
-        rospy.loginfo(rospy.get_name() + ": Waiting for start signal...")
-        # Wait for start signal
         start = False
         stop = False
         reset = False
 
+        # Wait for start signal
+        rospy.loginfo(rospy.get_name() + ": Waiting for start signal...")
         while not start and not rospy.is_shutdown():
             self._rate.sleep()
             start = self.getSafeFlag("start")
 
          # Start recording
-        if start == True and stop == False:
-            rospy.loginfo(rospy.get_name() + ": Start received")
-
-            log_folder = ""
-            while not rospy.has_param("log_folder"):
-                print("Waiting for log_folder")
-            log_folder = rospy.get_param("log_folder")
-
-            topics_string = self.prepare_topics()
-            command = "rosbag record -p -o " + log_folder + "/ " + topics_string
-            self.startCommandProc(command)
+        rospy.loginfo(rospy.get_name() + ": Start received")
+        rospy.loginfo(rospy.get_name() + ": Waiting for param log_folder")
+        while not rospy.has_param("log_folder"):
+            pass
+        log_folder = rospy.get_param("log_folder")
+        topics_string = self.prepare_topics()
+        command = "rosbag record -p -o " + log_folder + "/ " + topics_string
+        self.startCommandProc(command)
 
         # Wait for stop signal
         while not stop and not rospy.is_shutdown():
@@ -109,14 +106,13 @@ class Rosbagger(BaseLogger):
             stop = self.getSafeFlag("stop")
         
         # Kill recorder
-        if start == True:
-            if stop or rospy.is_shutdown():
-                rospy.loginfo(rospy.get_name() + ": Stop received")
-                self.killCommandProc()
+        rospy.loginfo(rospy.get_name() + ": Stop received")
+        self.killCommandProc()
 
-        rospy.loginfo(rospy.get_name() + ": Waiting for reset signal...")
         # Wait for reset
+        rospy.loginfo(rospy.get_name() + ": Waiting for reset signal...")
         while not reset and not rospy.is_shutdown():
             self._rate.sleep()
             reset = self.getSafeFlag("reset")
-        
+        rospy.loginfo(rospy.get_name() + ": Resetting")
+

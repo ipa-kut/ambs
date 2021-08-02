@@ -65,11 +65,11 @@ class BaseLogger(object):
         # Prepare command
         _command = shlex.split(command)
         self.command_proc = subprocess.Popen(_command)
-        rospy.loginfo(rospy.get_name() + ": Starting process {} now!".format(self.command_proc))
+        rospy.loginfo(rospy.get_name() + ": Starting process {}".format(self.command_proc))
 
     def killCommandProc(self):
         self.command_proc.send_signal(subprocess.signal.SIGINT)
-        rospy.loginfo(rospy.get_name() + ": Destructor killing process {}!".format(self.command_proc))
+        rospy.loginfo(rospy.get_name() + ": Killing process {}".format(self.command_proc))
     
     def getConfig(self, param_list):
         for arg in param_list:
