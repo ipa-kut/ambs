@@ -9,6 +9,11 @@ from datetime import datetime
 from std_msgs.msg import String
 import os
 
+## @package Rosbagger
+#
+# Records topics in rosbags. Whitelist is a pattern search that takes in all topics mathcing the given list.
+# Blacklist is also a pattern search that rejects topics taken from the Whitelist that match the list.
+#
 class Rosbagger(BaseLogger):
     def __init__(self):
 
@@ -85,7 +90,7 @@ class Rosbagger(BaseLogger):
             self._rate.sleep()
             start = self.getSafeFlag("start")
 
-         # Create folder -> sleep -> start recording
+         # Start recording
         if start == True and stop == False:
             rospy.loginfo(rospy.get_name() + ": Start received")
 

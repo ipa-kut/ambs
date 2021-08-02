@@ -35,6 +35,7 @@ var classambs__base_1_1AMBSBaseRunner =
     [ "ROSBAG_BEGAN_", "d6/daa/classambs__base_1_1AMBSBaseRunner.html#ae2e2f4a203a78e052c6c27e1f69c0a87", null ],
     [ "signal_interface_", "d6/daa/classambs__base_1_1AMBSBaseRunner.html#a6625c2a4e03a55a9c34fa1bc4f19d640", null ],
     [ "START_ROBOT_", "d6/daa/classambs__base_1_1AMBSBaseRunner.html#a4c63945b6a95163d6197e88e3a27f7bd", null ],
+    [ "START_ROSBAG", "d6/daa/classambs__base_1_1AMBSBaseRunner.html#a70a8e02d5807dfe0e8ef2698451f35a0", null ],
     [ "START_TEST_", "d6/daa/classambs__base_1_1AMBSBaseRunner.html#a9e236ceafdbdac246f3a91ccd081fef5", null ],
     [ "STOP_ROBOT_", "d6/daa/classambs__base_1_1AMBSBaseRunner.html#abe4df9f0f7103f35f7e347dd20f7af51", null ],
     [ "TEST_COMPLETED_", "d6/daa/classambs__base_1_1AMBSBaseRunner.html#ac61767211902f2e6474299e7543fba46", null ],

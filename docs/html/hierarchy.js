@@ -30,6 +30,11 @@ var hierarchy =
       [ "EmptyRunnerNodelet", "d8/d6a/classambs__runners_1_1EmptyRunnerNodelet.html", null ],
       [ "Test1BrakingNodelet", "dd/d5c/classambs__runners_1_1Test1BrakingNodelet.html", null ]
     ] ],
+    [ "object", null, [
+      [ "BaseLogger", "d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html", [
+        [ "Rosbagger", "de/d0d/classloggers_1_1rosbagger_1_1Rosbagger.html", null ]
+      ] ]
+    ] ],
     [ "Test", null, [
       [ "TestCompFloatParam", "db/dd0/classTestCompFloatParam.html", null ],
       [ "TestDiffFloatTemporal", "df/dd0/classTestDiffFloatTemporal.html", null ],

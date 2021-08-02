@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['emptyrunner_255',['EmptyRunner',['../d4/da7/classambs__runners_1_1EmptyRunner.html',1,'ambs_runners']]],
-  ['emptyrunnernodelet_256',['EmptyRunnerNodelet',['../d8/d6a/classambs__runners_1_1EmptyRunnerNodelet.html',1,'ambs_runners']]]
+  ['debuglogger_287',['DebugLogger',['../d4/d68/classambs__loggers_1_1DebugLogger.html',1,'ambs_loggers']]],
+  ['difffloattemporal_288',['DiffFloatTemporal',['../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html',1,'ambs_calculators']]],
+  ['difffloattemporalnodelet_289',['DiffFloatTemporalNodelet',['../db/de1/classambs__calculators_1_1DiffFloatTemporalNodelet.html',1,'ambs_calculators']]],
+  ['diffposetemporal_290',['DiffPoseTemporal',['../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html',1,'ambs_calculators']]],
+  ['diffposetemporalnodelet_291',['DiffPoseTemporalNodelet',['../df/d4e/classambs__calculators_1_1DiffPoseTemporalNodelet.html',1,'ambs_calculators']]]
 ];

@@ -33,6 +33,16 @@ var annotated_dup =
       [ "Test1Braking", "d7/d68/classambs__runners_1_1Test1Braking.html", "d7/d68/classambs__runners_1_1Test1Braking" ],
       [ "Test1BrakingNodelet", "dd/d5c/classambs__runners_1_1Test1BrakingNodelet.html", "dd/d5c/classambs__runners_1_1Test1BrakingNodelet" ]
     ] ],
+    [ "loggers", "dd/d2e/namespaceloggers.html", [
+      [ "rosbagger", "d4/d7a/namespaceloggers_1_1rosbagger.html", [
+        [ "Rosbagger", "de/d0d/classloggers_1_1rosbagger_1_1Rosbagger.html", "de/d0d/classloggers_1_1rosbagger_1_1Rosbagger" ]
+      ] ]
+    ] ],
+    [ "python_base_classes", "d1/dbf/namespacepython__base__classes.html", [
+      [ "base_logger", "db/daa/namespacepython__base__classes_1_1base__logger.html", [
+        [ "BaseLogger", "d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html", "d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger" ]
+      ] ]
+    ] ],
     [ "TestCompFloatParam", "db/dd0/classTestCompFloatParam.html", "db/dd0/classTestCompFloatParam" ],
     [ "TestDiffFloatTemporal", "df/dd0/classTestDiffFloatTemporal.html", "df/dd0/classTestDiffFloatTemporal" ],
     [ "TestDiffPoseTemporal", "da/d9b/classTestDiffPoseTemporal.html", "da/d9b/classTestDiffPoseTemporal" ],
