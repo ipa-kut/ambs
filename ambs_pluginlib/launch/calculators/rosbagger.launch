@@ -5,8 +5,8 @@
     <arg name="bot_name" default="test_bot" />
 
     <rosparam command="load" file="$(find ambs_pluginlib)/test_configs/test_components.yaml" />
-    <rosparam param="/ambs/log_folder_root" subst_value="True">$(arg dest_dir)</rosparam>
-    <rosparam param="/ambs/robot_name" subst_value="True">$(arg bot_name)</rosparam>
+    <rosparam param="log_folder_root" subst_value="True">$(arg dest_dir)</rosparam>
+    <rosparam param="robot_name" subst_value="True">$(arg bot_name)</rosparam>
 
     <node pkg="nodelet" type="nodelet" name="base_nodelet_manager" args="manager"  output="screen">
         <param name="num_worker_threads" value="32" />
