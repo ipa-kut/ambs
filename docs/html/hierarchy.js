@@ -4,6 +4,7 @@ var hierarchy =
       [ "CompFloatParam", "d4/db3/classambs__calculators_1_1CompFloatParam.html", null ],
       [ "DiffFloatTemporal", "de/d8d/classambs__calculators_1_1DiffFloatTemporal.html", null ],
       [ "DiffPoseTemporal", "d7/d23/classambs__calculators_1_1DiffPoseTemporal.html", null ],
+      [ "EdgeDetector", "dd/d7f/classambs__calculators_1_1EdgeDetector.html", null ],
       [ "Stopwatch", "d0/d7e/classambs__calculators_1_1Stopwatch.html", null ]
     ] ],
     [ "AMBSBaseRunner", "d6/daa/classambs__base_1_1AMBSBaseRunner.html", [
@@ -24,6 +25,7 @@ var hierarchy =
       [ "CompFloatParamNodelet", "d5/d85/classambs__calculators_1_1CompFloatParamNodelet.html", null ],
       [ "DiffFloatTemporalNodelet", "db/de1/classambs__calculators_1_1DiffFloatTemporalNodelet.html", null ],
       [ "DiffPoseTemporalNodelet", "df/d4e/classambs__calculators_1_1DiffPoseTemporalNodelet.html", null ],
+      [ "EdgeDetectorNodelet", "db/d89/classambs__calculators_1_1EdgeDetectorNodelet.html", null ],
       [ "StopwatchNodelet", "db/d86/classambs__calculators_1_1StopwatchNodelet.html", null ],
       [ "CommandVelocityInterpreterNodelet", "df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet.html", null ],
       [ "OdomInterpreterNodelet", "d7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet.html", null ],
@@ -39,6 +41,7 @@ var hierarchy =
       [ "TestCompFloatParam", "db/dd0/classTestCompFloatParam.html", null ],
       [ "TestDiffFloatTemporal", "df/dd0/classTestDiffFloatTemporal.html", null ],
       [ "TestDiffPoseTemporal", "da/d9b/classTestDiffPoseTemporal.html", null ],
+      [ "TestEdgeDetector", "d4/de5/classTestEdgeDetector.html", null ],
       [ "TestStopwatch", "d1/d43/classTestStopwatch.html", null ]
     ] ]
 ];

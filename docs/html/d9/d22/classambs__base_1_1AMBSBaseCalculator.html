@@ -101,11 +101,12 @@ Inheritance diagram for AMBSBaseCalculator:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../db/d8d/classambs__base_1_1AMBSBaseCalculator__inherit__graph.png" border="0" usemap="#aAMBSBaseCalculator_inherit__map" alt="Inheritance graph"/></div>
 <map name="aAMBSBaseCalculator_inherit__map" id="aAMBSBaseCalculator_inherit__map">
-<area shape="rect" title="The VIRTUAL base class for all calculators to inherit from." alt="" coords="217,5,366,32"/>
+<area shape="rect" title="The VIRTUAL base class for all calculators to inherit from." alt="" coords="293,5,442,32"/>
 <area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html" title="Compare float from topic vs a param and output true when nearly equal." alt="" coords="5,80,129,107"/>
 <area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html" title="Compute difference in a float value from a topic between start and stop." alt="" coords="153,80,280,107"/>
 <area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html" title="Compute difference in a pose value from a topic between start and stop." alt="" coords="304,80,431,107"/>
-<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html" title="Compute difference in Time between start and stop, taken from messages directly." alt="" coords="455,80,539,107"/>
+<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html" title="Monitor a boolean input and output detected rising/falling edges. Cannot detec first falling edge." alt="" coords="455,80,557,107"/>
+<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html" title="Compute difference in Time between start and stop, taken from messages directly." alt="" coords="581,80,665,107"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -272,9 +273,9 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassambs__base_1_1AMBSBaseCalculator_html_a1300297c252ff1dc5ceea58a274d4db5"><div class="ttname"><a href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a1300297c252ff1dc5ceea58a274d4db5">ambs_base::AMBSBaseCalculator::nh_</a></div><div class="ttdeci">ros::NodeHandle nh_</div><div class="ttdef"><b>Definition:</b> ambs_base_calculator.hpp:29</div></div>
 <div class="ttc" id="aclassambs__base_1_1AMBSBaseCalculator_html_a69e220bdafb7c66b63cee0187bfc8bcb"><div class="ttname"><a href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a69e220bdafb7c66b63cee0187bfc8bcb">ambs_base::AMBSBaseCalculator::node_name_</a></div><div class="ttdeci">std::string node_name_</div><div class="ttdef"><b>Definition:</b> ambs_base_calculator.hpp:28</div></div>
 <div class="ttc" id="aclassambs__base_1_1AMBSBaseCalculator_html_aa627f498ea363805932c70f214f0ec1a"><div class="ttname"><a href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#aa627f498ea363805932c70f214f0ec1a">ambs_base::AMBSBaseCalculator::default_control_</a></div><div class="ttdeci">AMBSDefaultCalculatorInterface default_control_</div><div class="ttdef"><b>Definition:</b> ambs_base_calculator.hpp:32</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSDefaultCalculatorInterface_html_a9afa149dc8c8b88b27677d374cde3acd"><div class="ttname"><a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a9afa149dc8c8b88b27677d374cde3acd">ambs_base::AMBSDefaultCalculatorInterface::initDefaultInterface</a></div><div class="ttdeci">void initDefaultInterface(ros::NodeHandle nh, std::string node_name)</div><div class="ttdoc">Initialisation decoupled from constructor for convenince.</div><div class="ttdef"><b>Definition:</b> ambs_default_calculator_interface.hpp:104</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSDefaultCalculatorInterface_html_a9afa149dc8c8b88b27677d374cde3acd"><div class="ttname"><a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a9afa149dc8c8b88b27677d374cde3acd">ambs_base::AMBSDefaultCalculatorInterface::initDefaultInterface</a></div><div class="ttdeci">void initDefaultInterface(ros::NodeHandle nh, std::string node_name)</div><div class="ttdoc">Initialisation decoupled from constructor for convenince.</div><div class="ttdef"><b>Definition:</b> ambs_default_calculator_interface.hpp:105</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00032">AMBSBaseCalculator::default_control_</a>, <a class="el" href="../../#l00104">AMBSDefaultCalculatorInterface::initDefaultInterface()</a>, <a class="el" href="../../#l00029">AMBSBaseCalculator::nh_</a>, and <a class="el" href="../../#l00028">AMBSBaseCalculator::node_name_</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00032">AMBSBaseCalculator::default_control_</a>, <a class="el" href="../../#l00105">AMBSDefaultCalculatorInterface::initDefaultInterface()</a>, <a class="el" href="../../#l00029">AMBSBaseCalculator::nh_</a>, and <a class="el" href="../../#l00028">AMBSBaseCalculator::node_name_</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -313,7 +314,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1">Stopwatch</a>, <a class="el" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88">CompFloatParam</a>, <a class="el" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88">DiffFloatTemporal</a>, and <a class="el" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88">DiffPoseTemporal</a>.</p>
+<p>Implemented in <a class="el" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1">Stopwatch</a>, <a class="el" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88">EdgeDetector</a>, <a class="el" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88">CompFloatParam</a>, <a class="el" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88">DiffFloatTemporal</a>, and <a class="el" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88">DiffPoseTemporal</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../#l00060">AMBSBaseCalculator::startCalculator()</a>.</p>
 <div class="dynheader">
@@ -321,12 +322,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/d22/classambs__base_1_1AMBSBaseCalculator_a967f9a0a5cfaa49ba54b5fe00c08b132_icgraph.png" border="0" usemap="#ad9/d22/classambs__base_1_1AMBSBaseCalculator_a967f9a0a5cfaa49ba54b5fe00c08b132_icgraph" alt=""/></div>
 <map name="ad9/d22/classambs__base_1_1AMBSBaseCalculator_a967f9a0a5cfaa49ba54b5fe00c08b132_icgraph" id="ad9/d22/classambs__base_1_1AMBSBaseCalculator_a967f9a0a5cfaa49ba54b5fe00c08b132_icgraph">
-<area shape="rect" title=" " alt="" coords="404,111,491,138"/>
-<area shape="rect" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ae75e799bea3344778673b0378e7d01a2" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="249,111,356,138"/>
-<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,5,201,47"/>
-<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="12,71,195,112"/>
-<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="12,136,195,177"/>
-<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="6,201,201,243"/>
+<area shape="rect" title=" " alt="" coords="420,143,507,170"/>
+<area shape="rect" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ae75e799bea3344778673b0378e7d01a2" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="265,143,372,170"/>
+<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,5,217,47"/>
+<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="13,71,209,112"/>
+<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="20,136,203,177"/>
+<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="20,201,203,243"/>
+<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="14,267,209,308"/>
 </map>
 </div>
 
@@ -420,7 +422,7 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../#l00035">AMBSBaseCalculator::execute_timer_</a>, <a class="el" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a967f9a0a5cfaa49ba54b5fe00c08b132">AMBSBaseCalculator::executeCB()</a>, and <a class="el" href="../../#l00029">AMBSBaseCalculator::nh_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00054">CompFloatParam::init()</a>, <a class="el" href="../../#l00050">DiffFloatTemporal::init()</a>, <a class="el" href="../../#l00055">DiffPoseTemporal::init()</a>, and <a class="el" href="../../#l00051">Stopwatch::init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00053">EdgeDetector::init()</a>, <a class="el" href="../../#l00054">CompFloatParam::init()</a>, <a class="el" href="../../#l00050">DiffFloatTemporal::init()</a>, <a class="el" href="../../#l00055">DiffPoseTemporal::init()</a>, and <a class="el" href="../../#l00051">Stopwatch::init()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -435,11 +437,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/d22/classambs__base_1_1AMBSBaseCalculator_ae75e799bea3344778673b0378e7d01a2_icgraph.png" border="0" usemap="#ad9/d22/classambs__base_1_1AMBSBaseCalculator_ae75e799bea3344778673b0378e7d01a2_icgraph" alt=""/></div>
 <map name="ad9/d22/classambs__base_1_1AMBSBaseCalculator_ae75e799bea3344778673b0378e7d01a2_icgraph" id="ad9/d22/classambs__base_1_1AMBSBaseCalculator_ae75e799bea3344778673b0378e7d01a2_icgraph">
-<area shape="rect" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="249,111,356,138"/>
-<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,5,201,47"/>
-<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="12,71,195,112"/>
-<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="12,136,195,177"/>
-<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="6,201,201,243"/>
+<area shape="rect" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="265,143,372,170"/>
+<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,5,217,47"/>
+<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="13,71,209,112"/>
+<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="20,136,203,177"/>
+<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="20,201,203,243"/>
+<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="14,267,209,308"/>
 </map>
 </div>
 

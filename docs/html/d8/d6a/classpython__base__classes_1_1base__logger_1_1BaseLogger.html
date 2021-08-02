@@ -459,7 +459,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">def </span>killCommandProc(self):</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        self.command_proc.send_signal(subprocess.signal.SIGINT)</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        rospy.loginfo(rospy.get_name() + <span class="stringliteral">&quot;: Destructor killing process {}!&quot;</span>.format(self.command_proc))</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        rospy.loginfo(rospy.get_name() + <span class="stringliteral">&quot;: Killing process {}&quot;</span>.format(self.command_proc))</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../#l00067">BaseLogger.command_proc</a>, and <a class="el" href="../../#l00070">BaseLogger.killCommandProc()</a>.</p>
@@ -630,7 +630,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="comment"># Prepare command</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        _command = shlex.split(command)</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        self.command_proc = subprocess.Popen(_command)</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        rospy.loginfo(rospy.get_name() + <span class="stringliteral">&quot;: Starting process {} now!&quot;</span>.format(self.command_proc))</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        rospy.loginfo(rospy.get_name() + <span class="stringliteral">&quot;: Starting process {}&quot;</span>.format(self.command_proc))</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../#l00064">BaseLogger.startCommandProc()</a>.</p>

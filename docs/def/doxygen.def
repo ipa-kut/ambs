@@ -22,6 +22,12 @@ class = {
   };
   cp-ref     = {
     ref-type = derived;
+    ref-id   = 'dd/d7f/classambs__calculators_1_1EdgeDetector';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
     ref-id   = 'd0/d7e/classambs__calculators_1_1Stopwatch';
     ref-prot = public;
     ref-virt = non-virtual;
@@ -85,7 +91,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a9afa149dc8c8b88b27677d374cde3acd';
-        sec-mem-ref-line = '104';
+        sec-mem-ref-line = '105';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::initDefaultInterface';
     };
       sec-mem-referenceto = {
@@ -214,6 +220,11 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-name = 'AMBSBaseCalculator::nh_';
     };
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'EdgeDetector::init';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
         sec-mem-ref-line = '54';
         sec-mem-ref-name = 'CompFloatParam::init';
@@ -261,22 +272,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd5/d4b/stopwatch_8h_1af955dafbd2caaf93213592477dd71ce1';
-        sec-mem-ref-line = '67';
+        sec-mem-ref-line = '65';
         sec-mem-ref-name = 'Stopwatch::executeCB';
     };
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'EdgeDetector::executeCB';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '73';
+        sec-mem-ref-line = '71';
         sec-mem-ref-name = 'CompFloatParam::executeCB';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd9/d25/diff__float__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '65';
+        sec-mem-ref-line = '63';
         sec-mem-ref-name = 'DiffFloatTemporal::executeCB';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '74';
+        sec-mem-ref-line = '72';
         sec-mem-ref-name = 'DiffPoseTemporal::executeCB';
     };
     }; /* sec-member */
@@ -342,28 +358,38 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd5/d4b/stopwatch_8h_1af955dafbd2caaf93213592477dd71ce1';
-        sec-mem-ref-line = '67';
+        sec-mem-ref-line = '65';
         sec-mem-ref-name = 'Stopwatch::executeCB';
     };
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'EdgeDetector::executeCB';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '73';
+        sec-mem-ref-line = '71';
         sec-mem-ref-name = 'CompFloatParam::executeCB';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd9/d25/diff__float__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '65';
+        sec-mem-ref-line = '63';
         sec-mem-ref-name = 'DiffFloatTemporal::executeCB';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '74';
+        sec-mem-ref-line = '72';
         sec-mem-ref-name = 'DiffPoseTemporal::executeCB';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'dd/ded/ambs__base__calculator_8hpp_1ab677e11cb7da0bae588e0bf9afa10c43';
         sec-mem-ref-line = '74';
         sec-mem-ref-name = 'AMBSBaseCalculator::getResolvedParam';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'EdgeDetector::init';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
@@ -387,7 +413,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1a8dbde0632f95aa0029f70e512b02d672';
-        sec-mem-ref-line = '115';
+        sec-mem-ref-line = '113';
         sec-mem-ref-name = 'DiffPoseTemporal::printPose';
     };
     }; /* sec-member */
@@ -472,6 +498,17 @@ _EnD_oF_dEf_TeXt_;
       }; /* node */
       node = {
         node-id    = 5;
+        node-label = 'EdgeDetector';
+        node-link = {
+          node-link-id = 'dd/d7f/classambs__calculators_1_1EdgeDetector';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 6;
         node-label = 'Stopwatch';
         node-link = {
           node-link-id = 'd0/d7e/classambs__calculators_1_1Stopwatch';
@@ -2321,8 +2358,13 @@ _EnD_oF_dEf_TeXt_;
 @returns msg The message to be returned
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'EdgeDetector::executeCB';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '73';
+        sec-mem-ref-line = '71';
         sec-mem-ref-name = 'CompFloatParam::executeCB';
     };
       sec-mem-referencedby = {
@@ -2332,7 +2374,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a45924180e9991c17c1ec7264500c1878';
-        sec-mem-ref-line = '82';
+        sec-mem-ref-line = '83';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::publishDone';
     };
       sec-mem-referencedby = {
@@ -2407,7 +2449,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a9daeb45ab1c8723c550216193bc640d4';
-        sec-mem-ref-line = '69';
+        sec-mem-ref-line = '70';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::waitForReset';
     };
       sec-mem-referencedby = {
@@ -2427,7 +2469,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1ac5ea3fdfe16309af79519349423e0168';
-        sec-mem-ref-line = '59';
+        sec-mem-ref-line = '60';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::waitForStop';
     };
     }; /* sec-member */
@@ -2626,8 +2668,13 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::STOP_';
     };
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'EdgeDetector::executeCB';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '73';
+        sec-mem-ref-line = '71';
         sec-mem-ref-name = 'CompFloatParam::executeCB';
     };
     }; /* sec-member */
@@ -2758,22 +2805,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd5/d4b/stopwatch_8h_1af955dafbd2caaf93213592477dd71ce1';
-        sec-mem-ref-line = '67';
+        sec-mem-ref-line = '65';
         sec-mem-ref-name = 'Stopwatch::executeCB';
     };
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'EdgeDetector::executeCB';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '73';
+        sec-mem-ref-line = '71';
         sec-mem-ref-name = 'CompFloatParam::executeCB';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd9/d25/diff__float__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '65';
+        sec-mem-ref-line = '63';
         sec-mem-ref-name = 'DiffFloatTemporal::executeCB';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '74';
+        sec-mem-ref-line = '72';
         sec-mem-ref-name = 'DiffPoseTemporal::executeCB';
     };
     }; /* sec-member */
@@ -2816,22 +2868,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd5/d4b/stopwatch_8h_1af955dafbd2caaf93213592477dd71ce1';
-        sec-mem-ref-line = '67';
+        sec-mem-ref-line = '65';
         sec-mem-ref-name = 'Stopwatch::executeCB';
     };
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'EdgeDetector::executeCB';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '73';
+        sec-mem-ref-line = '71';
         sec-mem-ref-name = 'CompFloatParam::executeCB';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd9/d25/diff__float__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '65';
+        sec-mem-ref-line = '63';
         sec-mem-ref-name = 'DiffFloatTemporal::executeCB';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '74';
+        sec-mem-ref-line = '72';
         sec-mem-ref-name = 'DiffPoseTemporal::executeCB';
     };
     }; /* sec-member */
@@ -2869,22 +2926,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd5/d4b/stopwatch_8h_1af955dafbd2caaf93213592477dd71ce1';
-        sec-mem-ref-line = '67';
+        sec-mem-ref-line = '65';
         sec-mem-ref-name = 'Stopwatch::executeCB';
     };
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'EdgeDetector::executeCB';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '73';
+        sec-mem-ref-line = '71';
         sec-mem-ref-name = 'CompFloatParam::executeCB';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd9/d25/diff__float__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '65';
+        sec-mem-ref-line = '63';
         sec-mem-ref-name = 'DiffFloatTemporal::executeCB';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '74';
+        sec-mem-ref-line = '72';
         sec-mem-ref-name = 'DiffPoseTemporal::executeCB';
     };
     }; /* sec-member */
@@ -2917,17 +2979,17 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd5/d4b/stopwatch_8h_1af955dafbd2caaf93213592477dd71ce1';
-        sec-mem-ref-line = '67';
+        sec-mem-ref-line = '65';
         sec-mem-ref-name = 'Stopwatch::executeCB';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd9/d25/diff__float__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '65';
+        sec-mem-ref-line = '63';
         sec-mem-ref-name = 'DiffFloatTemporal::executeCB';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '74';
+        sec-mem-ref-line = '72';
         sec-mem-ref-name = 'DiffPoseTemporal::executeCB';
     };
     }; /* sec-member */
@@ -2956,7 +3018,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a9afa149dc8c8b88b27677d374cde3acd';
-        sec-mem-ref-line = '104';
+        sec-mem-ref-line = '105';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::initDefaultInterface';
     };
     }; /* sec-member */
@@ -2982,7 +3044,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a9afa149dc8c8b88b27677d374cde3acd';
-        sec-mem-ref-line = '104';
+        sec-mem-ref-line = '105';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::initDefaultInterface';
     };
     }; /* sec-member */
@@ -2996,7 +3058,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'DONE_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_done"
+= "out_done"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_calculator/ambs_default_calculator_interface.hpp';
       sec-mem-desc-line = '35';
@@ -3008,12 +3070,12 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1affc03288568e4ccca3d856d52b47ecef';
-        sec-mem-ref-line = '92';
+        sec-mem-ref-line = '93';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::printDefaultPorts';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a45924180e9991c17c1ec7264500c1878';
-        sec-mem-ref-line = '82';
+        sec-mem-ref-line = '83';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::publishDone';
     };
     }; /* sec-member */
@@ -3027,7 +3089,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'RESET_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/in_reset"
+= "in_reset"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_calculator/ambs_default_calculator_interface.hpp';
       sec-mem-desc-line = '34';
@@ -3039,12 +3101,12 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1affc03288568e4ccca3d856d52b47ecef';
-        sec-mem-ref-line = '92';
+        sec-mem-ref-line = '93';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::printDefaultPorts';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a9daeb45ab1c8723c550216193bc640d4';
-        sec-mem-ref-line = '69';
+        sec-mem-ref-line = '70';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::waitForReset';
     };
     }; /* sec-member */
@@ -3058,7 +3120,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'START_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/in_start"
+= "in_start"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_calculator/ambs_default_calculator_interface.hpp';
       sec-mem-desc-line = '32';
@@ -3070,12 +3132,12 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1abe5963a4394632431dd1fb08ea80b08b';
-        sec-mem-ref-line = '122';
+        sec-mem-ref-line = '123';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::getStartMsg';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1affc03288568e4ccca3d856d52b47ecef';
-        sec-mem-ref-line = '92';
+        sec-mem-ref-line = '93';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::printDefaultPorts';
     };
       sec-mem-referencedby = {
@@ -3094,7 +3156,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'STOP_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/in_stop"
+= "in_stop"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_calculator/ambs_default_calculator_interface.hpp';
       sec-mem-desc-line = '33';
@@ -3106,17 +3168,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1afcff3ff7d027c1515f6f2757131126c5';
-        sec-mem-ref-line = '113';
+        sec-mem-ref-line = '114';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::getStopMsg';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1affc03288568e4ccca3d856d52b47ecef';
-        sec-mem-ref-line = '92';
+        sec-mem-ref-line = '93';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::printDefaultPorts';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1ac5ea3fdfe16309af79519349423e0168';
-        sec-mem-ref-line = '59';
+        sec-mem-ref-line = '60';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::waitForStop';
     };
     }; /* sec-member */
@@ -3511,6 +3573,11 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-name = 'CommandVelocityInterpreter::executeCB';
     };
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'EdgeDetector::executeCB';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'dd/dd3/test1__braking_8h_1acc239077cecc1069d9306ceda27a8e88';
         sec-mem-ref-line = '54';
         sec-mem-ref-name = 'Test1Braking::executeCB';
@@ -3594,6 +3661,11 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-name = 'AMBSPort< T >::topic_name_';
     };
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'EdgeDetector::init';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
         sec-mem-ref-line = '54';
         sec-mem-ref-name = 'CompFloatParam::init';
@@ -3602,6 +3674,11 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-id = 'd3/d5b/velocity__interpreter_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
         sec-mem-ref-line = '13';
         sec-mem-ref-name = 'CommandVelocityInterpreter::init';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'de/d00/test__edge__detector_8cpp_1ad1e53c9ca9de182e69c6605aa758b9e2';
+        sec-mem-ref-line = '35';
+        sec-mem-ref-name = 'TestEdgeDetector::init';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd9/db5/test__diff__float__temporal_8cpp_1ad1e53c9ca9de182e69c6605aa758b9e2';
@@ -3652,6 +3729,11 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 @param port_name Port to check
 _EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'EdgeDetector::executeCB';
+    };
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
@@ -3705,8 +3787,13 @@ Publishes a shared pointer so as to work with nodelet zero copy transfer
 @param msg The msg which is automatically cast into a shared pointer.
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'EdgeDetector::executeCB';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '73';
+        sec-mem-ref-line = '71';
         sec-mem-ref-name = 'CompFloatParam::executeCB';
     };
       sec-mem-referencedby = {
@@ -4229,7 +4316,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1afcff3ff7d027c1515f6f2757131126c5';
-        sec-mem-ref-line = '113';
+        sec-mem-ref-line = '114';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::getStopMsg';
     };
       sec-mem-referenceto = {
@@ -4249,7 +4336,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a45924180e9991c17c1ec7264500c1878';
-        sec-mem-ref-line = '82';
+        sec-mem-ref-line = '83';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::publishDone';
     };
       sec-mem-referenceto = {
@@ -4264,7 +4351,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a9daeb45ab1c8723c550216193bc640d4';
-        sec-mem-ref-line = '69';
+        sec-mem-ref-line = '70';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::waitForReset';
     };
       sec-mem-referenceto = {
@@ -4295,7 +4382,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '73';
+        sec-mem-ref-line = '71';
         sec-mem-ref-name = 'CompFloatParam::executeCB';
     };
       sec-mem-referencedby = {
@@ -4314,7 +4401,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'COMPARISON_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_comparison"
+= "out_comparison"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/float_param_comparator.h';
       sec-mem-desc-line = '37';
@@ -4326,7 +4413,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '73';
+        sec-mem-ref-line = '71';
         sec-mem-ref-name = 'CompFloatParam::executeCB';
     };
       sec-mem-referencedby = {
@@ -4354,7 +4441,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '73';
+        sec-mem-ref-line = '71';
         sec-mem-ref-name = 'CompFloatParam::executeCB';
     };
       sec-mem-referencedby = {
@@ -4373,7 +4460,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'IN_FLOAT_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/in_float"
+= "in_float"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/float_param_comparator.h';
       sec-mem-desc-line = '38';
@@ -4385,7 +4472,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '73';
+        sec-mem-ref-line = '71';
         sec-mem-ref-name = 'CompFloatParam::executeCB';
     };
       sec-mem-referencedby = {
@@ -4439,7 +4526,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '73';
+        sec-mem-ref-line = '71';
         sec-mem-ref-name = 'CompFloatParam::executeCB';
     };
     }; /* sec-member */
@@ -4483,7 +4570,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d5b/float__param__comparator_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '73';
+        sec-mem-ref-line = '71';
         sec-mem-ref-name = 'CompFloatParam::executeCB';
     };
     }; /* sec-member */
@@ -4903,7 +4990,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a45924180e9991c17c1ec7264500c1878';
-        sec-mem-ref-line = '82';
+        sec-mem-ref-line = '83';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::publishDone';
     };
       sec-mem-referenceto = {
@@ -4913,7 +5000,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a9daeb45ab1c8723c550216193bc640d4';
-        sec-mem-ref-line = '69';
+        sec-mem-ref-line = '70';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::waitForReset';
     };
       sec-mem-referenceto = {
@@ -4923,7 +5010,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1ac5ea3fdfe16309af79519349423e0168';
-        sec-mem-ref-line = '59';
+        sec-mem-ref-line = '60';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::waitForStop';
     };
     }; /* sec-member */
@@ -4949,7 +5036,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd9/d25/diff__float__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '65';
+        sec-mem-ref-line = '63';
         sec-mem-ref-name = 'DiffFloatTemporal::executeCB';
     };
       sec-mem-referencedby = {
@@ -4968,7 +5055,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'IN_FLOAT_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/in_float"
+= "in_float"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/differentiators/diff_float_temporal.h';
       sec-mem-desc-line = '35';
@@ -4980,7 +5067,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd9/d25/diff__float__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '65';
+        sec-mem-ref-line = '63';
         sec-mem-ref-name = 'DiffFloatTemporal::executeCB';
     };
       sec-mem-referencedby = {
@@ -5022,7 +5109,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'OUT_FLOAT_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_float"
+= "out_float"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/differentiators/diff_float_temporal.h';
       sec-mem-desc-line = '36';
@@ -5034,7 +5121,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd9/d25/diff__float__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '65';
+        sec-mem-ref-line = '63';
         sec-mem-ref-name = 'DiffFloatTemporal::executeCB';
     };
       sec-mem-referencedby = {
@@ -5062,7 +5149,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd9/d25/diff__float__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '65';
+        sec-mem-ref-line = '63';
         sec-mem-ref-name = 'DiffFloatTemporal::executeCB';
     };
     }; /* sec-member */
@@ -5504,17 +5591,17 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1a8dbde0632f95aa0029f70e512b02d672';
-        sec-mem-ref-line = '115';
+        sec-mem-ref-line = '113';
         sec-mem-ref-name = 'DiffPoseTemporal::printPose';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a45924180e9991c17c1ec7264500c1878';
-        sec-mem-ref-line = '82';
+        sec-mem-ref-line = '83';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::publishDone';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a9daeb45ab1c8723c550216193bc640d4';
-        sec-mem-ref-line = '69';
+        sec-mem-ref-line = '70';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::waitForReset';
     };
       sec-mem-referenceto = {
@@ -5524,7 +5611,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1ac5ea3fdfe16309af79519349423e0168';
-        sec-mem-ref-line = '59';
+        sec-mem-ref-line = '60';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::waitForStop';
     };
     }; /* sec-member */
@@ -5563,7 +5650,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '74';
+        sec-mem-ref-line = '72';
         sec-mem-ref-name = 'DiffPoseTemporal::executeCB';
     };
     }; /* sec-member */
@@ -5580,7 +5667,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'DIFF_ORIENTATION';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_diff_orientation"
+= "out_diff_orientation"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/differentiators/diff_pose_temporal.h';
       sec-mem-desc-line = '40';
@@ -5592,7 +5679,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '74';
+        sec-mem-ref-line = '72';
         sec-mem-ref-name = 'DiffPoseTemporal::executeCB';
     };
       sec-mem-referencedby = {
@@ -5611,7 +5698,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'DIFF_POSITION_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_diff_position"
+= "out_diff_position"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/differentiators/diff_pose_temporal.h';
       sec-mem-desc-line = '39';
@@ -5623,7 +5710,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '74';
+        sec-mem-ref-line = '72';
         sec-mem-ref-name = 'DiffPoseTemporal::executeCB';
     };
       sec-mem-referencedby = {
@@ -5651,7 +5738,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '74';
+        sec-mem-ref-line = '72';
         sec-mem-ref-name = 'DiffPoseTemporal::executeCB';
     };
       sec-mem-referencedby = {
@@ -5670,7 +5757,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'IN_POSE_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/in_pose"
+= "in_pose"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/differentiators/diff_pose_temporal.h';
       sec-mem-desc-line = '41';
@@ -5682,7 +5769,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '74';
+        sec-mem-ref-line = '72';
         sec-mem-ref-name = 'DiffPoseTemporal::executeCB';
     };
       sec-mem-referencedby = {
@@ -5710,7 +5797,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '74';
+        sec-mem-ref-line = '72';
         sec-mem-ref-name = 'DiffPoseTemporal::executeCB';
     };
       sec-mem-referencedby = {
@@ -5968,6 +6055,695 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
 }; /* class */
 class = {
+  cp-id     = 'dd/d7f/classambs__calculators_1_1EdgeDetector';
+  cp-name   = 'ambs_calculators::EdgeDetector';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'd9/d22/classambs__base_1_1AMBSBaseCalculator';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'dd/d7f/classambs__calculators_1_1EdgeDetector_1a2bced11dc4d0b738832d52b128ae224e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'EdgeDetector';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h';
+      sec-mem-desc-line = '22';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'dd/d7f/classambs__calculators_1_1EdgeDetector_1a353415d756e628d1452ea029adf5627a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'EdgeDetector';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ros::NodeHandle
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'nh';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'node_name';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h';
+      sec-mem-desc-line = '24';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'dd/d7f/classambs__calculators_1_1EdgeDetector_1a2bc2bbb3288d4207be9d8c5c43560800';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~EdgeDetector';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'dd/d7f/classambs__calculators_1_1EdgeDetector_1a02fd73d861ef2e4aabb38c0c9ff82947';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'init';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+init function will be called by nodelet, so it is not called anywhere from within class
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+AMBSBaseCalculator::startCalculator() spawns a timer which executes executeCB()
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1a74a08d2b7318dbb1a7a60dd24bbc2c91';
+        sec-mem-ref-line = '33';
+        sec-mem-ref-name = 'EdgeDetector::bool_interface_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1ae8ea93134fa5946b4ed6b090762a6053';
+        sec-mem-ref-line = '36';
+        sec-mem-ref-name = 'EdgeDetector::IN_BOOL_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d1c/ambs__base__interface_8hpp_1ac55ed2cfd175f6e71ebe460eeb643b40';
+        sec-mem-ref-line = '261';
+        sec-mem-ref-name = 'AMBSTemplatedInterface< T >::init';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1a1300297c252ff1dc5ceea58a274d4db5';
+        sec-mem-ref-line = '32';
+        sec-mem-ref-name = 'EdgeDetector::nh_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dd/ded/ambs__base__calculator_8hpp_1a69e220bdafb7c66b63cee0187bfc8bcb';
+        sec-mem-ref-line = '28';
+        sec-mem-ref-name = 'AMBSBaseCalculator::node_name_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1a241463d2bac7dedac1641aab457b6982';
+        sec-mem-ref-line = '35';
+        sec-mem-ref-name = 'EdgeDetector::OUT_FALLING_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1a724bdbf1c72d90bbf666f31fc051c666';
+        sec-mem-ref-line = '34';
+        sec-mem-ref-name = 'EdgeDetector::OUT_RISING_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dd/ded/ambs__base__calculator_8hpp_1ae75e799bea3344778673b0378e7d01a2';
+        sec-mem-ref-line = '60';
+        sec-mem-ref-name = 'AMBSBaseCalculator::startCalculator';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'dd/d7f/classambs__calculators_1_1EdgeDetector_1acc239077cecc1069d9306ceda27a8e88';
+      sec-mem-virt = virtual;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'executeCB';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const ros::TimerEvent &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'event';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h';
+      sec-mem-desc-line = '31';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param event Not used
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1a74a08d2b7318dbb1a7a60dd24bbc2c91';
+        sec-mem-ref-line = '33';
+        sec-mem-ref-name = 'EdgeDetector::bool_interface_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d76/ambs__boolean__interface_8hpp_1af9a09dc0577d79c0862457114706c7a3';
+        sec-mem-ref-line = '49';
+        sec-mem-ref-name = 'AMBSBooleanInterface::constructNewBoolStamped';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dd/ded/ambs__base__calculator_8hpp_1aa627f498ea363805932c70f214f0ec1a';
+        sec-mem-ref-line = '32';
+        sec-mem-ref-name = 'AMBSBaseCalculator::default_control_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d1c/ambs__base__interface_8hpp_1ada64638f460eb73b2fdec44ef26236b1';
+        sec-mem-ref-line = '118';
+        sec-mem-ref-name = 'AMBSTemplatedInterface< T >::getPortMsg';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1afcff3ff7d027c1515f6f2757131126c5';
+        sec-mem-ref-line = '114';
+        sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::getStopMsg';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1ae8ea93134fa5946b4ed6b090762a6053';
+        sec-mem-ref-line = '36';
+        sec-mem-ref-name = 'EdgeDetector::IN_BOOL_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d1c/ambs__base__interface_8hpp_1adaa2cbf1da15afc4f5683da03e6207b9';
+        sec-mem-ref-line = '218';
+        sec-mem-ref-name = 'AMBSTemplatedInterface< T >::isPortValid';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dd/ded/ambs__base__calculator_8hpp_1a69e220bdafb7c66b63cee0187bfc8bcb';
+        sec-mem-ref-line = '28';
+        sec-mem-ref-name = 'AMBSBaseCalculator::node_name_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1a241463d2bac7dedac1641aab457b6982';
+        sec-mem-ref-line = '35';
+        sec-mem-ref-name = 'EdgeDetector::OUT_FALLING_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1a724bdbf1c72d90bbf666f31fc051c666';
+        sec-mem-ref-line = '34';
+        sec-mem-ref-name = 'EdgeDetector::OUT_RISING_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1ac60fb7d51cac6537f36afcfec5eceacf';
+        sec-mem-ref-line = '39';
+        sec-mem-ref-name = 'EdgeDetector::previous_bool_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a45924180e9991c17c1ec7264500c1878';
+        sec-mem-ref-line = '83';
+        sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::publishDone';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d1c/ambs__base__interface_8hpp_1aabf915c783f55403b189d83e619643fd';
+        sec-mem-ref-line = '181';
+        sec-mem-ref-name = 'AMBSTemplatedInterface< T >::publishMsgOnPort';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a9daeb45ab1c8723c550216193bc640d4';
+        sec-mem-ref-line = '70';
+        sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::waitForReset';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1ad7f2492738b8b944ceea50f2eba2682c';
+        sec-mem-ref-line = '48';
+        sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::waitForStart';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'dd/d7f/classambs__calculators_1_1EdgeDetector_1a74a08d2b7318dbb1a7a60dd24bbc2c91';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+ambs_base::AMBSBooleanInterface
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'bool_interface_';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h';
+      sec-mem-desc-line = '33';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'EdgeDetector::executeCB';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'EdgeDetector::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'dd/d7f/classambs__calculators_1_1EdgeDetector_1ae8ea93134fa5946b4ed6b090762a6053';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'IN_BOOL_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "in_bool"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h';
+      sec-mem-desc-line = '36';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'EdgeDetector::executeCB';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'EdgeDetector::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'dd/d7f/classambs__calculators_1_1EdgeDetector_1a1300297c252ff1dc5ceea58a274d4db5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+ros::NodeHandle
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'nh_';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h';
+      sec-mem-desc-line = '32';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'EdgeDetector::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'dd/d7f/classambs__calculators_1_1EdgeDetector_1a241463d2bac7dedac1641aab457b6982';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'OUT_FALLING_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "out_falling"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h';
+      sec-mem-desc-line = '35';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'EdgeDetector::executeCB';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'EdgeDetector::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'dd/d7f/classambs__calculators_1_1EdgeDetector_1a724bdbf1c72d90bbf666f31fc051c666';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'OUT_RISING_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "out_rising"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h';
+      sec-mem-desc-line = '34';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'EdgeDetector::executeCB';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'EdgeDetector::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'dd/d7f/classambs__calculators_1_1EdgeDetector_1a0c2da46413d593c24e3ab99e21f93eb2';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'PARAM_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "param"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h';
+      sec-mem-desc-line = '37';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'dd/d7f/classambs__calculators_1_1EdgeDetector_1ac60fb7d51cac6537f36afcfec5eceacf';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'previous_bool_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= false
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h';
+      sec-mem-desc-line = '39';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd9/d44/edge__detector_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'EdgeDetector::executeCB';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'dd/d7f/classambs__calculators_1_1EdgeDetector_1ac4072fd6b6bb5b7bbaf24a451da7a893';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TOLERANCE_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "tolerance"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h';
+  cp-fileline  = '19';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Monitor a boolean input and output detected rising/falling edges. Cannot detec first falling edge.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Has standard control intetrface, and a bool interface with one input and two output ports
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'EdgeDetector';
+        node-link = {
+          node-link-id = 'dd/d7f/classambs__calculators_1_1EdgeDetector';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'AMBSBaseCalculator';
+        node-link = {
+          node-link-id = 'd9/d22/classambs__base_1_1AMBSBaseCalculator';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 5;
+        node-label = 'AMBSTemplatedInterface< ambs_msgs::BoolStamped >';
+        node-link = {
+          node-link-id = 'd3/d0c/classambs__base_1_1AMBSTemplatedInterface';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'EdgeDetector';
+        node-link = {
+          node-link-id = 'dd/d7f/classambs__calculators_1_1EdgeDetector';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+        node-child = {
+          child-id = '4';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+bool_interface_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'AMBSBaseCalculator';
+        node-link = {
+          node-link-id = 'd9/d22/classambs__base_1_1AMBSBaseCalculator';
+        };
+        node-child = {
+          child-id = '3';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+default_control_
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 4;
+        node-label = 'AMBSBooleanInterface';
+        node-link = {
+          node-link-id = 'd6/dc2/classambs__base_1_1AMBSBooleanInterface';
+        };
+        node-child = {
+          child-id = '5';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'AMBSDefaultCalculatorInterface';
+        node-link = {
+          node-link-id = 'dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface';
+        };
+        node-child = {
+          child-id = '4';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'db/d89/classambs__calculators_1_1EdgeDetectorNodelet';
+  cp-name   = 'ambs_calculators::EdgeDetectorNodelet';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'd7/d81/classnodelet_1_1Nodelet';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'db/d89/classambs__calculators_1_1EdgeDetectorNodelet_1af5678c0e05ca8f90121f7631df77288b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'EdgeDetectorNodelet';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/calculators/comparators/edge_detector_nodelet.cpp';
+      sec-mem-desc-line = '13';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'db/d89/classambs__calculators_1_1EdgeDetectorNodelet_1a1656c91bb74dad07d9cecea1079687c0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~EdgeDetectorNodelet';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/calculators/comparators/edge_detector_nodelet.cpp';
+      sec-mem-desc-line = '14';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'db/d89/classambs__calculators_1_1EdgeDetectorNodelet_1a9450a15087a143d9db53ff89c172595f';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'onInit';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/calculators/comparators/edge_detector_nodelet.cpp';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'dd/dae/edge__detector__nodelet_8cpp_1a103ccbe052f259f54ca3cd615327969f';
+        sec-mem-ref-line = '28';
+        sec-mem-ref-name = 'EdgeDetectorNodelet::class_pointer_';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'db/d89/classambs__calculators_1_1EdgeDetectorNodelet_1a103ccbe052f259f54ca3cd615327969f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+boost::shared_ptr< EdgeDetector >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'class_pointer_';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/calculators/comparators/edge_detector_nodelet.cpp';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'dd/dae/edge__detector__nodelet_8cpp_1a9450a15087a143d9db53ff89c172595f';
+        sec-mem-ref-line = '16';
+        sec-mem-ref-name = 'EdgeDetectorNodelet::onInit';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/calculators/comparators/edge_detector_nodelet.cpp';
+  cp-fileline  = '10';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'EdgeDetectorNodelet';
+        node-link = {
+          node-link-id = 'db/d89/classambs__calculators_1_1EdgeDetectorNodelet';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'Nodelet';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'EdgeDetectorNodelet';
+        node-link = {
+          node-link-id = 'db/d89/classambs__calculators_1_1EdgeDetectorNodelet';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'Nodelet';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
   cp-id     = 'd0/d7e/classambs__calculators_1_1Stopwatch';
   cp-name   = 'ambs_calculators::Stopwatch';
   cp-ref     = {
@@ -6155,7 +6931,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a45924180e9991c17c1ec7264500c1878';
-        sec-mem-ref-line = '82';
+        sec-mem-ref-line = '83';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::publishDone';
     };
       sec-mem-referenceto = {
@@ -6165,7 +6941,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a9daeb45ab1c8723c550216193bc640d4';
-        sec-mem-ref-line = '69';
+        sec-mem-ref-line = '70';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::waitForReset';
     };
       sec-mem-referenceto = {
@@ -6175,7 +6951,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1ac5ea3fdfe16309af79519349423e0168';
-        sec-mem-ref-line = '59';
+        sec-mem-ref-line = '60';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::waitForStop';
     };
     }; /* sec-member */
@@ -6201,7 +6977,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd5/d4b/stopwatch_8h_1af955dafbd2caaf93213592477dd71ce1';
-        sec-mem-ref-line = '67';
+        sec-mem-ref-line = '65';
         sec-mem-ref-name = 'Stopwatch::executeCB';
     };
       sec-mem-referencedby = {
@@ -6229,7 +7005,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd5/d4b/stopwatch_8h_1af955dafbd2caaf93213592477dd71ce1';
-        sec-mem-ref-line = '67';
+        sec-mem-ref-line = '65';
         sec-mem-ref-name = 'Stopwatch::executeCB';
     };
       sec-mem-referencedby = {
@@ -6271,7 +7047,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'OUT_FLOAT_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_float"
+= "out_float"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/differentiators/stopwatch.h';
       sec-mem-desc-line = '36';
@@ -6283,7 +7059,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd5/d4b/stopwatch_8h_1af955dafbd2caaf93213592477dd71ce1';
-        sec-mem-ref-line = '67';
+        sec-mem-ref-line = '65';
         sec-mem-ref-name = 'Stopwatch::executeCB';
     };
       sec-mem-referencedby = {
@@ -6311,7 +7087,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd5/d4b/stopwatch_8h_1af955dafbd2caaf93213592477dd71ce1';
-        sec-mem-ref-line = '67';
+        sec-mem-ref-line = '65';
         sec-mem-ref-name = 'Stopwatch::executeCB';
     };
     }; /* sec-member */
@@ -8137,7 +8913,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd5/d4b/stopwatch_8h_1af955dafbd2caaf93213592477dd71ce1';
-        sec-mem-ref-line = '67';
+        sec-mem-ref-line = '65';
         sec-mem-ref-name = 'Stopwatch::executeCB';
     };
     }; /* sec-member */
@@ -10106,6 +10882,12 @@ class = {
   };
   cp-ref     = {
     ref-type = derived;
+    ref-id   = 'db/d89/classambs__calculators_1_1EdgeDetectorNodelet';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
     ref-id   = 'db/d86/classambs__calculators_1_1StopwatchNodelet';
     ref-prot = public;
     ref-virt = non-virtual;
@@ -10182,6 +10964,17 @@ _EnD_oF_dEf_TeXt_;
       }; /* node */
       node = {
         node-id    = 5;
+        node-label = 'EdgeDetectorNodelet';
+        node-link = {
+          node-link-id = 'db/d89/classambs__calculators_1_1EdgeDetectorNodelet';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 6;
         node-label = 'StopwatchNodelet';
         node-link = {
           node-link-id = 'db/d86/classambs__calculators_1_1StopwatchNodelet';
@@ -10192,7 +10985,7 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 6;
+        node-id    = 7;
         node-label = 'CommandVelocityInterpreterNodelet';
         node-link = {
           node-link-id = 'df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet';
@@ -10203,7 +10996,7 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 7;
+        node-id    = 8;
         node-label = 'OdomInterpreterNodelet';
         node-link = {
           node-link-id = 'd7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet';
@@ -10214,7 +11007,7 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 8;
+        node-id    = 9;
         node-label = 'EmptyRunnerNodelet';
         node-link = {
           node-link-id = 'd8/d6a/classambs__runners_1_1EmptyRunnerNodelet';
@@ -10225,7 +11018,7 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 9;
+        node-id    = 10;
         node-label = 'Test1BrakingNodelet';
         node-link = {
           node-link-id = 'dd/d5c/classambs__runners_1_1Test1BrakingNodelet';
@@ -11220,7 +12013,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'COMPARISON_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/in_comparison"
+= "in_comparison"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_comp_float_param.cpp';
       sec-mem-desc-line = '28';
@@ -11264,7 +12057,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'DONE_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/in_done"
+= "in_done"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_comp_float_param.cpp';
       sec-mem-desc-line = '26';
@@ -11285,7 +12078,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'FLOAT_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-="/out_float"
+="out_float"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_comp_float_param.cpp';
       sec-mem-desc-line = '27';
@@ -11445,7 +12238,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'RESET_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_reset"
+= "out_reset"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_comp_float_param.cpp';
       sec-mem-desc-line = '25';
@@ -11466,7 +12259,7 @@ const double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'response_time_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= 0.5
+= 0.25
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_comp_float_param.cpp';
       sec-mem-desc-line = '31';
@@ -11508,7 +12301,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'START_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_start"
+= "out_start"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_comp_float_param.cpp';
       sec-mem-desc-line = '23';
@@ -11529,7 +12322,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'STOP_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_stop"
+= "out_stop"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_comp_float_param.cpp';
       sec-mem-desc-line = '24';
@@ -11836,7 +12629,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'DONE_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/in_done"
+= "in_done"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_float_temporal.cpp';
       sec-mem-desc-line = '20';
@@ -11857,7 +12650,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'FLOAT_IN_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/in_float"
+= "in_float"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_float_temporal.cpp';
       sec-mem-desc-line = '21';
@@ -11927,7 +12720,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'FLOAT_OUT_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_float"
+= "out_float"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_float_temporal.cpp';
       sec-mem-desc-line = '22';
@@ -11997,7 +12790,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'RESET_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_reset"
+= "out_reset"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_float_temporal.cpp';
       sec-mem-desc-line = '19';
@@ -12018,7 +12811,7 @@ const double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'response_time_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= 0.2
+= 0.25
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_float_temporal.cpp';
       sec-mem-desc-line = '23';
@@ -12039,7 +12832,7 @@ const double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'spawn_time_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= 2
+= 1
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_float_temporal.cpp';
       sec-mem-desc-line = '24';
@@ -12060,7 +12853,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'START_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_start"
+= "out_start"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_float_temporal.cpp';
       sec-mem-desc-line = '17';
@@ -12081,7 +12874,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'STOP_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_stop"
+= "out_stop"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_float_temporal.cpp';
       sec-mem-desc-line = '18';
@@ -12359,7 +13152,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'DONE_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/in_done"
+= "in_done"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_pose_temporal.cpp';
       sec-mem-desc-line = '21';
@@ -12475,7 +13268,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'ORIENTATION_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/in_diff_orientation"
+= "in_diff_orientation"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_pose_temporal.cpp';
       sec-mem-desc-line = '24';
@@ -12496,7 +13289,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'POSE_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_pose"
+= "out_pose"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_pose_temporal.cpp';
       sec-mem-desc-line = '22';
@@ -12589,7 +13382,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'RESET_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_reset"
+= "out_reset"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_pose_temporal.cpp';
       sec-mem-desc-line = '20';
@@ -12610,7 +13403,7 @@ const double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'response_time_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= 0.2
+= 0.25
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_pose_temporal.cpp';
       sec-mem-desc-line = '25';
@@ -12631,7 +13424,7 @@ const double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'spawn_time_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= 2
+= 1
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_pose_temporal.cpp';
       sec-mem-desc-line = '26';
@@ -12652,7 +13445,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'START_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_start"
+= "out_start"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_pose_temporal.cpp';
       sec-mem-desc-line = '18';
@@ -12673,7 +13466,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'STOP_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_stop"
+= "out_stop"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_pose_temporal.cpp';
       sec-mem-desc-line = '19';
@@ -12694,7 +13487,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'TRANSLATION_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/in_diff_position"
+= "in_diff_position"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_diff_pose_temporal.cpp';
       sec-mem-desc-line = '23';
@@ -12777,6 +13570,445 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
 }; /* class */
 class = {
+  cp-id     = 'd4/de5/classTestEdgeDetector';
+  cp-name   = 'TestEdgeDetector';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'db/d9f/classtesting_1_1Test';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd4/de5/classTestEdgeDetector_1a9d46c9c33d3929b2882feacf62212aff';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TestEdgeDetector';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      sec-mem-desc-line = '13';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd4/de5/classTestEdgeDetector_1ad1e53c9ca9de182e69c6605aa758b9e2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'init';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ros::NodeHandle
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'nh';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      sec-mem-desc-line = '31';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'de/d00/test__edge__detector_8cpp_1a6ba7c018b569d85c311b2c1fbc8088bf';
+        sec-mem-ref-line = '25';
+        sec-mem-ref-name = 'bool_inputs_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'de/d00/test__edge__detector_8cpp_1a0720b9c54f3f98123c2309d844d8db29';
+        sec-mem-ref-line = '26';
+        sec-mem-ref-name = 'bool_outputs_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'de/d00/test__edge__detector_8cpp_1a3653effd5e2ff77d9d741c403b8be7dc';
+        sec-mem-ref-line = '28';
+        sec-mem-ref-name = 'control_iface';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d1c/ambs__base__interface_8hpp_1ac55ed2cfd175f6e71ebe460eeb643b40';
+        sec-mem-ref-line = '261';
+        sec-mem-ref-name = 'AMBSTemplatedInterface< T >::init';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'de/d00/test__edge__detector_8cpp_1a1300297c252ff1dc5ceea58a274d4db5';
+        sec-mem-ref-line = '29';
+        sec-mem-ref-name = 'nh_';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/de5/classTestEdgeDetector_1ac37561bc31e653dd4fa8ffbf92166709';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'BOOL_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+="out_bool"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      sec-mem-desc-line = '19';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/de5/classTestEdgeDetector_1a6ba7c018b569d85c311b2c1fbc8088bf';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::vector< std::string >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'bool_inputs_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+{DONE_, RISING_, FALLING_}
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      sec-mem-desc-line = '25';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'de/d00/test__edge__detector_8cpp_1ad1e53c9ca9de182e69c6605aa758b9e2';
+        sec-mem-ref-line = '35';
+        sec-mem-ref-name = 'init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/de5/classTestEdgeDetector_1a0720b9c54f3f98123c2309d844d8db29';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::vector< std::string >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'bool_outputs_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+{START_, STOP_, RESET_, BOOL_}
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      sec-mem-desc-line = '26';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'de/d00/test__edge__detector_8cpp_1ad1e53c9ca9de182e69c6605aa758b9e2';
+        sec-mem-ref-line = '35';
+        sec-mem-ref-name = 'init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/de5/classTestEdgeDetector_1a3653effd5e2ff77d9d741c403b8be7dc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+ambs_base::AMBSBooleanInterface
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'control_iface';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'de/d00/test__edge__detector_8cpp_1ad1e53c9ca9de182e69c6605aa758b9e2';
+        sec-mem-ref-line = '35';
+        sec-mem-ref-name = 'init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/de5/classTestEdgeDetector_1a5c976406bc02745e7bf40ea1f561baae';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'DONE_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "in_done"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/de5/classTestEdgeDetector_1ab2c930d5f470bfa40ebadf1ec858a618';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'FALLING_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "in_falling"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/de5/classTestEdgeDetector_1a1300297c252ff1dc5ceea58a274d4db5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+ros::NodeHandle
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'nh_';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      sec-mem-desc-line = '29';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'de/d00/test__edge__detector_8cpp_1ad1e53c9ca9de182e69c6605aa758b9e2';
+        sec-mem-ref-line = '35';
+        sec-mem-ref-name = 'init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/de5/classTestEdgeDetector_1aa5a5ab339e3a1f1e597c2eec3e726de7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'RESET_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "out_reset"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/de5/classTestEdgeDetector_1a4cdba69fc9fff624b3506a8fe6075344';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'response_time_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0.25
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      sec-mem-desc-line = '22';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/de5/classTestEdgeDetector_1adc2adc049994ccd6c97e63b49b33997e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'RISING_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "in_rising"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/de5/classTestEdgeDetector_1a8fff2390807ed2a74b9d8b15aee460cd';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'spawn_time_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 1
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/de5/classTestEdgeDetector_1aef5e1c6307d2c37484b4c9cf57ac6343';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'START_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "out_start"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      sec-mem-desc-line = '15';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd4/de5/classTestEdgeDetector_1a235c71426244121b8920c836939bebbc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'STOP_';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "out_stop"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+  cp-fileline  = '10';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'TestEdgeDetector';
+        node-link = {
+          node-link-id = 'd4/de5/classTestEdgeDetector';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'Test';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 4;
+        node-label = 'AMBSTemplatedInterface< ambs_msgs::BoolStamped >';
+        node-link = {
+          node-link-id = 'd3/d0c/classambs__base_1_1AMBSTemplatedInterface';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'TestEdgeDetector';
+        node-link = {
+          node-link-id = 'd4/de5/classTestEdgeDetector';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+        node-child = {
+          child-id = '3';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+control_iface
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'AMBSBooleanInterface';
+        node-link = {
+          node-link-id = 'd6/dc2/classambs__base_1_1AMBSBooleanInterface';
+        };
+        node-child = {
+          child-id = '4';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'Test';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
   cp-id     = 'db/d9f/classtesting_1_1Test';
   cp-name   = 'testing::Test';
   cp-ref     = {
@@ -12794,6 +14026,12 @@ class = {
   cp-ref     = {
     ref-type = derived;
     ref-id   = 'da/d9b/classTestDiffPoseTemporal';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'd4/de5/classTestEdgeDetector';
     ref-prot = public;
     ref-virt = non-virtual;
   };
@@ -12851,6 +14089,17 @@ _EnD_oF_dEf_TeXt_;
       }; /* node */
       node = {
         node-id    = 5;
+        node-label = 'TestEdgeDetector';
+        node-link = {
+          node-link-id = 'd4/de5/classTestEdgeDetector';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 6;
         node-label = 'TestStopwatch';
         node-link = {
           node-link-id = 'd1/d43/classTestStopwatch';
@@ -13044,7 +14293,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'DONE_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/in_done"
+= "in_done"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_stopwatch.cpp';
       sec-mem-desc-line = '20';
@@ -13065,7 +14314,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'FLOAT_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/in_float"
+= "in_float"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_stopwatch.cpp';
       sec-mem-desc-line = '21';
@@ -13181,7 +14430,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'RESET_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_reset"
+= "out_reset"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_stopwatch.cpp';
       sec-mem-desc-line = '19';
@@ -13202,7 +14451,7 @@ const double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'response_time_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= 0.2
+= 0.25
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_stopwatch.cpp';
       sec-mem-desc-line = '22';
@@ -13223,7 +14472,7 @@ const double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'spawn_time_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= 2
+= 1
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_stopwatch.cpp';
       sec-mem-desc-line = '23';
@@ -13244,7 +14493,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'START_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_start"
+= "out_start"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_stopwatch.cpp';
       sec-mem-desc-line = '17';
@@ -13265,7 +14514,7 @@ const std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'STOP_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "/out_stop"
+= "out_stop"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/differentiators/test_stopwatch.cpp';
       sec-mem-desc-line = '18';
@@ -13368,6 +14617,18 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
 }; /* class */
+file = {
+  file-id   = 'd9/d44/edge__detector_8h';
+  file-name = 'edge_detector.h';
+  file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
 file = {
   file-id   = 'd6/d5b/float__param__comparator_8h';
   file-name = 'float_param_comparator.h';
@@ -13619,7 +14880,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referencedby = {
         func-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        func-mem-ref-line = '74';
+        func-mem-ref-line = '72';
         func-mem-ref-name = 'DiffPoseTemporal::executeCB';
     };
     }; /* func-member */
@@ -13653,7 +14914,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referencedby = {
         func-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1a8dbde0632f95aa0029f70e512b02d672';
-        func-mem-ref-line = '115';
+        func-mem-ref-line = '113';
         func-mem-ref-name = 'DiffPoseTemporal::printPose';
     };
     }; /* func-member */
@@ -13693,7 +14954,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referencedby = {
         func-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        func-mem-ref-line = '74';
+        func-mem-ref-line = '72';
         func-mem-ref-name = 'DiffPoseTemporal::executeCB';
     };
     }; /* func-member */
@@ -13827,6 +15088,48 @@ _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     };
   file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/calculators/comparators/comp_float_param_nodelet.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'dd/dae/edge__detector__nodelet_8cpp';
+  file-name = 'edge_detector_nodelet.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'dd/dae/edge__detector__nodelet_8cpp_1a632c6f537e66c29cbb376ba64a02d504';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'PLUGINLIB_EXPORT_CLASS';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ambs_calculators::EdgeDetectorNodelet
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+nodelet::Nodelet
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/calculators/comparators/edge_detector_nodelet.cpp';
+      func-mem-desc-line = '33';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_pluginlib/src/calculators/comparators/edge_detector_nodelet.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 
@@ -14318,6 +15621,106 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
 }; /* file */
 file = {
+  file-id   = 'de/d00/test__edge__detector_8cpp';
+  file-name = 'test_edge_detector.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'de/d00/test__edge__detector_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argc';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char **
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argv';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      func-mem-desc-line = '128';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'de/d00/test__edge__detector_8cpp_1a83c9f9d1c42b71432f46dc0674e4d5df';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'TEST_F';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+TestEdgeDetector
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+test_down_up
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      func-mem-desc-line = '92';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'de/d00/test__edge__detector_8cpp_1a6390c60cbc7c4a43fc3f62a04ccbb5e1';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'TEST_F';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+TestEdgeDetector
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+test_up_down_up
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+      func-mem-desc-line = '42';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_tests/test/unit_tests/calculators/comparators/test_edge_detector.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
   file-id   = 'd9/db5/test__diff__float__temporal_8cpp';
   file-name = 'test_diff_float_temporal.cpp';
     func = {
@@ -14656,7 +16059,7 @@ _EnD_oF_dEf_TeXt_;
   namespace = {
     ns-id   = 'd1/d94/namespaceambs__calculators';
     ns-name = 'ambs_calculators';
-  ns-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/float_param_comparator.h';
+  ns-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h';
   ns-fileline  = '11';
   ns-briefdesc = <<_EnD_oF_dEf_TeXt_
 
@@ -14700,7 +16103,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referencedby = {
         func-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        func-mem-ref-line = '74';
+        func-mem-ref-line = '72';
         func-mem-ref-name = 'DiffPoseTemporal::executeCB';
     };
     }; /* func-member */
@@ -14734,7 +16137,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referencedby = {
         func-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1a8dbde0632f95aa0029f70e512b02d672';
-        func-mem-ref-line = '115';
+        func-mem-ref-line = '113';
         func-mem-ref-name = 'DiffPoseTemporal::printPose';
     };
     }; /* func-member */
@@ -14774,7 +16177,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referencedby = {
         func-mem-ref-id = 'd2/d21/diff__pose__temporal_8h_1acc239077cecc1069d9306ceda27a8e88';
-        func-mem-ref-line = '74';
+        func-mem-ref-line = '72';
         func-mem-ref-name = 'DiffPoseTemporal::executeCB';
     };
     }; /* func-member */
