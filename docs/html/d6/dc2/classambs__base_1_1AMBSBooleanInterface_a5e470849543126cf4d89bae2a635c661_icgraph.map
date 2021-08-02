@@ -1,14 +1,15 @@
 <map id="waitForTrueOnPort" name="waitForTrueOnPort">
-<area shape="rect" id="node1" title="Wait for TRUE on a port." alt="" coords="533,177,665,203"/>
-<area shape="rect" id="node2" href="$d4/da7/classambs__runners_1_1EmptyRunner.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="271,5,463,47"/>
-<area shape="rect" id="node3" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a9daeb45ab1c8723c550216193bc640d4" title="Wait for TRUE on the RESET port." alt="" coords="249,71,485,112"/>
-<area shape="rect" id="node8" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a9daeb45ab1c8723c550216193bc640d4" title="Wait for TRUE on the RESET port." alt="" coords="264,267,471,308"/>
-<area shape="rect" id="node10" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ad7f2492738b8b944ceea50f2eba2682c" title="Wait for TRUE on the START port." alt="" coords="249,136,485,177"/>
-<area shape="rect" id="node11" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#ad7f2492738b8b944ceea50f2eba2682c" title="Wait for TRUE on the START port." alt="" coords="264,332,471,373"/>
-<area shape="rect" id="node12" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac5ea3fdfe16309af79519349423e0168" title="Wait for TRUE on the STOP port." alt="" coords="249,201,485,243"/>
-<area shape="rect" id="node4" href="$d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="6,71,201,112"/>
-<area shape="rect" id="node5" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,5,201,47"/>
-<area shape="rect" id="node6" href="$de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="12,136,195,177"/>
-<area shape="rect" id="node7" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="12,201,195,243"/>
-<area shape="rect" id="node9" href="$d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="9,299,198,340"/>
+<area shape="rect" id="node1" title="Wait for TRUE on a port." alt="" coords="549,177,681,203"/>
+<area shape="rect" id="node2" href="$d4/da7/classambs__runners_1_1EmptyRunner.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="287,5,479,47"/>
+<area shape="rect" id="node3" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a9daeb45ab1c8723c550216193bc640d4" title="Wait for TRUE on the RESET port." alt="" coords="265,71,501,112"/>
+<area shape="rect" id="node9" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a9daeb45ab1c8723c550216193bc640d4" title="Wait for TRUE on the RESET port." alt="" coords="280,267,487,308"/>
+<area shape="rect" id="node11" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ad7f2492738b8b944ceea50f2eba2682c" title="Wait for TRUE on the START port." alt="" coords="265,136,501,177"/>
+<area shape="rect" id="node12" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#ad7f2492738b8b944ceea50f2eba2682c" title="Wait for TRUE on the START port." alt="" coords="280,332,487,373"/>
+<area shape="rect" id="node13" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac5ea3fdfe16309af79519349423e0168" title="Wait for TRUE on the STOP port." alt="" coords="265,201,501,243"/>
+<area shape="rect" id="node4" href="$d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="14,136,209,177"/>
+<area shape="rect" id="node5" href="$dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,5,217,47"/>
+<area shape="rect" id="node6" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="13,71,209,112"/>
+<area shape="rect" id="node7" href="$de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,201,203,243"/>
+<area shape="rect" id="node8" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,267,203,308"/>
+<area shape="rect" id="node10" href="$d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="17,332,206,373"/>
 </map>

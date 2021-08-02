@@ -1,7 +1,8 @@
 <map id="startCalculator" name="startCalculator">
-<area shape="rect" id="node1" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="249,111,356,138"/>
-<area shape="rect" id="node2" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,5,201,47"/>
-<area shape="rect" id="node3" href="$de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="12,71,195,112"/>
-<area shape="rect" id="node4" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="12,136,195,177"/>
-<area shape="rect" id="node5" href="$d0/d7e/classambs__calculators_1_1Stopwatch.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="6,201,201,243"/>
+<area shape="rect" id="node1" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="265,143,372,170"/>
+<area shape="rect" id="node2" href="$dd/d7f/classambs__calculators_1_1EdgeDetector.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,5,217,47"/>
+<area shape="rect" id="node3" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="13,71,209,112"/>
+<area shape="rect" id="node4" href="$de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="20,136,203,177"/>
+<area shape="rect" id="node5" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="20,201,203,243"/>
+<area shape="rect" id="node6" href="$d0/d7e/classambs__calculators_1_1Stopwatch.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="14,267,209,308"/>
 </map>

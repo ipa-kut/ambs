@@ -1,0 +1,7 @@
+<map id="EdgeDetector" name="EdgeDetector">
+<area shape="rect" id="node1" title="Monitor a boolean input and output detected rising/falling edges. Cannot detec first falling edge." alt="" coords="55,337,158,364"/>
+<area shape="rect" id="node2" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html" title="The VIRTUAL base class for all calculators to inherit from." alt="" coords="133,261,283,288"/>
+<area shape="rect" id="node3" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html" title="A standard boolean AMBSTemplatedInterface interface for calculators." alt="" coords="127,172,339,199"/>
+<area shape="rect" id="node4" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html" title="A bool specialisation of AMBSTemplatedInterface. Offers two extra functions." alt="" coords="27,96,186,123"/>
+<area shape="rect" id="node5" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html" title=" " alt="" coords="5,5,208,47"/>
+</map>

@@ -1,11 +1,12 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,187,72,213"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,208,72,235"/>
 <area shape="rect" id="node2" href="$d5/d85/classambs__calculators_1_1CompFloatParamNodelet.html" title=" " alt="" coords="129,5,299,32"/>
 <area shape="rect" id="node3" href="$db/de1/classambs__calculators_1_1DiffFloatTemporalNodelet.html" title=" " alt="" coords="129,56,299,83"/>
 <area shape="rect" id="node4" href="$df/d4e/classambs__calculators_1_1DiffPoseTemporalNodelet.html" title=" " alt="" coords="128,107,300,133"/>
-<area shape="rect" id="node5" href="$db/d86/classambs__calculators_1_1StopwatchNodelet.html" title=" " alt="" coords="149,157,279,184"/>
-<area shape="rect" id="node6" href="$df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet.html" title=" " alt="" coords="120,209,308,250"/>
-<area shape="rect" id="node7" href="$d7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet.html" title=" " alt="" coords="133,275,295,301"/>
-<area shape="rect" id="node8" href="$d8/d6a/classambs__runners_1_1EmptyRunnerNodelet.html" title=" " alt="" coords="141,325,287,352"/>
-<area shape="rect" id="node9" href="$dd/d5c/classambs__runners_1_1Test1BrakingNodelet.html" title=" " alt="" coords="142,376,286,403"/>
+<area shape="rect" id="node5" href="$db/d89/classambs__calculators_1_1EdgeDetectorNodelet.html" title=" " alt="" coords="141,157,287,184"/>
+<area shape="rect" id="node6" href="$db/d86/classambs__calculators_1_1StopwatchNodelet.html" title=" " alt="" coords="149,208,279,235"/>
+<area shape="rect" id="node7" href="$df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet.html" title=" " alt="" coords="120,259,308,301"/>
+<area shape="rect" id="node8" href="$d7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet.html" title=" " alt="" coords="133,325,295,352"/>
+<area shape="rect" id="node9" href="$d8/d6a/classambs__runners_1_1EmptyRunnerNodelet.html" title=" " alt="" coords="141,376,287,403"/>
+<area shape="rect" id="node10" href="$dd/d5c/classambs__runners_1_1Test1BrakingNodelet.html" title=" " alt="" coords="142,427,286,453"/>
 </map>

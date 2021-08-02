@@ -15,6 +15,8 @@ var annotated_dup =
       [ "DiffFloatTemporalNodelet", "db/de1/classambs__calculators_1_1DiffFloatTemporalNodelet.html", "db/de1/classambs__calculators_1_1DiffFloatTemporalNodelet" ],
       [ "DiffPoseTemporal", "d7/d23/classambs__calculators_1_1DiffPoseTemporal.html", "d7/d23/classambs__calculators_1_1DiffPoseTemporal" ],
       [ "DiffPoseTemporalNodelet", "df/d4e/classambs__calculators_1_1DiffPoseTemporalNodelet.html", "df/d4e/classambs__calculators_1_1DiffPoseTemporalNodelet" ],
+      [ "EdgeDetector", "dd/d7f/classambs__calculators_1_1EdgeDetector.html", "dd/d7f/classambs__calculators_1_1EdgeDetector" ],
+      [ "EdgeDetectorNodelet", "db/d89/classambs__calculators_1_1EdgeDetectorNodelet.html", "db/d89/classambs__calculators_1_1EdgeDetectorNodelet" ],
       [ "Stopwatch", "d0/d7e/classambs__calculators_1_1Stopwatch.html", "d0/d7e/classambs__calculators_1_1Stopwatch" ],
       [ "StopwatchNodelet", "db/d86/classambs__calculators_1_1StopwatchNodelet.html", "db/d86/classambs__calculators_1_1StopwatchNodelet" ]
     ] ],
@@ -46,5 +48,6 @@ var annotated_dup =
     [ "TestCompFloatParam", "db/dd0/classTestCompFloatParam.html", "db/dd0/classTestCompFloatParam" ],
     [ "TestDiffFloatTemporal", "df/dd0/classTestDiffFloatTemporal.html", "df/dd0/classTestDiffFloatTemporal" ],
     [ "TestDiffPoseTemporal", "da/d9b/classTestDiffPoseTemporal.html", "da/d9b/classTestDiffPoseTemporal" ],
+    [ "TestEdgeDetector", "d4/de5/classTestEdgeDetector.html", "d4/de5/classTestEdgeDetector" ],
     [ "TestStopwatch", "d1/d43/classTestStopwatch.html", "d1/d43/classTestStopwatch" ]
 ];

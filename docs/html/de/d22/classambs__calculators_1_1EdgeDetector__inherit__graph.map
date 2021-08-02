@@ -1,0 +1,4 @@
+<map id="EdgeDetector" name="EdgeDetector">
+<area shape="rect" id="node1" title="Monitor a boolean input and output detected rising/falling edges. Cannot detec first falling edge." alt="" coords="29,80,131,107"/>
+<area shape="rect" id="node2" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html" title="The VIRTUAL base class for all calculators to inherit from." alt="" coords="5,5,155,32"/>
+</map>

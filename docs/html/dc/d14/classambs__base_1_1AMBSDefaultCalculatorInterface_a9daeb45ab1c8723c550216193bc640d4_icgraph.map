@@ -1,7 +1,8 @@
 <map id="waitForReset" name="waitForReset">
-<area shape="rect" id="node1" title="Wait for TRUE on the RESET port." alt="" coords="249,111,349,138"/>
-<area shape="rect" id="node2" href="$d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="6,5,201,47"/>
-<area shape="rect" id="node3" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,71,201,112"/>
-<area shape="rect" id="node4" href="$de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="12,136,195,177"/>
-<area shape="rect" id="node5" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="12,201,195,243"/>
+<area shape="rect" id="node1" title="Wait for TRUE on the RESET port." alt="" coords="265,143,365,170"/>
+<area shape="rect" id="node2" href="$d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="14,5,209,47"/>
+<area shape="rect" id="node3" href="$dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,71,217,112"/>
+<area shape="rect" id="node4" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="13,136,209,177"/>
+<area shape="rect" id="node5" href="$de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,201,203,243"/>
+<area shape="rect" id="node6" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,267,203,308"/>
 </map>

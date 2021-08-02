@@ -1,11 +1,13 @@
 <map id="ambs_core/include/ambs_core/ambs_base_calculator/ambs_base_calculator.hpp" name="ambs_core/include/ambs_core/ambs_base_calculator/ambs_base_calculator.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="353,5,541,61"/>
-<area shape="rect" id="node2" href="$d6/d5b/float__param__comparator_8h.html" title=" " alt="" coords="43,109,220,180"/>
-<area shape="rect" id="node4" href="$d9/d25/diff__float__temporal_8h.html" title=" " alt="" coords="259,109,436,180"/>
-<area shape="rect" id="node6" href="$d2/d21/diff__pose__temporal_8h.html" title=" " alt="" coords="476,109,653,180"/>
-<area shape="rect" id="node8" href="$d5/d4b/stopwatch_8h.html" title=" " alt="" coords="692,109,869,180"/>
-<area shape="rect" id="node3" href="$df/d63/comp__float__param__nodelet_8cpp.html" title=" " alt="" coords="5,228,212,284"/>
-<area shape="rect" id="node5" href="$db/df8/diff__float__temporal__nodelet_8cpp.html" title=" " alt="" coords="236,228,443,284"/>
-<area shape="rect" id="node7" href="$d5/d53/diff__pose__temporal__nodelet_8cpp.html" title=" " alt="" coords="467,228,678,284"/>
-<area shape="rect" id="node9" href="$d6/d72/stopwatch__nodelet_8cpp.html" title=" " alt="" coords="703,228,875,284"/>
+<area shape="rect" id="node1" title=" " alt="" coords="452,5,640,61"/>
+<area shape="rect" id="node2" href="$d9/d44/edge__detector_8h.html" title=" " alt="" coords="32,109,209,180"/>
+<area shape="rect" id="node4" href="$d6/d5b/float__param__comparator_8h.html" title=" " alt="" coords="241,109,419,180"/>
+<area shape="rect" id="node6" href="$d9/d25/diff__float__temporal_8h.html" title=" " alt="" coords="457,109,635,180"/>
+<area shape="rect" id="node8" href="$d2/d21/diff__pose__temporal_8h.html" title=" " alt="" coords="675,109,852,180"/>
+<area shape="rect" id="node10" href="$d5/d4b/stopwatch_8h.html" title=" " alt="" coords="891,109,1068,180"/>
+<area shape="rect" id="node3" href="$dd/dae/edge__detector__nodelet_8cpp.html" title=" " alt="" coords="5,228,188,284"/>
+<area shape="rect" id="node5" href="$df/d63/comp__float__param__nodelet_8cpp.html" title=" " alt="" coords="212,228,419,284"/>
+<area shape="rect" id="node7" href="$db/df8/diff__float__temporal__nodelet_8cpp.html" title=" " alt="" coords="443,228,649,284"/>
+<area shape="rect" id="node9" href="$d5/d53/diff__pose__temporal__nodelet_8cpp.html" title=" " alt="" coords="674,228,885,284"/>
+<area shape="rect" id="node11" href="$d6/d72/stopwatch__nodelet_8cpp.html" title=" " alt="" coords="909,228,1081,284"/>
 </map>
