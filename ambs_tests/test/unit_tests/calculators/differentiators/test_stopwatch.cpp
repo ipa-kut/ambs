@@ -19,8 +19,8 @@ public:
   const std::string RESET_ = "out_reset";
   const std::string DONE_ = "in_done";
   const std::string FLOAT_ = "in_float";
-  const double response_time_ = 0.2;
-  const double spawn_time_ = 2;
+  const double response_time_ = 0.25;
+  const double spawn_time_ = 1;
   const double test_sleep_time = 0.5;
 
   std::vector<std::string> bool_inputs_{DONE_};

@@ -59,6 +59,12 @@ if(CATKIN_ENABLE_TESTING)
     target_link_libraries(test_diff_float_temporal ${catkin_LIBRARIES} ${GTEST_LIBRARIES})
     add_dependencies(test_diff_float_temporal ${catkin_EXPORTED_TARGETS})
 
+    add_rostest_gtest(test_edge_detector
+        test/unit_tests/calculators/comparators/test_edge_detector.test
+        test/unit_tests/calculators/comparators/test_edge_detector.cpp)
+    target_link_libraries(test_edge_detector ${catkin_LIBRARIES} ${GTEST_LIBRARIES})
+    add_dependencies(test_edge_detector ${catkin_EXPORTED_TARGETS})
+
 endif()
 
 

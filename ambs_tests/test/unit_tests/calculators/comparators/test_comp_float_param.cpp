@@ -28,7 +28,7 @@ public:
   const std::string COMPARISON_ = "in_comparison";
   const std::string PARAM_ = "/ambs/calculators/test_comp_float_temporal/param";
   const std::string TOLERANCE_ = "/ambs/calculators/test_comp_float_temporal/tolerance";
-  const double response_time_ = 0.5;
+  const double response_time_ = 0.25;
   const double spawn_time_ = 1;
 
   std::vector<std::string> bool_inputs_{DONE_, COMPARISON_};

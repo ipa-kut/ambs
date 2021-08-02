@@ -22,8 +22,8 @@ public:
   const std::string POSE_ = "out_pose";
   const std::string TRANSLATION_ = "in_diff_position";
   const std::string ORIENTATION_ = "in_diff_orientation";
-  const double response_time_ = 0.2;
-  const double spawn_time_ = 2;
+  const double response_time_ = 0.25;
+  const double spawn_time_ = 1;
 
   std::vector<std::string> bool_inputs_{DONE_};
   std::vector<std::string> bool_outputs_{START_, STOP_, RESET_};

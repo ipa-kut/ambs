@@ -12,9 +12,21 @@
         <remap from="test_edge_detector/in_stop" to="stop_calc" />
         <remap from="test_edge_detector/in_reset" to="reset_calc" />
         <remap from="test_edge_detector/in_bool" to="bool_to_detect" />
+        <remap from="test_edge_detector/out_done" to="calc_done" />
         <remap from="test_edge_detector/out_rising" to="rising" />
         <remap from="test_edge_detector/out_falling" to="falling" />
     </node>
+
+    <test test-name="gtest_edge_detector_tester" pkg="ambs_tests"
+        type="test_edge_detector" name="gtest_edge_detector_tester">
+        <remap from="out_start" to="start_calc" />
+        <remap from="out_stop" to="stop_calc" />
+        <remap from="out_reset" to="reset_calc" />
+        <remap from="in_done" to="calc_done" />
+        <remap from="out_bool" to="bool_to_detect" />
+        <remap from="in_rising" to="rising" />
+        <remap from="in_falling" to="falling" />
+    </test>
 
     </group>
 </launch>
