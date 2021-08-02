@@ -49,8 +49,6 @@ private:
  */
 void DiffFloatTemporal::init()
 {
-  ROS_INFO_STREAM(node_name_ <<": Init class");
-
   std::vector<std::string> float_inputs{IN_FLOAT_};
   std::vector<std::string> float_outputs{OUT_FLOAT_};
   float_interface_.init(float_inputs, float_outputs, nh_, node_name_);
@@ -68,16 +66,13 @@ void DiffFloatTemporal::executeCB(const ros::TimerEvent& event)
   default_control_.waitForStart();
   double start_float = float_interface_.getPortMsg(IN_FLOAT_).data;
   ROS_INFO_STREAM(node_name_ << ": Starting float stored: " << start_float);
-  ROS_INFO(" ");
 
   default_control_.waitForStop();
   double stop_float = float_interface_.getPortMsg(IN_FLOAT_).data;
   ROS_INFO_STREAM(node_name_ << ": Stopping float stored: " << stop_float);
-  ROS_INFO(" ");
 
   double diff_float = stop_float - start_float;
   ROS_INFO_STREAM(node_name_ << ": Difference in floats: " << diff_float);
-  ROS_INFO(" ");
   result_msg_.data = diff_float;
   float_interface_.publishMsgOnPort(OUT_FLOAT_, result_msg_);
 
@@ -86,9 +81,6 @@ void DiffFloatTemporal::executeCB(const ros::TimerEvent& event)
   float_interface_.resetAllPorts();
 
   ROS_INFO_STREAM(node_name_ << ": Restarting calculator");
-  ROS_INFO(" ");
-  ROS_INFO("-----------------------------------------------------------");
-  ROS_INFO(" ");
 }
 
 

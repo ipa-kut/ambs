@@ -12,7 +12,7 @@ CommandVelocityInterpreter::CommandVelocityInterpreter(ros::NodeHandle nh, std::
 
 void CommandVelocityInterpreter::init()
 {
-  ROS_INFO_STREAM(node_name_ << ": Init class");
+  ROS_INFO_STREAM(node_name_ << ": Interpreter ready");
   std::string param_name = "/ambs/interpreters/" + node_name_ + "/" + PARAM_VEL_X_;
   if (!nh_.param(param_name, velocity_x_, default_velocity_x_))
   {

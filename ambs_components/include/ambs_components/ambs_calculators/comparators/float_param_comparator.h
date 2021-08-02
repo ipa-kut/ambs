@@ -53,8 +53,6 @@ private:
  */
 void CompFloatParam::init()
 {
-  ROS_INFO_STREAM(node_name_ <<": Init class");
-
   std::vector<std::string> float_inputs{IN_FLOAT_};
   std::vector<std::string> float_outputs;
   float_interface_.init(float_inputs, float_outputs, nh_, node_name_);
@@ -119,9 +117,6 @@ void CompFloatParam::executeCB(const ros::TimerEvent& event)
   float_interface_.resetAllPorts();
 
   ROS_INFO_STREAM(node_name_ << ": Restarting calculator");
-  ROS_INFO(" ");
-  ROS_INFO("-----------------------------------------------------------");
-  ROS_INFO(" ");
 }
 
 

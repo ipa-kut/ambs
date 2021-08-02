@@ -47,7 +47,7 @@ private:
  */
 inline ambs_msgs::BoolStamped AMBSDefaultCalculatorInterface::waitForStart()
 {
-  ROS_INFO_STREAM(node_name_ << ": Wait for Start");
+  ROS_DEBUG_STREAM(node_name_ << ": Wait for Start");
   ambs_msgs::BoolStamped msg = waitForTrueOnPort(START_);
   return msg;
 }

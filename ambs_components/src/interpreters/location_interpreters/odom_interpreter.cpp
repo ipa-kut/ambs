@@ -16,7 +16,7 @@ OdomInterpreter::OdomInterpreter(ros::NodeHandle nh, std::string node_name):
 
 void OdomInterpreter::init()
 {
-  ROS_INFO_STREAM(node_name_ << ": Init class");
+  ROS_INFO_STREAM(node_name_ << ": Interpreter ready");
   pub_pose_ = nh_.advertise<geometry_msgs::PoseStamped>(POSE_STAMPED_, queue_size);
   pub_lin_x_ = nh_.advertise<std_msgs::Float64>(TWIST_LINEARX_, queue_size);
   sub_odom_ = nh_.subscribe(ODOM_, queue_size, &OdomInterpreter::odomCB, this);
