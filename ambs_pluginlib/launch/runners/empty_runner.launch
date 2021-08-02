@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <launch>
     <group ns="ambs">
 
@@ -14,6 +15,15 @@
 
     <node pkg="nodelet" type="nodelet" name="empty_runner"
         args="load ambs_runners/EmptyRunnerNodelet base_nodelet_manager">
+        <remap from="empty_runner/in_start_test" to="event/ui/start_test" />
+        <remap from="empty_runner/in_reset_test" to="event/ui/reset_test" />
+        <remap from="empty_runner/in_rosbag_began" to="event/calc/rosbag_began" />
+        <remap from="empty_runner/out_start_robot" to="event/runner/start_robot" />
+        <remap from="empty_runner/out_stop_robot" to="event/runner/stop_robot" />
+        <remap from="empty_runner/out_test_completed" to="event/runner/test_completed" />
+        <remap from="empty_runner/out_test_succeeded" to="event/runner/test_succeeded" />
+        <remap from="empty_runner/out_test_failed" to="event/runner/test_failed" />
+        <remap from="empty_runner/out_start_rosbag" to="event/runner/start_rosbag" />
     </node>
 
     </group>

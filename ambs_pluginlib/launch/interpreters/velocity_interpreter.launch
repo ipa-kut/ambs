@@ -1,6 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <launch>
     <group ns="ambs">
 
+    <rosparam command="load" file="$(find ambs_pluginlib)/test_configs/test_components.yaml" />
     <arg name="dest_dir" default="$(env HOME)/ARAIG" />
     <arg name="bot_name" default="test_bot" />
 
@@ -11,6 +13,11 @@
 
     <node pkg="nodelet" type="nodelet" name="test_velocity_interpreter"
         args="load ambs_interpreters/CommandVelocityInterpreterNodelet base_nodelet_manager">
+        <remap from="test_velocity_interpreter/in_activate" to="event/ui/start_test" />
+        <remap from="test_velocity_interpreter/in_deactivate" to="event/ui/stop_test" />
+        <remap from="test_velocity_interpreter/in_start_robot" to="event/runner/start_robot" />
+        <remap from="test_velocity_interpreter/in_stop_robot" to="event/runner/stop_robot" />
+        <remap from="test_velocity_interpreter/out_cmd_vel" to="/cob/cmd_vel" />
     </node>
 
     </group>

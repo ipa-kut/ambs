@@ -8,22 +8,22 @@
 
     <node pkg="nodelet" type="nodelet" name="diff_float_temporal_nodelet"
         args="load ambs_calculators/DiffFloatTemporalNodelet base_nodelet_manager">
-        <remap from="/in_start" to="start_calc" />
-        <remap from="/in_stop" to="stop_calc" />
-        <remap from="/in_reset" to="reset_calc" />
-        <remap from="/out_done" to="calc_done" />
-        <remap from="/in_float" to="float_to_diff" />
-        <remap from="/out_float" to="diff_of_floats" />
+        <remap from="diff_float_temporal_nodelet/in_start" to="start_calc" />
+        <remap from="diff_float_temporal_nodelet/in_stop" to="stop_calc" />
+        <remap from="diff_float_temporal_nodelet/in_reset" to="reset_calc" />
+        <remap from="diff_float_temporal_nodelet/out_done" to="calc_done" />
+        <remap from="diff_float_temporal_nodelet/in_float" to="float_to_diff" />
+        <remap from="diff_float_temporal_nodelet/out_float" to="diff_of_floats" />
     </node>
 
     <test test-name="gtest_diff_float_temporal_tester" pkg="ambs_tests"
-        type="test_diff_float_temporal" name="gtest_diff_pose_temporal_tester">
-        <remap from="/out_start" to="start_calc" />
-        <remap from="/out_stop" to="stop_calc" />
-        <remap from="/out_reset" to="reset_calc" />
-        <remap from="/in_done" to="calc_done" />
-        <remap from="/out_float" to="float_to_diff" />
-        <remap from="/in_float" to="diff_of_floats" />
+        type="test_diff_float_temporal" name="gtest_diff_float_temporal_tester">
+        <remap from="out_start" to="start_calc" />
+        <remap from="out_stop" to="stop_calc" />
+        <remap from="out_reset" to="reset_calc" />
+        <remap from="in_done" to="calc_done" />
+        <remap from="out_float" to="float_to_diff" />
+        <remap from="in_float" to="diff_of_floats" />
     </test>
 
     </group>

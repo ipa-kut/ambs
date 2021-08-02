@@ -20,12 +20,12 @@ public:
     tolerance_(tolerance)
   {}
 
-  const std::string START_ = "/out_start";
-  const std::string STOP_ = "/out_stop";
-  const std::string RESET_ = "/out_reset";
-  const std::string DONE_ = "/in_done";
-  const std::string FLOAT_ ="/out_float";
-  const std::string COMPARISON_ = "/in_comparison";
+  const std::string START_ = "out_start";
+  const std::string STOP_ = "out_stop";
+  const std::string RESET_ = "out_reset";
+  const std::string DONE_ = "in_done";
+  const std::string FLOAT_ ="out_float";
+  const std::string COMPARISON_ = "in_comparison";
   const std::string PARAM_ = "/ambs/calculators/test_comp_float_temporal/param";
   const std::string TOLERANCE_ = "/ambs/calculators/test_comp_float_temporal/tolerance";
   const double response_time_ = 0.5;

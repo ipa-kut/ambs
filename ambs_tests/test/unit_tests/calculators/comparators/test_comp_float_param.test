@@ -15,23 +15,23 @@
 
     <node pkg="nodelet" type="nodelet" name="$(arg nodelet_name)"
         args="load ambs_calculators/CompFloatParamNodelet base_nodelet_manager">
-        <remap from="/in_start" to="start_calc" />
-        <remap from="/in_stop" to="stop_calc" />
-        <remap from="/in_reset" to="reset_calc" />
-        <remap from="/in_float" to="calc_float" />
-        <remap from="/out_done" to="calc_done" />
-        <remap from="/out_comparison" to="calc_result" />
+        <remap from="$(arg nodelet_name)/in_start" to="start_calc" />
+        <remap from="$(arg nodelet_name)/in_stop" to="stop_calc" />
+        <remap from="$(arg nodelet_name)/in_reset" to="reset_calc" />
+        <remap from="$(arg nodelet_name)/in_float" to="calc_float" />
+        <remap from="$(arg nodelet_name)/out_done" to="calc_done" />
+        <remap from="$(arg nodelet_name)/out_comparison" to="calc_result" />
     </node>
 
     <test test-name="gtest_comp_float_param_tester" pkg="ambs_tests"
         type="test_comp_float_param" name="gtest_comp_float_param_tester"
         args="$(arg param) $(arg tolerance)">
-        <remap from="/out_start" to="start_calc" />
-        <remap from="/out_stop" to="stop_calc" />
-        <remap from="/out_reset" to="reset_calc" />
-        <remap from="/in_done" to="calc_done" />
-        <remap from="/out_float" to="calc_float" />
-        <remap from="/in_comparison" to="calc_result" />
+        <remap from="out_start" to="start_calc" />
+        <remap from="out_stop" to="stop_calc" />
+        <remap from="out_reset" to="reset_calc" />
+        <remap from="in_done" to="calc_done" />
+        <remap from="out_float" to="calc_float" />
+        <remap from="in_comparison" to="calc_result" />
     </test>
 
     </group>

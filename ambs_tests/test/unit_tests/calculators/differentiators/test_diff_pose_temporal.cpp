@@ -15,13 +15,13 @@ class TestDiffPoseTemporal : public testing::Test
 public:
   TestDiffPoseTemporal() {}
 
-  const std::string START_ = "/out_start";
-  const std::string STOP_ = "/out_stop";
-  const std::string RESET_ = "/out_reset";
-  const std::string DONE_ = "/in_done";
-  const std::string POSE_ = "/out_pose";
-  const std::string TRANSLATION_ = "/in_diff_position";
-  const std::string ORIENTATION_ = "/in_diff_orientation";
+  const std::string START_ = "out_start";
+  const std::string STOP_ = "out_stop";
+  const std::string RESET_ = "out_reset";
+  const std::string DONE_ = "in_done";
+  const std::string POSE_ = "out_pose";
+  const std::string TRANSLATION_ = "in_diff_position";
+  const std::string ORIENTATION_ = "in_diff_orientation";
   const double response_time_ = 0.2;
   const double spawn_time_ = 2;
 

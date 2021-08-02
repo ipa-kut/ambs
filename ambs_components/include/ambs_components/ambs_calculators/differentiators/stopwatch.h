@@ -33,7 +33,7 @@ private:
   ros::NodeHandle nh_;
   ambs_base::AMBSTemplatedInterface<std_msgs::Float64> float_interface_;
   std_msgs::Float64 result_msg_;
-  const std::string OUT_FLOAT_ = "/out_float";  ///< Output float topic
+  const std::string OUT_FLOAT_ = "out_float";  ///< Output float topic
   ambs_loggers::DebugLogger debug_logger_;
 };
 

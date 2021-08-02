@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <launch>
     <group ns="ambs">
 
@@ -11,6 +12,9 @@
 
     <node pkg="nodelet" type="nodelet" name="test_odom_interpreter"
         args="load ambs_interpreters/OdomInterpreterNodelet base_nodelet_manager">
+        <remap from="test_odom_interpreter/odom" to="/cob/odom" />
+        <remap from="test_odom_interpreter/pose" to="data/interpreter/robot/pose" />
+        <remap from="test_odom_interpreter/twist_linear_x" to="data/interpreter/robot/twist_linear_x" />
     </node>
 
     </group>

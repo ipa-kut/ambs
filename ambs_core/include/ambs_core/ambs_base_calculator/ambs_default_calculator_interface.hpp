@@ -29,10 +29,10 @@ public:
   void initDefaultInterface(ros::NodeHandle nh, std::string node_name);
 
 private:
-  const std::string START_ = "/in_start"; ///< The START port
-  const std::string STOP_ = "/in_stop"; ///< The STOP port
-  const std::string RESET_ = "/in_reset"; ///< The RESET port
-  const std::string DONE_ = "/out_done"; ///< The DONE port
+  const std::string START_ = "in_start"; ///< The START port
+  const std::string STOP_ = "in_stop"; ///< The STOP port
+  const std::string RESET_ = "in_reset"; ///< The RESET port
+  const std::string DONE_ = "out_done"; ///< The DONE port
   const std::vector<std::string> default_inputs_{START_, STOP_, RESET_};
   const std::vector<std::string> default_outputs_{DONE_};
 };
