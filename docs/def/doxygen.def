@@ -632,7 +632,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'event';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '61';
+      sec-mem-desc-line = '62';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -641,7 +641,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a4b4b82770c8ec00850f56bde466ff543';
-        sec-mem-ref-line = '222';
+        sec-mem-ref-line = '224';
         sec-mem-ref-name = 'AMBSBaseRunner::startRunner';
     };
     }; /* sec-member */
@@ -661,7 +661,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'param_name';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '60';
+      sec-mem-desc-line = '61';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Gets a specified parameter by resolving to the ambs/runners namespace.
 _EnD_oF_dEf_TeXt_;
@@ -716,7 +716,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'extended_bool_outputs';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '54';
+      sec-mem-desc-line = '55';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Actual initialisation function.
 _EnD_oF_dEf_TeXt_;
@@ -727,32 +727,32 @@ startRunner() MUST BE EXPLICITLY called to start the timer
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6ba7c018b569d85c311b2c1fbc8088bf';
-        sec-mem-ref-line = '72';
+        sec-mem-ref-line = '73';
         sec-mem-ref-name = 'AMBSBaseRunner::bool_inputs_';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a0720b9c54f3f98123c2309d844d8db29';
-        sec-mem-ref-line = '73';
+        sec-mem-ref-line = '74';
         sec-mem-ref-name = 'AMBSBaseRunner::bool_outputs_';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6d3f3a18d02e55a0751aaa7cd478b815';
-        sec-mem-ref-line = '308';
+        sec-mem-ref-line = '310';
         sec-mem-ref-name = 'AMBSBaseRunner::createLoggingFolder';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a5c5ab4f4aea23711a784f2b6c55d36b3';
-        sec-mem-ref-line = '71';
+        sec-mem-ref-line = '72';
         sec-mem-ref-name = 'AMBSBaseRunner::debug_sub_';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ac098b4c493dd4315da918784c62134d7';
-        sec-mem-ref-line = '50';
+        sec-mem-ref-line = '51';
         sec-mem-ref-name = 'AMBSBaseRunner::DEBUG_TOPIC';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1adc39894aa95dbe432cae0562681b5b1f';
-        sec-mem-ref-line = '292';
+        sec-mem-ref-line = '294';
         sec-mem-ref-name = 'AMBSBaseRunner::debugCallback';
     };
       sec-mem-referenceto = {
@@ -797,7 +797,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d70/empty__runner_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
-        sec-mem-ref-line = '50';
+        sec-mem-ref-line = '58';
         sec-mem-ref-name = 'EmptyRunner::init';
     };
       sec-mem-referencedby = {
@@ -815,92 +815,6 @@ _EnD_oF_dEf_TeXt_;
 void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'startRobot';
-      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '66';
-      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-      sec-mem-referenceto = {
-        sec-mem-ref-id = 'da/d76/ambs__boolean__interface_8hpp_1af9a09dc0577d79c0862457114706c7a3';
-        sec-mem-ref-line = '49';
-        sec-mem-ref-name = 'AMBSBooleanInterface::constructNewBoolStamped';
-    };
-      sec-mem-referenceto = {
-        sec-mem-ref-id = 'da/d1c/ambs__base__interface_8hpp_1aabf915c783f55403b189d83e619643fd';
-        sec-mem-ref-line = '181';
-        sec-mem-ref-name = 'AMBSTemplatedInterface< T >::publishMsgOnPort';
-    };
-      sec-mem-referenceto = {
-        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6625c2a4e03a55a9c34fa1bc4f19d640';
-        sec-mem-ref-line = '36';
-        sec-mem-ref-name = 'AMBSBaseRunner::signal_interface_';
-    };
-      sec-mem-referenceto = {
-        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a4c63945b6a95163d6197e88e3a27f7bd';
-        sec-mem-ref-line = '45';
-        sec-mem-ref-name = 'AMBSBaseRunner::START_ROBOT_';
-    };
-      sec-mem-referenceto = {
-        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1abe4df9f0f7103f35f7e347dd20f7af51';
-        sec-mem-ref-line = '46';
-        sec-mem-ref-name = 'AMBSBaseRunner::STOP_ROBOT_';
-    };
-      sec-mem-referencedby = {
-        sec-mem-ref-id = 'dd/dd3/test1__braking_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '54';
-        sec-mem-ref-name = 'Test1Braking::executeCB';
-    };
-    }; /* sec-member */
-    sec-member = {
-      sec-mem-kind = 'function';
-      sec-mem-id   = 'd6/daa/classambs__base_1_1AMBSBaseRunner_1a4b4b82770c8ec00850f56bde466ff543';
-      sec-mem-virt = normal;
-      sec-mem-prot = protected;
-      sec-mem-type = <<_EnD_oF_dEf_TeXt_
-void
-_EnD_oF_dEf_TeXt_;
-      sec-mem-name = 'startRunner';
-      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '62';
-      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-Starts the timer thread. MUST BE EXPLICITLY CALLED.
-_EnD_oF_dEf_TeXt_;
-      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-      sec-mem-referenceto = {
-        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ab90e87f4774e82d8f97062cdbc6978fc';
-        sec-mem-ref-line = '70';
-        sec-mem-ref-name = 'AMBSBaseRunner::execute_timer_';
-    };
-      sec-mem-referenceto = {
-        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a1300297c252ff1dc5ceea58a274d4db5';
-        sec-mem-ref-line = '32';
-        sec-mem-ref-name = 'AMBSBaseRunner::nh_';
-    };
-      sec-mem-referencedby = {
-        sec-mem-ref-id = 'd6/d70/empty__runner_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
-        sec-mem-ref-line = '50';
-        sec-mem-ref-name = 'EmptyRunner::init';
-    };
-      sec-mem-referencedby = {
-        sec-mem-ref-id = 'dd/dd3/test1__braking_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
-        sec-mem-ref-line = '112';
-        sec-mem-ref-name = 'Test1Braking::init';
-    };
-    }; /* sec-member */
-    sec-member = {
-      sec-mem-kind = 'function';
-      sec-mem-id   = 'd6/daa/classambs__base_1_1AMBSBaseRunner_1a574496e1966eec1bdd39a5bab7f44117';
-      sec-mem-virt = normal;
-      sec-mem-prot = protected;
-      sec-mem-type = <<_EnD_oF_dEf_TeXt_
-void
-_EnD_oF_dEf_TeXt_;
-      sec-mem-name = 'stopRobot';
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
       sec-mem-desc-line = '67';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
@@ -926,12 +840,98 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a4c63945b6a95163d6197e88e3a27f7bd';
-        sec-mem-ref-line = '45';
+        sec-mem-ref-line = '46';
         sec-mem-ref-name = 'AMBSBaseRunner::START_ROBOT_';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1abe4df9f0f7103f35f7e347dd20f7af51';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'AMBSBaseRunner::STOP_ROBOT_';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'dd/dd3/test1__braking_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '54';
+        sec-mem-ref-name = 'Test1Braking::executeCB';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd6/daa/classambs__base_1_1AMBSBaseRunner_1a4b4b82770c8ec00850f56bde466ff543';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'startRunner';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
+      sec-mem-desc-line = '63';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Starts the timer thread. MUST BE EXPLICITLY CALLED.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ab90e87f4774e82d8f97062cdbc6978fc';
+        sec-mem-ref-line = '71';
+        sec-mem-ref-name = 'AMBSBaseRunner::execute_timer_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a1300297c252ff1dc5ceea58a274d4db5';
+        sec-mem-ref-line = '32';
+        sec-mem-ref-name = 'AMBSBaseRunner::nh_';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd6/d70/empty__runner_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '58';
+        sec-mem-ref-name = 'EmptyRunner::init';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'dd/dd3/test1__braking_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        sec-mem-ref-line = '112';
+        sec-mem-ref-name = 'Test1Braking::init';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd6/daa/classambs__base_1_1AMBSBaseRunner_1a574496e1966eec1bdd39a5bab7f44117';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'stopRobot';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
+      sec-mem-desc-line = '68';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d76/ambs__boolean__interface_8hpp_1af9a09dc0577d79c0862457114706c7a3';
+        sec-mem-ref-line = '49';
+        sec-mem-ref-name = 'AMBSBooleanInterface::constructNewBoolStamped';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d1c/ambs__base__interface_8hpp_1aabf915c783f55403b189d83e619643fd';
+        sec-mem-ref-line = '181';
+        sec-mem-ref-name = 'AMBSTemplatedInterface< T >::publishMsgOnPort';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6625c2a4e03a55a9c34fa1bc4f19d640';
+        sec-mem-ref-line = '36';
+        sec-mem-ref-name = 'AMBSBaseRunner::signal_interface_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a4c63945b6a95163d6197e88e3a27f7bd';
         sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'AMBSBaseRunner::START_ROBOT_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1abe4df9f0f7103f35f7e347dd20f7af51';
+        sec-mem-ref-line = '47';
         sec-mem-ref-name = 'AMBSBaseRunner::STOP_ROBOT_';
     };
       sec-mem-referencedby = {
@@ -949,6 +949,49 @@ _EnD_oF_dEf_TeXt_;
 void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'testCompleted';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
+      sec-mem-desc-line = '66';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Publish test results.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d76/ambs__boolean__interface_8hpp_1af9a09dc0577d79c0862457114706c7a3';
+        sec-mem-ref-line = '49';
+        sec-mem-ref-name = 'AMBSBooleanInterface::constructNewBoolStamped';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d1c/ambs__base__interface_8hpp_1aabf915c783f55403b189d83e619643fd';
+        sec-mem-ref-line = '181';
+        sec-mem-ref-name = 'AMBSTemplatedInterface< T >::publishMsgOnPort';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6625c2a4e03a55a9c34fa1bc4f19d640';
+        sec-mem-ref-line = '36';
+        sec-mem-ref-name = 'AMBSBaseRunner::signal_interface_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ac61767211902f2e6474299e7543fba46';
+        sec-mem-ref-line = '48';
+        sec-mem-ref-name = 'AMBSBaseRunner::TEST_COMPLETED_';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a911a471d55770719e68bebd652685255';
+        sec-mem-ref-line = '241';
+        sec-mem-ref-name = 'AMBSBaseRunner::testFailed';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd6/daa/classambs__base_1_1AMBSBaseRunner_1a911a471d55770719e68bebd652685255';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'testFailed';
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
       sec-mem-desc-line = '65';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
@@ -973,25 +1016,35 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-name = 'AMBSBaseRunner::signal_interface_';
     };
       sec-mem-referenceto = {
-        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ac61767211902f2e6474299e7543fba46';
-        sec-mem-ref-line = '47';
-        sec-mem-ref-name = 'AMBSBaseRunner::TEST_COMPLETED_';
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a3b96c2031d453424957963e4d4825a8a';
+        sec-mem-ref-line = '50';
+        sec-mem-ref-name = 'AMBSBaseRunner::TEST_FAILED_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a11697a4bb55728ca215a948b71de95db';
+        sec-mem-ref-line = '49';
+        sec-mem-ref-name = 'AMBSBaseRunner::TEST_SUCCEEDED_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ad8770edaeff5709344d43ecc25d59818';
+        sec-mem-ref-line = '251';
+        sec-mem-ref-name = 'AMBSBaseRunner::testCompleted';
     };
       sec-mem-referencedby = {
-        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a911a471d55770719e68bebd652685255';
-        sec-mem-ref-line = '239';
-        sec-mem-ref-name = 'AMBSBaseRunner::testFailed';
+        sec-mem-ref-id = 'dd/dd3/test1__braking_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '54';
+        sec-mem-ref-name = 'Test1Braking::executeCB';
     };
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'd6/daa/classambs__base_1_1AMBSBaseRunner_1a911a471d55770719e68bebd652685255';
+      sec-mem-id   = 'd6/daa/classambs__base_1_1AMBSBaseRunner_1a4d711578fec3cad592d7f66c5419bd50';
       sec-mem-virt = normal;
       sec-mem-prot = protected;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
 void
 _EnD_oF_dEf_TeXt_;
-      sec-mem-name = 'testFailed';
+      sec-mem-name = 'testSucceeded';
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
       sec-mem-desc-line = '64';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
@@ -1017,65 +1070,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a3b96c2031d453424957963e4d4825a8a';
-        sec-mem-ref-line = '49';
+        sec-mem-ref-line = '50';
         sec-mem-ref-name = 'AMBSBaseRunner::TEST_FAILED_';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a11697a4bb55728ca215a948b71de95db';
-        sec-mem-ref-line = '48';
-        sec-mem-ref-name = 'AMBSBaseRunner::TEST_SUCCEEDED_';
-    };
-      sec-mem-referenceto = {
-        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ad8770edaeff5709344d43ecc25d59818';
-        sec-mem-ref-line = '249';
-        sec-mem-ref-name = 'AMBSBaseRunner::testCompleted';
-    };
-      sec-mem-referencedby = {
-        sec-mem-ref-id = 'dd/dd3/test1__braking_8h_1acc239077cecc1069d9306ceda27a8e88';
-        sec-mem-ref-line = '54';
-        sec-mem-ref-name = 'Test1Braking::executeCB';
-    };
-    }; /* sec-member */
-    sec-member = {
-      sec-mem-kind = 'function';
-      sec-mem-id   = 'd6/daa/classambs__base_1_1AMBSBaseRunner_1a4d711578fec3cad592d7f66c5419bd50';
-      sec-mem-virt = normal;
-      sec-mem-prot = protected;
-      sec-mem-type = <<_EnD_oF_dEf_TeXt_
-void
-_EnD_oF_dEf_TeXt_;
-      sec-mem-name = 'testSucceeded';
-      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '63';
-      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-Publish test results.
-_EnD_oF_dEf_TeXt_;
-      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-      sec-mem-referenceto = {
-        sec-mem-ref-id = 'da/d76/ambs__boolean__interface_8hpp_1af9a09dc0577d79c0862457114706c7a3';
         sec-mem-ref-line = '49';
-        sec-mem-ref-name = 'AMBSBooleanInterface::constructNewBoolStamped';
-    };
-      sec-mem-referenceto = {
-        sec-mem-ref-id = 'da/d1c/ambs__base__interface_8hpp_1aabf915c783f55403b189d83e619643fd';
-        sec-mem-ref-line = '181';
-        sec-mem-ref-name = 'AMBSTemplatedInterface< T >::publishMsgOnPort';
-    };
-      sec-mem-referenceto = {
-        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6625c2a4e03a55a9c34fa1bc4f19d640';
-        sec-mem-ref-line = '36';
-        sec-mem-ref-name = 'AMBSBaseRunner::signal_interface_';
-    };
-      sec-mem-referenceto = {
-        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a3b96c2031d453424957963e4d4825a8a';
-        sec-mem-ref-line = '49';
-        sec-mem-ref-name = 'AMBSBaseRunner::TEST_FAILED_';
-    };
-      sec-mem-referenceto = {
-        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a11697a4bb55728ca215a948b71de95db';
-        sec-mem-ref-line = '48';
         sec-mem-ref-name = 'AMBSBaseRunner::TEST_SUCCEEDED_';
     };
       sec-mem-referencedby = {
@@ -1112,7 +1112,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'rate';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '58';
+      sec-mem-desc-line = '59';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Returns the first port in list that has a true message, or if timer expires.
 _EnD_oF_dEf_TeXt_;
@@ -1166,7 +1166,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'rate';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '59';
+      sec-mem-desc-line = '60';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Returns the first port in list that has a false message, or if timer expires.
 _EnD_oF_dEf_TeXt_;
@@ -1197,7 +1197,7 @@ ambs_msgs::BoolStamped
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'waitForReset';
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '53';
+      sec-mem-desc-line = '54';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Wait for TRUE on the RESET port.
 _EnD_oF_dEf_TeXt_;
@@ -1245,7 +1245,7 @@ ambs_msgs::BoolStamped
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'waitForStart';
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '52';
+      sec-mem-desc-line = '53';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Wait for TRUE on the START port.
 _EnD_oF_dEf_TeXt_;
@@ -1299,7 +1299,7 @@ _EnD_oF_dEf_TeXt_;
 = "/ambs/debug_messages"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '50';
+      sec-mem-desc-line = '51';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1308,7 +1308,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '120';
         sec-mem-ref-name = 'AMBSBaseRunner::initialiseBaseRunner';
     };
     }; /* sec-member */
@@ -1331,17 +1331,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6d3f3a18d02e55a0751aaa7cd478b815';
-        sec-mem-ref-line = '308';
+        sec-mem-ref-line = '310';
         sec-mem-ref-name = 'AMBSBaseRunner::createLoggingFolder';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1adc39894aa95dbe432cae0562681b5b1f';
-        sec-mem-ref-line = '292';
+        sec-mem-ref-line = '294';
         sec-mem-ref-name = 'AMBSBaseRunner::debugCallback';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '120';
         sec-mem-ref-name = 'AMBSBaseRunner::initialiseBaseRunner';
     };
     }; /* sec-member */
@@ -1364,7 +1364,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '120';
         sec-mem-ref-name = 'AMBSBaseRunner::initialiseBaseRunner';
     };
     }; /* sec-member */
@@ -1387,17 +1387,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6d3f3a18d02e55a0751aaa7cd478b815';
-        sec-mem-ref-line = '308';
+        sec-mem-ref-line = '310';
         sec-mem-ref-name = 'AMBSBaseRunner::createLoggingFolder';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ab677e11cb7da0bae588e0bf9afa10c43';
-        sec-mem-ref-line = '342';
+        sec-mem-ref-line = '344';
         sec-mem-ref-name = 'AMBSBaseRunner::getResolvedParam';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d70/empty__runner_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
-        sec-mem-ref-line = '50';
+        sec-mem-ref-line = '58';
         sec-mem-ref-name = 'EmptyRunner::init';
     };
       sec-mem-referencedby = {
@@ -1407,12 +1407,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '120';
         sec-mem-ref-name = 'AMBSBaseRunner::initialiseBaseRunner';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a4b4b82770c8ec00850f56bde466ff543';
-        sec-mem-ref-line = '222';
+        sec-mem-ref-line = '224';
         sec-mem-ref-name = 'AMBSBaseRunner::startRunner';
     };
     }; /* sec-member */
@@ -1435,8 +1435,13 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6d3f3a18d02e55a0751aaa7cd478b815';
-        sec-mem-ref-line = '308';
+        sec-mem-ref-line = '310';
         sec-mem-ref-name = 'AMBSBaseRunner::createLoggingFolder';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd6/d70/empty__runner_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'EmptyRunner::executeCB';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'dd/dd3/test1__braking_8h_1acc239077cecc1069d9306ceda27a8e88';
@@ -1445,12 +1450,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ab677e11cb7da0bae588e0bf9afa10c43';
-        sec-mem-ref-line = '342';
+        sec-mem-ref-line = '344';
         sec-mem-ref-name = 'AMBSBaseRunner::getResolvedParam';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d70/empty__runner_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
-        sec-mem-ref-line = '50';
+        sec-mem-ref-line = '58';
         sec-mem-ref-name = 'EmptyRunner::init';
     };
       sec-mem-referencedby = {
@@ -1460,17 +1465,17 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '120';
         sec-mem-ref-name = 'AMBSBaseRunner::initialiseBaseRunner';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a9daeb45ab1c8723c550216193bc640d4';
-        sec-mem-ref-line = '102';
+        sec-mem-ref-line = '104';
         sec-mem-ref-name = 'AMBSBaseRunner::waitForReset';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ad7f2492738b8b944ceea50f2eba2682c';
-        sec-mem-ref-line = '89';
+        sec-mem-ref-line = '91';
         sec-mem-ref-name = 'AMBSBaseRunner::waitForStart';
     };
     }; /* sec-member */
@@ -1496,7 +1501,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6d3f3a18d02e55a0751aaa7cd478b815';
-        sec-mem-ref-line = '308';
+        sec-mem-ref-line = '310';
         sec-mem-ref-name = 'AMBSBaseRunner::createLoggingFolder';
     };
     }; /* sec-member */
@@ -1522,7 +1527,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '120';
         sec-mem-ref-name = 'AMBSBaseRunner::initialiseBaseRunner';
     };
     }; /* sec-member */
@@ -1548,7 +1553,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '120';
         sec-mem-ref-name = 'AMBSBaseRunner::initialiseBaseRunner';
     };
     }; /* sec-member */
@@ -1574,7 +1579,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a9daeb45ab1c8723c550216193bc640d4';
-        sec-mem-ref-line = '102';
+        sec-mem-ref-line = '104';
         sec-mem-ref-name = 'AMBSBaseRunner::waitForReset';
     };
     }; /* sec-member */
@@ -1599,8 +1604,13 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd6/d70/empty__runner_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'EmptyRunner::executeCB';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ad7f2492738b8b944ceea50f2eba2682c';
-        sec-mem-ref-line = '89';
+        sec-mem-ref-line = '91';
         sec-mem-ref-name = 'AMBSBaseRunner::waitForStart';
     };
     }; /* sec-member */
@@ -1622,58 +1632,63 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd6/d70/empty__runner_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'EmptyRunner::executeCB';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'dd/dd3/test1__braking_8h_1acc239077cecc1069d9306ceda27a8e88';
         sec-mem-ref-line = '54';
         sec-mem-ref-name = 'Test1Braking::executeCB';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '120';
         sec-mem-ref-name = 'AMBSBaseRunner::initialiseBaseRunner';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a1c7c141283496076d1689b09c128f390';
-        sec-mem-ref-line = '254';
+        sec-mem-ref-line = '256';
         sec-mem-ref-name = 'AMBSBaseRunner::startRobot';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a574496e1966eec1bdd39a5bab7f44117';
-        sec-mem-ref-line = '260';
+        sec-mem-ref-line = '262';
         sec-mem-ref-name = 'AMBSBaseRunner::stopRobot';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ad8770edaeff5709344d43ecc25d59818';
-        sec-mem-ref-line = '249';
+        sec-mem-ref-line = '251';
         sec-mem-ref-name = 'AMBSBaseRunner::testCompleted';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a911a471d55770719e68bebd652685255';
-        sec-mem-ref-line = '239';
+        sec-mem-ref-line = '241';
         sec-mem-ref-name = 'AMBSBaseRunner::testFailed';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a4d711578fec3cad592d7f66c5419bd50';
-        sec-mem-ref-line = '230';
+        sec-mem-ref-line = '232';
         sec-mem-ref-name = 'AMBSBaseRunner::testSucceeded';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1aaa1d167d92a6a76b7e15e89c46808a0b';
-        sec-mem-ref-line = '170';
+        sec-mem-ref-line = '172';
         sec-mem-ref-name = 'AMBSBaseRunner::timedLoopFallbackOnPorts';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1abb5bd2798f3e0e6535fe8178525a9d22';
-        sec-mem-ref-line = '198';
+        sec-mem-ref-line = '200';
         sec-mem-ref-name = 'AMBSBaseRunner::timedLoopSequenceOnPorts';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a9daeb45ab1c8723c550216193bc640d4';
-        sec-mem-ref-line = '102';
+        sec-mem-ref-line = '104';
         sec-mem-ref-name = 'AMBSBaseRunner::waitForReset';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ad7f2492738b8b944ceea50f2eba2682c';
-        sec-mem-ref-line = '89';
+        sec-mem-ref-line = '91';
         sec-mem-ref-name = 'AMBSBaseRunner::waitForStart';
     };
     }; /* sec-member */
@@ -1690,7 +1705,7 @@ _EnD_oF_dEf_TeXt_;
 = "out_start_robot"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '45';
+      sec-mem-desc-line = '46';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1699,13 +1714,39 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a1c7c141283496076d1689b09c128f390';
-        sec-mem-ref-line = '254';
+        sec-mem-ref-line = '256';
         sec-mem-ref-name = 'AMBSBaseRunner::startRobot';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a574496e1966eec1bdd39a5bab7f44117';
-        sec-mem-ref-line = '260';
+        sec-mem-ref-line = '262';
         sec-mem-ref-name = 'AMBSBaseRunner::stopRobot';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd6/daa/classambs__base_1_1AMBSBaseRunner_1a70a8e02d5807dfe0e8ef2698451f35a0';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'START_ROSBAG';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "out_start_rosbag"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
+      sec-mem-desc-line = '44';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd6/d70/empty__runner_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'EmptyRunner::executeCB';
     };
     }; /* sec-member */
     sec-member = {
@@ -1730,7 +1771,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ad7f2492738b8b944ceea50f2eba2682c';
-        sec-mem-ref-line = '89';
+        sec-mem-ref-line = '91';
         sec-mem-ref-name = 'AMBSBaseRunner::waitForStart';
     };
     }; /* sec-member */
@@ -1747,7 +1788,7 @@ _EnD_oF_dEf_TeXt_;
 = "out_stop_robot"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '46';
+      sec-mem-desc-line = '47';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1756,12 +1797,12 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a1c7c141283496076d1689b09c128f390';
-        sec-mem-ref-line = '254';
+        sec-mem-ref-line = '256';
         sec-mem-ref-name = 'AMBSBaseRunner::startRobot';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a574496e1966eec1bdd39a5bab7f44117';
-        sec-mem-ref-line = '260';
+        sec-mem-ref-line = '262';
         sec-mem-ref-name = 'AMBSBaseRunner::stopRobot';
     };
     }; /* sec-member */
@@ -1778,7 +1819,7 @@ _EnD_oF_dEf_TeXt_;
 = "out_test_completed"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '47';
+      sec-mem-desc-line = '48';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1787,7 +1828,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ad8770edaeff5709344d43ecc25d59818';
-        sec-mem-ref-line = '249';
+        sec-mem-ref-line = '251';
         sec-mem-ref-name = 'AMBSBaseRunner::testCompleted';
     };
     }; /* sec-member */
@@ -1804,7 +1845,7 @@ _EnD_oF_dEf_TeXt_;
 = "out_test_failed"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '49';
+      sec-mem-desc-line = '50';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1813,12 +1854,12 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a911a471d55770719e68bebd652685255';
-        sec-mem-ref-line = '239';
+        sec-mem-ref-line = '241';
         sec-mem-ref-name = 'AMBSBaseRunner::testFailed';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a4d711578fec3cad592d7f66c5419bd50';
-        sec-mem-ref-line = '230';
+        sec-mem-ref-line = '232';
         sec-mem-ref-name = 'AMBSBaseRunner::testSucceeded';
     };
     }; /* sec-member */
@@ -1835,7 +1876,7 @@ _EnD_oF_dEf_TeXt_;
 = "out_test_succeeded"
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '48';
+      sec-mem-desc-line = '49';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1844,12 +1885,12 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a911a471d55770719e68bebd652685255';
-        sec-mem-ref-line = '239';
+        sec-mem-ref-line = '241';
         sec-mem-ref-name = 'AMBSBaseRunner::testFailed';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a4d711578fec3cad592d7f66c5419bd50';
-        sec-mem-ref-line = '230';
+        sec-mem-ref-line = '232';
         sec-mem-ref-name = 'AMBSBaseRunner::testSucceeded';
     };
     }; /* sec-member */
@@ -1872,7 +1913,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'path';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '76';
+      sec-mem-desc-line = '78';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Counts the number of subdirectories in a path.
 _EnD_oF_dEf_TeXt_;
@@ -1882,7 +1923,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6d3f3a18d02e55a0751aaa7cd478b815';
-        sec-mem-ref-line = '308';
+        sec-mem-ref-line = '310';
         sec-mem-ref-name = 'AMBSBaseRunner::createLoggingFolder';
     };
     }; /* sec-member */
@@ -1902,7 +1943,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'path';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '75';
+      sec-mem-desc-line = '77';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Check if param path exists, create it otherwise, then create next logging folder.
 _EnD_oF_dEf_TeXt_;
@@ -1912,7 +1953,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1af9fce1b0f9e44464e1616bde818ddf62';
-        sec-mem-ref-line = '271';
+        sec-mem-ref-line = '273';
         sec-mem-ref-name = 'AMBSBaseRunner::countSubDirectories';
     };
       sec-mem-referenceto = {
@@ -1937,7 +1978,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '120';
         sec-mem-ref-name = 'AMBSBaseRunner::initialiseBaseRunner';
     };
     }; /* sec-member */
@@ -1957,7 +1998,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'msg';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '77';
+      sec-mem-desc-line = '79';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Callback function for debug topic. Log all messages to file in test folder. Has
 a globally resolved constant topic name.
@@ -1972,7 +2013,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '120';
         sec-mem-ref-name = 'AMBSBaseRunner::initialiseBaseRunner';
     };
     }; /* sec-member */
@@ -1992,7 +2033,7 @@ _EnD_oF_dEf_TeXt_;
 {START_TEST_, RESET_TEST_, ROSBAG_BEGAN_}
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '72';
+      sec-mem-desc-line = '73';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2001,7 +2042,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '120';
         sec-mem-ref-name = 'AMBSBaseRunner::initialiseBaseRunner';
     };
     }; /* sec-member */
@@ -2015,10 +2056,11 @@ std::vector< std::string >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'bool_outputs_';
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
-{START_ROBOT_, STOP_ROBOT_, TEST_COMPLETED_, TEST_SUCCEEDED_, TEST_FAILED_}
+{START_ROBOT_, STOP_ROBOT_, START_ROSBAG,
+        TEST_COMPLETED_, TEST_SUCCEEDED_, TEST_FAILED_}
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '73';
+      sec-mem-desc-line = '74';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2027,7 +2069,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '120';
         sec-mem-ref-name = 'AMBSBaseRunner::initialiseBaseRunner';
     };
     }; /* sec-member */
@@ -2041,7 +2083,7 @@ ros::Subscriber
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'debug_sub_';
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '71';
+      sec-mem-desc-line = '72';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2050,7 +2092,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '120';
         sec-mem-ref-name = 'AMBSBaseRunner::initialiseBaseRunner';
     };
     }; /* sec-member */
@@ -2064,7 +2106,7 @@ ros::Timer
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'execute_timer_';
       sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_runner/ambs_base_runner.h';
-      sec-mem-desc-line = '70';
+      sec-mem-desc-line = '71';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2073,7 +2115,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a4b4b82770c8ec00850f56bde466ff543';
-        sec-mem-ref-line = '222';
+        sec-mem-ref-line = '224';
         sec-mem-ref-name = 'AMBSBaseRunner::startRunner';
     };
     }; /* sec-member */
@@ -2284,33 +2326,38 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-name = 'CompFloatParam::executeCB';
     };
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd6/d70/empty__runner_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'EmptyRunner::executeCB';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a45924180e9991c17c1ec7264500c1878';
         sec-mem-ref-line = '82';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::publishDone';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a1c7c141283496076d1689b09c128f390';
-        sec-mem-ref-line = '254';
+        sec-mem-ref-line = '256';
         sec-mem-ref-name = 'AMBSBaseRunner::startRobot';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a574496e1966eec1bdd39a5bab7f44117';
-        sec-mem-ref-line = '260';
+        sec-mem-ref-line = '262';
         sec-mem-ref-name = 'AMBSBaseRunner::stopRobot';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ad8770edaeff5709344d43ecc25d59818';
-        sec-mem-ref-line = '249';
+        sec-mem-ref-line = '251';
         sec-mem-ref-name = 'AMBSBaseRunner::testCompleted';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a911a471d55770719e68bebd652685255';
-        sec-mem-ref-line = '239';
+        sec-mem-ref-line = '241';
         sec-mem-ref-name = 'AMBSBaseRunner::testFailed';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a4d711578fec3cad592d7f66c5419bd50';
-        sec-mem-ref-line = '230';
+        sec-mem-ref-line = '232';
         sec-mem-ref-name = 'AMBSBaseRunner::testSucceeded';
     };
     }; /* sec-member */
@@ -2354,13 +2401,18 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-name = 'AMBSBooleanInterface::wait_loop_rate';
     };
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd6/d70/empty__runner_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'EmptyRunner::executeCB';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'd2/dcb/ambs__default__calculator__interface_8hpp_1a9daeb45ab1c8723c550216193bc640d4';
         sec-mem-ref-line = '69';
         sec-mem-ref-name = 'AMBSDefaultCalculatorInterface::waitForReset';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a9daeb45ab1c8723c550216193bc640d4';
-        sec-mem-ref-line = '102';
+        sec-mem-ref-line = '104';
         sec-mem-ref-name = 'AMBSBaseRunner::waitForReset';
     };
       sec-mem-referencedby = {
@@ -2370,7 +2422,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ad7f2492738b8b944ceea50f2eba2682c';
-        sec-mem-ref-line = '89';
+        sec-mem-ref-line = '91';
         sec-mem-ref-name = 'AMBSBaseRunner::waitForStart';
     };
       sec-mem-referencedby = {
@@ -3465,12 +3517,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1aaa1d167d92a6a76b7e15e89c46808a0b';
-        sec-mem-ref-line = '170';
+        sec-mem-ref-line = '172';
         sec-mem-ref-name = 'AMBSBaseRunner::timedLoopFallbackOnPorts';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1abb5bd2798f3e0e6535fe8178525a9d22';
-        sec-mem-ref-line = '198';
+        sec-mem-ref-line = '200';
         sec-mem-ref-name = 'AMBSBaseRunner::timedLoopSequenceOnPorts';
     };
     }; /* sec-member */
@@ -3573,7 +3625,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '120';
         sec-mem-ref-name = 'AMBSBaseRunner::initialiseBaseRunner';
     };
     }; /* sec-member */
@@ -3658,28 +3710,33 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-name = 'CompFloatParam::executeCB';
     };
       sec-mem-referencedby = {
+        sec-mem-ref-id = 'd6/d70/empty__runner_8h_1acc239077cecc1069d9306ceda27a8e88';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'EmptyRunner::executeCB';
+    };
+      sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a1c7c141283496076d1689b09c128f390';
-        sec-mem-ref-line = '254';
+        sec-mem-ref-line = '256';
         sec-mem-ref-name = 'AMBSBaseRunner::startRobot';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a574496e1966eec1bdd39a5bab7f44117';
-        sec-mem-ref-line = '260';
+        sec-mem-ref-line = '262';
         sec-mem-ref-name = 'AMBSBaseRunner::stopRobot';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ad8770edaeff5709344d43ecc25d59818';
-        sec-mem-ref-line = '249';
+        sec-mem-ref-line = '251';
         sec-mem-ref-name = 'AMBSBaseRunner::testCompleted';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a911a471d55770719e68bebd652685255';
-        sec-mem-ref-line = '239';
+        sec-mem-ref-line = '241';
         sec-mem-ref-name = 'AMBSBaseRunner::testFailed';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a4d711578fec3cad592d7f66c5419bd50';
-        sec-mem-ref-line = '230';
+        sec-mem-ref-line = '232';
         sec-mem-ref-name = 'AMBSBaseRunner::testSucceeded';
     };
     }; /* sec-member */
@@ -3707,7 +3764,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a9daeb45ab1c8723c550216193bc640d4';
-        sec-mem-ref-line = '102';
+        sec-mem-ref-line = '104';
         sec-mem-ref-name = 'AMBSBaseRunner::waitForReset';
     };
     }; /* sec-member */
@@ -8399,6 +8456,41 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 @param event Not used
 _EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d76/ambs__boolean__interface_8hpp_1af9a09dc0577d79c0862457114706c7a3';
+        sec-mem-ref-line = '49';
+        sec-mem-ref-name = 'AMBSBooleanInterface::constructNewBoolStamped';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a69e220bdafb7c66b63cee0187bfc8bcb';
+        sec-mem-ref-line = '33';
+        sec-mem-ref-name = 'AMBSBaseRunner::node_name_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d1c/ambs__base__interface_8hpp_1aabf915c783f55403b189d83e619643fd';
+        sec-mem-ref-line = '181';
+        sec-mem-ref-name = 'AMBSTemplatedInterface< T >::publishMsgOnPort';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ae2e2f4a203a78e052c6c27e1f69c0a87';
+        sec-mem-ref-line = '43';
+        sec-mem-ref-name = 'AMBSBaseRunner::ROSBAG_BEGAN_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a6625c2a4e03a55a9c34fa1bc4f19d640';
+        sec-mem-ref-line = '36';
+        sec-mem-ref-name = 'AMBSBaseRunner::signal_interface_';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a70a8e02d5807dfe0e8ef2698451f35a0';
+        sec-mem-ref-line = '44';
+        sec-mem-ref-name = 'AMBSBaseRunner::START_ROSBAG';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'da/d76/ambs__boolean__interface_8hpp_1a5e470849543126cf4d89bae2a635c661';
+        sec-mem-ref-line = '63';
+        sec-mem-ref-name = 'AMBSBooleanInterface::waitForTrueOnPort';
+    };
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
@@ -8429,7 +8521,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '120';
         sec-mem-ref-name = 'AMBSBaseRunner::initialiseBaseRunner';
     };
       sec-mem-referenceto = {
@@ -8444,7 +8536,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a4b4b82770c8ec00850f56bde466ff543';
-        sec-mem-ref-line = '222';
+        sec-mem-ref-line = '224';
         sec-mem-ref-name = 'AMBSBaseRunner::startRunner';
     };
     }; /* sec-member */
@@ -8470,7 +8562,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d70/empty__runner_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
-        sec-mem-ref-line = '50';
+        sec-mem-ref-line = '58';
         sec-mem-ref-name = 'EmptyRunner::init';
     };
     }; /* sec-member */
@@ -8493,7 +8585,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = 'd6/d70/empty__runner_8h_1a02fd73d861ef2e4aabb38c0c9ff82947';
-        sec-mem-ref-line = '50';
+        sec-mem-ref-line = '58';
         sec-mem-ref-name = 'EmptyRunner::init';
     };
     }; /* sec-member */
@@ -8863,37 +8955,37 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a1c7c141283496076d1689b09c128f390';
-        sec-mem-ref-line = '254';
+        sec-mem-ref-line = '256';
         sec-mem-ref-name = 'AMBSBaseRunner::startRobot';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a574496e1966eec1bdd39a5bab7f44117';
-        sec-mem-ref-line = '260';
+        sec-mem-ref-line = '262';
         sec-mem-ref-name = 'AMBSBaseRunner::stopRobot';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a911a471d55770719e68bebd652685255';
-        sec-mem-ref-line = '239';
+        sec-mem-ref-line = '241';
         sec-mem-ref-name = 'AMBSBaseRunner::testFailed';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a4d711578fec3cad592d7f66c5419bd50';
-        sec-mem-ref-line = '230';
+        sec-mem-ref-line = '232';
         sec-mem-ref-name = 'AMBSBaseRunner::testSucceeded';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1aaa1d167d92a6a76b7e15e89c46808a0b';
-        sec-mem-ref-line = '170';
+        sec-mem-ref-line = '172';
         sec-mem-ref-name = 'AMBSBaseRunner::timedLoopFallbackOnPorts';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a9daeb45ab1c8723c550216193bc640d4';
-        sec-mem-ref-line = '102';
+        sec-mem-ref-line = '104';
         sec-mem-ref-name = 'AMBSBaseRunner::waitForReset';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1ad7f2492738b8b944ceea50f2eba2682c';
-        sec-mem-ref-line = '89';
+        sec-mem-ref-line = '91';
         sec-mem-ref-name = 'AMBSBaseRunner::waitForStart';
     };
     }; /* sec-member */
@@ -8926,7 +9018,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a2ce63b7c990f2c030b6cd2afcff95624';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '120';
         sec-mem-ref-name = 'AMBSBaseRunner::initialiseBaseRunner';
     };
       sec-mem-referenceto = {
@@ -8981,7 +9073,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'd7/d82/ambs__base__runner_8h_1a4b4b82770c8ec00850f56bde466ff543';
-        sec-mem-ref-line = '222';
+        sec-mem-ref-line = '224';
         sec-mem-ref-name = 'AMBSBaseRunner::startRunner';
     };
     }; /* sec-member */
@@ -9525,6 +9617,473 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
 }; /* class */
 class = {
+  cp-id     = 'de/d0d/classloggers_1_1rosbagger_1_1Rosbagger';
+  cp-name   = 'loggers::rosbagger::Rosbagger';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'de/d0d/classloggers_1_1rosbagger_1_1Rosbagger_1ae64f0875afe3067b97ba370b354b9213';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__init__';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+self
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'self';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/loggers/rosbagger.py';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1ae64f0875afe3067b97ba370b354b9213';
+        sec-mem-ref-line = '18';
+        sec-mem-ref-name = 'Rosbagger::__init__';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1ae64f0875afe3067b97ba370b354b9213';
+        sec-mem-ref-line = '18';
+        sec-mem-ref-name = 'Rosbagger::__init__';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'de/d0d/classloggers_1_1rosbagger_1_1Rosbagger_1a5544fbb9394b5c03513982ae883baaa4';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'buildNewBoolStamped';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+self
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'self';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+data
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'data';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+True
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/loggers/rosbagger.py';
+      sec-mem-desc-line = '44';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a5544fbb9394b5c03513982ae883baaa4';
+        sec-mem-ref-line = '44';
+        sec-mem-ref-name = 'Rosbagger::buildNewBoolStamped';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a5544fbb9394b5c03513982ae883baaa4';
+        sec-mem-ref-line = '44';
+        sec-mem-ref-name = 'Rosbagger::buildNewBoolStamped';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a36032efd3fb76bdc99c51ac549db4090';
+        sec-mem-ref-line = '75';
+        sec-mem-ref-name = 'Rosbagger::main_loop';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a22085c5b2ddd4c59830c5afe8f02d45f';
+        sec-mem-ref-line = '50';
+        sec-mem-ref-name = 'Rosbagger::rosbag_begin_cb';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'de/d0d/classloggers_1_1rosbagger_1_1Rosbagger_1a36032efd3fb76bdc99c51ac549db4090';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'main_loop';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+self
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'self';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/loggers/rosbagger.py';
+      sec-mem-desc-line = '75';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a9c6c32105f3cb5864b37b20107ef393a';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'Rosbagger::_published_once';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a542de837fcadc2601e062cc73377c1ef';
+        sec-mem-ref-line = '15';
+        sec-mem-ref-name = 'BaseLogger::_rate';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1ae0a2270f7e9493c5a666f257a4b55dfd';
+        sec-mem-ref-line = '36';
+        sec-mem-ref-name = 'Rosbagger::begin_write_pub';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a5544fbb9394b5c03513982ae883baaa4';
+        sec-mem-ref-line = '44';
+        sec-mem-ref-name = 'Rosbagger::buildNewBoolStamped';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a21485ff7847dfcd1f8948bce26778114';
+        sec-mem-ref-line = '56';
+        sec-mem-ref-name = 'BaseLogger::getSafeFlag';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1ac388a7e52181fdccdf7019d1f693531c';
+        sec-mem-ref-line = '70';
+        sec-mem-ref-name = 'BaseLogger::killCommandProc';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a36032efd3fb76bdc99c51ac549db4090';
+        sec-mem-ref-line = '75';
+        sec-mem-ref-name = 'Rosbagger::main_loop';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1ab147e704484d485c7cf319dbc3eae6ad';
+        sec-mem-ref-line = '55';
+        sec-mem-ref-name = 'Rosbagger::prepare_topics';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a22085c5b2ddd4c59830c5afe8f02d45f';
+        sec-mem-ref-line = '50';
+        sec-mem-ref-name = 'Rosbagger::rosbag_begin_cb';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1ab35f2d30ed89d9e0996a55321711e9fe';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 'BaseLogger::startCommandProc';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a36032efd3fb76bdc99c51ac549db4090';
+        sec-mem-ref-line = '75';
+        sec-mem-ref-name = 'Rosbagger::main_loop';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'de/d0d/classloggers_1_1rosbagger_1_1Rosbagger_1ab147e704484d485c7cf319dbc3eae6ad';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'prepare_topics';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+self
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'self';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/loggers/rosbagger.py';
+      sec-mem-desc-line = '55';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1aa103f6cbd9e0147581f8790d8a2bcb9b';
+        sec-mem-ref-line = '27';
+        sec-mem-ref-name = 'BaseLogger::config_param';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1ade953296428d5559c706b34d12b2b531';
+        sec-mem-ref-line = '20';
+        sec-mem-ref-name = 'Rosbagger::node_name';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1ab147e704484d485c7cf319dbc3eae6ad';
+        sec-mem-ref-line = '55';
+        sec-mem-ref-name = 'Rosbagger::prepare_topics';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1ab817b527c0a98e11c41ef9ec5b4b616b';
+        sec-mem-ref-line = '32';
+        sec-mem-ref-name = 'Rosbagger::whitelist';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a36032efd3fb76bdc99c51ac549db4090';
+        sec-mem-ref-line = '75';
+        sec-mem-ref-name = 'Rosbagger::main_loop';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1ab147e704484d485c7cf319dbc3eae6ad';
+        sec-mem-ref-line = '55';
+        sec-mem-ref-name = 'Rosbagger::prepare_topics';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'de/d0d/classloggers_1_1rosbagger_1_1Rosbagger_1a22085c5b2ddd4c59830c5afe8f02d45f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'rosbag_begin_cb';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+self
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'self';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+msg
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'msg';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/loggers/rosbagger.py';
+      sec-mem-desc-line = '50';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a9c6c32105f3cb5864b37b20107ef393a';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'Rosbagger::_published_once';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1ae0a2270f7e9493c5a666f257a4b55dfd';
+        sec-mem-ref-line = '36';
+        sec-mem-ref-name = 'Rosbagger::begin_write_pub';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a5544fbb9394b5c03513982ae883baaa4';
+        sec-mem-ref-line = '44';
+        sec-mem-ref-name = 'Rosbagger::buildNewBoolStamped';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a22085c5b2ddd4c59830c5afe8f02d45f';
+        sec-mem-ref-line = '50';
+        sec-mem-ref-name = 'Rosbagger::rosbag_begin_cb';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a36032efd3fb76bdc99c51ac549db4090';
+        sec-mem-ref-line = '75';
+        sec-mem-ref-name = 'Rosbagger::main_loop';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a22085c5b2ddd4c59830c5afe8f02d45f';
+        sec-mem-ref-line = '50';
+        sec-mem-ref-name = 'Rosbagger::rosbag_begin_cb';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'de/d0d/classloggers_1_1rosbagger_1_1Rosbagger_1ae0a2270f7e9493c5a666f257a4b55dfd';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'begin_write_pub';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/loggers/rosbagger.py';
+      sec-mem-desc-line = '36';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a36032efd3fb76bdc99c51ac549db4090';
+        sec-mem-ref-line = '75';
+        sec-mem-ref-name = 'Rosbagger::main_loop';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a22085c5b2ddd4c59830c5afe8f02d45f';
+        sec-mem-ref-line = '50';
+        sec-mem-ref-name = 'Rosbagger::rosbag_begin_cb';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'de/d0d/classloggers_1_1rosbagger_1_1Rosbagger_1ade953296428d5559c706b34d12b2b531';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'node_name';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/loggers/rosbagger.py';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1ab147e704484d485c7cf319dbc3eae6ad';
+        sec-mem-ref-line = '55';
+        sec-mem-ref-name = 'Rosbagger::prepare_topics';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'de/d0d/classloggers_1_1rosbagger_1_1Rosbagger_1ab817b527c0a98e11c41ef9ec5b4b616b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'whitelist';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/loggers/rosbagger.py';
+      sec-mem-desc-line = '32';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1ab147e704484d485c7cf319dbc3eae6ad';
+        sec-mem-ref-line = '55';
+        sec-mem-ref-name = 'Rosbagger::prepare_topics';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'de/d0d/classloggers_1_1rosbagger_1_1Rosbagger_1a9c6c32105f3cb5864b37b20107ef393a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_published_once';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/loggers/rosbagger.py';
+      sec-mem-desc-line = '53';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a36032efd3fb76bdc99c51ac549db4090';
+        sec-mem-ref-line = '75';
+        sec-mem-ref-name = 'Rosbagger::main_loop';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a22085c5b2ddd4c59830c5afe8f02d45f';
+        sec-mem-ref-line = '50';
+        sec-mem-ref-name = 'Rosbagger::rosbag_begin_cb';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/loggers/rosbagger.py';
+  cp-fileline  = '17';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'Rosbagger';
+        node-link = {
+          node-link-id = 'de/d0d/classloggers_1_1rosbagger_1_1Rosbagger';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'object';
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'BaseLogger';
+        node-link = {
+          node-link-id = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger';
+        };
+        node-child = {
+          child-id = '3';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'Rosbagger';
+        node-link = {
+          node-link-id = 'de/d0d/classloggers_1_1rosbagger_1_1Rosbagger';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'object';
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'BaseLogger';
+        node-link = {
+          node-link-id = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger';
+        };
+        node-child = {
+          child-id = '3';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
   cp-id     = 'd7/d81/classnodelet_1_1Nodelet';
   cp-name   = 'nodelet::Nodelet';
   cp-ref     = {
@@ -9675,6 +10234,778 @@ _EnD_oF_dEf_TeXt_;
           child-id = '1';
           relation = public-inheritance;
         }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'dc/dd8/classobject';
+  cp-name   = 'object';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+  cp-fileline  = '13';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 3;
+        node-label = 'Rosbagger';
+        node-link = {
+          node-link-id = 'de/d0d/classloggers_1_1rosbagger_1_1Rosbagger';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'object';
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'BaseLogger';
+        node-link = {
+          node-link-id = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger';
+  cp-name   = 'python_base_classes::base_logger::BaseLogger';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'dc/dd8/classobject';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'de/d0d/classloggers_1_1rosbagger_1_1Rosbagger';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_1a14a785d26a200721609ebcb7b612bd17';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__init__';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+self
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'self';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+sub_dict
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'sub_dict';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+{}
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+result_list
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'result_list';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+[]
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+param_list
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'param_list';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+[]
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+rate
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'rate';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+100
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+      sec-mem-desc-line = '14';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a14a785d26a200721609ebcb7b612bd17';
+        sec-mem-ref-line = '14';
+        sec-mem-ref-name = 'BaseLogger::__init__';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a14a785d26a200721609ebcb7b612bd17';
+        sec-mem-ref-line = '14';
+        sec-mem-ref-name = 'BaseLogger::__init__';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_1a0f39d514d9aad0f46d0bd51abc08c63b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'callback';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+self
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'self';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+msg
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'msg';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+key
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'key';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+      sec-mem-desc-line = '53';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a0f39d514d9aad0f46d0bd51abc08c63b';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'BaseLogger::callback';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a9cbc65c7819882efeacd2a7c511ba8c1';
+        sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'BaseLogger::setSafeFlag';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a0f39d514d9aad0f46d0bd51abc08c63b';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'BaseLogger::callback';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_1a63befab73dcde6bca930f929904a07c2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getConfig';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+self
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'self';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+param_list
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'param_list';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+      sec-mem-desc-line = '74';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1aa103f6cbd9e0147581f8790d8a2bcb9b';
+        sec-mem-ref-line = '27';
+        sec-mem-ref-name = 'BaseLogger::config_param';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a63befab73dcde6bca930f929904a07c2';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'BaseLogger::getConfig';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a63befab73dcde6bca930f929904a07c2';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'BaseLogger::getConfig';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_1a21485ff7847dfcd1f8948bce26778114';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getSafeFlag';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+self
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'self';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+key
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'key';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+      sec-mem-desc-line = '56';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1ab67e522783ea6e8b77674904f7ec26dc';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'BaseLogger::_flag';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1ae79cf5c304b989bfd755eb707040073b';
+        sec-mem-ref-line = '17';
+        sec-mem-ref-name = 'BaseLogger::_input_interface';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a94d81925dd1b489031708b4e86c7416d';
+        sec-mem-ref-line = '30';
+        sec-mem-ref-name = 'BaseLogger::_locks';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a21485ff7847dfcd1f8948bce26778114';
+        sec-mem-ref-line = '56';
+        sec-mem-ref-name = 'BaseLogger::getSafeFlag';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1ac4215aa0048085ed901f54e9c8f03225';
+        sec-mem-ref-line = '39';
+        sec-mem-ref-name = 'BaseLogger::result_list';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a21485ff7847dfcd1f8948bce26778114';
+        sec-mem-ref-line = '56';
+        sec-mem-ref-name = 'BaseLogger::getSafeFlag';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a36032efd3fb76bdc99c51ac549db4090';
+        sec-mem-ref-line = '75';
+        sec-mem-ref-name = 'Rosbagger::main_loop';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_1ac388a7e52181fdccdf7019d1f693531c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'killCommandProc';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+self
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'self';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+      sec-mem-desc-line = '70';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a477a523b004a0d9025176a2332b7ef7a';
+        sec-mem-ref-line = '67';
+        sec-mem-ref-name = 'BaseLogger::command_proc';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1ac388a7e52181fdccdf7019d1f693531c';
+        sec-mem-ref-line = '70';
+        sec-mem-ref-name = 'BaseLogger::killCommandProc';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1ac388a7e52181fdccdf7019d1f693531c';
+        sec-mem-ref-line = '70';
+        sec-mem-ref-name = 'BaseLogger::killCommandProc';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a36032efd3fb76bdc99c51ac549db4090';
+        sec-mem-ref-line = '75';
+        sec-mem-ref-name = 'Rosbagger::main_loop';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_1a5c220a707c817caeb98d2d8fe74d97ef';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'logScreenFile';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+self
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'self';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+log_msg
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'log_msg';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+      sec-mem-desc-line = '83';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1aa103f6cbd9e0147581f8790d8a2bcb9b';
+        sec-mem-ref-line = '27';
+        sec-mem-ref-name = 'BaseLogger::config_param';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a5c220a707c817caeb98d2d8fe74d97ef';
+        sec-mem-ref-line = '83';
+        sec-mem-ref-name = 'BaseLogger::logScreenFile';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a5c220a707c817caeb98d2d8fe74d97ef';
+        sec-mem-ref-line = '83';
+        sec-mem-ref-name = 'BaseLogger::logScreenFile';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_1a9cbc65c7819882efeacd2a7c511ba8c1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setSafeFlag';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+self
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'self';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+key
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'key';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+value
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'value';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+      sec-mem-desc-line = '46';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1ab67e522783ea6e8b77674904f7ec26dc';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'BaseLogger::_flag';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1ae79cf5c304b989bfd755eb707040073b';
+        sec-mem-ref-line = '17';
+        sec-mem-ref-name = 'BaseLogger::_input_interface';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a94d81925dd1b489031708b4e86c7416d';
+        sec-mem-ref-line = '30';
+        sec-mem-ref-name = 'BaseLogger::_locks';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1ac4215aa0048085ed901f54e9c8f03225';
+        sec-mem-ref-line = '39';
+        sec-mem-ref-name = 'BaseLogger::result_list';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a9cbc65c7819882efeacd2a7c511ba8c1';
+        sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'BaseLogger::setSafeFlag';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a0f39d514d9aad0f46d0bd51abc08c63b';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'BaseLogger::callback';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a9cbc65c7819882efeacd2a7c511ba8c1';
+        sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'BaseLogger::setSafeFlag';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_1ab35f2d30ed89d9e0996a55321711e9fe';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'startCommandProc';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+self
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'self';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+command
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'command';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+      sec-mem-desc-line = '64';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1ab35f2d30ed89d9e0996a55321711e9fe';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 'BaseLogger::startCommandProc';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a36032efd3fb76bdc99c51ac549db4090';
+        sec-mem-ref-line = '75';
+        sec-mem-ref-name = 'Rosbagger::main_loop';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1ab35f2d30ed89d9e0996a55321711e9fe';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 'BaseLogger::startCommandProc';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_1a477a523b004a0d9025176a2332b7ef7a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'command_proc';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+      sec-mem-desc-line = '67';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1ac388a7e52181fdccdf7019d1f693531c';
+        sec-mem-ref-line = '70';
+        sec-mem-ref-name = 'BaseLogger::killCommandProc';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_1aa103f6cbd9e0147581f8790d8a2bcb9b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'config_param';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+      sec-mem-desc-line = '27';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a63befab73dcde6bca930f929904a07c2';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'BaseLogger::getConfig';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a5c220a707c817caeb98d2d8fe74d97ef';
+        sec-mem-ref-line = '83';
+        sec-mem-ref-name = 'BaseLogger::logScreenFile';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1ab147e704484d485c7cf319dbc3eae6ad';
+        sec-mem-ref-line = '55';
+        sec-mem-ref-name = 'Rosbagger::prepare_topics';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_1ac4215aa0048085ed901f54e9c8f03225';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'result_list';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+      sec-mem-desc-line = '39';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a21485ff7847dfcd1f8948bce26778114';
+        sec-mem-ref-line = '56';
+        sec-mem-ref-name = 'BaseLogger::getSafeFlag';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a9cbc65c7819882efeacd2a7c511ba8c1';
+        sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'BaseLogger::setSafeFlag';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_1a8cc260b3aa3548914a9690a6c30c2881';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_config_param';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_1ab67e522783ea6e8b77674904f7ec26dc';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_flag';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+      sec-mem-desc-line = '31';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a21485ff7847dfcd1f8948bce26778114';
+        sec-mem-ref-line = '56';
+        sec-mem-ref-name = 'BaseLogger::getSafeFlag';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a9cbc65c7819882efeacd2a7c511ba8c1';
+        sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'BaseLogger::setSafeFlag';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_1ae79cf5c304b989bfd755eb707040073b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_input_interface';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a21485ff7847dfcd1f8948bce26778114';
+        sec-mem-ref-line = '56';
+        sec-mem-ref-name = 'BaseLogger::getSafeFlag';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a9cbc65c7819882efeacd2a7c511ba8c1';
+        sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'BaseLogger::setSafeFlag';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_1a94d81925dd1b489031708b4e86c7416d';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_locks';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+      sec-mem-desc-line = '30';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a21485ff7847dfcd1f8948bce26778114';
+        sec-mem-ref-line = '56';
+        sec-mem-ref-name = 'BaseLogger::getSafeFlag';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'df/d56/base__logger_8py_1a9cbc65c7819882efeacd2a7c511ba8c1';
+        sec-mem-ref-line = '46';
+        sec-mem-ref-name = 'BaseLogger::setSafeFlag';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_1a542de837fcadc2601e062cc73377c1ef';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_rate';
+      sec-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+      sec-mem-desc-line = '15';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'd3/df6/rosbagger_8py_1a36032efd3fb76bdc99c51ac549db4090';
+        sec-mem-ref-line = '75';
+        sec-mem-ref-name = 'Rosbagger::main_loop';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+  cp-fileline  = '13';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'BaseLogger';
+        node-link = {
+          node-link-id = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'Rosbagger';
+        node-link = {
+          node-link-id = 'de/d0d/classloggers_1_1rosbagger_1_1Rosbagger';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'object';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'BaseLogger';
+        node-link = {
+          node-link-id = 'd8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'object';
       }; /* node */
 
 _EnD_oF_dEf_TeXt_;
@@ -12182,6 +13513,18 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
 }; /* file */
 file = {
+  file-id   = 'd3/df6/rosbagger_8py';
+  file-name = 'rosbagger.py';
+  file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/loggers/rosbagger.py';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
   file-id   = 'dd/ded/ambs__base__calculator_8hpp';
   file-name = 'ambs_base_calculator.hpp';
   file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_base_calculator/ambs_base_calculator.hpp';
@@ -12356,6 +13699,92 @@ _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     };
   file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/include/ambs_core/ambs_helper/helper.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'df/ddb/ambs__components_2setup_8py';
+  file-name = 'setup.py';
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'dd/dc4/namespacesetup_1a1aabac6d068eef6a7bad3fdf50a05cc8';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'd';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+=  generate_distutils_setup(
+    packages=['loggers'],
+    package_dir={'': 'src'},
+)
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/setup.py';
+      var-mem-desc-line = '6';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    };
+  file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/setup.py';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'da/d4d/ambs__core_2setup_8py';
+  file-name = 'setup.py';
+  file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/setup.py';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd8/d68/ambs__components_2src_2loggers_2____init_____8py';
+  file-name = '__init__.py';
+  file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/loggers/__init__.py';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'dc/d2f/ambs__core_2src_2python__base__classes_2____init_____8py';
+  file-name = '__init__.py';
+  file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/__init__.py';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'df/d56/base__logger_8py';
+  file-name = 'base_logger.py';
+  file-full-name  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 
@@ -13396,9 +14825,120 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   };
   namespace = {
+    ns-id   = 'da/d8b/namespaceBaseLogger';
+    ns-name = 'BaseLogger';
+  ns-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+  ns-fileline  = '9';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+@
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+ Provides base class for other loggers, mainly the rosbagger
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'dd/d2e/namespaceloggers';
+    ns-name = 'loggers';
+  ns-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/loggers/rosbagger.py';
+  ns-fileline  = '1';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'd4/d7a/namespaceloggers_1_1rosbagger';
+    ns-name = 'loggers::rosbagger';
+  ns-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/loggers/rosbagger.py';
+  ns-fileline  = '1';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
     ns-id   = 'db/dd2/namespacenodelet';
     ns-name = 'nodelet';
   ns-filename  = '[generated]';
+  ns-fileline  = '1';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'd1/dbf/namespacepython__base__classes';
+    ns-name = 'python_base_classes';
+  ns-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+  ns-fileline  = '1';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'db/daa/namespacepython__base__classes_1_1base__logger';
+    ns-name = 'python_base_classes::base_logger';
+  ns-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_core/src/python_base_classes/base_logger.py';
+  ns-fileline  = '1';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'd3/da3/namespaceRosbagger';
+    ns-name = 'Rosbagger';
+  ns-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/src/loggers/rosbagger.py';
+  ns-fileline  = '12';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+Records topics in rosbags.
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+ Whitelist is a pattern search that takes in all topics mathcing the given list.
+ Blacklist is also a pattern search that rejects topics taken from the Whitelist that match the list.
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'dd/dc4/namespacesetup';
+    ns-name = 'setup';
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'dd/dc4/namespacesetup_1a1aabac6d068eef6a7bad3fdf50a05cc8';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'd';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+=  generate_distutils_setup(
+    packages=['loggers'],
+    package_dir={'': 'src'},
+)
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/setup.py';
+      var-mem-desc-line = '6';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    };
+  ns-filename  = '/home/tejas/workspaces/araig_ws/src/ambs/ambs_components/setup.py';
   ns-fileline  = '1';
   ns-briefdesc = <<_EnD_oF_dEf_TeXt_
 

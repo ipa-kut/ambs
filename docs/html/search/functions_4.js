@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['getportmsg_328',['getPortMsg',['../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1',1,'ambs_base::AMBSTemplatedInterface']]],
-  ['getresolvedparam_329',['getResolvedParam',['../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ab677e11cb7da0bae588e0bf9afa10c43',1,'ambs_base::AMBSBaseCalculator::getResolvedParam()'],['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#ab677e11cb7da0bae588e0bf9afa10c43',1,'ambs_base::AMBSBaseRunner::getResolvedParam()']]],
-  ['getstartmsg_330',['getStartMsg',['../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#abe5963a4394632431dd1fb08ea80b08b',1,'ambs_base::AMBSDefaultCalculatorInterface']]],
-  ['getstopmsg_331',['getStopMsg',['../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#afcff3ff7d027c1515f6f2757131126c5',1,'ambs_base::AMBSDefaultCalculatorInterface']]],
-  ['gettranslationdifffromposes_332',['getTranslationDiffFromPoses',['../d2/d9b/namespaceambs__helper.html#a6f280a22d46d2ffb8d296cd972e9fa9b',1,'ambs_helper']]],
-  ['getyawdegreesfromquaternion_333',['getYawDegreesFromQuaternion',['../d2/d9b/namespaceambs__helper.html#a1d47d005dacfd358210b9ff150304f33',1,'ambs_helper']]],
-  ['getyawdifffromposes_334',['getYawDiffFromPoses',['../d2/d9b/namespaceambs__helper.html#a0e6c5a124bfe1e7b1886fddac2cc7b58',1,'ambs_helper']]]
+  ['debugcallback_371',['debugCallback',['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#adc39894aa95dbe432cae0562681b5b1f',1,'ambs_base::AMBSBaseRunner']]],
+  ['debuglogger_372',['DebugLogger',['../d4/d68/classambs__loggers_1_1DebugLogger.html#a9e5111f6254b0f5feb9ba0df0fee42c6',1,'ambs_loggers::DebugLogger']]],
+  ['difffloattemporal_373',['DiffFloatTemporal',['../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#aeae7de79d4119fd8f1653df49f929ccd',1,'ambs_calculators::DiffFloatTemporal::DiffFloatTemporal()'],['../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#a27360dd67614385f34bac0c80a4b62d1',1,'ambs_calculators::DiffFloatTemporal::DiffFloatTemporal(ros::NodeHandle nh, std::string node_name)']]],
+  ['difffloattemporalnodelet_374',['DiffFloatTemporalNodelet',['../db/de1/classambs__calculators_1_1DiffFloatTemporalNodelet.html#ac46e5d5b87a5fa16f9f7dc643e530c05',1,'ambs_calculators::DiffFloatTemporalNodelet']]],
+  ['diffposetemporal_375',['DiffPoseTemporal',['../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#abc911177e5354a1ad853f3b887a6c4f3',1,'ambs_calculators::DiffPoseTemporal::DiffPoseTemporal()'],['../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a1c71d1bde958c525b8b2200c2536dc25',1,'ambs_calculators::DiffPoseTemporal::DiffPoseTemporal(ros::NodeHandle nh, std::string node_name)']]],
+  ['diffposetemporalnodelet_376',['DiffPoseTemporalNodelet',['../df/d4e/classambs__calculators_1_1DiffPoseTemporalNodelet.html#a74f82af01f88ccc1fb957cd0556ac086',1,'ambs_calculators::DiffPoseTemporalNodelet']]]
 ];

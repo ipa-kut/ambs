@@ -9,5 +9,12 @@ var namespaces_dup =
     ] ],
     [ "ambs_interpreters", "d1/d70/namespaceambs__interpreters.html", "d1/d70/namespaceambs__interpreters" ],
     [ "ambs_loggers", "d1/dad/namespaceambs__loggers.html", "d1/dad/namespaceambs__loggers" ],
-    [ "ambs_runners", "d9/dc8/namespaceambs__runners.html", "d9/dc8/namespaceambs__runners" ]
+    [ "ambs_runners", "d9/dc8/namespaceambs__runners.html", "d9/dc8/namespaceambs__runners" ],
+    [ "BaseLogger", "da/d8b/namespaceBaseLogger.html", null ],
+    [ "loggers", "dd/d2e/namespaceloggers.html", "dd/d2e/namespaceloggers" ],
+    [ "python_base_classes", "d1/dbf/namespacepython__base__classes.html", "d1/dbf/namespacepython__base__classes" ],
+    [ "Rosbagger", "d3/da3/namespaceRosbagger.html", null ],
+    [ "setup", "dd/dc4/namespacesetup.html", [
+      [ "d", "dd/dc4/namespacesetup.html#a1aabac6d068eef6a7bad3fdf50a05cc8", null ]
+    ] ]
 ];

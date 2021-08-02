@@ -6,6 +6,10 @@ import threading
 import sys
 import os
 
+##@ @package BaseLogger
+#
+# Provides base class for other loggers, mainly the rosbagger
+#
 class BaseLogger(object):
     def __init__(self, sub_dict = {}, result_list = [], param_list = [], rate = 100):
         self._rate = rospy.Rate(rate)

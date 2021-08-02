@@ -1,22 +1,13 @@
 var searchData=
 [
-  ['_7eambsbasecalculator_380',['~AMBSBaseCalculator',['../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ab420ee96f780a39bba288292b040cabf',1,'ambs_base::AMBSBaseCalculator']]],
-  ['_7eambsbaserunner_381',['~AMBSBaseRunner',['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a5b935e7290702d7de380b6a4c8d9d2b4',1,'ambs_base::AMBSBaseRunner']]],
-  ['_7eambsbooleaninterface_382',['~AMBSBooleanInterface',['../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#aadb408a2b9c325600daca188b68de2ec',1,'ambs_base::AMBSBooleanInterface']]],
-  ['_7eambsdefaultcalculatorinterface_383',['~AMBSDefaultCalculatorInterface',['../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a0f7cf83b071c722b99344022dd7ca91d',1,'ambs_base::AMBSDefaultCalculatorInterface']]],
-  ['_7eambstemplatedinterface_384',['~AMBSTemplatedInterface',['../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a514b14a43c8b1e5b122effbab3b91251',1,'ambs_base::AMBSTemplatedInterface']]],
-  ['_7ecommandvelocityinterpreternodelet_385',['~CommandVelocityInterpreterNodelet',['../df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet.html#a4213d7530a4d6c1f5db2fed6a7064bc0',1,'ambs_interpreters::CommandVelocityInterpreterNodelet']]],
-  ['_7ecompfloatparam_386',['~CompFloatParam',['../d4/db3/classambs__calculators_1_1CompFloatParam.html#a8cb4eeb8e9cd1e735d59bbb1069e68ac',1,'ambs_calculators::CompFloatParam']]],
-  ['_7ecompfloatparamnodelet_387',['~CompFloatParamNodelet',['../d5/d85/classambs__calculators_1_1CompFloatParamNodelet.html#ae6d55fdaf9c9cb1f7ff2c8e4ecece901',1,'ambs_calculators::CompFloatParamNodelet']]],
-  ['_7edifffloattemporal_388',['~DiffFloatTemporal',['../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#a921e08a1faaaddd4091fe600923a5673',1,'ambs_calculators::DiffFloatTemporal']]],
-  ['_7edifffloattemporalnodelet_389',['~DiffFloatTemporalNodelet',['../db/de1/classambs__calculators_1_1DiffFloatTemporalNodelet.html#a7454d9ce110a0b8730138aa7ffc9f89e',1,'ambs_calculators::DiffFloatTemporalNodelet']]],
-  ['_7ediffposetemporal_390',['~DiffPoseTemporal',['../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#afbf8dc7b7111367f4132deceebccb18c',1,'ambs_calculators::DiffPoseTemporal']]],
-  ['_7ediffposetemporalnodelet_391',['~DiffPoseTemporalNodelet',['../df/d4e/classambs__calculators_1_1DiffPoseTemporalNodelet.html#a54c072c136aea3cd0e19f09f3865b24f',1,'ambs_calculators::DiffPoseTemporalNodelet']]],
-  ['_7eemptyrunner_392',['~EmptyRunner',['../d4/da7/classambs__runners_1_1EmptyRunner.html#a395b023c531eeba3c753ac3e06812095',1,'ambs_runners::EmptyRunner']]],
-  ['_7eemptyrunnernodelet_393',['~EmptyRunnerNodelet',['../d8/d6a/classambs__runners_1_1EmptyRunnerNodelet.html#aa19c23b631ab30685ab2d07d98e5d261',1,'ambs_runners::EmptyRunnerNodelet']]],
-  ['_7eodominterpreternodelet_394',['~OdomInterpreterNodelet',['../d7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet.html#a70776b391008aa418c7f9b28c7b7afb7',1,'ambs_interpreters::OdomInterpreterNodelet']]],
-  ['_7estopwatch_395',['~Stopwatch',['../d0/d7e/classambs__calculators_1_1Stopwatch.html#acf221fb801e920779d173b236ddd9023',1,'ambs_calculators::Stopwatch']]],
-  ['_7estopwatchnodelet_396',['~StopwatchNodelet',['../db/d86/classambs__calculators_1_1StopwatchNodelet.html#a8b95fc6eb35f64045c707f17fa725280',1,'ambs_calculators::StopwatchNodelet']]],
-  ['_7etest1braking_397',['~Test1Braking',['../d7/d68/classambs__runners_1_1Test1Braking.html#a3d45134621d7c8b95448dbd162b9a88f',1,'ambs_runners::Test1Braking']]],
-  ['_7etest1brakingnodelet_398',['~Test1BrakingNodelet',['../dd/d5c/classambs__runners_1_1Test1BrakingNodelet.html#abc85cd3488513945be07405a2a7712a2',1,'ambs_runners::Test1BrakingNodelet']]]
+  ['setportmsg_414',['setPortMsg',['../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a720d11b3d464d5603f65300bd4bf4f53',1,'ambs_base::AMBSTemplatedInterface']]],
+  ['setportvalidity_415',['setPortValidity',['../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a394a325bb68d82e7e0c340327b70c785',1,'ambs_base::AMBSTemplatedInterface']]],
+  ['setsafeflag_416',['setSafeFlag',['../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a9cbc65c7819882efeacd2a7c511ba8c1',1,'python_base_classes::base_logger::BaseLogger']]],
+  ['startcalculator_417',['startCalculator',['../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ae75e799bea3344778673b0378e7d01a2',1,'ambs_base::AMBSBaseCalculator']]],
+  ['startcommandproc_418',['startCommandProc',['../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#ab35f2d30ed89d9e0996a55321711e9fe',1,'python_base_classes::base_logger::BaseLogger']]],
+  ['startrobot_419',['startRobot',['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a1c7c141283496076d1689b09c128f390',1,'ambs_base::AMBSBaseRunner']]],
+  ['startrunner_420',['startRunner',['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a4b4b82770c8ec00850f56bde466ff543',1,'ambs_base::AMBSBaseRunner']]],
+  ['stoprobot_421',['stopRobot',['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a574496e1966eec1bdd39a5bab7f44117',1,'ambs_base::AMBSBaseRunner']]],
+  ['stopwatch_422',['Stopwatch',['../d0/d7e/classambs__calculators_1_1Stopwatch.html#a3b667144a70d38545d73dbcbcfe53a42',1,'ambs_calculators::Stopwatch::Stopwatch()'],['../d0/d7e/classambs__calculators_1_1Stopwatch.html#a3be25e1e7e6a6be4a02aa7a4c8c3a56a',1,'ambs_calculators::Stopwatch::Stopwatch(ros::NodeHandle nh, std::string node_name)']]],
+  ['stopwatchnodelet_423',['StopwatchNodelet',['../db/d86/classambs__calculators_1_1StopwatchNodelet.html#af8c77f7eaa7fb7e5445376a8831693ff',1,'ambs_calculators::StopwatchNodelet']]]
 ];

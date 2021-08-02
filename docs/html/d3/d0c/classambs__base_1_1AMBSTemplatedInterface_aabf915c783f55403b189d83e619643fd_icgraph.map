@@ -1,10 +1,11 @@
 <map id="publishMsgOnPort" name="publishMsgOnPort">
-<area shape="rect" id="node1" title="Publish a message on a port." alt="" coords="752,151,881,178"/>
+<area shape="rect" id="node1" title="Publish a message on a port." alt="" coords="752,187,881,214"/>
 <area shape="rect" id="node2" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="503,5,699,47"/>
-<area shape="rect" id="node3" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a1c7c141283496076d1689b09c128f390" title=" " alt="" coords="243,64,449,105"/>
-<area shape="rect" id="node5" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a574496e1966eec1bdd39a5bab7f44117" title=" " alt="" coords="243,129,449,171"/>
-<area shape="rect" id="node6" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#ad8770edaeff5709344d43ecc25d59818" title="Publish test results." alt="" coords="497,173,704,215"/>
-<area shape="rect" id="node7" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a911a471d55770719e68bebd652685255" title="Publish test results." alt="" coords="243,195,449,236"/>
-<area shape="rect" id="node8" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a4d711578fec3cad592d7f66c5419bd50" title="Publish test results." alt="" coords="497,291,704,332"/>
-<area shape="rect" id="node4" href="$d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="5,163,195,204"/>
+<area shape="rect" id="node3" href="$d4/da7/classambs__runners_1_1EmptyRunner.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="505,71,697,112"/>
+<area shape="rect" id="node4" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a1c7c141283496076d1689b09c128f390" title=" " alt="" coords="243,129,449,171"/>
+<area shape="rect" id="node6" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a574496e1966eec1bdd39a5bab7f44117" title=" " alt="" coords="243,195,449,236"/>
+<area shape="rect" id="node7" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#ad8770edaeff5709344d43ecc25d59818" title="Publish test results." alt="" coords="497,239,704,280"/>
+<area shape="rect" id="node8" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a911a471d55770719e68bebd652685255" title="Publish test results." alt="" coords="243,260,449,301"/>
+<area shape="rect" id="node9" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a4d711578fec3cad592d7f66c5419bd50" title="Publish test results." alt="" coords="243,336,449,377"/>
+<area shape="rect" id="node5" href="$d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="5,228,195,269"/>
 </map>

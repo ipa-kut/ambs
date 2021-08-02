@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['ambs_5fbase_5fcalculator_2ehpp_273',['ambs_base_calculator.hpp',['../dd/ded/ambs__base__calculator_8hpp.html',1,'']]],
-  ['ambs_5fbase_5finterface_2ehpp_274',['ambs_base_interface.hpp',['../da/d1c/ambs__base__interface_8hpp.html',1,'']]],
-  ['ambs_5fbase_5frunner_2eh_275',['ambs_base_runner.h',['../d7/d82/ambs__base__runner_8h.html',1,'']]],
-  ['ambs_5fboolean_5finterface_2ehpp_276',['ambs_boolean_interface.hpp',['../da/d76/ambs__boolean__interface_8hpp.html',1,'']]],
-  ['ambs_5fdefault_5fcalculator_5finterface_2ehpp_277',['ambs_default_calculator_interface.hpp',['../d2/dcb/ambs__default__calculator__interface_8hpp.html',1,'']]]
+  ['_5f_5finit_5f_5f_2epy_318',['__init__.py',['../d8/d68/ambs__components_2src_2loggers_2____init_____8py.html',1,'(Global Namespace)'],['../dc/d2f/ambs__core_2src_2python__base__classes_2____init_____8py.html',1,'(Global Namespace)']]]
 ];
