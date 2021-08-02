@@ -5,7 +5,7 @@
     <arg name="dest_dir" default="$(env HOME)/ARAIG" />
     <arg name="bot_name" default="test_bot" />
 
-    <rosparam command="load" file="$(find ambs_pluginlib)/test_configs/test_components.yaml" />
+    <rosparam command="load" file="$(find ambs_tests)/test_configs/test_components.yaml" />
     <rosparam param="/ambs/log_folder_root" subst_value="True">$(arg dest_dir)</rosparam>
     <rosparam param="/ambs/robot_name" subst_value="True">$(arg bot_name)</rosparam>
 
