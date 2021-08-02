@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <group ns="ambs">
+
+    <node pkg="nodelet" type="nodelet" name="base_nodelet_manager" args="manager"  output="screen">
+        <param name="num_worker_threads" value="32" />
+    </node>
+
+    <node pkg="nodelet" type="nodelet" name="test_edge_detector"
+        args="load ambs_calculators/EdgeDetectorNodelet base_nodelet_manager">
+        <remap from="test_edge_detector/in_start" to="start_calc" />
+        <remap from="test_edge_detector/in_stop" to="stop_calc" />
+        <remap from="test_edge_detector/in_reset" to="reset_calc" />
+        <remap from="test_edge_detector/in_bool" to="bool_to_detect" />
+        <remap from="test_edge_detector/out_rising" to="rising" />
+        <remap from="test_edge_detector/out_falling" to="falling" />
+    </node>
+
+    </group>
+</launch>
