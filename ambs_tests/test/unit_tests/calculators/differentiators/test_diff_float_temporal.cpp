@@ -20,8 +20,8 @@ public:
   const std::string DONE_ = "in_done";
   const std::string FLOAT_IN_ = "in_float";
   const std::string FLOAT_OUT_ = "out_float";
-  const double response_time_ = 0.2;
-  const double spawn_time_ = 2;
+  const double response_time_ = 0.25;
+  const double spawn_time_ = 1;
 
   std::vector<std::string> bool_inputs_{DONE_};
   std::vector<std::string> bool_outputs_{START_, STOP_, RESET_};
