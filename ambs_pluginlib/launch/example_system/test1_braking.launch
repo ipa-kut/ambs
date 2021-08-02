@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- WARNING: THIS IS AN EXAMPLE ONLY, DOES NOT RUN!! -->
 <launch>
     <group ns="ambs">
@@ -19,16 +20,17 @@
     <!-- Runner -->
     <node pkg="nodelet" type="nodelet" name="nodelet_test1_braking"
         args="load ambs_runners/Test1BrakingNodelet base_nodelet_manager">
-        <remap from="/in_start_test" to="event/ui/start_test" />
-        <remap from="/in_reset_test" to="event/ui/reset_test" />
-        <remap from="/in_rosbag_began" to="event/calc/rosbag_began" />
-        <remap from="/out_start_robot" to="event/runner/start_robot" />
-        <remap from="/out_stop_robot" to="event/runner/stop_robot" />
-        <remap from="/out_test_completed" to="event/runner/test_completed" />
-        <remap from="/out_test_succeeded" to="event/runner/test_succeeded" />
-        <remap from="/out_test_failed" to="event/runner/test_failed" />
-        <remap from="/robot_is_stationary" to="event/calc/robot_is_stationary" />
-        <remap from="/robot_has_max_vel" to="event/calc/robot_has_max_vel" />
+        <remap from="nodelet_test1_braking/in_start_test" to="event/ui/start_test" />
+        <remap from="nodelet_test1_braking/in_reset_test" to="event/ui/reset_test" />
+        <remap from="nodelet_test1_braking/in_rosbag_began" to="event/calc/rosbag_began" />
+        <remap from="nodelet_test1_braking/out_start_robot" to="event/runner/start_robot" />
+        <remap from="nodelet_test1_braking/out_stop_robot" to="event/runner/stop_robot" />
+        <remap from="nodelet_test1_braking/out_test_completed" to="event/runner/test_completed" />
+        <remap from="nodelet_test1_braking/out_test_succeeded" to="event/runner/test_succeeded" />
+        <remap from="nodelet_test1_braking/out_test_failed" to="event/runner/test_failed" />
+        <remap from="nodelet_test1_braking/robot_is_stationary" to="event/calc/robot_is_stationary" />
+        <remap from="nodelet_test1_braking/robot_has_max_vel" to="event/calc/robot_has_max_vel" />
+        <remap from="nodelet_test1_braking/out_start_rosbag" to="event/runner/start_rosbag" />
     </node>
 
     <!-- Interpreters NOT IMPLEMENTED YET-->

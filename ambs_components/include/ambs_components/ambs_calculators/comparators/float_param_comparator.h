@@ -34,8 +34,8 @@ private:
   ambs_base::AMBSBooleanInterface bool_interface_;
   ambs_base::AMBSTemplatedInterface<std_msgs::Float64> float_interface_;
   std_msgs::Float64 result_msg_;
-  const std::string COMPARISON_ = "/out_comparison";
-  const std::string IN_FLOAT_ = "/in_float";  ///< Input float topic
+  const std::string COMPARISON_ = "out_comparison";
+  const std::string IN_FLOAT_ = "in_float";  ///< Input float topic
   const std::string PARAM_ = "param";
   const std::string TOLERANCE_ = "tolerance";
 };

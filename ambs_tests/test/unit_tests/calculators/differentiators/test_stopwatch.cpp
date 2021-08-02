@@ -14,11 +14,11 @@ class TestStopwatch : public testing::Test
 public:
   TestStopwatch() {}
 
-  const std::string START_ = "/out_start";
-  const std::string STOP_ = "/out_stop";
-  const std::string RESET_ = "/out_reset";
-  const std::string DONE_ = "/in_done";
-  const std::string FLOAT_ = "/in_float";
+  const std::string START_ = "out_start";
+  const std::string STOP_ = "out_stop";
+  const std::string RESET_ = "out_reset";
+  const std::string DONE_ = "in_done";
+  const std::string FLOAT_ = "in_float";
   const double response_time_ = 0.2;
   const double spawn_time_ = 2;
   const double test_sleep_time = 0.5;

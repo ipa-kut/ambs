@@ -14,12 +14,12 @@ class TestDiffFloatTemporal : public testing::Test
 public:
   TestDiffFloatTemporal() {}
 
-  const std::string START_ = "/out_start";
-  const std::string STOP_ = "/out_stop";
-  const std::string RESET_ = "/out_reset";
-  const std::string DONE_ = "/in_done";
-  const std::string FLOAT_IN_ = "/in_float";
-  const std::string FLOAT_OUT_ = "/out_float";
+  const std::string START_ = "out_start";
+  const std::string STOP_ = "out_stop";
+  const std::string RESET_ = "out_reset";
+  const std::string DONE_ = "in_done";
+  const std::string FLOAT_IN_ = "in_float";
+  const std::string FLOAT_OUT_ = "out_float";
   const double response_time_ = 0.2;
   const double spawn_time_ = 2;
 

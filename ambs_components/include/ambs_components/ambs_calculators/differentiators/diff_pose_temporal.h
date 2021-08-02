@@ -36,9 +36,9 @@ private:
   ambs_base::AMBSTemplatedInterface<std_msgs::Float64> float_interface_;
   ambs_base::AMBSTemplatedInterface<geometry_msgs::PoseStamped> pose_interface_;
   std_msgs::Float64 result_msg_;
-  const std::string DIFF_POSITION_ = "/out_diff_position";
-  const std::string DIFF_ORIENTATION = "/out_diff_orientation";
-  const std::string IN_POSE_ = "/in_pose";
+  const std::string DIFF_POSITION_ = "out_diff_position";
+  const std::string DIFF_ORIENTATION = "out_diff_orientation";
+  const std::string IN_POSE_ = "in_pose";
 };
 
 
