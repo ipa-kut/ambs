@@ -1,0 +1,29 @@
+<launch>
+    <group ns="ambs">
+
+    <arg name="dest_dir" default="$(env HOME)/ARAIG" />
+    <arg name="bot_name" default="test_bot" />
+
+    <rosparam command="load" file="$(find ambs_pluginlib)/test_configs/test_components.yaml" />
+    <rosparam param="/ambs/log_folder_root" subst_value="True">$(arg dest_dir)</rosparam>
+    <rosparam param="/ambs/robot_name" subst_value="True">$(arg bot_name)</rosparam>
+
+    <node pkg="nodelet" type="nodelet" name="base_nodelet_manager" args="manager"  output="screen">
+        <param name="num_worker_threads" value="32" />
+    </node>
+
+    <node pkg="nodelet" type="nodelet" name="empty_runner"
+        args="load ambs_runners/EmptyRunnerNodelet base_nodelet_manager">
+        <remap from="/ambs/empty_runner/in_rosbag_began" to="event/rosbagger/rosbag_began" />
+        <remap from="/ambs/empty_runner/out_start_rosbag" to="event/rosbagger/start" />
+    </node>
+
+    <node pkg="ambs_components" type="rosbagger_node" name="test_rosbagger_node" output="screen">
+        <remap from="in_start" to="event/rosbagger/start" />
+        <remap from="in_stop" to="event/rosbagger/stop" />
+        <remap from="in_reset" to="event/rosbagger/reset" />
+        <remap from="out_rosbag_began" to="event/rosbagger/rosbag_began" />
+    </node>
+
+    </group>
+</launch>

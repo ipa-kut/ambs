@@ -41,6 +41,7 @@ protected:
   const std::string START_TEST_ = "in_start_test";
   const std::string RESET_TEST_ = "in_reset_test";
   const std::string ROSBAG_BEGAN_ = "in_rosbag_began";
+  const std::string START_ROSBAG = "out_start_rosbag";
 
   const std::string START_ROBOT_ = "out_start_robot";
   const std::string STOP_ROBOT_ = "out_stop_robot";
@@ -70,7 +71,8 @@ private:
   ros::Timer execute_timer_;
   ros::Subscriber debug_sub_;
   std::vector<std::string> bool_inputs_{START_TEST_, RESET_TEST_, ROSBAG_BEGAN_};
-  std::vector<std::string> bool_outputs_{START_ROBOT_, STOP_ROBOT_, TEST_COMPLETED_, TEST_SUCCEEDED_, TEST_FAILED_};
+  std::vector<std::string> bool_outputs_{START_ROBOT_, STOP_ROBOT_, START_ROSBAG,
+        TEST_COMPLETED_, TEST_SUCCEEDED_, TEST_FAILED_};
 
   bool createLoggingFolder(std::string path);
   int countSubDirectories(std::string path);

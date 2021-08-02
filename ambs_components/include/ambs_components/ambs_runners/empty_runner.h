@@ -40,6 +40,14 @@ private:
  */
 void EmptyRunner::executeCB(const ros::TimerEvent& event)
 {
+  ros::Duration(1).sleep();
+  ROS_INFO_STREAM(node_name_ << ": Starting rosbag");
+  signal_interface_.publishMsgOnPort(START_ROSBAG, signal_interface_.constructNewBoolStamped(true));
+
+  signal_interface_.waitForTrueOnPort(ROSBAG_BEGAN_);
+  ROS_INFO_STREAM(node_name_ << ": Rosbag is recording");
+
+  while(ros::ok());
 }
 
 /**
