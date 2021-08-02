@@ -9,10 +9,13 @@ find_package(catkin REQUIRED COMPONENTS
     geometry_msgs
     roscpp
     roslint
+    rospy
     std_msgs
     tf
     tf_conversions
 )
+
+catkin_python_setup()
 
 catkin_package(
   INCLUDE_DIRS include
@@ -20,6 +23,7 @@ catkin_package(
     ambs_msgs
     geometry_msgs
     roscpp
+    rospy
     std_msgs
     tf
 )

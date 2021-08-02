@@ -17,3 +17,13 @@ runners:
 interpreters:
   test_velocity_interpreter:
     velocity_x: 1.0
+
+test_rosbagger_node:
+  whitelist:
+  # Default whitelist: ["ambs"]
+  # Any topics which have one of these STRINGS in them will be added to the whitelist for recording,
+    - hedge
+    - ros
+  blacklist:
+  # Any WHITELISTED topics which have one of these STRINGS in them will be rejected for recording
+    - compressed
