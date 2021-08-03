@@ -41,6 +41,9 @@ class Rosbagger(BaseLogger):
         except rospy.ROSException:
             pass 
 
+    def __del__(self):
+        self.killCommandProc()
+
     def buildNewBoolStamped(self, data = True):
         msg = BoolStamped()
         msg.header.stamp = rospy.Time.now()
