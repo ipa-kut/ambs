@@ -179,7 +179,7 @@ inline std::string AMBSBaseRunner::timedLoopFallbackOnPorts(std::vector<std::str
   {
     for (auto port : *ports)
     {
-      if (signal_interface_.getPortMsg(port).data)
+      if (signal_interface_.getPortMsg(port).data && signal_interface_.isPortValid(port))
       {
         return port;
       }
@@ -207,7 +207,7 @@ inline std::string AMBSBaseRunner::timedLoopSequenceOnPorts(std::vector<std::str
   {
     for (auto port : *ports)
     {
-      if (!signal_interface_.getPortMsg(port).data)
+      if (!signal_interface_.getPortMsg(port).data && signal_interface_.isPortValid(port))
       {
         return port;
       }
