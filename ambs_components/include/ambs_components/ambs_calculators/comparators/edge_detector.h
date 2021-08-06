@@ -25,17 +25,21 @@ public:
     ambs_base::AMBSBaseCalculator(nh, node_name),
     nh_(nh)
   {}
-  void init();
+  void init(std::string in_start,
+            std::string in_stop,
+            std::string in_reset,
+            std::string out_done,
+            std::string in_bool,
+            std::string out_rising,
+            std::string out_falling);
 
 private:
   void executeCB(const ros::TimerEvent& event) override;
   ros::NodeHandle nh_;
   ambs_base::AMBSBooleanInterface bool_interface_;
-  const std::string OUT_RISING_ = "out_rising";
-  const std::string OUT_FALLING_ = "out_falling";
-  const std::string IN_BOOL_ = "in_bool";
-  const std::string PARAM_ = "param";
-  const std::string TOLERANCE_ = "tolerance";
+  std::string OUT_RISING_ = "out_rising";
+  std::string OUT_FALLING_ = "out_falling";
+  std::string IN_BOOL_ = "in_bool";
   bool previous_bool_ = false;
 };
 
@@ -50,11 +54,22 @@ private:
  *
  * AMBSBaseCalculator::startCalculator() spawns a timer which executes executeCB()
  */
-void EdgeDetector::init()
+void EdgeDetector::init(std::string in_start = "in_start",
+                        std::string in_stop = "in_stop",
+                        std::string in_reset = "in_reset",
+                        std::string out_done = "out_done",
+                        std::string in_bool = "in_bool",
+                        std::string out_rising = "out_rising",
+                        std::string out_falling = "out_falling")
 {
+  OUT_RISING_ = out_rising;
+  OUT_FALLING_ = out_falling;
+  IN_BOOL_ = in_bool;
+
   std::vector<std::string> bool_inputs{IN_BOOL_};
   std::vector<std::string> bool_outputs{OUT_RISING_, OUT_FALLING_};
   bool_interface_.init(bool_inputs, bool_outputs, nh_, node_name_);
+  default_control_.initDefaultInterface(nh_, node_name_, in_start, in_stop, in_reset, out_done);
 
   startCalculator();
 }
