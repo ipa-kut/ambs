@@ -21,7 +21,8 @@ public:
 
         NODELET_INFO_STREAM("Initialising nodelet... [" << name << "]");
         class_pointer_.reset(new CompFloatParam(nh, name));
-        class_pointer_->init();
+        class_pointer_->init("in_start", "in_stop", "in_reset", "out_done",
+                             "out_comparison", "in_float");
       }
 
 private:

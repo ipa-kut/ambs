@@ -26,7 +26,12 @@ public:
     ambs_base::AMBSBaseCalculator(nh, node_name),
     nh_(nh)
   {}
-  void init();
+  void init(std::string in_start,
+            std::string in_stop,
+            std::string in_reset,
+            std::string out_done,
+            std::string out_comparison,
+            std::string in_float);
 
 private:
   void executeCB(const ros::TimerEvent& event) override;
@@ -34,10 +39,10 @@ private:
   ambs_base::AMBSBooleanInterface bool_interface_;
   ambs_base::AMBSTemplatedInterface<std_msgs::Float64> float_interface_;
   std_msgs::Float64 result_msg_;
-  const std::string COMPARISON_ = "out_comparison";
-  const std::string IN_FLOAT_ = "in_float";  ///< Input float topic
-  const std::string PARAM_ = "param";
-  const std::string TOLERANCE_ = "tolerance";
+  std::string COMPARISON_;
+  std::string IN_FLOAT_;
+  std::string PARAM_ = "param";
+  std::string TOLERANCE_ = "tolerance";
 };
 
 
@@ -51,8 +56,16 @@ private:
  *
  * AMBSBaseCalculator::startCalculator() spawns a timer which executes executeCB()
  */
-void CompFloatParam::init()
+void CompFloatParam::init(std::string in_start = "in_start",
+                          std::string in_stop = "in_stop",
+                          std::string in_reset = "in_reset",
+                          std::string out_done = "out_done",
+                          std::string out_comparison = "out_comparison",
+                          std::string in_float = "in_float")
 {
+  COMPARISON_ = out_comparison;
+  IN_FLOAT_ = in_float;
+
   std::vector<std::string> float_inputs{IN_FLOAT_};
   std::vector<std::string> float_outputs;
   float_interface_.init(float_inputs, float_outputs, nh_, node_name_);
@@ -60,6 +73,8 @@ void CompFloatParam::init()
   std::vector<std::string> bool_inputs;
   std::vector<std::string> bool_outputs{COMPARISON_};
   bool_interface_.init(bool_inputs, bool_outputs, nh_, node_name_);
+
+  default_control_.initDefaultInterface(nh_, node_name_, in_start, in_stop, in_reset, out_done);
 
   startCalculator();
 }

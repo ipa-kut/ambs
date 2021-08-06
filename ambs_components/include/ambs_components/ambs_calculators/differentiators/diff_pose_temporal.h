@@ -62,6 +62,8 @@ void DiffPoseTemporal::init()
   std::vector<std::string> pose_outputs{};
   pose_interface_.init(pose_inputs, pose_outputs, nh_, node_name_);
 
+  default_control_.initDefaultInterface(nh_, node_name_);
+
   startCalculator();
 }
 

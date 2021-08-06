@@ -26,20 +26,44 @@ public:
   ambs_msgs::BoolStamped waitForReset();
   void publishDone();
   void printDefaultPorts();
-  void initDefaultInterface(ros::NodeHandle nh, std::string node_name);
+  void initDefaultInterface(ros::NodeHandle nh,
+                            std::string node_name,
+                            std::string in_start,
+                            std::string in_stop,
+                            std::string in_reset,
+                            std::string out_done);
 
 private:
-  const std::string START_ = "in_start"; ///< The START port
-  const std::string STOP_ = "in_stop"; ///< The STOP port
-  const std::string RESET_ = "in_reset"; ///< The RESET port
-  const std::string DONE_ = "out_done"; ///< The DONE port
-  const std::vector<std::string> default_inputs_{START_, STOP_, RESET_};
-  const std::vector<std::string> default_outputs_{DONE_};
+  std::string START_;
+  std::string STOP_;
+  std::string RESET_;
+  std::string DONE_;
+
 };
 
 // ---------------------------------------------------------------------------------------------------------------------
 //                                              IMPLEMENTATION
 // ---------------------------------------------------------------------------------------------------------------------
+
+/**
+ * @brief Initialisation decoupled from constructor for convenince
+ *
+ */
+inline void AMBSDefaultCalculatorInterface::initDefaultInterface(ros::NodeHandle nh,
+                                                                 std::string node_name,
+                                                                 std::string in_start = "in_start",
+                                                                 std::string in_stop = "in_stop",
+                                                                 std::string in_reset = "in_reset",
+                                                                 std::string out_done = "out_done")
+{
+  START_ = in_start;
+  STOP_ = in_stop;
+  RESET_ = in_reset;
+  DONE_ = out_done;
+  std::vector<std::string> default_inputs{START_, STOP_, RESET_};
+  std::vector<std::string> default_outputs{DONE_};
+  init(default_inputs, default_outputs, nh, node_name);
+}
 
 /**
  * @brief Wait for TRUE on the START port
@@ -96,15 +120,6 @@ inline void AMBSDefaultCalculatorInterface::printDefaultPorts()
                   << " Stop : " << std::to_string(getPortMsg(STOP_).data)
                   << " Reset : " << std::to_string(getPortMsg(RESET_).data)
                   << " Done : " << std::to_string(getPortMsg(DONE_).data));
-}
-
-/**
- * @brief Initialisation decoupled from constructor for convenince
- *
- */
-inline void AMBSDefaultCalculatorInterface::initDefaultInterface(ros::NodeHandle nh, std::string node_name)
-{
-  init(default_inputs_,default_outputs_, nh, node_name);
 }
 
 /**
