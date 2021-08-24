@@ -1,5 +1,5 @@
-#ifndef EDGE_DETECTOR_H
-#define EDGE_DETECTOR_H
+#ifndef AMBS_COMPONENTS_AMBS_CALCULATORS_COMPARATORS_EDGE_DETECTOR_H
+#define AMBS_COMPONENTS_AMBS_CALCULATORS_COMPARATORS_EDGE_DETECTOR_H
 
 #include <string>
 #include <vector>
@@ -131,4 +131,4 @@ void EdgeDetector::executeCB(const ros::TimerEvent& event)
 
 }  // namespace ambs_calculators
 
-#endif // EDGE_DETECTOR_H
+#endif  // AMBS_COMPONENTS_AMBS_CALCULATORS_COMPARATORS_EDGE_DETECTOR_H

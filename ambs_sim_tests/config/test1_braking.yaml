@@ -1,9 +1,9 @@
 calculators:
   calc_robot_has_max_vel:
-    param: 0.8
+    param: 0.5
     tolerance: 0.01
 
-  calc_robot_has_stopped:
+  calc_robot_is_stationary:
     param: 0.0
     tolerance: 0.01
 
@@ -20,9 +20,9 @@ runners:
 
 interpreters:
   velocity_interpreter:
-    velocity_x: 1.0
+    velocity_x: 0.5
 
-test_rosbagger_node:
+test1_rosbagger:
   whitelist:
   # Default whitelist: ["ambs"]
   # Any topics which have one of these STRINGS in them will be added to the whitelist for recording,
@@ -31,64 +31,3 @@ test_rosbagger_node:
   blacklist:
   # Any WHITELISTED topics which have one of these STRINGS in them will be rejected for recording
     - compressed
-
-#--------------------------------------------------------------------------------------------------------
-
-runner:
-  stabilization_timeout: 0.25
-  acceleration_timeout: 2
-  verification_timeout: 0.25
-  decceleration_timeout: 2
-    
-interpreters:
-  velocity_interpreter_node: # node name 
-    max_vel: 0.8
-    rate: 100
-
-calculators:
-  robot_type: "turtlebot3_sim"
-  test_type: "test1_braking"
-
-  robot_reached_max_vel_node: # node name 
-    param: 0.8
-    tolerance: 0.01
-  
-  robot_has_stopped_node: # node name 
-    param: 0.0
-    tolerance: 0.005
-
-  braking_time_node:
-    if_log: True
-
-  param_logger_node:
-    start_offset: 0.5
-    stop_offset: 0.5
-    namespaces: 
-      - "runner"
-      - "interpreters"
-      - "calculators"
-  
-  results_logger_node:
-    start_offset: 0.5
-    stop_offset: 0.1
-    logginng_topics: 
-      - /data/calc/braking_time
-      - /data/calc/braking_distance
-
-  folder_bagger_node:
-    start_offset: 0.5 # Wait these many seconds for folder to be created before start recording
-    stop_offset: 2 # Wait these many seconds before killing
-    whitelist:
-    # Default whitelist: ["/signal/", "/data", "usb_cam", "/tf"]
-    # Any topics which have one of these STRINGS in them will be added to the whitelist for recording,
-      - hedge
-      - ros
-    blacklist:
-    # Any WHITELISTED topics which have one of these STRINGS in them will be rejected for recording
-      - compressed
-
-  robot_speed_logger:
-    start_offset: 0.5 # Must be longer than folder bagger, since this tends to be created first.
-    stop_offset: 0.1
-    logged_data_title: "robot_speed" # Used to name the file
-    column_headers: ["Time", "Speed"]

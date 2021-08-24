@@ -74,7 +74,7 @@ void Test1Braking::executeCB(const ros::TimerEvent& event)
   }
 
   /// Wait some time and check again to see if robot maintained max vel
-  ROS_INFO_STREAM(node_name_ << ": Robot hit max vel, waiting " << param_acceleration_ <<"s to recheck");
+  ROS_INFO_STREAM(node_name_ << ": Robot hit max vel, waiting " << param_verification_ <<"s to recheck");
   ros::Duration(param_verification_).sleep();
   if (signal_interface_.getPortMsg(ROBOT_HAS_MAX_VEL_).data)
   {

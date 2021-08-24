@@ -34,6 +34,7 @@ class Rosbagger(BaseLogger):
         self.whitelist = self.whitelist + self.config_param[self.node_name + "/whitelist"]
 
         self.begin_write_pub = rospy.Publisher('out_rosbag_began', BoolStamped, queue_size=10, latch=True)
+        self.started = False
 
         try:
             while not rospy.is_shutdown():
@@ -42,7 +43,8 @@ class Rosbagger(BaseLogger):
             pass 
 
     def __del__(self):
-        self.killCommandProc()
+        if self.started:
+            self.killCommandProc()
 
     def buildNewBoolStamped(self, data = True):
         msg = BoolStamped()
@@ -86,6 +88,7 @@ class Rosbagger(BaseLogger):
         start = False
         stop = False
         reset = False
+        self.started = False
 
         # Wait for start signal
         rospy.loginfo(rospy.get_name() + ": Waiting for start signal...")
@@ -102,6 +105,7 @@ class Rosbagger(BaseLogger):
         topics_string = self.prepare_topics()
         command = "rosbag record -p -o " + log_folder + "/ " + topics_string
         self.startCommandProc(command)
+        self.started = True
 
         # Wait for stop signal
         while not stop and not rospy.is_shutdown():
