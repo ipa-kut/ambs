@@ -67,10 +67,10 @@ void Stopwatch::init()
 void Stopwatch::executeCB(const ros::TimerEvent& event)
 {
   ros::Time start_time = default_control_.waitForStart().header.stamp;
-  ROS_INFO_STREAM(node_name_ << ": Got start time: " << start_time);
+  ROS_DEBUG_STREAM(node_name_ << ": Got start time: " << start_time);
 
   ros::Time stop_time = default_control_.waitForStop().header.stamp;
-  ROS_INFO_STREAM(node_name_ << ": Got stop time: " << stop_time);
+  ROS_DEBUG_STREAM(node_name_ << ": Got stop time: " << stop_time);
 
   ros::Duration difference = stop_time - start_time;
   ROS_INFO_STREAM(node_name_ << ": Difference: " << difference);

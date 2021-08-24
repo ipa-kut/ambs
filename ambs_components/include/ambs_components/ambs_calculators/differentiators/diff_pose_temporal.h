@@ -7,6 +7,7 @@
 #include "ambs_core/ambs_base_calculator/ambs_base_calculator.hpp"
 #include "ambs_core/ambs_base_interface/ambs_base_interface.hpp"
 #include "ambs_core/ambs_helper/helper.h"
+#include "ambs_components/ambs_loggers/debug_logger.h"
 #include <std_msgs/Float64.h>
 #include <geometry_msgs/PoseStamped.h>
 
@@ -39,6 +40,7 @@ private:
   const std::string DIFF_POSITION_ = "out_diff_position";
   const std::string DIFF_ORIENTATION = "out_diff_orientation";
   const std::string IN_POSE_ = "in_pose";
+  ambs_loggers::DebugLogger debug_logger_;
 };
 
 
@@ -61,6 +63,7 @@ void DiffPoseTemporal::init()
   std::vector<std::string> pose_inputs{IN_POSE_};
   std::vector<std::string> pose_outputs{};
   pose_interface_.init(pose_inputs, pose_outputs, nh_, node_name_);
+  debug_logger_.init(nh_, node_name_);
 
   default_control_.initDefaultInterface(nh_, node_name_);
 
@@ -80,15 +83,15 @@ void DiffPoseTemporal::executeCB(const ros::TimerEvent& event)
 
   default_control_.waitForStart();
   geometry_msgs::PoseStamped start_pose = pose_interface_.getPortMsg(IN_POSE_);
-  ROS_INFO_STREAM(node_name_ << ": Starting pose stored: ");
-  printPose(start_pose);
-  ROS_INFO(" ");
+  ROS_DEBUG_STREAM(node_name_ << ": Starting pose stored: ");
+//  printPose(start_pose);
+  ROS_DEBUG_STREAM(" ");
 
   default_control_.waitForStop();
   geometry_msgs::PoseStamped stop_pose = pose_interface_.getPortMsg(IN_POSE_);
-  ROS_INFO_STREAM(node_name_ << ": Stopping pose stored: ");
-  printPose(stop_pose);
-  ROS_INFO(" ");
+  ROS_DEBUG_STREAM(node_name_ << ": Stopping pose stored: ");
+//  printPose(stop_pose);
+  ROS_DEBUG_STREAM(" ");
 
   diff_pos_msg.data = ambs_helper::getTranslationDiffFromPoses(start_pose, stop_pose);
   diff_orientation_msg.data = ambs_helper::getYawDiffFromPoses(start_pose, stop_pose);
@@ -97,6 +100,8 @@ void DiffPoseTemporal::executeCB(const ros::TimerEvent& event)
   float_interface_.publishMsgOnPort(DIFF_POSITION_, diff_pos_msg);
   float_interface_.publishMsgOnPort(DIFF_ORIENTATION, diff_orientation_msg);
   default_control_.publishDone();
+  debug_logger_.logInfo("Lin: " + std::to_string(diff_pos_msg.data));
+  debug_logger_.logInfo("Ang(deg): " + std::to_string(diff_orientation_msg.data));
 
   default_control_.waitForReset();
   float_interface_.resetAllPorts();

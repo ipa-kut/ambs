@@ -2,9 +2,9 @@
     <group ns="ambs">
 
         <arg name="dest_dir" default="$(env HOME)/ARAIG" />
-        <arg name="bot_name" default="test_bot" />
+        <arg name="bot_name" default="ambs_sim_tb3" />
 
-        <rosparam command="load" file="$(find ambs_tests)/test_configs/test_components.yaml" />
+        <rosparam command="load" file="$(find ambs_sim_tests)/config/test1_braking.yaml" />
         <rosparam param="/ambs/log_folder_root" subst_value="True">$(arg dest_dir)</rosparam>
         <rosparam param="/ambs/robot_name" subst_value="True">$(arg bot_name)</rosparam>
 
@@ -13,12 +13,12 @@
         </node>
 
 
-    <!-- test runner -->
+    <!-- Runner (which includes debug logger) -->
         <node pkg="nodelet" type="nodelet" name="test1_braking"
             args="load ambs_runners/Test1BrakingNodelet base_nodelet_manager">
             <remap from="test1_braking/in_start_test" to="event/ui/start_test" />
             <remap from="test1_braking/in_reset_test" to="event/ui/reset_test" />
-            <remap from="test1_braking/in_rosbag_began" to="event/calc/rosbag_began" />
+            <remap from="test1_braking/in_rosbag_began" to="event/rosbagger/rosbag_began" />
             <remap from="test1_braking/out_start_robot" to="event/runner/start_robot" />
             <remap from="test1_braking/out_stop_robot" to="event/runner/stop_robot" />
             <remap from="test1_braking/out_test_completed" to="event/runner/test_completed" />
@@ -39,7 +39,7 @@
             <remap from="velocity_interpreter/out_cmd_vel" to="/cmd_vel" />
         </node>
 
-        <!-- ONLY for TEST use /amcl_pose as the location of robot -->
+        <!-- ONLY for TEST use /odom as the location of robot -->
         <node name="focus_pose" pkg="topic_tools" type="transform" 
         args="/odom data/interpreter/location/robot geometry_msgs/PoseStamped 
         'geometry_msgs.msg.PoseStamped(header=std_msgs.msg.Header
@@ -60,83 +60,45 @@
             <remap from="calc_robot_has_max_vel/out_comparison" to="event/calc/robot_has_max_vel" />
         </node>
 
-        <!-- robot_has_stopped_node -->
-        <node pkg="nodelet" type="nodelet" name="calc_robot_has_stopped"
+        <!-- robot_is_stationary_node -->
+        <node pkg="nodelet" type="nodelet" name="calc_robot_is_stationary"
         args="load ambs_calculators/CompFloatParamNodelet base_nodelet_manager">
-            <remap from="calc_robot_has_stopped/in_start" to="event/runner/start_robot" />
-            <remap from="calc_robot_has_stopped/in_stop" to="event/ui/reset_test" />
-            <remap from="calc_robot_has_stopped/in_reset" to="event/ui/reset_test" />
-            <remap from="calc_robot_has_stopped/in_float" to="data/robot/odom/twist/linear_x" />
-            <remap from="calc_robot_has_stopped/out_comparison" to="event/calc/robot_has_stopped" />
+            <remap from="calc_robot_is_stationary/in_start" to="event/runner/start_robot" />
+            <remap from="calc_robot_is_stationary/in_stop" to="event/ui/reset_test" />
+            <remap from="calc_robot_is_stationary/in_reset" to="event/ui/reset_test" />
+            <remap from="calc_robot_is_stationary/in_float" to="data/robot/odom/twist/linear_x" />
+            <remap from="calc_robot_is_stationary/out_comparison" to="event/calc/robot_is_stationary" />
         </node>
 
         <!-- braking_distance_node -->
-        <node pkg="araig_calculators" type="diff_pose_temporal_node" name="braking_distance_node" output="screen">
-        <remap from="/in_start" to="/signal/runner/stop_robot"/>
-        <remap from="/in_stop" to="/signal/calc/robot_has_stopped"/>
-        <remap from="/in_pose" to="/data/interpreter/location/robot"/>
-        <remap from="/out_disp_position" to="/data/calc/braking_distance"/>
-        </node>
         <node pkg="nodelet" type="nodelet" name="calc_braking_distance"
         args="load ambs_calculators/DiffPoseTemporalNodelet base_nodelet_manager">
-            <remap from="calc_braking_distance/in_start" to="event/runner/start_robot" />
-            <remap from="calc_braking_distance/in_stop" to="event/ui/reset_test" />
+            <remap from="calc_braking_distance/in_start" to="event/runner/stop_robot" />
+            <remap from="calc_braking_distance/in_stop" to="event/calc/robot_is_stationary" />
             <remap from="calc_braking_distance/in_reset" to="event/ui/reset_test" />
             <remap from="calc_braking_distance/in_pose" to="data/interpreter/location/robot" />
             <remap from="calc_braking_distance/out_diff_position" to="data/calc/braking_distance" />
             <remap from="calc_braking_distance/out_diff_orientation" to="data/calc/braking_angular_offset" />
         </node>
+
+        <!-- braking_time_node -->
+        <node pkg="nodelet" type="nodelet" name="calc_braking_time"
+        args="load ambs_calculators/StopwatchNodelet base_nodelet_manager">
+            <remap from="calc_braking_time/in_start" to="event/runner/stop_robot" />
+            <remap from="calc_braking_time/in_stop" to="event/calc/robot_is_stationary" />
+            <remap from="calc_braking_time/in_reset" to="event/ui/reset_test" />
+            <remap from="calc_braking_time/out_float" to="data/calc/braking_time" />
+        </node>
+
+    <!-- Loggers -->
+        <!-- folder_bagger_node -->
+        <node pkg="ambs_components" type="rosbagger_node" name="test1_rosbagger" output="screen">
+            <remap from="in_start" to="event/runner/start_rosbag" />
+            <remap from="in_stop" to="event/ui/reset_test" />
+            <remap from="in_reset" to="event/ui/reset_test" />
+            <remap from="out_rosbag_began" to="event/rosbagger/rosbag_began" />
+        </node>
+
     </group>
-
-    <node pkg="araig_calculators" type="diff_pose_temporal_node" name="braking_distance_node" output="screen">
-        <remap from="/in_start" to="/signal/runner/stop_robot"/>
-        <remap from="/in_stop" to="/signal/calc/robot_has_stopped"/>
-        <remap from="/in_pose" to="/data/interpreter/location/robot"/>
-        <remap from="/out_disp_position" to="/data/calc/braking_distance"/>
-    </node>
-
-    <!-- braking_time_node -->
-    <node pkg="araig_calculators" type="diff_time_node" name="braking_time_node" output="screen">
-        <remap from="/in_start" to="/signal/runner/stop_robot"/>
-        <remap from="/in_stop" to="/signal/calc/robot_has_stopped"/>
-        <remap from="/out_duration" to="/data/calc/braking_time"/>
-    </node>
-
-    <!-- logging -->
-    <!-- folder_bagger_node -->
-    <node pkg="araig_calculators" type="folder_bagger_node" name="folder_bagger_node" output="screen">
-        <remap from="/start" to="/signal/ui/start_test"/>
-        <remap from="/stop" to="/signal/runner/test_completed"/>
-        <remap from="/test_failed" to="/signal/runner/test_failed"/>
-        <remap from="/test_succeeded" to="/signal/runner/test_succeeded"/>
-        <remap from="/out_begin_write" to="/signal/logger/begin_write"/>
-    </node>
-
-    <!-- param_logger_node -->
-    <node pkg="araig_calculators" type="rosparam_logger_node" name="param_logger_node" output="screen">
-        <remap from="/start" to="/signal/ui/start_test"/>
-        <remap from="/stop" to="/signal/runner/test_completed"/>
-    </node>
-
-    <!-- results_logger_node -->
-    <node pkg="araig_calculators" type="results_logger_node" name="results_logger_node" output="screen">
-        <remap from="/start" to="/signal/ui/start_test"/>
-        <remap from="/stop" to="/signal/runner/test_completed"/>
-        <remap from="/test_failed" to="/signal/runner/test_failed"/>
-        <remap from="/test_succeeded" to="/signal/runner/test_succeeded"/>
-    </node>
-
-    <!-- Speed logger -->
-    <node pkg="araig_calculators" type="float_series_logger_node" name="robot_speed_logger" output="screen">
-        <remap from="/start" to="/signal/ui/start_test"/>
-        <remap from="/stop" to="/signal/runner/test_completed"/>
-        <remap from="/in_float" to="/data/robot/odom/twist/linear_x"/>
-    </node>
-
-    <!-- RQT Multiplotter -->
-    <node name="plotter" type="rqt_multiplot" pkg="rqt_multiplot"
-        args="--multiplot-config $(find ambs_sim_tests)/config/plotter/speed_plot.xml --multiplot-run-all">
-    </node>
-
 </launch>
  

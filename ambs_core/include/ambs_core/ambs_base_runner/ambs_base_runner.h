@@ -71,8 +71,8 @@ private:
   ros::Timer execute_timer_;
   ros::Subscriber debug_sub_;
   std::vector<std::string> bool_inputs_{START_TEST_, RESET_TEST_, ROSBAG_BEGAN_};
-  std::vector<std::string> bool_outputs_{START_ROBOT_, STOP_ROBOT_, START_ROSBAG,
-        TEST_COMPLETED_, TEST_SUCCEEDED_, TEST_FAILED_};
+  std::vector<std::string>
+  bool_outputs_{START_ROBOT_, STOP_ROBOT_, START_ROSBAG, TEST_COMPLETED_, TEST_SUCCEEDED_, TEST_FAILED_};
 
   bool createLoggingFolder(std::string path);
   int countSubDirectories(std::string path);
@@ -93,7 +93,9 @@ inline ambs_msgs::BoolStamped AMBSBaseRunner::waitForStart()
   ROS_INFO_STREAM(node_name_ << ": Wait for Start");
   ambs_msgs::BoolStamped msg = signal_interface_.waitForTrueOnPort(START_TEST_);
   ROS_INFO_STREAM(node_name_ << ": Got Start, waiting for rosbagger to be ready");
+  signal_interface_.publishMsgOnPort(START_ROSBAG, signal_interface_.constructNewBoolStamped(true));
   signal_interface_.waitForTrueOnPort(ROSBAG_BEGAN_);
+  signal_interface_.publishMsgOnPort(START_ROSBAG, signal_interface_.constructNewBoolStamped(false));
   return msg;
 }
 

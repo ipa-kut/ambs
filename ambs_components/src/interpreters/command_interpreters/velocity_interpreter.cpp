@@ -63,7 +63,7 @@ void CommandVelocityInterpreter::executeCB(const ros::TimerEvent &event)
   else if (control_interface_.getPortMsg(ACTIVATE_).data &&
            control_interface_.getPortMsg(DEACTIVATE_).data)
   {
-    ROS_DEBUG_STREAM(node_name_ << ": DEACTIVATED");
+    ROS_INFO_STREAM(node_name_ << ": DEACTIVATED");
     control_interface_.resetAllPorts();
     return;
   }

@@ -63,6 +63,10 @@ Contains the nodelet code of components, which implements classes defined in `am
 
 Contains automated unit tests for components. These tests also give a good idea of how components should be used.
 
+### ambs_sim_tests
+
+Contains TurtleBot3 simulation testing environment for testing a complete AMBS test.
+
 # Developer Info
 
 ## Linting

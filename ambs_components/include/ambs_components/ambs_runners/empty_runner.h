@@ -47,7 +47,7 @@ void EmptyRunner::executeCB(const ros::TimerEvent& event)
   signal_interface_.waitForTrueOnPort(ROSBAG_BEGAN_);
   ROS_INFO_STREAM(node_name_ << ": Rosbag is recording");
 
-  while(ros::ok());
+  while (ros::ok()) {}
 }
 
 /**
