@@ -16,5 +16,13 @@
         </description>
     </class>
 
+    <class name="ambs_runners/BenchBrakingNodelet"
+    type="ambs_runners::BenchBrakingNodelet"
+    base_class_type="nodelet::Nodelet">
+        <description>
+        Nodelet to benchmarking test1 braking
+        </description>
+    </class>
+
 </library>
 

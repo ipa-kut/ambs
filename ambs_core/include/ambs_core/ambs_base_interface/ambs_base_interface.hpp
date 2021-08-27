@@ -211,6 +211,8 @@ void AMBSTemplatedInterface<T>::publishMsgOnPort(std::string port_name, T msg)
   }
   msg_ptr = boost::make_shared<T>(msg);
   interfaces_[port_name].pub_.publish(msg_ptr);
+//  interfaces_[port_name].pub_.publish(msg);
+  setPortMsg(port_name,msg);
 }
 
 /**
@@ -268,7 +270,7 @@ bool AMBSTemplatedInterface<T>::isPortValid(std::string port_name)
  * @param topic The name of the topic of the port
  */
 template<typename T> inline
-void AMBSTemplatedInterface<T>::templatedCB( boost::shared_ptr<const T> msg, std::string topic)
+void AMBSTemplatedInterface<T>::templatedCB(const boost::shared_ptr<const T> msg, std::string topic)
 {
   try
   {

@@ -1,0 +1,8 @@
+calculators:
+  calc_robot_is_stationary:
+    param: 0.0
+    tolerance: 0.1
+
+  calc_robot_has_max_vel:
+      param: 0.5
+      tolerance: 0.1
