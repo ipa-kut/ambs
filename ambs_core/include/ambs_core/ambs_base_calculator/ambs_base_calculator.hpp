@@ -59,7 +59,7 @@ inline  AMBSBaseCalculator::AMBSBaseCalculator(ros::NodeHandle nh, std::string n
  */
 inline void AMBSBaseCalculator::startCalculator()
 {
-  execute_timer_ = nh_.createTimer(ros::Duration(0.1), boost::bind(&AMBSBaseCalculator::executeCB, this, _1));
+  execute_timer_ = nh_.createTimer(ros::Duration(0.01), boost::bind(&AMBSBaseCalculator::executeCB, this, _1));
 }
 
 /**

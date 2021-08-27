@@ -173,7 +173,7 @@ inline bool AMBSBaseRunner::initialiseBaseRunner(ros::NodeHandle nh,
  */
 inline std::string AMBSBaseRunner::timedLoopFallbackOnPorts(std::vector<std::string> *ports,
                                                             double time,
-                                                            double rate = 10)
+                                                            double rate = 100)
 {
   ros::Time start = ros::Time::now();
   ros::Rate loop(rate);
@@ -201,7 +201,7 @@ inline std::string AMBSBaseRunner::timedLoopFallbackOnPorts(std::vector<std::str
  */
 inline std::string AMBSBaseRunner::timedLoopSequenceOnPorts(std::vector<std::string> *ports,
                                                             double time,
-                                                            double rate = 10)
+                                                            double rate = 100)
 {
   ros::Time start = ros::Time::now();
   ros::Rate loop(rate);
@@ -225,7 +225,7 @@ inline std::string AMBSBaseRunner::timedLoopSequenceOnPorts(std::vector<std::str
  */
 inline void AMBSBaseRunner::startRunner()
 {
-  execute_timer_ = nh_.createTimer(ros::Duration(0.1), boost::bind(&AMBSBaseRunner::executeCB, this, _1));
+  execute_timer_ = nh_.createTimer(ros::Duration(0.01), boost::bind(&AMBSBaseRunner::executeCB, this, _1));
 }
 
 /**

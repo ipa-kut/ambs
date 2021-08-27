@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <group ns="ambs">
+
+        <arg name="dest_dir" default="$(env HOME)/ARAIG/benchmarks" />
+        <arg name="bot_name" default="ambs_bench_braking" />
+        <arg name="loops" default="20" />
+        <arg name="sensor_rate" default="100" />
+
+        <rosparam command="load" file="$(find ambs_tests)/test_configs/bench_braking.yaml" />
+        <rosparam param="/ambs/log_folder_root" subst_value="True">$(arg dest_dir)</rosparam>
+        <rosparam param="/ambs/robot_name" subst_value="True">$(arg bot_name)</rosparam>
+
+        <node pkg="nodelet" type="nodelet" name="base_nodelet_manager" args="manager"  output="screen">
+            <param name="num_worker_threads" value="32" />
+        </node>
+
+
+    <!-- Runner (which includes debug logger) -->
+        <node pkg="nodelet" type="nodelet" name="bench_braking"
+            args="load ambs_runners/BenchBrakingNodelet base_nodelet_manager">
+            <rosparam param="/ambs/runners/bench_braking/loops" subst_value="True">
+                    $(arg loops)</rosparam>
+            <rosparam param="/ambs/runners/bench_braking/sensor_rate" subst_value="True">
+                    $(arg sensor_rate)</rosparam>
+            <remap from="bench_braking/out_start_robot" to="event/runner/start_robot" />
+            <remap from="bench_braking/out_stop_robot" to="event/runner/stop_robot" />
+            <remap from="bench_braking/out_reset_test" to="event/runner/reset_test" />
+            <remap from="bench_braking/robot_is_stationary" to="event/calc/robot_is_stationary" />
+            <remap from="bench_braking/robot_has_max_vel" to="event/calc/robot_has_max_vel" />
+            <remap from="bench_braking/out_robot_location" to="data/mock/location/robot" />
+            <remap from="bench_braking/out_robot_speed_x" to="data/mock/speed/robot" />
+            <remap from="bench_braking/in_calc_braking_distance" to="data/calc/braking_distance" />
+        </node>
+
+    <!-- calculators -->
+        <!-- robot_reached_max_vel_node -->
+        <node pkg="nodelet" type="nodelet" name="calc_robot_has_max_vel"
+        args="load ambs_calculators/CompFloatParamNodelet base_nodelet_manager">
+            <remap from="calc_robot_has_max_vel/in_start" to="event/runner/start_robot" />
+            <remap from="calc_robot_has_max_vel/in_stop" to="event/runner/reset_test" />
+            <remap from="calc_robot_has_max_vel/in_reset" to="event/runner/reset_test" />
+            <remap from="calc_robot_has_max_vel/in_float" to="data/mock/speed/robot" />
+            <remap from="calc_robot_has_max_vel/out_comparison" to="event/calc/robot_has_max_vel" />
+        </node>
+
+        <!-- robot_is_stationary_node -->
+        <node pkg="nodelet" type="nodelet" name="calc_robot_is_stationary"
+        args="load ambs_calculators/CompFloatParamNodelet base_nodelet_manager">
+            <remap from="calc_robot_is_stationary/in_start" to="event/runner/start_robot" />
+            <remap from="calc_robot_is_stationary/in_stop" to="event/runner/reset_test" />
+            <remap from="calc_robot_is_stationary/in_reset" to="event/runner/reset_test" />
+            <remap from="calc_robot_is_stationary/in_float" to="data/mock/speed/robot" />
+            <remap from="calc_robot_is_stationary/out_comparison" to="event/calc/robot_is_stationary" />
+        </node>
+
+        <!-- braking_distance_node -->
+        <node pkg="nodelet" type="nodelet" name="calc_braking_distance"
+        args="load ambs_calculators/DiffPoseTemporalNodelet base_nodelet_manager">
+            <remap from="calc_braking_distance/in_start" to="event/runner/stop_robot" />
+            <remap from="calc_braking_distance/in_stop" to="event/calc/robot_is_stationary" />
+            <remap from="calc_braking_distance/in_reset" to="event/runner/reset_test" />
+            <remap from="calc_braking_distance/in_pose" to="data/mock/location/robot" />
+            <remap from="calc_braking_distance/out_diff_position" to="data/calc/braking_distance" />
+        </node>
+
+        <!-- braking_time_node -->
+ <!--       <node pkg="nodelet" type="nodelet" name="calc_braking_time"
+        args="load ambs_calculators/StopwatchNodelet base_nodelet_manager">
+            <remap from="calc_braking_time/in_start" to="event/runner/stop_robot" />
+            <remap from="calc_braking_time/in_stop" to="event/calc/robot_is_stationary" />
+            <remap from="calc_braking_time/in_reset" to="event/runner/reset_test" />
+            <remap from="calc_braking_time/out_float" to="data/calc/braking_time" />
+        </node>-->
+
+    </group>
+</launch>
+
+
