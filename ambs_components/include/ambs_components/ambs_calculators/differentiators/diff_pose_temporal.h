@@ -83,18 +83,16 @@ void DiffPoseTemporal::executeCB(const ros::TimerEvent& event)
 
   default_control_.waitForStart();
   geometry_msgs::PoseStamped start_pose = pose_interface_.getPortMsg(IN_POSE_);
-  ROS_WARN_STREAM(node_name_ << ": Starting pos stamp @ " <<  start_pose.header.stamp
+  ROS_DEBUG_STREAM(node_name_ << ": Starting pos stamp @ " <<  start_pose.header.stamp
                       << " stored @ " << ros::Time::now() <<
                     ": " << start_pose.pose.position.x);
-//  printPose(start_pose);
   ROS_DEBUG_STREAM(" ");
 
   default_control_.waitForStop();
   geometry_msgs::PoseStamped stop_pose = pose_interface_.getPortMsg(IN_POSE_);
-  ROS_WARN_STREAM(node_name_ << ": Stopping pos stamp @ " <<  stop_pose.header.stamp
+  ROS_DEBUG_STREAM(node_name_ << ": Stopping pos stamp @ " <<  stop_pose.header.stamp
                    << " stored @ " << ros::Time::now() <<
                     ": " << stop_pose.pose.position.x);
-//  printPose(stop_pose);
   ROS_DEBUG_STREAM(" ");
 
   diff_pos_msg.data = ambs_helper::getTranslationDiffFromPoses(start_pose, stop_pose);
@@ -112,9 +110,9 @@ void DiffPoseTemporal::executeCB(const ros::TimerEvent& event)
   pose_interface_.resetAllPorts();
 
   ROS_INFO_STREAM(node_name_ << ": Restarting calculator");
-  ROS_INFO(" ");
-  ROS_INFO("-----------------------------------------------------------");
-  ROS_INFO(" ");
+  ROS_DEBUG_STREAM(" ");
+  ROS_DEBUG_STREAM("-----------------------------------------------------------");
+  ROS_DEBUG_STREAM(" ");
 }
 
 /**

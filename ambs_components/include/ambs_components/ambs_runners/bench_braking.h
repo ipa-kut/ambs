@@ -6,11 +6,15 @@
 #include <numeric>
 #include <angles/angles.h>
 #include <experimental/random>
+#include <fstream>
+#include <cmath>
+#include <chrono>
 
 #include <geometry_msgs/PoseStamped.h>
 #include <std_msgs/Float64.h>
 #include "ambs_core/ambs_base_runner/ambs_base_runner.h"
 #include "ambs_components/ambs_loggers/debug_logger.h"
+#include "ambs_core/ambs_helper/helper.h"
 
 namespace ambs_runners
 {
@@ -61,6 +65,9 @@ private:
 
   int loops_;
   int sensor_rate_;
+
+  double getStandardDeviation(std::vector<double> data);
+  double getMaxDeviation(std::vector<double> data);
 };
 
 
@@ -80,6 +87,7 @@ void BenchBraking::mockRobot(const ros::TimerEvent &event)
 
   while (ros::ok())
   {
+    if (sin(angles::from_degrees(x)) == 0) continue;
     geometry_msgs::PoseStamped msg_pos;
     msg_pos.header.stamp = ros::Time::now();
     msg_pos.pose.position.x = sin(angles::from_degrees(x));
@@ -117,6 +125,14 @@ void BenchBraking::executeCB(const ros::TimerEvent& event)
   ros::Duration(1).sleep();
   ROS_WARN_STREAM(node_name_ << "Running bench for " << loops_ << " loops @ "
                   << sensor_rate_ <<"Hz sensor rate");
+  std::ofstream debug_file;
+  debug_file.open(log_folder_path_ + "/benchmarking.csv", std::ios_base::app);
+  debug_file << "TIMESTAMP " << " , " <<
+                "ERROR " << " , " <<
+                "ACCURACY "<< " , " << std::endl;
+  debug_file.close();
+
+  std::chrono::steady_clock::time_point time_begin = std::chrono::steady_clock::now();
   for (int i=1; i <= loops_; i++)
   {
     ROS_INFO_STREAM(node_name_ << "-------------------ITERATION " << i << "--------------------------");
@@ -132,7 +148,7 @@ void BenchBraking::executeCB(const ros::TimerEvent& event)
     ROS_INFO_STREAM(node_name_ << ": Robot maintained max vel, stopping it");
     stopRobot();
     double actual_brake_received = pose_interface_.getPortMsg(ROBOT_LOCATION).pose.position.x;
-    ROS_WARN_STREAM(node_name_ << ": Starting pos stored @ " << ros::Time::now() <<
+    ROS_DEBUG_STREAM(node_name_ << ": Starting pos stored @ " << ros::Time::now() <<
                     ": " << actual_brake_received);
 
     //  Wait for mock robot to actually stop
@@ -143,7 +159,7 @@ void BenchBraking::executeCB(const ros::TimerEvent& event)
 
     //  Get braking distance ground truth
     double actual_mock_stopped = pose_interface_.getPortMsg(ROBOT_LOCATION).pose.position.x;
-    ROS_WARN_STREAM(node_name_ << ": Stopping pos stamp @ "
+    ROS_DEBUG_STREAM(node_name_ << ": Stopping pos stamp @ "
                     <<  pose_interface_.getPortMsg(ROBOT_LOCATION).header.stamp
                     << " stored @ " << ros::Time::now() <<
                     ": " << actual_mock_stopped);
@@ -153,16 +169,22 @@ void BenchBraking::executeCB(const ros::TimerEvent& event)
     ros::Duration(0.5).sleep();
     double calc_braking_distance = float_interface_.getPortMsg(CALC_BRAKING_DISTANCE_).data;
 
+    if (actual_braking_distance == 0)
+    {
+      ROS_WARN_STREAM(node_name_ << ": 0 braking distance, skipping loop");
+      continue;
+    }
+
     error = std::abs(std::abs(actual_braking_distance) - std::abs(calc_braking_distance));
     accuracy = 100 - std::abs(error/actual_braking_distance)*100;
 
     error_list.push_back(error);
     accuracy_list.push_back(accuracy);
 
-    err_avg = std::accumulate(error_list.begin(), error_list.end(), 0)/error_list.size();
-    acc_avg = std::accumulate(accuracy_list.begin(), accuracy_list.end(), 0)/accuracy_list.size();
+    err_avg = ambs_helper::getMean(error_list);
+    acc_avg = ambs_helper::getMean(accuracy_list);
 
-    ROS_WARN_STREAM(node_name_ << ": Sens dist: " << actual_braking_distance
+    ROS_DEBUG_STREAM(node_name_ << ": Sens dist: " << actual_braking_distance
                     << " Calc dist " << calc_braking_distance);
     if (accuracy <= 90)
       ROS_ERROR_STREAM(node_name_ << ": BAD Error " << error << " BAD Accuracy " << accuracy);
@@ -170,7 +192,11 @@ void BenchBraking::executeCB(const ros::TimerEvent& event)
       ROS_WARN_STREAM(node_name_ << ": Error " << error << " Accuracy " << accuracy);
     ROS_WARN_STREAM(node_name_ << ": Error AVG " << err_avg << " Accuracy AVG " << acc_avg);
 
-     debug_logger_.logInfo(std::to_string(accuracy));
+    debug_file.open(log_folder_path_ + "/benchmarking.csv", std::ios_base::app);
+    debug_file << ros::Time::now() << " , " <<
+                  error << " , " <<
+                  accuracy << " , " << std::endl;
+    debug_file.close();
 
     //  Reset test
     signal_interface_.publishMsgOnPort(RESET_TEST, signal_interface_.constructNewBoolStamped(true));
@@ -180,10 +206,42 @@ void BenchBraking::executeCB(const ros::TimerEvent& event)
 
     //  Randomize next run
     ros::Duration(static_cast<float>(std::experimental::randint(5, 15))/10).sleep();
+    ROS_INFO_STREAM(" ");
+    ROS_INFO_STREAM("-----------------------------------------------------------");
+    ROS_INFO_STREAM(" ");
   }
+  std::chrono::steady_clock::time_point time_end = std::chrono::steady_clock::now();
+
+  double time_elapsed = std::chrono::duration_cast<std::chrono::seconds>(time_end - time_begin).count();
+
+  double err_std = ambs_helper::getStandardDeviation(error_list);
+  double acc_std = ambs_helper::getStandardDeviation(accuracy_list);
+  double err_maxdev = ambs_helper::getMaxDeviation(error_list);
+  double acc_maxdev = ambs_helper::getMaxDeviation(accuracy_list);
+
+  ROS_WARN_STREAM(node_name_ << ": AVG Accuracy " << acc_avg <<
+                   " STD Accuracy " << acc_std <<
+                   " MAXDEV Accuracy " << " , " << acc_maxdev);
+  ROS_WARN_STREAM(node_name_ << ": AVG Error " << err_avg <<
+                   " STD Error " << err_std <<
+                   " MAXDEV Error " << " , " << err_maxdev);
+
+  debug_file.open(log_folder_path_ + "/benchmarking.csv", std::ios_base::app);
+  debug_file << "AVG Accuracy" << " , " << acc_avg << " , " <<
+                "STD Accuracy " << " , " << acc_std << " , " <<
+                "MAXDEV Accuracy " << " , " << acc_maxdev << std::endl;
+  debug_file << "AVG Error" << " , " << err_avg << " , " <<
+                "STD Error " << " , " << err_std << " , " <<
+                "MAXDEV Error " << " , " << err_maxdev << std::endl;
+  debug_file << "Time elapsed (s)" << " , " << time_elapsed << std::endl;
+  debug_file << "Loops" << " , " << loops_ << std::endl;
+  debug_file << "Sensor rate" << " , " << sensor_rate_ << std::endl;
+  debug_file.close();
 
   ros::shutdown();
 }
+
+
 
 /**
  * @brief init function will be called by nodelet, so it is not called anywhere from within class
@@ -204,6 +262,8 @@ void BenchBraking::init()
   mock_robot_ = nh_.createTimer(ros::Duration(0.1), boost::bind(&BenchBraking::mockRobot, this, _1));
   startRunner();
 }
+
+
 
 
 }  // namespace ambs_runners

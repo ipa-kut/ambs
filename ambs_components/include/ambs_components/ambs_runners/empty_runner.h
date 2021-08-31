@@ -48,6 +48,9 @@ void EmptyRunner::executeCB(const ros::TimerEvent& event)
   ROS_INFO_STREAM(node_name_ << ": Rosbag is recording");
 
   while (ros::ok()) {}
+  ROS_INFO_STREAM(" ");
+  ROS_INFO_STREAM("-----------------------------------------------------------");
+  ROS_INFO_STREAM(" ");
 }
 
 /**

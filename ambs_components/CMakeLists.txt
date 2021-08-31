@@ -47,7 +47,7 @@ add_library(${PROJECT_NAME}
 add_dependencies(${PROJECT_NAME} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
 
-set(ROSLINT_CPP_OPTS "--filter=-legal/copyright,-whitespace/braces")
+set(ROSLINT_CPP_OPTS "--filter=-legal/copyright,-whitespace/braces, -build/c++11")
 roslint_cpp()
 
 install(DIRECTORY include/${PROJECT_NAME}/

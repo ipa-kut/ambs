@@ -79,8 +79,8 @@ protected:
   std::map<std::string, AMBSPort<T>> interfaces_;
   ros::NodeHandle nh_;
   std::string node_name_;
-  const unsigned int subscriber_queue_size_ = 10;
-  const unsigned int publisher_queue_size_ = 10;
+  const unsigned int subscriber_queue_size_ = 1000;
+  const unsigned int publisher_queue_size_ = 1000;
 
   virtual void templatedCB(const boost::shared_ptr<const T> msg, std::string topic);
 };
@@ -117,12 +117,6 @@ AMBSTemplatedInterface<T>::AMBSTemplatedInterface(std::vector<std::string> input
 template<typename T> inline
 T AMBSTemplatedInterface<T>::getPortMsg(std::string port_name)
 {
-  if(interfaces_.find(port_name) == interfaces_.end())
-  {
-    ROS_WARN_STREAM(node_name_ << "  tried to access non existent port " << port_name);
-    T default_msg;
-    return default_msg;
-  }
   T val;
   try
   {
@@ -132,7 +126,7 @@ T AMBSTemplatedInterface<T>::getPortMsg(std::string port_name)
   }
   catch (std::exception e)
   {
-    ROS_ERROR_STREAM(node_name_ << ":  getPortMsg mutex exception on port " << port_name << " " << e.what());
+    ROS_ERROR_STREAM(node_name_ << ":  getPortMsg exception on port " << port_name << " " << e.what());
   }
   return val;
 }
@@ -147,11 +141,6 @@ T AMBSTemplatedInterface<T>::getPortMsg(std::string port_name)
 template<typename T> inline
 void AMBSTemplatedInterface<T>::setPortMsg(std::string port_name, T msg)
 {
-  if(interfaces_.find(port_name) == interfaces_.end())
-  {
-    ROS_WARN_STREAM(node_name_ << "  tried to access non existent port " << port_name);
-    return;
-  }
   try
   {
     mutexes_[interfaces_[port_name].index_].lock();
@@ -160,7 +149,7 @@ void AMBSTemplatedInterface<T>::setPortMsg(std::string port_name, T msg)
   }
   catch (std::exception e)
   {
-    ROS_ERROR_STREAM(node_name_ << ":  setPortMsg mutex exception on port " << port_name << " " << e.what());
+    ROS_ERROR_STREAM(node_name_ << ":  setPortMsg exception on port " << port_name << " " << e.what());
   }
 }
 
@@ -173,11 +162,6 @@ void AMBSTemplatedInterface<T>::setPortMsg(std::string port_name, T msg)
 template<typename T>
 void AMBSTemplatedInterface<T>::setPortValidity(std::string port_name, bool validity)
 {
-  if(interfaces_.find(port_name) == interfaces_.end())
-  {
-    ROS_WARN_STREAM(node_name_ << "  tried to access non existent port " << port_name);
-    return;
-  }
   try
   {
     mutexes_[interfaces_[port_name].index_].lock();
@@ -186,9 +170,8 @@ void AMBSTemplatedInterface<T>::setPortValidity(std::string port_name, bool vali
   }
   catch (std::exception e)
   {
-    ROS_ERROR_STREAM(node_name_ << ":  setPortValidity mutex exception on port " << port_name << " " << e.what());
+    ROS_ERROR_STREAM(node_name_ << ":  setPortValidity exception on port " << port_name << " " << e.what());
   }
-
 }
 
 /**
@@ -203,16 +186,16 @@ void AMBSTemplatedInterface<T>::setPortValidity(std::string port_name, bool vali
 template<typename T> inline
 void AMBSTemplatedInterface<T>::publishMsgOnPort(std::string port_name, T msg)
 {
-  if(interfaces_.find(port_name) == interfaces_.end())
+  try
   {
-    ROS_WARN_STREAM(node_name_ << " tried to access non existent port " << port_name);
-    T default_msg;
-    return;
+    msg_ptr = boost::make_shared<T>(msg);
+    interfaces_[port_name].pub_.publish(msg_ptr);
+    setPortMsg(port_name,msg);
   }
-  msg_ptr = boost::make_shared<T>(msg);
-  interfaces_[port_name].pub_.publish(msg_ptr);
-//  interfaces_[port_name].pub_.publish(msg);
-  setPortMsg(port_name,msg);
+  catch (std::exception e)
+  {
+    ROS_ERROR_STREAM(node_name_ << ":  publishMsgOnPort exception on port " << port_name << " " << e.what());
+  }
 }
 
 /**
@@ -242,12 +225,6 @@ void AMBSTemplatedInterface<T>::printPorts()
 template<typename T>
 bool AMBSTemplatedInterface<T>::isPortValid(std::string port_name)
 {
-  if(interfaces_.find(port_name) == interfaces_.end())
-  {
-    ROS_WARN_STREAM(node_name_ << " tried to access non existent port " << port_name);
-    T default_msg;
-    return false;
-  }
   bool result;
   try
   {
@@ -257,7 +234,7 @@ bool AMBSTemplatedInterface<T>::isPortValid(std::string port_name)
   }
   catch (std::exception e)
   {
-    ROS_ERROR_STREAM(node_name_ << ":  isPortValid mutex exception on port " << port_name << " " << e.what());
+    ROS_ERROR_STREAM(node_name_ << ":  isPortValid exception on port " << port_name << " " << e.what());
   }
   return result;
 }
@@ -281,7 +258,7 @@ void AMBSTemplatedInterface<T>::templatedCB(const boost::shared_ptr<const T> msg
   }
   catch (std::exception e)
   {
-    ROS_ERROR_STREAM(node_name_ << ":  templatedCB mutex exception " << e.what());
+    ROS_ERROR_STREAM(node_name_ << ":  templatedCB exception " << e.what());
   }
 }
 
@@ -333,14 +310,16 @@ void AMBSTemplatedInterface<T>::init(std::vector<std::string> input_interface,
 template<typename T> inline
 void AMBSTemplatedInterface<T>::resetPort(std::string port_name)
 {
-  if(interfaces_.find(port_name) == interfaces_.end())
+  try
   {
-    ROS_WARN_STREAM(node_name_ << " tried to access non existent port " << port_name);
-    return;
+    T default_msg;
+    setPortMsg(port_name, default_msg);
+    setPortValidity(port_name, false);
   }
-  T default_msg;
-  setPortMsg(port_name, default_msg);
-  setPortValidity(port_name, false);
+  catch (std::exception e)
+  {
+    ROS_ERROR_STREAM(node_name_ << ":  resetPort exception on port " << port_name << " " << e.what());
+  }
 }
 
 /**

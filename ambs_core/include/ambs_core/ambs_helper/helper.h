@@ -4,6 +4,7 @@
 #include <tf/transform_datatypes.h>
 #include <geometry_msgs/Quaternion.h>
 #include <angles/angles.h>
+#include <numeric>
 
 namespace ambs_helper
 {
@@ -31,6 +32,55 @@ double getYawDiffFromPoses(geometry_msgs::PoseStamped start_pose, geometry_msgs:
   return std::abs(getYawDegreesFromQuaternion(start_pose.pose.orientation) -
         getYawDegreesFromQuaternion(stop_pose.pose.orientation));
 }
+
+/**
+ * @brief Get mean of a data series
+ * @param data The data series
+ * @return The mean
+ */
+double getMean(std::vector<double> data)
+{
+  double sum = 0;
+  for (double val : data)
+  {
+    sum += val;
+  }
+  double mean = sum/data.size();
+  return mean;
+}
+
+/**
+ * @brief Get Standard Deviation of a data series
+ * @param data The data series
+ * @return The SD
+ */
+double getStandardDeviation(std::vector<double> data)
+{
+
+  double mean = getMean(data);
+  double sd = 0;
+  for (double val : data)
+  {
+    sd += pow(val - mean, 2);
+  }
+  return sqrt(sd/data.size());
+}
+
+/**
+ * @brief Get Maximum Deviation of a data series
+ * @param data The data series
+ * @return The MD
+ */
+double getMaxDeviation(std::vector<double> data)
+{
+  double mean = getMean(data);
+  double md = 0;
+  for (double val : data) {
+    md = std::max(md, std::abs(val - mean));
+  }
+  return md;
+}
+
 
 
 }  // namespace ambs_helper

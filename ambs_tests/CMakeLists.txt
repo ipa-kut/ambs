@@ -65,6 +65,12 @@ if(CATKIN_ENABLE_TESTING)
     target_link_libraries(test_edge_detector ${catkin_LIBRARIES} ${GTEST_LIBRARIES})
     add_dependencies(test_edge_detector ${catkin_EXPORTED_TARGETS})
 
+    add_rostest_gtest(test_helper
+        test/unit_tests/core/helper/test_helper.test
+        test/unit_tests/core/helper/test_helper.cpp)
+    target_link_libraries(test_helper ${catkin_LIBRARIES} ${GTEST_LIBRARIES})
+    add_dependencies(test_helper ${catkin_EXPORTED_TARGETS})
+
 endif()
 
 
