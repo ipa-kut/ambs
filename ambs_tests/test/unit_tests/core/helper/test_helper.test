@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <group ns="ambs">
+
+    <test test-name="gtest_helper_tester" pkg="ambs_tests"
+        type="test_helper" name="gtest_helper_tester">
+        <remap from="out_start" to="start_calc" />
+        <remap from="out_stop" to="stop_calc" />
+        <remap from="out_reset" to="reset_calc" />
+        <remap from="in_done" to="calc_done" />
+        <remap from="out_float" to="calc_float" />
+        <remap from="in_comparison" to="calc_result" />
+    </test>
+
+    </group>
+</launch>

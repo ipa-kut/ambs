@@ -92,7 +92,7 @@ void CompFloatParam::executeCB(const ros::TimerEvent& event)
   float tolerance = getResolvedParam<float>(TOLERANCE_);
   bool is_published = false;
 
-  ros::Rate loop(10);
+  ros::Rate loop(500);
   while (ros::ok())
   {
     ros::spinOnce();

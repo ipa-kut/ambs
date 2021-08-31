@@ -23,7 +23,7 @@ public:
   ambs_msgs::BoolStamped waitForTrueOnPort(std::string port);
 
 private:
-  const double wait_loop_rate = 100;
+  const double wait_loop_rate = 500;
 };
 
 

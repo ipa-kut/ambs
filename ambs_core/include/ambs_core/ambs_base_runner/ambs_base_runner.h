@@ -160,6 +160,7 @@ inline bool AMBSBaseRunner::initialiseBaseRunner(ros::NodeHandle nh,
   }
   else
   {
+    ROS_ERROR_STREAM(node_name_ << ": Folder " << log_path_ << " could not be created!!");
     ros::shutdown();
   }
 }
@@ -173,7 +174,7 @@ inline bool AMBSBaseRunner::initialiseBaseRunner(ros::NodeHandle nh,
  */
 inline std::string AMBSBaseRunner::timedLoopFallbackOnPorts(std::vector<std::string> *ports,
                                                             double time,
-                                                            double rate = 100)
+                                                            double rate = 500)
 {
   ros::Time start = ros::Time::now();
   ros::Rate loop(rate);
@@ -201,7 +202,7 @@ inline std::string AMBSBaseRunner::timedLoopFallbackOnPorts(std::vector<std::str
  */
 inline std::string AMBSBaseRunner::timedLoopSequenceOnPorts(std::vector<std::string> *ports,
                                                             double time,
-                                                            double rate = 100)
+                                                            double rate = 500)
 {
   ros::Time start = ros::Time::now();
   ros::Rate loop(rate);

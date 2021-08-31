@@ -101,6 +101,9 @@ void Test1Braking::executeCB(const ros::TimerEvent& event)
   }
 
   waitForReset();
+  ROS_INFO_STREAM(" ");
+  ROS_INFO_STREAM("-----------------------------------------------------------");
+  ROS_INFO_STREAM(" ");
   return;
 }
 
