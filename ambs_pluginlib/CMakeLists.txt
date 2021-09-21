@@ -27,6 +27,7 @@ include_directories(
 add_library(ambs_calculators
    src/calculators/comparators/comp_float_param_nodelet.cpp
    src/calculators/comparators/edge_detector_nodelet.cpp
+   src/calculators/utils/signal_repeater_nodelet.cpp
    src/calculators/differentiators/diff_float_temporal_nodelet.cpp
    src/calculators/differentiators/diff_pose_temporal_nodelet.cpp
    src/calculators/differentiators/stopwatch_nodelet.cpp
