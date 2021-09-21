@@ -32,6 +32,14 @@
         </description>
     </class>
 
+    <class name="ambs_calculators/SignalRepeaterNodelet"
+    type="ambs_calculators::SignalRepeaterNodelet"
+    base_class_type="nodelet::Nodelet">
+        <description>
+        Nodelet to boost signal frequency
+        </description>
+    </class>
+
     <class name="ambs_calculators/StopwatchNodelet"
     type="ambs_calculators::StopwatchNodelet"
     base_class_type="nodelet::Nodelet">
