@@ -3,6 +3,7 @@
 <area shape="rect" id="node2" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3" title="Create a new BoolStamped type message." alt="" coords="140,5,373,47"/>
 <area shape="rect" id="node3" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aabf915c783f55403b189d83e619643fd" title="Publish a message on a port." alt="" coords="159,71,355,112"/>
 <area shape="rect" id="node4" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="140,136,373,177"/>
-<area shape="rect" id="node5" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="421,89,617,145"/>
-<area shape="rect" id="node6" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="421,169,617,225"/>
+<area shape="rect" id="node5" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="421,49,617,105"/>
+<area shape="rect" id="node6" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9" title="Returns if the port has received at least on message." alt="" coords="421,129,617,185"/>
+<area shape="rect" id="node7" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="421,209,617,265"/>
 </map>

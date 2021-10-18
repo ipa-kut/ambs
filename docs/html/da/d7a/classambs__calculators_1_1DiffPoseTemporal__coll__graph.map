@@ -1,7 +1,8 @@
 <map id="DiffPoseTemporal" name="DiffPoseTemporal">
-<area shape="rect" id="node1" title="Compute difference in a pose value from a topic between start and stop." alt="" coords="48,337,175,364"/>
+<area shape="rect" id="node1" title="Compute difference in a pose value from a topic between start and stop." alt="" coords="159,351,285,377"/>
 <area shape="rect" id="node2" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html" title="The VIRTUAL base class for all calculators to inherit from." alt="" coords="37,261,186,288"/>
 <area shape="rect" id="node3" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html" title="A standard boolean AMBSTemplatedInterface interface for calculators." alt="" coords="5,172,217,199"/>
 <area shape="rect" id="node4" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html" title="A bool specialisation of AMBSTemplatedInterface. Offers two extra functions." alt="" coords="32,96,191,123"/>
 <area shape="rect" id="node5" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html" title=" " alt="" coords="10,5,213,47"/>
+<area shape="rect" id="node6" href="$d4/d68/classambs__loggers_1_1DebugLogger.html" title="Components may use objects of this class to send debug logging messages to the runner." alt="" coords="210,261,309,288"/>
 </map>

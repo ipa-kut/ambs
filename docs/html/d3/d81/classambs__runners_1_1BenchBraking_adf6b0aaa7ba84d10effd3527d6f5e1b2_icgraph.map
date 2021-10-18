@@ -1,0 +1,4 @@
+<map id="mockRobot" name="mockRobot">
+<area shape="rect" id="node1" title="Mocks the robot &amp; sensor: provides robot speed &amp; sensor location." alt="" coords="92,5,181,32"/>
+<area shape="rect" id="node2" href="$d3/d81/classambs__runners_1_1BenchBraking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,5,44,32"/>
+</map>

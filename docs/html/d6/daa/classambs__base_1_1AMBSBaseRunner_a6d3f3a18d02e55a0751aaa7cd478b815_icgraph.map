@@ -1,6 +1,7 @@
 <map id="createLoggingFolder" name="createLoggingFolder">
-<area shape="rect" id="node1" title="Check if param path exists, create it otherwise, then create next logging folder." alt="" coords="435,46,573,73"/>
-<area shape="rect" id="node2" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a2ce63b7c990f2c030b6cd2afcff95624" title="Actual initialisation function." alt="" coords="245,46,387,73"/>
-<area shape="rect" id="node3" href="$d4/da7/classambs__runners_1_1EmptyRunner.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,5,197,47"/>
-<area shape="rect" id="node4" href="$d7/d68/classambs__runners_1_1Test1Braking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="7,71,196,112"/>
+<area shape="rect" id="node1" title="Check if param path exists, create it otherwise, then create next logging folder." alt="" coords="436,78,575,105"/>
+<area shape="rect" id="node2" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a2ce63b7c990f2c030b6cd2afcff95624" title="Actual initialisation function." alt="" coords="247,78,388,105"/>
+<area shape="rect" id="node3" href="$d3/d81/classambs__runners_1_1BenchBraking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node4" href="$d4/da7/classambs__runners_1_1EmptyRunner.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="6,71,198,112"/>
+<area shape="rect" id="node5" href="$d7/d68/classambs__runners_1_1Test1Braking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="7,136,197,177"/>
 </map>

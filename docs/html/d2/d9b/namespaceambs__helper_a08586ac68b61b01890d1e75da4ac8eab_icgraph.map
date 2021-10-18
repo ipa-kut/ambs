@@ -1,0 +1,9 @@
+<map id="getMean" name="getMean">
+<area shape="rect" id="node1" title="Get mean of a data series." alt="" coords="441,89,513,116"/>
+<area shape="rect" id="node2" href="$d3/d81/classambs__runners_1_1BenchBraking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="5,57,199,98"/>
+<area shape="rect" id="node3" href="$d2/d9b/namespaceambs__helper.html#a2d874fc1731da6f902ae3f88787f4c44" title="Get Maximum Deviation of a data series." alt="" coords="260,13,380,40"/>
+<area shape="rect" id="node5" href="$d2/d9b/namespaceambs__helper.html#a21ad9157629eec9a279bb870c1115dbf" title="Get Standard Deviation of a data series." alt="" coords="247,115,393,141"/>
+<area shape="rect" id="node7" href="$d3/dd5/test__helper_8cpp.html#a25bbc5b8446706ec6500717f8d0dd476" title=" " alt="" coords="285,165,355,192"/>
+<area shape="rect" id="node4" href="$d3/dd5/test__helper_8cpp.html#a63a800b68eaf6f342b3ce0b7a4ce50fe" title=" " alt="" coords="67,5,137,32"/>
+<area shape="rect" id="node6" href="$d3/dd5/test__helper_8cpp.html#aaf5b8db1f0f4bb48fa431a6596406caf" title=" " alt="" coords="67,123,137,149"/>
+</map>

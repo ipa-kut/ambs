@@ -3,13 +3,14 @@
 <area shape="rect" id="node2" href="$d4/d68/classambs__loggers_1_1DebugLogger.html#ad7e431c5f91d44c145cb99ece9bfca21" title="Log message with level 0." alt="" coords="164,43,352,84"/>
 <area shape="rect" id="node4" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a45924180e9991c17c1ec7264500c1878" title="Publish TRUE on the DONE port." alt="" coords="140,144,376,185"/>
 <area shape="rect" id="node7" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a9daeb45ab1c8723c550216193bc640d4" title="Wait for TRUE on the RESET port." alt="" coords="140,216,376,257"/>
-<area shape="rect" id="node12" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ad7f2492738b8b944ceea50f2eba2682c" title="Wait for TRUE on the START port." alt="" coords="140,281,376,323"/>
-<area shape="rect" id="node13" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac5ea3fdfe16309af79519349423e0168" title="Wait for TRUE on the STOP port." alt="" coords="140,347,376,388"/>
+<area shape="rect" id="node13" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ad7f2492738b8b944ceea50f2eba2682c" title="Wait for TRUE on the START port." alt="" coords="140,281,376,323"/>
+<area shape="rect" id="node14" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac5ea3fdfe16309af79519349423e0168" title="Wait for TRUE on the STOP port." alt="" coords="140,347,376,388"/>
 <area shape="rect" id="node3" href="$d4/d68/classambs__loggers_1_1DebugLogger.html#afa1149c9fdc4ced4d60c0ec9ef56c4bb" title=" " alt="" coords="447,5,635,47"/>
 <area shape="rect" id="node5" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3" title="Create a new BoolStamped type message." alt="" coords="424,71,657,112"/>
 <area shape="rect" id="node6" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aabf915c783f55403b189d83e619643fd" title="Publish a message on a port." alt="" coords="427,137,654,193"/>
 <area shape="rect" id="node8" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#af8173f556899e5af6e228ced6c0009fb" title="Reset inernal buffer message of all ports." alt="" coords="443,217,639,273"/>
 <area shape="rect" id="node9" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="424,297,657,339"/>
-<area shape="rect" id="node10" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="705,250,901,306"/>
-<area shape="rect" id="node11" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="705,330,901,386"/>
+<area shape="rect" id="node10" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="705,210,901,266"/>
+<area shape="rect" id="node11" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9" title="Returns if the port has received at least on message." alt="" coords="705,290,901,346"/>
+<area shape="rect" id="node12" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="705,370,901,426"/>
 </map>

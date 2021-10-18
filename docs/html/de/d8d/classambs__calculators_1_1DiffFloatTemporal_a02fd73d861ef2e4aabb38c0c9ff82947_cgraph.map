@@ -1,5 +1,7 @@
 <map id="init" name="init">
-<area shape="rect" id="node1" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,13,44,39"/>
-<area shape="rect" id="node2" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ae75e799bea3344778673b0378e7d01a2" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="92,5,316,47"/>
-<area shape="rect" id="node3" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a967f9a0a5cfaa49ba54b5fe00c08b132" title=" " alt="" coords="364,5,588,47"/>
+<area shape="rect" id="node1" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,57,44,84"/>
+<area shape="rect" id="node2" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ab0c2214caea3e5818fc59fdbd68f57a8" title="Initialisation decoupled from constructor for convenince." alt="" coords="92,15,328,57"/>
+<area shape="rect" id="node4" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ae75e799bea3344778673b0378e7d01a2" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="98,82,322,123"/>
+<area shape="rect" id="node3" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="390,5,586,61"/>
+<area shape="rect" id="node5" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a967f9a0a5cfaa49ba54b5fe00c08b132" title=" " alt="" coords="376,86,600,127"/>
 </map>

@@ -1,0 +1,4 @@
+<map id="BenchBraking" name="BenchBraking">
+<area shape="rect" id="node1" title="Benchmark braking test: analyse braking distance." alt="" coords="20,80,123,107"/>
+<area shape="rect" id="node2" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html" title="The virtual base class for all runners to inherit from." alt="" coords="5,5,137,32"/>
+</map>

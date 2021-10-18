@@ -1,5 +1,6 @@
 <map id="AMBSBaseRunner" name="AMBSBaseRunner">
-<area shape="rect" id="node1" title="The virtual base class for all runners to inherit from." alt="" coords="53,5,185,32"/>
-<area shape="rect" id="node2" href="$d4/da7/classambs__runners_1_1EmptyRunner.html" title="Test 1 braking starts a robot and stops after it reaches max vel or times out." alt="" coords="5,80,108,107"/>
-<area shape="rect" id="node3" href="$d7/d68/classambs__runners_1_1Test1Braking.html" title="Test 1 braking starts a robot and stops after it reaches max vel or times out." alt="" coords="133,80,231,107"/>
+<area shape="rect" id="node1" title="The virtual base class for all runners to inherit from." alt="" coords="117,5,249,32"/>
+<area shape="rect" id="node2" href="$d3/d81/classambs__runners_1_1BenchBraking.html" title="Benchmark braking test: analyse braking distance." alt="" coords="5,80,108,107"/>
+<area shape="rect" id="node3" href="$d4/da7/classambs__runners_1_1EmptyRunner.html" title="Test 1 braking starts a robot and stops after it reaches max vel or times out." alt="" coords="132,80,235,107"/>
+<area shape="rect" id="node4" href="$d7/d68/classambs__runners_1_1Test1Braking.html" title="Test 1 braking starts a robot and stops after it reaches max vel or times out." alt="" coords="259,80,358,107"/>
 </map>

@@ -165,13 +165,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a720d11b3d464d5603f65300bd4bf4f53 inherit pub_methods_classambs__base_1_1AMBSTemplatedInterface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a720d11b3d464d5603f65300bd4bf4f53">setPortMsg</a> (std::string port_name, ambs_msgs::BoolStamped msg)</td></tr>
 <tr class="memdesc:a720d11b3d464d5603f65300bd4bf4f53 inherit pub_methods_classambs__base_1_1AMBSTemplatedInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the internal message value of a port. DOES NOT PUBLISH.  <a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a720d11b3d464d5603f65300bd4bf4f53">More...</a><br /></td></tr>
 <tr class="separator:a720d11b3d464d5603f65300bd4bf4f53 inherit pub_methods_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a394a325bb68d82e7e0c340327b70c785 inherit pub_methods_classambs__base_1_1AMBSTemplatedInterface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a394a325bb68d82e7e0c340327b70c785">setPortValidity</a> (std::string port_name, bool validity)</td></tr>
-<tr class="memdesc:a394a325bb68d82e7e0c340327b70c785 inherit pub_methods_classambs__base_1_1AMBSTemplatedInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the is_valid_ flag of a port.  <a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a394a325bb68d82e7e0c340327b70c785">More...</a><br /></td></tr>
-<tr class="separator:a394a325bb68d82e7e0c340327b70c785 inherit pub_methods_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aa007662072f7d7aed6e44a30b80412e2"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#aa007662072f7d7aed6e44a30b80412e2">wait_loop_rate</a> = 100</td></tr>
+<tr class="memitem:aa007662072f7d7aed6e44a30b80412e2"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#aa007662072f7d7aed6e44a30b80412e2">wait_loop_rate</a> = 500</td></tr>
 <tr class="memdesc:aa007662072f7d7aed6e44a30b80412e2"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#aa007662072f7d7aed6e44a30b80412e2">More...</a><br /></td></tr>
 <tr class="separator:aa007662072f7d7aed6e44a30b80412e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -185,12 +182,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2c7c3372ae2463ed268b6f1cab5c7372 inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memItemLeft" align="right" valign="top"><a id="a2c7c3372ae2463ed268b6f1cab5c7372" name="a2c7c3372ae2463ed268b6f1cab5c7372"></a>
 std::map&lt; std::string, <a class="el" href="../../d7/d71/structambs__base_1_1AMBSPort.html">AMBSPort</a>&lt; ambs_msgs::BoolStamped &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>interfaces_</b></td></tr>
 <tr class="separator:a2c7c3372ae2463ed268b6f1cab5c7372 inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cd043ced63c2cdd99da9549ea60fe5f inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memItemLeft" align="right" valign="top"><a id="a1cd043ced63c2cdd99da9549ea60fe5f" name="a1cd043ced63c2cdd99da9549ea60fe5f"></a>
-boost::shared_ptr&lt; ambs_msgs::BoolStamped &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>msg_ptr</b></td></tr>
-<tr class="separator:a1cd043ced63c2cdd99da9549ea60fe5f inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfa8e5a1f2a9cfeed5dadac37a9dbe4b inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memItemLeft" align="right" valign="top"><a id="adfa8e5a1f2a9cfeed5dadac37a9dbe4b" name="adfa8e5a1f2a9cfeed5dadac37a9dbe4b"></a>
-std::deque&lt; boost::mutex &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mutexes_</b></td></tr>
-<tr class="separator:adfa8e5a1f2a9cfeed5dadac37a9dbe4b inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1300297c252ff1dc5ceea58a274d4db5 inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memItemLeft" align="right" valign="top"><a id="a1300297c252ff1dc5ceea58a274d4db5" name="a1300297c252ff1dc5ceea58a274d4db5"></a>
 ros::NodeHandle&#160;</td><td class="memItemRight" valign="bottom"><b>nh_</b></td></tr>
 <tr class="separator:a1300297c252ff1dc5ceea58a274d4db5 inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -281,9 +272,9 @@ const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>subscri
 <div class="fragment"><div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40">init</a>(extended_bool_inputs, extended_bool_outputs, nh, node_name);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_ac55ed2cfd175f6e71ebe460eeb643b40"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::init</a></div><div class="ttdeci">void init(std::vector&lt; std::string &gt; input_interface, std::vector&lt; std::string &gt; output_interface, ros::NodeHandle nh, std::string node_name)</div><div class="ttdoc">Initialisation function, decoupled from constructor for convenience.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:261</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_ac55ed2cfd175f6e71ebe460eeb643b40"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::init</a></div><div class="ttdeci">void init(std::vector&lt; std::string &gt; input_interface, std::vector&lt; std::string &gt; output_interface, ros::NodeHandle nh, std::string node_name)</div><div class="ttdoc">Initialisation function, decoupled from constructor for convenience.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:120</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00261">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::init()</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00120">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::init()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -363,26 +354,30 @@ Here is the call graph for this function:</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordflow">return</span> msg;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../#l00066">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00071">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00041">EmptyRunner::executeCB()</a>, <a class="el" href="../../#l00083">AMBSDefaultCalculatorInterface::publishDone()</a>, <a class="el" href="../../#l00256">AMBSBaseRunner::startRobot()</a>, <a class="el" href="../../#l00262">AMBSBaseRunner::stopRobot()</a>, <a class="el" href="../../#l00251">AMBSBaseRunner::testCompleted()</a>, <a class="el" href="../../#l00241">AMBSBaseRunner::testFailed()</a>, and <a class="el" href="../../#l00232">AMBSBaseRunner::testSucceeded()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00086">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00122">BenchBraking::executeCB()</a>, <a class="el" href="../../#l00041">EmptyRunner::executeCB()</a>, <a class="el" href="../../#l00146">AMBSDefaultCalculatorInterface::getStartMsg()</a>, <a class="el" href="../../#l00130">AMBSDefaultCalculatorInterface::getStopMsg()</a>, <a class="el" href="../../#l00108">AMBSDefaultCalculatorInterface::publishDone()</a>, <a class="el" href="../../#l00265">AMBSBaseRunner::startRobot()</a>, <a class="el" href="../../#l00271">AMBSBaseRunner::stopRobot()</a>, <a class="el" href="../../#l00260">AMBSBaseRunner::testCompleted()</a>, <a class="el" href="../../#l00250">AMBSBaseRunner::testFailed()</a>, <a class="el" href="../../#l00241">AMBSBaseRunner::testSucceeded()</a>, and <a class="el" href="../../#l00091">AMBSBaseRunner::waitForStart()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface_af9a09dc0577d79c0862457114706c7a3_icgraph.png" border="0" usemap="#ad6/dc2/classambs__base_1_1AMBSBooleanInterface_af9a09dc0577d79c0862457114706c7a3_icgraph" alt=""/></div>
 <map name="ad6/dc2/classambs__base_1_1AMBSBooleanInterface_af9a09dc0577d79c0862457114706c7a3_icgraph" id="ad6/dc2/classambs__base_1_1AMBSBooleanInterface_af9a09dc0577d79c0862457114706c7a3_icgraph">
-<area shape="rect" title="Create a new BoolStamped type message." alt="" coords="787,267,968,294"/>
-<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="243,5,455,47"/>
-<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="251,71,447,112"/>
-<area shape="rect" href="../../d4/da7/classambs__runners_1_1EmptyRunner.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="525,195,717,236"/>
-<area shape="rect" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a45924180e9991c17c1ec7264500c1878" title="Publish TRUE on the DONE port." alt="" coords="503,129,739,171"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a1c7c141283496076d1689b09c128f390" title=" " alt="" coords="517,508,724,549"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a574496e1966eec1bdd39a5bab7f44117" title=" " alt="" coords="517,260,724,301"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#ad8770edaeff5709344d43ecc25d59818" title="Publish test results." alt="" coords="517,325,724,367"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a911a471d55770719e68bebd652685255" title="Publish test results." alt="" coords="245,384,452,425"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a4d711578fec3cad592d7f66c5419bd50" title="Publish test results." alt="" coords="517,443,724,484"/>
-<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="251,136,446,177"/>
-<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="257,201,440,243"/>
-<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="257,267,440,308"/>
-<area shape="rect" href="../../d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="5,413,195,455"/>
+<area shape="rect" title="Create a new BoolStamped type message." alt="" coords="787,394,968,420"/>
+<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="243,9,455,50"/>
+<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="251,74,447,116"/>
+<area shape="rect" href="../../d3/d81/classambs__runners_1_1BenchBraking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="252,569,445,610"/>
+<area shape="rect" href="../../d4/da7/classambs__runners_1_1EmptyRunner.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="525,693,717,734"/>
+<area shape="rect" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#abe5963a4394632431dd1fb08ea80b08b" title="Get the message received by the START_ port." alt="" coords="503,758,739,800"/>
+<area shape="rect" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#afcff3ff7d027c1515f6f2757131126c5" title="Get the message received by the STOP_ port." alt="" coords="503,74,739,116"/>
+<area shape="rect" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a45924180e9991c17c1ec7264500c1878" title="Publish TRUE on the DONE port." alt="" coords="503,201,739,242"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a1c7c141283496076d1689b09c128f390" title=" " alt="" coords="517,510,724,552"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a574496e1966eec1bdd39a5bab7f44117" title=" " alt="" coords="517,628,724,669"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#ad8770edaeff5709344d43ecc25d59818" title="Publish test results." alt="" coords="517,277,724,318"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a911a471d55770719e68bebd652685255" title="Publish test results." alt="" coords="245,336,452,377"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a4d711578fec3cad592d7f66c5419bd50" title="Publish test results." alt="" coords="245,401,452,442"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#ad7f2492738b8b944ceea50f2eba2682c" title="Wait for TRUE on the START port." alt="" coords="517,445,724,486"/>
+<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="251,140,446,181"/>
+<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="257,205,440,246"/>
+<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="257,270,440,312"/>
+<area shape="rect" href="../../d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="5,460,195,501"/>
 </map>
 </div>
 
@@ -427,30 +422,35 @@ Here is the caller graph for this function:</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  {</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    loop.sleep();</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    ros::spinOnce();</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    msg = <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">getPortMsg</a>(port);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">if</span>(msg.data)</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408">resetPort</a>(port);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keywordflow">return</span> msg;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">if</span>(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9">isPortValid</a>(port))</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      msg = <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">getPortMsg</a>(port);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      <span class="keywordflow">if</span>(msg.data)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408">resetPort</a>(port);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordflow">return</span> msg;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
 <div class="ttc" id="aclassambs__base_1_1AMBSBooleanInterface_html_aa007662072f7d7aed6e44a30b80412e2"><div class="ttname"><a href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#aa007662072f7d7aed6e44a30b80412e2">ambs_base::AMBSBooleanInterface::wait_loop_rate</a></div><div class="ttdeci">const double wait_loop_rate</div><div class="ttdef"><b>Definition:</b> ambs_boolean_interface.hpp:26</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_aadd7ecd6a0db64d273c2ba8128419408"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::resetPort</a></div><div class="ttdeci">void resetPort(std::string port_name)</div><div class="ttdoc">Reset internal buffer message of a port.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:295</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_ada64638f460eb73b2fdec44ef26236b1"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg</a></div><div class="ttdeci">ambs_msgs::BoolStamped getPortMsg(std::string port_name)</div><div class="ttdoc">Gets the latest message received from the port, even if it is not a latched topic.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:118</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_aadd7ecd6a0db64d273c2ba8128419408"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::resetPort</a></div><div class="ttdeci">void resetPort(std::string port_name)</div><div class="ttdoc">Reset internal buffer message of a port.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:272</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_ada64638f460eb73b2fdec44ef26236b1"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg</a></div><div class="ttdeci">ambs_msgs::BoolStamped getPortMsg(std::string port_name)</div><div class="ttdoc">Gets the latest message received from the port, even if it is not a latched topic.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:152</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_adaa2cbf1da15afc4f5683da03e6207b9"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::isPortValid</a></div><div class="ttdeci">bool isPortValid(std::string port_name)</div><div class="ttdoc">Returns if the port has received at least on message.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:232</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00118">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg()</a>, <a class="el" href="../../#l00295">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::resetPort()</a>, and <a class="el" href="../../#l00026">AMBSBooleanInterface::wait_loop_rate</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00152">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg()</a>, <a class="el" href="../../#l00232">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::isPortValid()</a>, <a class="el" href="../../#l00272">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::resetPort()</a>, and <a class="el" href="../../#l00026">AMBSBooleanInterface::wait_loop_rate</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00041">EmptyRunner::executeCB()</a>, <a class="el" href="../../#l00070">AMBSDefaultCalculatorInterface::waitForReset()</a>, <a class="el" href="../../#l00104">AMBSBaseRunner::waitForReset()</a>, <a class="el" href="../../#l00048">AMBSDefaultCalculatorInterface::waitForStart()</a>, <a class="el" href="../../#l00091">AMBSBaseRunner::waitForStart()</a>, and <a class="el" href="../../#l00060">AMBSDefaultCalculatorInterface::waitForStop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00041">EmptyRunner::executeCB()</a>, <a class="el" href="../../#l00095">AMBSDefaultCalculatorInterface::waitForReset()</a>, <a class="el" href="../../#l00106">AMBSBaseRunner::waitForReset()</a>, <a class="el" href="../../#l00072">AMBSDefaultCalculatorInterface::waitForStart()</a>, <a class="el" href="../../#l00091">AMBSBaseRunner::waitForStart()</a>, and <a class="el" href="../../#l00084">AMBSDefaultCalculatorInterface::waitForStop()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface_a5e470849543126cf4d89bae2a635c661_cgraph.png" border="0" usemap="#ad6/dc2/classambs__base_1_1AMBSBooleanInterface_a5e470849543126cf4d89bae2a635c661_cgraph" alt=""/></div>
 <map name="ad6/dc2/classambs__base_1_1AMBSBooleanInterface_a5e470849543126cf4d89bae2a635c661_cgraph" id="ad6/dc2/classambs__base_1_1AMBSBooleanInterface_a5e470849543126cf4d89bae2a635c661_cgraph">
-<area shape="rect" title="Wait for TRUE on a port." alt="" coords="5,60,137,87"/>
+<area shape="rect" title="Wait for TRUE on a port." alt="" coords="5,100,137,127"/>
 <area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="185,5,381,61"/>
-<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="185,85,381,141"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9" title="Returns if the port has received at least on message." alt="" coords="185,85,381,141"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="185,165,381,221"/>
 </map>
 </div>
 <div class="dynheader">

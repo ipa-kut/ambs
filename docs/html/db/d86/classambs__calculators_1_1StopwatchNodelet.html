@@ -205,16 +205,17 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>      {</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        ros::NodeHandle nh = this-&gt;getMTPrivateNodeHandle();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        std::string name = nh.getUnresolvedNamespace();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        name = name.substr(name.find_last_of(<span class="charliteral">&#39;/&#39;</span>) + 1);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        std::string <a class="code" href="../../d8/d91/namespacetest1__braking.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> = nh.getUnresolvedNamespace();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code" href="../../d8/d91/namespacetest1__braking.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> = <a class="code" href="../../d8/d91/namespacetest1__braking.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>.substr(<a class="code" href="../../d8/d91/namespacetest1__braking.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>.find_last_of(<span class="charliteral">&#39;/&#39;</span>) + 1);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        NODELET_INFO_STREAM(<span class="stringliteral">&quot;Initialising nodelet... [&quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code" href="../../db/d86/classambs__calculators_1_1StopwatchNodelet.html#a9cabf287deae3e7bb4962883f0a392e9">comp_temporal_</a>.reset(<span class="keyword">new</span> Stopwatch(nh, name));</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        NODELET_INFO_STREAM(<span class="stringliteral">&quot;Initialising nodelet... [&quot;</span> &lt;&lt; <a class="code" href="../../d8/d91/namespacetest1__braking.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code" href="../../db/d86/classambs__calculators_1_1StopwatchNodelet.html#a9cabf287deae3e7bb4962883f0a392e9">comp_temporal_</a>.reset(<span class="keyword">new</span> Stopwatch(nh, <a class="code" href="../../d8/d91/namespacetest1__braking.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>));</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code" href="../../db/d86/classambs__calculators_1_1StopwatchNodelet.html#a9cabf287deae3e7bb4962883f0a392e9">comp_temporal_</a>-&gt;init();</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      }</div>
 <div class="ttc" id="aclassambs__calculators_1_1StopwatchNodelet_html_a9cabf287deae3e7bb4962883f0a392e9"><div class="ttname"><a href="../../db/d86/classambs__calculators_1_1StopwatchNodelet.html#a9cabf287deae3e7bb4962883f0a392e9">ambs_calculators::StopwatchNodelet::comp_temporal_</a></div><div class="ttdeci">boost::shared_ptr&lt; Stopwatch &gt; comp_temporal_</div><div class="ttdef"><b>Definition:</b> stopwatch_nodelet.cpp:28</div></div>
+<div class="ttc" id="anamespacetest1__braking_html_a8ccf841cb59e451791bcb2e1ac4f1edc"><div class="ttname"><a href="../../d8/d91/namespacetest1__braking.html#a8ccf841cb59e451791bcb2e1ac4f1edc">test1_braking.name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> test1_braking.py:158</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00028">StopwatchNodelet::comp_temporal_</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00028">StopwatchNodelet::comp_temporal_</a>, and <a class="el" href="../../#l00158">test1_braking::name</a>.</p>
 
 </div>
 </div>
