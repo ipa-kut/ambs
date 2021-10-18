@@ -84,7 +84,7 @@ void EdgeDetector::executeCB(const ros::TimerEvent& event)
   default_control_.waitForStart();
 
 
-  ros::Rate loop(10);
+  ros::Rate loop(100);
   while (ros::ok())
   {
     ros::spinOnce();
@@ -123,6 +123,7 @@ void EdgeDetector::executeCB(const ros::TimerEvent& event)
 
   default_control_.publishDone();
   default_control_.waitForReset();
+  bool_interface_.resetAllPorts();
 
   ROS_INFO_STREAM(node_name_ << ": Restarting calculator");
 }
