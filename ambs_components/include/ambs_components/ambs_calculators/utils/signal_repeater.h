@@ -38,6 +38,8 @@ private:
   ambs_base::AMBSBooleanInterface bool_interface_;
   std::string OUT_SIGNAL_ = "out_signal";
   std::string IN_SIGNAL_ = "in_signal";
+  const std::string RATE_ = "boost_rate";
+  const int DEFAULT_RATE_ = 20;
 };
 
 
@@ -76,13 +78,11 @@ void SignalRepeater::init(std::string in_start = "in_start",
 void SignalRepeater::executeCB(const ros::TimerEvent& event)
 {
   (void) event;
-//  default_control_.waitForStart();
+  default_control_.waitForStart();
 
-
-  ros::Rate loop(20); /// @todo: paremetrize this hardcoded value
+  ros::Rate loop(getResolvedParam<int>(RATE_, DEFAULT_RATE_));
   while (ros::ok())
   {
-    ros::spinOnce();
     loop.sleep();
 
     if (default_control_.getStopMsg().data)

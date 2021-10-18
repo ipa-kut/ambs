@@ -7,6 +7,9 @@ calculators:
     thresh_position: 0.5
     thresh_yaw_degrees: 10
 
+  test_signal_repeater:
+    boost_rate: 20
+
 runners:
   test_test1_braking:
     stabilization_timeout: 0.5
