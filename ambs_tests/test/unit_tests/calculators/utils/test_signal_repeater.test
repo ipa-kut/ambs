@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <group ns="ambs">
+
+    <node pkg="nodelet" type="nodelet" name="base_nodelet_manager" args="manager"  output="screen">
+        <param name="num_worker_threads" value="32" />
+    </node>
+
+    <node pkg="nodelet" type="nodelet" name="test_signal_repeater"
+        args="load ambs_calculators/SignalRepeaterNodelet base_nodelet_manager">
+        <remap from="test_signal_repeater/in_start" to="start_calc" />
+        <remap from="test_signal_repeater/in_stop" to="stop_calc" />
+        <remap from="test_signal_repeater/in_reset" to="reset_calc" />
+        <remap from="test_signal_repeater/out_done" to="calc_done" />
+        <remap from="test_signal_repeater/in_signal" to="signal_to_boost" />
+        <remap from="test_signal_repeater/out_signal" to="boosted_signal" />
+    </node>
+
+    <test test-name="gtest_signal_repeater_tester" pkg="ambs_tests"
+        type="test_signal_repeater" name="gtest_signal_repeater_tester">
+        <remap from="out_start" to="start_calc" />
+        <remap from="out_stop" to="stop_calc" />
+        <remap from="out_reset" to="reset_calc" />
+        <remap from="in_done" to="calc_done" />
+        <remap from="out_signal" to="signal_to_boost" />
+        <remap from="in_signal" to="boosted_signal" />
+    </test>
+
+    </group>
+</launch>
