@@ -32,7 +32,6 @@ void CommandVelocityInterpreter::executeCB(const ros::TimerEvent &event)
 {
   (void) event;
 
-  ros::spinOnce();
   if (control_interface_.getPortMsg(ACTIVATE_).data &&
       !control_interface_.getPortMsg(DEACTIVATE_).data)
   {

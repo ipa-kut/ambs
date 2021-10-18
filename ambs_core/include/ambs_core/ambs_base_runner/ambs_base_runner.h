@@ -190,7 +190,6 @@ inline std::string AMBSBaseRunner::timedLoopFallbackOnPorts(std::vector<std::str
         }
       }
       loop.sleep();
-      ros::spinOnce();
     }
   }
   return "";
@@ -221,7 +220,6 @@ inline std::string AMBSBaseRunner::timedLoopSequenceOnPorts(std::vector<std::str
         }
       }
       loop.sleep();
-      ros::spinOnce();
     }
   }
   return "";

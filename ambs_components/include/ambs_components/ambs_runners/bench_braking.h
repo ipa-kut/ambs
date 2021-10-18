@@ -110,7 +110,6 @@ void BenchBraking::mockRobot(const ros::TimerEvent &event)
 //    Randomize next run
     x = (x == 360) ? std::experimental::randint(0, 50) : x+1;
     ros::Rate(sensor_rate_).sleep();
-    ros::spinOnce();
   }
 }
 

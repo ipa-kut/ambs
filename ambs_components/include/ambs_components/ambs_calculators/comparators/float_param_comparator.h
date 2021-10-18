@@ -95,7 +95,6 @@ void CompFloatParam::executeCB(const ros::TimerEvent& event)
   ros::Rate loop(500);
   while (ros::ok())
   {
-    ros::spinOnce();
     loop.sleep();
 
      if (default_control_.getStopMsg().data)
