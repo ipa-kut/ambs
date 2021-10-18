@@ -30,11 +30,10 @@ struct AMBSPort
           topic_name_(topic_name)
   {}
   std::string topic_name_;
-  T msg_;
+  boost::shared_ptr<T> msg_;
   ros::Subscriber sub_;
   ros::Publisher pub_;
   uint64_t index_;
-  bool is_valid_ = false;
 };
 
 /**
@@ -62,7 +61,6 @@ public:
 
   T getPortMsg(std::string port_name);
   void setPortMsg(std::string port_name, T msg);
-  void setPortValidity(std::string port_name, bool validity);
   void publishMsgOnPort(std::string port_name, T msg);
   void printPorts();
   bool isPortValid(std::string port_name);
@@ -74,8 +72,6 @@ public:
   void resetAllPorts();
 
 protected:
-  boost::shared_ptr<T> msg_ptr;
-  std::deque<boost::mutex> mutexes_;
   std::map<std::string, AMBSPort<T>> interfaces_;
   ros::NodeHandle nh_;
   std::string node_name_;
@@ -110,6 +106,44 @@ AMBSTemplatedInterface<T>::AMBSTemplatedInterface(std::vector<std::string> input
 }
 
 /**
+ * @brief Initialisation function, decoupled from constructor for convenience
+ *
+ * Create subscribers for inputs ports, publishers for output ports,
+ * set node handle and save nodelet name
+ *
+ * @param input_interface List of names of topics of ports to serve as subscribers
+ * @param output_interface List of name of topics of ports to serve as publishers
+ * @param nh Nodehandle passed down from the nodelet manager
+ * @param node_name Explicitly necessary becase all nodelets resolve ros::this_node::getName() as nodelet manager
+ */
+template<typename T> inline
+void AMBSTemplatedInterface<T>::init(std::vector<std::string> input_interface,
+                                     std::vector<std::string> output_interface,
+                                     ros::NodeHandle nh,
+                                     std::string node_name)
+{
+  node_name_ = node_name;
+  nh_ = nh;
+  for(unsigned long i=0; i<input_interface.size(); i++)
+  {
+    AMBSPort<T> port(input_interface[i]);
+    port.index_ = i;
+    port.sub_ = nh_.subscribe<T>(port.topic_name_, subscriber_queue_size_,
+                              boost::bind(&AMBSTemplatedInterface<T>::templatedCB, this,_1, port.topic_name_)
+                              );
+    interfaces_[port.topic_name_] = port;
+  }
+
+  for(unsigned long i=0; i<output_interface.size(); i++)
+  {
+    AMBSPort<T> port(output_interface[i]);
+    port.index_ = i + input_interface.size();
+    port.pub_ = nh_.advertise<T>(port.topic_name_, publisher_queue_size_);
+    interfaces_[port.topic_name_] = port;
+  }
+}
+
+/**
  * @brief Gets the latest message received from the port, even if it is not a latched topic.
  *
  * @param port_name The name of the topic of the port
@@ -117,24 +151,20 @@ AMBSTemplatedInterface<T>::AMBSTemplatedInterface(std::vector<std::string> input
 template<typename T> inline
 T AMBSTemplatedInterface<T>::getPortMsg(std::string port_name)
 {
-  T val;
-  try
+  T default_msg;
+  if(isPortValid(port_name))
   {
-    mutexes_[interfaces_[port_name].index_].lock();
-    val = interfaces_[port_name].msg_;
-    mutexes_[interfaces_[port_name].index_].unlock();
+    return *interfaces_[port_name].msg_;
   }
-  catch (std::exception e)
+  else
   {
-    ROS_ERROR_STREAM(node_name_ << ":  getPortMsg exception on port " << port_name << " " << e.what());
+    ROS_WARN_STREAM(node_name_ << ": Trying to get msg on port " << port_name << " but it is null!");
+    return default_msg;
   }
-  return val;
 }
 
 /**
  * @brief Sets the internal message value of a port. DOES NOT PUBLISH.
- *
- * Used mainly to clear the internal message buffer
  *
  * @param port_name The name of the topic of the port
  */
@@ -143,34 +173,11 @@ void AMBSTemplatedInterface<T>::setPortMsg(std::string port_name, T msg)
 {
   try
   {
-    mutexes_[interfaces_[port_name].index_].lock();
-    interfaces_[port_name].msg_ = msg ;
-    mutexes_[interfaces_[port_name].index_].unlock();
+    interfaces_[port_name].msg_ = boost::make_shared<T>(msg);
   }
   catch (std::exception e)
   {
     ROS_ERROR_STREAM(node_name_ << ":  setPortMsg exception on port " << port_name << " " << e.what());
-  }
-}
-
-/**
- * @brief Set the is_valid_ flag of a port
- *
- * @param port_name Port to set
- * @param validity Validity to set
- */
-template<typename T>
-void AMBSTemplatedInterface<T>::setPortValidity(std::string port_name, bool validity)
-{
-  try
-  {
-    mutexes_[interfaces_[port_name].index_].lock();
-    interfaces_[port_name].is_valid_ = validity;
-    mutexes_[interfaces_[port_name].index_].unlock();
-  }
-  catch (std::exception e)
-  {
-    ROS_ERROR_STREAM(node_name_ << ":  setPortValidity exception on port " << port_name << " " << e.what());
   }
 }
 
@@ -188,9 +195,8 @@ void AMBSTemplatedInterface<T>::publishMsgOnPort(std::string port_name, T msg)
 {
   try
   {
-    msg_ptr = boost::make_shared<T>(msg);
-    interfaces_[port_name].pub_.publish(msg_ptr);
     setPortMsg(port_name,msg);
+    interfaces_[port_name].pub_.publish(boost::make_shared<T>(msg));
   }
   catch (std::exception e)
   {
@@ -228,9 +234,7 @@ bool AMBSTemplatedInterface<T>::isPortValid(std::string port_name)
   bool result;
   try
   {
-    mutexes_[interfaces_[port_name].index_].lock();
-    result = interfaces_[port_name].is_valid_;
-    mutexes_[interfaces_[port_name].index_].unlock();
+    result = interfaces_[port_name].msg_ != nullptr;
   }
   catch (std::exception e)
   {
@@ -251,54 +255,11 @@ void AMBSTemplatedInterface<T>::templatedCB(const boost::shared_ptr<const T> msg
 {
   try
   {
-    mutexes_[interfaces_[topic].index_].lock();
-    interfaces_[topic].msg_ = std::move(*msg.get());
-    interfaces_[topic].is_valid_ = true;
-    mutexes_[interfaces_[topic].index_].unlock();
+    interfaces_[topic].msg_ =  boost::make_shared<T>(*msg);
   }
   catch (std::exception e)
   {
     ROS_ERROR_STREAM(node_name_ << ":  templatedCB exception " << e.what());
-  }
-}
-
-/**
- * @brief Initialisation function, decoupled from constructor for convenience
- *
- * Create subscribers for inputs ports, publishers for output ports,
- * set node handle and save nodelet name
- *
- * @param input_interface List of names of topics of ports to serve as subscribers
- * @param output_interface List of name of topics of ports to serve as publishers
- * @param nh Nodehandle passed down from the nodelet manager
- * @param node_name Explicitly necessary becase all nodelets resolve ros::this_node::getName() as nodelet manager
- */
-template<typename T> inline
-void AMBSTemplatedInterface<T>::init(std::vector<std::string> input_interface,
-                                     std::vector<std::string> output_interface,
-                                     ros::NodeHandle nh,
-                                     std::string node_name)
-{
-  node_name_ = node_name;
-  mutexes_.resize(input_interface.size() + output_interface.size());
-  nh_ = nh;
-  msg_ptr.reset(new T());
-  for(unsigned long i=0; i<input_interface.size(); i++)
-  {
-    AMBSPort<T> port(input_interface[i]);
-    port.index_ = i;
-    port.sub_ = nh_.subscribe<T>(port.topic_name_, subscriber_queue_size_,
-                              boost::bind(&AMBSTemplatedInterface<T>::templatedCB, this,_1, port.topic_name_)
-                              );
-    interfaces_[port.topic_name_] = port;
-  }
-
-  for(unsigned long i=0; i<output_interface.size(); i++)
-  {
-    AMBSPort<T> port(output_interface[i]);
-    port.index_ = i + input_interface.size();
-    port.pub_ = nh_.advertise<T>(port.topic_name_, publisher_queue_size_);
-    interfaces_[port.topic_name_] = port;
   }
 }
 
@@ -312,9 +273,7 @@ void AMBSTemplatedInterface<T>::resetPort(std::string port_name)
 {
   try
   {
-    T default_msg;
-    setPortMsg(port_name, default_msg);
-    setPortValidity(port_name, false);
+    interfaces_[port_name].msg_.reset();
   }
   catch (std::exception e)
   {
@@ -332,8 +291,7 @@ void AMBSTemplatedInterface<T>::resetAllPorts()
   auto iter = interfaces_.begin();
   while(iter != interfaces_.end())
   {
-    setPortMsg(iter->first , default_msg);
-    setPortValidity(iter->first, false);
+    resetPort(iter->first);
     ++iter;
   }
 }

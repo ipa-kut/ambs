@@ -129,7 +129,14 @@ inline void AMBSDefaultCalculatorInterface::printDefaultPorts()
  */
 inline ambs_msgs::BoolStamped AMBSDefaultCalculatorInterface::getStopMsg()
 {
-  return getPortMsg(STOP_);
+  if (isPortValid(STOP_))
+  {
+    return getPortMsg(STOP_);
+  }
+  else
+  {
+    return constructNewBoolStamped(false);
+  }
 }
 
 /**
@@ -138,7 +145,14 @@ inline ambs_msgs::BoolStamped AMBSDefaultCalculatorInterface::getStopMsg()
  */
 inline ambs_msgs::BoolStamped AMBSDefaultCalculatorInterface::getStartMsg()
 {
-  return getPortMsg(START_);
+  if (isPortValid(START_))
+  {
+    return getPortMsg(START_);
+  }
+  else
+  {
+    return constructNewBoolStamped(false);
+  }
 }
 
 

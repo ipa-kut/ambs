@@ -68,10 +68,13 @@ inline ambs_msgs::BoolStamped AMBSBooleanInterface::waitForTrueOnPort(std::strin
   {
     loop.sleep();
     ros::spinOnce();
-    msg = getPortMsg(port);
-    if(msg.data)
+    if(isPortValid(port))
     {
-      break;
+      msg = getPortMsg(port);
+      if(msg.data)
+      {
+        break;
+      }
     }
   }
   resetPort(port);
