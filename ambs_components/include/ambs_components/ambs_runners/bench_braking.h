@@ -87,7 +87,11 @@ void BenchBraking::mockRobot(const ros::TimerEvent &event)
 
   while (ros::ok())
   {
-    if (sin(angles::from_degrees(x)) == 0) continue;
+    if (sin(angles::from_degrees(x)) == 0)
+    {
+      x++;
+      continue;
+    }
     geometry_msgs::PoseStamped msg_pos;
     msg_pos.header.stamp = ros::Time::now();
     msg_pos.pose.position.x = sin(angles::from_degrees(x));
@@ -221,10 +225,10 @@ void BenchBraking::executeCB(const ros::TimerEvent& event)
 
   ROS_WARN_STREAM(node_name_ << ": AVG Accuracy " << acc_avg <<
                    " STD Accuracy " << acc_std <<
-                   " MAXDEV Accuracy " << " , " << acc_maxdev);
+                   " MAXDEV Accuracy " << acc_maxdev);
   ROS_WARN_STREAM(node_name_ << ": AVG Error " << err_avg <<
                    " STD Error " << err_std <<
-                   " MAXDEV Error " << " , " << err_maxdev);
+                   " MAXDEV Error " << err_maxdev);
 
   debug_file.open(log_folder_path_ + "/benchmarking.csv", std::ios_base::app);
   debug_file << "AVG Accuracy" << " , " << acc_avg << " , " <<
