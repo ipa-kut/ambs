@@ -28,7 +28,7 @@ protected:
   std::string node_name_;
   ros::NodeHandle nh_;
   template<typename T>
-  T getResolvedParam(std::string param_name);
+  T getResolvedParam(std::string param_name, T default_value = T());
   AMBSDefaultCalculatorInterface default_control_;
 
 private:
@@ -71,19 +71,21 @@ inline void AMBSBaseCalculator::startCalculator()
  * example: getResolvedParam<std::vector<double>>("some_param")
  */
 template<typename T> inline
-T AMBSBaseCalculator::getResolvedParam(std::string param_name)
+T AMBSBaseCalculator::getResolvedParam(std::string param_name, T default_value)
 {
   std::string resolved_name = "/ambs/calculators/" + node_name_ + "/" + param_name;
-  T param_value;
   if(nh_.hasParam(resolved_name))
   {
+    T param_value;
     nh_.getParam(resolved_name, param_value);
+    return param_value;
   }
   else
   {
-    ROS_WARN_STREAM(node_name_ << ": Could not fetch param - " << resolved_name);
+    ROS_WARN_STREAM(node_name_ << ": Could not fetch param "
+                    << resolved_name << ", using default " << default_value);
+    return default_value;
   }
-  return param_value;
 }
 
 

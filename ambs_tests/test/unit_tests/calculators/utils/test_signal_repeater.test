@@ -2,10 +2,13 @@
 <launch>
     <group ns="ambs">
 
+    <arg name="boost_rate" default="20" />
+
     <node pkg="nodelet" type="nodelet" name="base_nodelet_manager" args="manager"  output="screen">
         <param name="num_worker_threads" value="32" />
     </node>
 
+    <rosparam param="/ambs/calculators/test_signal_repeater/boost_rate" subst_value="True">$(arg boost_rate)</rosparam>
     <node pkg="nodelet" type="nodelet" name="test_signal_repeater"
         args="load ambs_calculators/SignalRepeaterNodelet base_nodelet_manager">
         <remap from="test_signal_repeater/in_start" to="start_calc" />
