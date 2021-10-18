@@ -30,6 +30,8 @@ var annotated_dup =
       [ "DebugLogger", "d4/d68/classambs__loggers_1_1DebugLogger.html", "d4/d68/classambs__loggers_1_1DebugLogger" ]
     ] ],
     [ "ambs_runners", "d9/dc8/namespaceambs__runners.html", [
+      [ "BenchBraking", "d3/d81/classambs__runners_1_1BenchBraking.html", "d3/d81/classambs__runners_1_1BenchBraking" ],
+      [ "BenchBrakingNodelet", "db/da9/classambs__runners_1_1BenchBrakingNodelet.html", "db/da9/classambs__runners_1_1BenchBrakingNodelet" ],
       [ "EmptyRunner", "d4/da7/classambs__runners_1_1EmptyRunner.html", "d4/da7/classambs__runners_1_1EmptyRunner" ],
       [ "EmptyRunnerNodelet", "d8/d6a/classambs__runners_1_1EmptyRunnerNodelet.html", "d8/d6a/classambs__runners_1_1EmptyRunnerNodelet" ],
       [ "Test1Braking", "d7/d68/classambs__runners_1_1Test1Braking.html", "d7/d68/classambs__runners_1_1Test1Braking" ],
@@ -45,9 +47,13 @@ var annotated_dup =
         [ "BaseLogger", "d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html", "d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger" ]
       ] ]
     ] ],
+    [ "test1_braking", "d8/d91/namespacetest1__braking.html", [
+      [ "Test1Braking", "d0/d11/classtest1__braking_1_1Test1Braking.html", "d0/d11/classtest1__braking_1_1Test1Braking" ]
+    ] ],
     [ "TestCompFloatParam", "db/dd0/classTestCompFloatParam.html", "db/dd0/classTestCompFloatParam" ],
     [ "TestDiffFloatTemporal", "df/dd0/classTestDiffFloatTemporal.html", "df/dd0/classTestDiffFloatTemporal" ],
     [ "TestDiffPoseTemporal", "da/d9b/classTestDiffPoseTemporal.html", "da/d9b/classTestDiffPoseTemporal" ],
     [ "TestEdgeDetector", "d4/de5/classTestEdgeDetector.html", "d4/de5/classTestEdgeDetector" ],
+    [ "TestHelper", "da/dd6/classTestHelper.html", "da/dd6/classTestHelper" ],
     [ "TestStopwatch", "d1/d43/classTestStopwatch.html", "d1/d43/classTestStopwatch" ]
 ];

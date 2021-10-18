@@ -82,3 +82,16 @@ To build tests: `catkin_make tests`
 To build & run tests: `catkin_make run_tests`   
 To run individual tests verbosely: `rostest ambs_tests test_XXX.test --text`   
 
+## Generating Documentation
+
+From the folder `src/ambs`, run `doxywizard Doxyfile`.   
+Select parameters as required, click through next and click on `Run doxygen`.   
+Click on `Show HTML output` once done to see the generated docs.   
+This same documentation gets linked on the github page as well.   
+
+## Benchmarking
+
+To run benchmark: `roslaunch ambs_tests bench_braking.launch`   
+This will generate the result in `$(env HOME)/ARAIG/benchmarks` - ensure the folder ARAIG exists   
+Change the number of trial loops with the `loops` roslaunch parameter. Default is 20.   
+Change the mock sensor frequence with `sensor_rate` roslaunch parameter. Default is 100.   

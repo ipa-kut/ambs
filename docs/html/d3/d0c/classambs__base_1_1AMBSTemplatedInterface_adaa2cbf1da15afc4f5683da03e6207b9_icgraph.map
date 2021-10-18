@@ -1,4 +1,8 @@
 <map id="isPortValid" name="isPortValid">
-<area shape="rect" id="node1" title="Returns if the port has received at least on message." alt="" coords="265,13,351,39"/>
-<area shape="rect" id="node2" href="$dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,5,217,47"/>
+<area shape="rect" id="node1" title="Returns if the port has received at least on message." alt="" coords="507,78,592,105"/>
+<area shape="rect" id="node2" href="$dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="247,5,459,47"/>
+<area shape="rect" id="node3" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#aaa1d167d92a6a76b7e15e89c46808a0b" title="Returns the first port in list that has a true message, or if timer expires." alt="" coords="249,71,456,112"/>
+<area shape="rect" id="node6" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#abb5bd2798f3e0e6535fe8178525a9d22" title="Returns the first port in list that has a false message, or if timer expires." alt="" coords="249,136,456,177"/>
+<area shape="rect" id="node4" href="$d3/d81/classambs__runners_1_1BenchBraking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="5,39,199,80"/>
+<area shape="rect" id="node5" href="$d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="7,104,197,145"/>
 </map>

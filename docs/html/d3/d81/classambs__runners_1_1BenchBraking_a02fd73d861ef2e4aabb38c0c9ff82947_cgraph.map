@@ -1,0 +1,12 @@
+<map id="init" name="init">
+<area shape="rect" id="node1" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,111,44,138"/>
+<area shape="rect" id="node2" href="$d4/d68/classambs__loggers_1_1DebugLogger.html#a471027d91ef8e611350304d529d21af3" title=" " alt="" coords="101,9,289,51"/>
+<area shape="rect" id="node3" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a2ce63b7c990f2c030b6cd2afcff95624" title="Actual initialisation function." alt="" coords="92,75,299,116"/>
+<area shape="rect" id="node8" href="$d3/d81/classambs__runners_1_1BenchBraking.html#adf6b0aaa7ba84d10effd3527d6f5e1b2" title="Mocks the robot &amp; sensor: provides robot speed &amp; sensor location." alt="" coords="151,141,240,167"/>
+<area shape="rect" id="node9" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a4b4b82770c8ec00850f56bde466ff543" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="92,195,299,236"/>
+<area shape="rect" id="node4" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a6d3f3a18d02e55a0751aaa7cd478b815" title="Check if param path exists, create it otherwise, then create next logging folder." alt="" coords="347,5,553,47"/>
+<area shape="rect" id="node6" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#adc39894aa95dbe432cae0562681b5b1f" title="Callback function for debug topic. Log all messages to file in test folder. Has a globally resolved c..." alt="" coords="347,71,553,112"/>
+<area shape="rect" id="node7" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="352,136,548,177"/>
+<area shape="rect" id="node5" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#af9fce1b0f9e44464e1616bde818ddf62" title="Counts the number of subdirectories in a path." alt="" coords="601,5,808,47"/>
+<area shape="rect" id="node10" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a967f9a0a5cfaa49ba54b5fe00c08b132" title=" " alt="" coords="347,201,553,243"/>
+</map>

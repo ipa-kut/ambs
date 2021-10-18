@@ -8,6 +8,7 @@ var hierarchy =
       [ "Stopwatch", "d0/d7e/classambs__calculators_1_1Stopwatch.html", null ]
     ] ],
     [ "AMBSBaseRunner", "d6/daa/classambs__base_1_1AMBSBaseRunner.html", [
+      [ "BenchBraking", "d3/d81/classambs__runners_1_1BenchBraking.html", null ],
       [ "EmptyRunner", "d4/da7/classambs__runners_1_1EmptyRunner.html", null ],
       [ "Test1Braking", "d7/d68/classambs__runners_1_1Test1Braking.html", null ]
     ] ],
@@ -29,6 +30,7 @@ var hierarchy =
       [ "StopwatchNodelet", "db/d86/classambs__calculators_1_1StopwatchNodelet.html", null ],
       [ "CommandVelocityInterpreterNodelet", "df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet.html", null ],
       [ "OdomInterpreterNodelet", "d7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet.html", null ],
+      [ "BenchBrakingNodelet", "db/da9/classambs__runners_1_1BenchBrakingNodelet.html", null ],
       [ "EmptyRunnerNodelet", "d8/d6a/classambs__runners_1_1EmptyRunnerNodelet.html", null ],
       [ "Test1BrakingNodelet", "dd/d5c/classambs__runners_1_1Test1BrakingNodelet.html", null ]
     ] ],
@@ -42,6 +44,10 @@ var hierarchy =
       [ "TestDiffFloatTemporal", "df/dd0/classTestDiffFloatTemporal.html", null ],
       [ "TestDiffPoseTemporal", "da/d9b/classTestDiffPoseTemporal.html", null ],
       [ "TestEdgeDetector", "d4/de5/classTestEdgeDetector.html", null ],
+      [ "TestHelper", "da/dd6/classTestHelper.html", null ],
       [ "TestStopwatch", "d1/d43/classTestStopwatch.html", null ]
+    ] ],
+    [ "TestCase", null, [
+      [ "Test1Braking", "d0/d11/classtest1__braking_1_1Test1Braking.html", null ]
     ] ]
 ];

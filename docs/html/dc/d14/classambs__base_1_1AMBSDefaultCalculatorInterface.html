@@ -129,9 +129,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afcff3ff7d027c1515f6f2757131126c5"><td class="memItemLeft" align="right" valign="top">ambs_msgs::BoolStamped&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#afcff3ff7d027c1515f6f2757131126c5">getStopMsg</a> ()</td></tr>
 <tr class="memdesc:afcff3ff7d027c1515f6f2757131126c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the message received by the STOP_ port.  <a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#afcff3ff7d027c1515f6f2757131126c5">More...</a><br /></td></tr>
 <tr class="separator:afcff3ff7d027c1515f6f2757131126c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9afa149dc8c8b88b27677d374cde3acd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a9afa149dc8c8b88b27677d374cde3acd">initDefaultInterface</a> (ros::NodeHandle nh, std::string node_name)</td></tr>
-<tr class="memdesc:a9afa149dc8c8b88b27677d374cde3acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation decoupled from constructor for convenince.  <a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a9afa149dc8c8b88b27677d374cde3acd">More...</a><br /></td></tr>
-<tr class="separator:a9afa149dc8c8b88b27677d374cde3acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c2214caea3e5818fc59fdbd68f57a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ab0c2214caea3e5818fc59fdbd68f57a8">initDefaultInterface</a> (ros::NodeHandle nh, std::string node_name, std::string in_start, std::string in_stop, std::string in_reset, std::string out_done)</td></tr>
+<tr class="memdesc:ab0c2214caea3e5818fc59fdbd68f57a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation decoupled from constructor for convenince.  <a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ab0c2214caea3e5818fc59fdbd68f57a8">More...</a><br /></td></tr>
+<tr class="separator:ab0c2214caea3e5818fc59fdbd68f57a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affc03288568e4ccca3d856d52b47ecef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#affc03288568e4ccca3d856d52b47ecef">printDefaultPorts</a> ()</td></tr>
 <tr class="memdesc:affc03288568e4ccca3d856d52b47ecef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print internal buffer values of all ports.  <a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#affc03288568e4ccca3d856d52b47ecef">More...</a><br /></td></tr>
 <tr class="separator:affc03288568e4ccca3d856d52b47ecef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,30 +197,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a720d11b3d464d5603f65300bd4bf4f53 inherit pub_methods_classambs__base_1_1AMBSTemplatedInterface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a720d11b3d464d5603f65300bd4bf4f53">setPortMsg</a> (std::string port_name, ambs_msgs::BoolStamped msg)</td></tr>
 <tr class="memdesc:a720d11b3d464d5603f65300bd4bf4f53 inherit pub_methods_classambs__base_1_1AMBSTemplatedInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the internal message value of a port. DOES NOT PUBLISH.  <a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a720d11b3d464d5603f65300bd4bf4f53">More...</a><br /></td></tr>
 <tr class="separator:a720d11b3d464d5603f65300bd4bf4f53 inherit pub_methods_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a394a325bb68d82e7e0c340327b70c785 inherit pub_methods_classambs__base_1_1AMBSTemplatedInterface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a394a325bb68d82e7e0c340327b70c785">setPortValidity</a> (std::string port_name, bool validity)</td></tr>
-<tr class="memdesc:a394a325bb68d82e7e0c340327b70c785 inherit pub_methods_classambs__base_1_1AMBSTemplatedInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the is_valid_ flag of a port.  <a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a394a325bb68d82e7e0c340327b70c785">More...</a><br /></td></tr>
-<tr class="separator:a394a325bb68d82e7e0c340327b70c785 inherit pub_methods_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ac989feac039a5173611960ba706da012"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac989feac039a5173611960ba706da012">default_inputs_</a> {<a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#aef5e1c6307d2c37484b4c9cf57ac6343">START_</a>, <a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a235c71426244121b8920c836939bebbc">STOP_</a>, <a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#aa5a5ab339e3a1f1e597c2eec3e726de7">RESET_</a>}</td></tr>
-<tr class="memdesc:ac989feac039a5173611960ba706da012"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac989feac039a5173611960ba706da012">More...</a><br /></td></tr>
-<tr class="separator:ac989feac039a5173611960ba706da012"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a619bddc9d77018a24330d2acef243a28"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a619bddc9d77018a24330d2acef243a28">default_outputs_</a> {<a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a5c976406bc02745e7bf40ea1f561baae">DONE_</a>}</td></tr>
-<tr class="memdesc:a619bddc9d77018a24330d2acef243a28"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a619bddc9d77018a24330d2acef243a28">More...</a><br /></td></tr>
-<tr class="separator:a619bddc9d77018a24330d2acef243a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c976406bc02745e7bf40ea1f561baae"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a5c976406bc02745e7bf40ea1f561baae">DONE_</a> = &quot;out_done&quot;</td></tr>
-<tr class="memdesc:a5c976406bc02745e7bf40ea1f561baae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The DONE port.  <a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a5c976406bc02745e7bf40ea1f561baae">More...</a><br /></td></tr>
-<tr class="separator:a5c976406bc02745e7bf40ea1f561baae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5a5ab339e3a1f1e597c2eec3e726de7"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#aa5a5ab339e3a1f1e597c2eec3e726de7">RESET_</a> = &quot;in_reset&quot;</td></tr>
-<tr class="memdesc:aa5a5ab339e3a1f1e597c2eec3e726de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The RESET port.  <a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#aa5a5ab339e3a1f1e597c2eec3e726de7">More...</a><br /></td></tr>
-<tr class="separator:aa5a5ab339e3a1f1e597c2eec3e726de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef5e1c6307d2c37484b4c9cf57ac6343"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#aef5e1c6307d2c37484b4c9cf57ac6343">START_</a> = &quot;in_start&quot;</td></tr>
-<tr class="memdesc:aef5e1c6307d2c37484b4c9cf57ac6343"><td class="mdescLeft">&#160;</td><td class="mdescRight">The START port.  <a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#aef5e1c6307d2c37484b4c9cf57ac6343">More...</a><br /></td></tr>
-<tr class="separator:aef5e1c6307d2c37484b4c9cf57ac6343"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a235c71426244121b8920c836939bebbc"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a235c71426244121b8920c836939bebbc">STOP_</a> = &quot;in_stop&quot;</td></tr>
-<tr class="memdesc:a235c71426244121b8920c836939bebbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The STOP port.  <a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a235c71426244121b8920c836939bebbc">More...</a><br /></td></tr>
-<tr class="separator:a235c71426244121b8920c836939bebbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde39091d4e4ce0b149b31f2686fa7f8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#abde39091d4e4ce0b149b31f2686fa7f8">DONE_</a></td></tr>
+<tr class="memdesc:abde39091d4e4ce0b149b31f2686fa7f8"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#abde39091d4e4ce0b149b31f2686fa7f8">More...</a><br /></td></tr>
+<tr class="separator:abde39091d4e4ce0b149b31f2686fa7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c9711311ec0474931f00621f3d0ace"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac3c9711311ec0474931f00621f3d0ace">RESET_</a></td></tr>
+<tr class="memdesc:ac3c9711311ec0474931f00621f3d0ace"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac3c9711311ec0474931f00621f3d0ace">More...</a><br /></td></tr>
+<tr class="separator:ac3c9711311ec0474931f00621f3d0ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67e10fa1b1494170aa3dae327076ce0a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a67e10fa1b1494170aa3dae327076ce0a">START_</a></td></tr>
+<tr class="memdesc:a67e10fa1b1494170aa3dae327076ce0a"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a67e10fa1b1494170aa3dae327076ce0a">More...</a><br /></td></tr>
+<tr class="separator:a67e10fa1b1494170aa3dae327076ce0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98d6875ee56151d369a122ba10c524b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ad98d6875ee56151d369a122ba10c524b">STOP_</a></td></tr>
+<tr class="memdesc:ad98d6875ee56151d369a122ba10c524b"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ad98d6875ee56151d369a122ba10c524b">More...</a><br /></td></tr>
+<tr class="separator:ad98d6875ee56151d369a122ba10c524b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -232,12 +223,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2c7c3372ae2463ed268b6f1cab5c7372 inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memItemLeft" align="right" valign="top"><a id="a2c7c3372ae2463ed268b6f1cab5c7372" name="a2c7c3372ae2463ed268b6f1cab5c7372"></a>
 std::map&lt; std::string, <a class="el" href="../../d7/d71/structambs__base_1_1AMBSPort.html">AMBSPort</a>&lt; ambs_msgs::BoolStamped &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>interfaces_</b></td></tr>
 <tr class="separator:a2c7c3372ae2463ed268b6f1cab5c7372 inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cd043ced63c2cdd99da9549ea60fe5f inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memItemLeft" align="right" valign="top"><a id="a1cd043ced63c2cdd99da9549ea60fe5f" name="a1cd043ced63c2cdd99da9549ea60fe5f"></a>
-boost::shared_ptr&lt; ambs_msgs::BoolStamped &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>msg_ptr</b></td></tr>
-<tr class="separator:a1cd043ced63c2cdd99da9549ea60fe5f inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfa8e5a1f2a9cfeed5dadac37a9dbe4b inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memItemLeft" align="right" valign="top"><a id="adfa8e5a1f2a9cfeed5dadac37a9dbe4b" name="adfa8e5a1f2a9cfeed5dadac37a9dbe4b"></a>
-std::deque&lt; boost::mutex &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mutexes_</b></td></tr>
-<tr class="separator:adfa8e5a1f2a9cfeed5dadac37a9dbe4b inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1300297c252ff1dc5ceea58a274d4db5 inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memItemLeft" align="right" valign="top"><a id="a1300297c252ff1dc5ceea58a274d4db5" name="a1300297c252ff1dc5ceea58a274d4db5"></a>
 ros::NodeHandle&#160;</td><td class="memItemRight" valign="bottom"><b>nh_</b></td></tr>
 <tr class="separator:a1300297c252ff1dc5ceea58a274d4db5 inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,20 +319,31 @@ const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>subscri
 
 <p>Get the message received by the START_ port. </p>
 <dl class="section return"><dt>Returns</dt><dd>msg The message </dd></dl>
-<div class="fragment"><div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>{</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <span class="keywordflow">return</span> <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">getPortMsg</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#aef5e1c6307d2c37484b4c9cf57ac6343">START_</a>);</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}</div>
-<div class="ttc" id="aclassambs__base_1_1AMBSDefaultCalculatorInterface_html_aef5e1c6307d2c37484b4c9cf57ac6343"><div class="ttname"><a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#aef5e1c6307d2c37484b4c9cf57ac6343">ambs_base::AMBSDefaultCalculatorInterface::START_</a></div><div class="ttdeci">const std::string START_</div><div class="ttdoc">The START port.</div><div class="ttdef"><b>Definition:</b> ambs_default_calculator_interface.hpp:32</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_ada64638f460eb73b2fdec44ef26236b1"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg</a></div><div class="ttdeci">ambs_msgs::BoolStamped getPortMsg(std::string port_name)</div><div class="ttdoc">Gets the latest message received from the port, even if it is not a latched topic.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:118</div></div>
+<div class="fragment"><div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>{</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  <span class="keywordflow">if</span> (<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9">isPortValid</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a67e10fa1b1494170aa3dae327076ce0a">START_</a>))</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordflow">return</span> <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">getPortMsg</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a67e10fa1b1494170aa3dae327076ce0a">START_</a>);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  {</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordflow">return</span> <a class="code" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3">constructNewBoolStamped</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
+<div class="ttc" id="aclassambs__base_1_1AMBSBooleanInterface_html_af9a09dc0577d79c0862457114706c7a3"><div class="ttname"><a href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3">ambs_base::AMBSBooleanInterface::constructNewBoolStamped</a></div><div class="ttdeci">ambs_msgs::BoolStamped constructNewBoolStamped(bool data)</div><div class="ttdoc">Create a new BoolStamped type message.</div><div class="ttdef"><b>Definition:</b> ambs_boolean_interface.hpp:49</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSDefaultCalculatorInterface_html_a67e10fa1b1494170aa3dae327076ce0a"><div class="ttname"><a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a67e10fa1b1494170aa3dae327076ce0a">ambs_base::AMBSDefaultCalculatorInterface::START_</a></div><div class="ttdeci">std::string START_</div><div class="ttdef"><b>Definition:</b> ambs_default_calculator_interface.hpp:37</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_ada64638f460eb73b2fdec44ef26236b1"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg</a></div><div class="ttdeci">ambs_msgs::BoolStamped getPortMsg(std::string port_name)</div><div class="ttdoc">Gets the latest message received from the port, even if it is not a latched topic.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:152</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_adaa2cbf1da15afc4f5683da03e6207b9"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::isPortValid</a></div><div class="ttdeci">bool isPortValid(std::string port_name)</div><div class="ttdoc">Returns if the port has received at least on message.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:232</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00118">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg()</a>, and <a class="el" href="../../#l00032">AMBSDefaultCalculatorInterface::START_</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00049">AMBSBooleanInterface::constructNewBoolStamped()</a>, <a class="el" href="../../#l00152">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg()</a>, <a class="el" href="../../#l00232">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::isPortValid()</a>, and <a class="el" href="../../#l00037">AMBSDefaultCalculatorInterface::START_</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_abe5963a4394632431dd1fb08ea80b08b_cgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_abe5963a4394632431dd1fb08ea80b08b_cgraph" alt=""/></div>
 <map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_abe5963a4394632431dd1fb08ea80b08b_cgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_abe5963a4394632431dd1fb08ea80b08b_cgraph">
-<area shape="rect" title="Get the message received by the START_ port." alt="" coords="5,20,99,47"/>
-<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="147,5,343,61"/>
+<area shape="rect" title="Get the message received by the START_ port." alt="" coords="5,86,99,113"/>
+<area shape="rect" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3" title="Create a new BoolStamped type message." alt="" coords="147,5,380,47"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="165,71,361,127"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9" title="Returns if the port has received at least on message." alt="" coords="165,151,361,207"/>
 </map>
 </div>
 
@@ -378,21 +374,30 @@ Here is the call graph for this function:</div>
 
 <p>Get the message received by the STOP_ port. </p>
 <dl class="section return"><dt>Returns</dt><dd>msg The message </dd></dl>
-<div class="fragment"><div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>{</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keywordflow">return</span> <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">getPortMsg</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a235c71426244121b8920c836939bebbc">STOP_</a>);</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
-<div class="ttc" id="aclassambs__base_1_1AMBSDefaultCalculatorInterface_html_a235c71426244121b8920c836939bebbc"><div class="ttname"><a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a235c71426244121b8920c836939bebbc">ambs_base::AMBSDefaultCalculatorInterface::STOP_</a></div><div class="ttdeci">const std::string STOP_</div><div class="ttdoc">The STOP port.</div><div class="ttdef"><b>Definition:</b> ambs_default_calculator_interface.hpp:33</div></div>
+<div class="fragment"><div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>{</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  <span class="keywordflow">if</span> (<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9">isPortValid</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ad98d6875ee56151d369a122ba10c524b">STOP_</a>))</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">return</span> <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">getPortMsg</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ad98d6875ee56151d369a122ba10c524b">STOP_</a>);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordflow">return</span> <a class="code" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3">constructNewBoolStamped</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  }</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>}</div>
+<div class="ttc" id="aclassambs__base_1_1AMBSDefaultCalculatorInterface_html_ad98d6875ee56151d369a122ba10c524b"><div class="ttname"><a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ad98d6875ee56151d369a122ba10c524b">ambs_base::AMBSDefaultCalculatorInterface::STOP_</a></div><div class="ttdeci">std::string STOP_</div><div class="ttdef"><b>Definition:</b> ambs_default_calculator_interface.hpp:38</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00118">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg()</a>, and <a class="el" href="../../#l00033">AMBSDefaultCalculatorInterface::STOP_</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00049">AMBSBooleanInterface::constructNewBoolStamped()</a>, <a class="el" href="../../#l00152">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg()</a>, <a class="el" href="../../#l00232">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::isPortValid()</a>, and <a class="el" href="../../#l00038">AMBSDefaultCalculatorInterface::STOP_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00066">EdgeDetector::executeCB()</a>, and <a class="el" href="../../#l00071">CompFloatParam::executeCB()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, and <a class="el" href="../../#l00086">CompFloatParam::executeCB()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_afcff3ff7d027c1515f6f2757131126c5_cgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_afcff3ff7d027c1515f6f2757131126c5_cgraph" alt=""/></div>
 <map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_afcff3ff7d027c1515f6f2757131126c5_cgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_afcff3ff7d027c1515f6f2757131126c5_cgraph">
-<area shape="rect" title="Get the message received by the STOP_ port." alt="" coords="5,20,97,47"/>
-<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="145,5,341,61"/>
+<area shape="rect" title="Get the message received by the STOP_ port." alt="" coords="5,86,97,113"/>
+<area shape="rect" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3" title="Create a new BoolStamped type message." alt="" coords="145,5,379,47"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="164,71,360,127"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9" title="Returns if the port has received at least on message." alt="" coords="164,151,360,207"/>
 </map>
 </div>
 <div class="dynheader">
@@ -408,8 +413,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a9afa149dc8c8b88b27677d374cde3acd" name="a9afa149dc8c8b88b27677d374cde3acd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9afa149dc8c8b88b27677d374cde3acd">&#9670;&nbsp;</a></span>initDefaultInterface()</h2>
+<a id="ab0c2214caea3e5818fc59fdbd68f57a8" name="ab0c2214caea3e5818fc59fdbd68f57a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0c2214caea3e5818fc59fdbd68f57a8">&#9670;&nbsp;</a></span>initDefaultInterface()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -427,7 +432,31 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>node_name</em>&#160;</td>
+          <td class="paramname"><em>node_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>in_start</em> = <code>&quot;in_start&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>in_stop</em> = <code>&quot;in_stop&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>in_reset</em> = <code>&quot;in_reset&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>out_done</em> = <code>&quot;out_done&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -443,21 +472,27 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Initialisation decoupled from constructor for convenince. </p>
-<div class="fragment"><div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>{</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40">init</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac989feac039a5173611960ba706da012">default_inputs_</a>,<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a619bddc9d77018a24330d2acef243a28">default_outputs_</a>, nh, node_name);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
-<div class="ttc" id="aclassambs__base_1_1AMBSDefaultCalculatorInterface_html_a619bddc9d77018a24330d2acef243a28"><div class="ttname"><a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a619bddc9d77018a24330d2acef243a28">ambs_base::AMBSDefaultCalculatorInterface::default_outputs_</a></div><div class="ttdeci">const std::vector&lt; std::string &gt; default_outputs_</div><div class="ttdef"><b>Definition:</b> ambs_default_calculator_interface.hpp:37</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSDefaultCalculatorInterface_html_ac989feac039a5173611960ba706da012"><div class="ttname"><a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac989feac039a5173611960ba706da012">ambs_base::AMBSDefaultCalculatorInterface::default_inputs_</a></div><div class="ttdeci">const std::vector&lt; std::string &gt; default_inputs_</div><div class="ttdef"><b>Definition:</b> ambs_default_calculator_interface.hpp:36</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_ac55ed2cfd175f6e71ebe460eeb643b40"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::init</a></div><div class="ttdeci">void init(std::vector&lt; std::string &gt; input_interface, std::vector&lt; std::string &gt; output_interface, ros::NodeHandle nh, std::string node_name)</div><div class="ttdoc">Initialisation function, decoupled from constructor for convenience.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:261</div></div>
+<div class="fragment"><div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a67e10fa1b1494170aa3dae327076ce0a">START_</a> = in_start;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ad98d6875ee56151d369a122ba10c524b">STOP_</a> = in_stop;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac3c9711311ec0474931f00621f3d0ace">RESET_</a> = in_reset;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#abde39091d4e4ce0b149b31f2686fa7f8">DONE_</a> = out_done;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  std::vector&lt;std::string&gt; default_inputs{<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a67e10fa1b1494170aa3dae327076ce0a">START_</a>, <a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ad98d6875ee56151d369a122ba10c524b">STOP_</a>, <a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac3c9711311ec0474931f00621f3d0ace">RESET_</a>};</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  std::vector&lt;std::string&gt; default_outputs{<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#abde39091d4e4ce0b149b31f2686fa7f8">DONE_</a>};</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40">init</a>(default_inputs, default_outputs, nh, node_name);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
+<div class="ttc" id="aclassambs__base_1_1AMBSDefaultCalculatorInterface_html_abde39091d4e4ce0b149b31f2686fa7f8"><div class="ttname"><a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#abde39091d4e4ce0b149b31f2686fa7f8">ambs_base::AMBSDefaultCalculatorInterface::DONE_</a></div><div class="ttdeci">std::string DONE_</div><div class="ttdef"><b>Definition:</b> ambs_default_calculator_interface.hpp:40</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSDefaultCalculatorInterface_html_ac3c9711311ec0474931f00621f3d0ace"><div class="ttname"><a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac3c9711311ec0474931f00621f3d0ace">ambs_base::AMBSDefaultCalculatorInterface::RESET_</a></div><div class="ttdeci">std::string RESET_</div><div class="ttdef"><b>Definition:</b> ambs_default_calculator_interface.hpp:39</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_ac55ed2cfd175f6e71ebe460eeb643b40"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::init</a></div><div class="ttdeci">void init(std::vector&lt; std::string &gt; input_interface, std::vector&lt; std::string &gt; output_interface, ros::NodeHandle nh, std::string node_name)</div><div class="ttdoc">Initialisation function, decoupled from constructor for convenience.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:120</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00036">AMBSDefaultCalculatorInterface::default_inputs_</a>, <a class="el" href="../../#l00037">AMBSDefaultCalculatorInterface::default_outputs_</a>, and <a class="el" href="../../#l00261">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::init()</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00040">AMBSDefaultCalculatorInterface::DONE_</a>, <a class="el" href="../../#l00120">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::init()</a>, <a class="el" href="../../#l00039">AMBSDefaultCalculatorInterface::RESET_</a>, <a class="el" href="../../#l00037">AMBSDefaultCalculatorInterface::START_</a>, and <a class="el" href="../../#l00038">AMBSDefaultCalculatorInterface::STOP_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00050">AMBSBaseCalculator::AMBSBaseCalculator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00050">AMBSBaseCalculator::AMBSBaseCalculator()</a>, <a class="el" href="../../#l00050">DiffFloatTemporal::init()</a>, <a class="el" href="../../#l00057">DiffPoseTemporal::init()</a>, <a class="el" href="../../#l00051">Stopwatch::init()</a>, <a class="el" href="../../#l00057">EdgeDetector::init()</a>, and <a class="el" href="../../#l00059">CompFloatParam::init()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9afa149dc8c8b88b27677d374cde3acd_cgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9afa149dc8c8b88b27677d374cde3acd_cgraph" alt=""/></div>
-<map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9afa149dc8c8b88b27677d374cde3acd_cgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9afa149dc8c8b88b27677d374cde3acd_cgraph">
+<div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ab0c2214caea3e5818fc59fdbd68f57a8_cgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ab0c2214caea3e5818fc59fdbd68f57a8_cgraph" alt=""/></div>
+<map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ab0c2214caea3e5818fc59fdbd68f57a8_cgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ab0c2214caea3e5818fc59fdbd68f57a8_cgraph">
 <area shape="rect" title="Initialisation decoupled from constructor for convenince." alt="" coords="5,20,137,47"/>
 <area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="185,5,381,61"/>
 </map>
@@ -465,10 +500,15 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9afa149dc8c8b88b27677d374cde3acd_icgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9afa149dc8c8b88b27677d374cde3acd_icgraph" alt=""/></div>
-<map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9afa149dc8c8b88b27677d374cde3acd_icgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9afa149dc8c8b88b27677d374cde3acd_icgraph">
-<area shape="rect" title="Initialisation decoupled from constructor for convenince." alt="" coords="277,13,409,39"/>
+<div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ab0c2214caea3e5818fc59fdbd68f57a8_icgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ab0c2214caea3e5818fc59fdbd68f57a8_icgraph" alt=""/></div>
+<map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ab0c2214caea3e5818fc59fdbd68f57a8_icgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ab0c2214caea3e5818fc59fdbd68f57a8_icgraph">
+<area shape="rect" title="Initialisation decoupled from constructor for convenince." alt="" coords="277,177,409,203"/>
 <area shape="rect" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a9bd5d1229a90f907a1f5fd27020a0f0e" title="Constructor." alt="" coords="5,5,229,47"/>
+<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="26,71,209,112"/>
+<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="26,136,209,177"/>
+<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="20,201,215,243"/>
+<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#af4e8c313828e584f6ea0a12abd6e3414" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="11,267,223,308"/>
+<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#ad2496cf9193f5ee5374d5bbbca8d2891" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="19,332,215,373"/>
 </map>
 </div>
 
@@ -499,16 +539,14 @@ Here is the caller graph for this function:</div>
 
 <p>Print internal buffer values of all ports. </p>
 <p >Used mainly for debugging </p>
-<div class="fragment"><div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>{</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  ROS_INFO_STREAM(<span class="stringliteral">&quot;Start : &quot;</span> &lt;&lt; std::to_string(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">getPortMsg</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#aef5e1c6307d2c37484b4c9cf57ac6343">START_</a>).data)</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                  &lt;&lt; <span class="stringliteral">&quot; Stop : &quot;</span> &lt;&lt; std::to_string(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">getPortMsg</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a235c71426244121b8920c836939bebbc">STOP_</a>).data)</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                  &lt;&lt; <span class="stringliteral">&quot; Reset : &quot;</span> &lt;&lt; std::to_string(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">getPortMsg</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#aa5a5ab339e3a1f1e597c2eec3e726de7">RESET_</a>).data)</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                  &lt;&lt; <span class="stringliteral">&quot; Done : &quot;</span> &lt;&lt; std::to_string(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">getPortMsg</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a5c976406bc02745e7bf40ea1f561baae">DONE_</a>).data));</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
-<div class="ttc" id="aclassambs__base_1_1AMBSDefaultCalculatorInterface_html_a5c976406bc02745e7bf40ea1f561baae"><div class="ttname"><a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a5c976406bc02745e7bf40ea1f561baae">ambs_base::AMBSDefaultCalculatorInterface::DONE_</a></div><div class="ttdeci">const std::string DONE_</div><div class="ttdoc">The DONE port.</div><div class="ttdef"><b>Definition:</b> ambs_default_calculator_interface.hpp:35</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSDefaultCalculatorInterface_html_aa5a5ab339e3a1f1e597c2eec3e726de7"><div class="ttname"><a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#aa5a5ab339e3a1f1e597c2eec3e726de7">ambs_base::AMBSDefaultCalculatorInterface::RESET_</a></div><div class="ttdeci">const std::string RESET_</div><div class="ttdoc">The RESET port.</div><div class="ttdef"><b>Definition:</b> ambs_default_calculator_interface.hpp:34</div></div>
+<div class="fragment"><div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>{</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  ROS_INFO_STREAM(<span class="stringliteral">&quot;Start : &quot;</span> &lt;&lt; std::to_string(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">getPortMsg</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a67e10fa1b1494170aa3dae327076ce0a">START_</a>).data)</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                  &lt;&lt; <span class="stringliteral">&quot; Stop : &quot;</span> &lt;&lt; std::to_string(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">getPortMsg</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ad98d6875ee56151d369a122ba10c524b">STOP_</a>).data)</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                  &lt;&lt; <span class="stringliteral">&quot; Reset : &quot;</span> &lt;&lt; std::to_string(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">getPortMsg</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac3c9711311ec0474931f00621f3d0ace">RESET_</a>).data)</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                  &lt;&lt; <span class="stringliteral">&quot; Done : &quot;</span> &lt;&lt; std::to_string(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">getPortMsg</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#abde39091d4e4ce0b149b31f2686fa7f8">DONE_</a>).data));</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00035">AMBSDefaultCalculatorInterface::DONE_</a>, <a class="el" href="../../#l00118">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg()</a>, <a class="el" href="../../#l00034">AMBSDefaultCalculatorInterface::RESET_</a>, <a class="el" href="../../#l00032">AMBSDefaultCalculatorInterface::START_</a>, and <a class="el" href="../../#l00033">AMBSDefaultCalculatorInterface::STOP_</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00040">AMBSDefaultCalculatorInterface::DONE_</a>, <a class="el" href="../../#l00152">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg()</a>, <a class="el" href="../../#l00039">AMBSDefaultCalculatorInterface::RESET_</a>, <a class="el" href="../../#l00037">AMBSDefaultCalculatorInterface::START_</a>, and <a class="el" href="../../#l00038">AMBSDefaultCalculatorInterface::STOP_</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -545,15 +583,14 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Publish TRUE on the DONE port. </p>
-<div class="fragment"><div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>{</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aabf915c783f55403b189d83e619643fd">publishMsgOnPort</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a5c976406bc02745e7bf40ea1f561baae">DONE_</a>, <a class="code" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3">constructNewBoolStamped</a>(<span class="keyword">true</span>));</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
-<div class="ttc" id="aclassambs__base_1_1AMBSBooleanInterface_html_af9a09dc0577d79c0862457114706c7a3"><div class="ttname"><a href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3">ambs_base::AMBSBooleanInterface::constructNewBoolStamped</a></div><div class="ttdeci">ambs_msgs::BoolStamped constructNewBoolStamped(bool data)</div><div class="ttdoc">Create a new BoolStamped type message.</div><div class="ttdef"><b>Definition:</b> ambs_boolean_interface.hpp:49</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_aabf915c783f55403b189d83e619643fd"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aabf915c783f55403b189d83e619643fd">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::publishMsgOnPort</a></div><div class="ttdeci">void publishMsgOnPort(std::string port_name, ambs_msgs::BoolStamped msg)</div><div class="ttdoc">Publish a message on a port.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:181</div></div>
+<div class="fragment"><div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>{</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aabf915c783f55403b189d83e619643fd">publishMsgOnPort</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#abde39091d4e4ce0b149b31f2686fa7f8">DONE_</a>, <a class="code" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3">constructNewBoolStamped</a>(<span class="keyword">true</span>));</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_aabf915c783f55403b189d83e619643fd"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aabf915c783f55403b189d83e619643fd">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::publishMsgOnPort</a></div><div class="ttdeci">void publishMsgOnPort(std::string port_name, ambs_msgs::BoolStamped msg)</div><div class="ttdoc">Publish a message on a port.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:194</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00049">AMBSBooleanInterface::constructNewBoolStamped()</a>, <a class="el" href="../../#l00035">AMBSDefaultCalculatorInterface::DONE_</a>, and <a class="el" href="../../#l00181">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::publishMsgOnPort()</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00049">AMBSBooleanInterface::constructNewBoolStamped()</a>, <a class="el" href="../../#l00040">AMBSDefaultCalculatorInterface::DONE_</a>, and <a class="el" href="../../#l00194">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::publishMsgOnPort()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00065">Stopwatch::executeCB()</a>, <a class="el" href="../../#l00066">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00071">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00063">DiffFloatTemporal::executeCB()</a>, and <a class="el" href="../../#l00072">DiffPoseTemporal::executeCB()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00067">Stopwatch::executeCB()</a>, <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00086">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00065">DiffFloatTemporal::executeCB()</a>, and <a class="el" href="../../#l00077">DiffPoseTemporal::executeCB()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -605,30 +642,31 @@ Here is the caller graph for this function:</div>
 
 <p>Wait for TRUE on the RESET port. </p>
 <dl class="section return"><dt>Returns</dt><dd>The msg that set TRUE </dd></dl>
-<div class="fragment"><div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>{</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  ROS_INFO_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt;  <span class="stringliteral">&quot;: Wait for Reset&quot;</span>);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  ambs_msgs::BoolStamped msg = <a class="code" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661">waitForTrueOnPort</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#aa5a5ab339e3a1f1e597c2eec3e726de7">RESET_</a>);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  ROS_INFO_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;: Got Reset&quot;</span>);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#af8173f556899e5af6e228ced6c0009fb">resetAllPorts</a>();</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordflow">return</span> msg;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+<div class="fragment"><div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>{</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  ROS_INFO_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt;  <span class="stringliteral">&quot;: Wait for Reset&quot;</span>);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  ambs_msgs::BoolStamped msg = <a class="code" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661">waitForTrueOnPort</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac3c9711311ec0474931f00621f3d0ace">RESET_</a>);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  ROS_INFO_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;: Got Reset&quot;</span>);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#af8173f556899e5af6e228ced6c0009fb">resetAllPorts</a>();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keywordflow">return</span> msg;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
 <div class="ttc" id="aclassambs__base_1_1AMBSBooleanInterface_html_a5e470849543126cf4d89bae2a635c661"><div class="ttname"><a href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661">ambs_base::AMBSBooleanInterface::waitForTrueOnPort</a></div><div class="ttdeci">ambs_msgs::BoolStamped waitForTrueOnPort(std::string port)</div><div class="ttdoc">Wait for TRUE on a port.</div><div class="ttdef"><b>Definition:</b> ambs_boolean_interface.hpp:63</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_a69e220bdafb7c66b63cee0187bfc8bcb"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::node_name_</a></div><div class="ttdeci">std::string node_name_</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:81</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_af8173f556899e5af6e228ced6c0009fb"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#af8173f556899e5af6e228ced6c0009fb">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::resetAllPorts</a></div><div class="ttdeci">void resetAllPorts()</div><div class="ttdoc">Reset inernal buffer message of all ports.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:311</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_a69e220bdafb7c66b63cee0187bfc8bcb"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::node_name_</a></div><div class="ttdeci">std::string node_name_</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:77</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_af8173f556899e5af6e228ced6c0009fb"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#af8173f556899e5af6e228ced6c0009fb">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::resetAllPorts</a></div><div class="ttdeci">void resetAllPorts()</div><div class="ttdoc">Reset inernal buffer message of all ports.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:288</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00081">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::node_name_</a>, <a class="el" href="../../#l00034">AMBSDefaultCalculatorInterface::RESET_</a>, <a class="el" href="../../#l00311">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::resetAllPorts()</a>, and <a class="el" href="../../#l00063">AMBSBooleanInterface::waitForTrueOnPort()</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00077">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::node_name_</a>, <a class="el" href="../../#l00039">AMBSDefaultCalculatorInterface::RESET_</a>, <a class="el" href="../../#l00288">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::resetAllPorts()</a>, and <a class="el" href="../../#l00063">AMBSBooleanInterface::waitForTrueOnPort()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00065">Stopwatch::executeCB()</a>, <a class="el" href="../../#l00066">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00071">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00063">DiffFloatTemporal::executeCB()</a>, and <a class="el" href="../../#l00072">DiffPoseTemporal::executeCB()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00067">Stopwatch::executeCB()</a>, <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00086">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00065">DiffFloatTemporal::executeCB()</a>, and <a class="el" href="../../#l00077">DiffPoseTemporal::executeCB()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9daeb45ab1c8723c550216193bc640d4_cgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9daeb45ab1c8723c550216193bc640d4_cgraph" alt=""/></div>
 <map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9daeb45ab1c8723c550216193bc640d4_cgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9daeb45ab1c8723c550216193bc640d4_cgraph">
-<area shape="rect" title="Wait for TRUE on the RESET port." alt="" coords="5,57,105,84"/>
-<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#af8173f556899e5af6e228ced6c0009fb" title="Reset inernal buffer message of all ports." alt="" coords="172,5,368,61"/>
-<area shape="rect" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="153,86,387,127"/>
-<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="435,39,631,95"/>
-<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="435,119,631,175"/>
+<area shape="rect" title="Wait for TRUE on the RESET port." alt="" coords="5,64,105,91"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#af8173f556899e5af6e228ced6c0009fb" title="Reset inernal buffer message of all ports." alt="" coords="172,12,368,68"/>
+<area shape="rect" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="153,93,387,134"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="435,5,631,61"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9" title="Returns if the port has received at least on message." alt="" coords="435,85,631,141"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="435,165,631,221"/>
 </map>
 </div>
 <div class="dynheader">
@@ -672,25 +710,26 @@ Here is the caller graph for this function:</div>
 
 <p>Wait for TRUE on the START port. </p>
 <dl class="section return"><dt>Returns</dt><dd>The msg that set TRUE </dd></dl>
-<div class="fragment"><div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  ROS_INFO_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;: Wait for Start&quot;</span>);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  ambs_msgs::BoolStamped msg = <a class="code" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661">waitForTrueOnPort</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#aef5e1c6307d2c37484b4c9cf57ac6343">START_</a>);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  ROS_INFO_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;: Got Start&quot;</span>);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordflow">return</span> msg;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
+<div class="fragment"><div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  ROS_INFO_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;: Wait for Start&quot;</span>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  ambs_msgs::BoolStamped msg = <a class="code" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661">waitForTrueOnPort</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a67e10fa1b1494170aa3dae327076ce0a">START_</a>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  ROS_INFO_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;: Got Start&quot;</span>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordflow">return</span> msg;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00081">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::node_name_</a>, <a class="el" href="../../#l00032">AMBSDefaultCalculatorInterface::START_</a>, and <a class="el" href="../../#l00063">AMBSBooleanInterface::waitForTrueOnPort()</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00077">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::node_name_</a>, <a class="el" href="../../#l00037">AMBSDefaultCalculatorInterface::START_</a>, and <a class="el" href="../../#l00063">AMBSBooleanInterface::waitForTrueOnPort()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00065">Stopwatch::executeCB()</a>, <a class="el" href="../../#l00066">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00071">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00063">DiffFloatTemporal::executeCB()</a>, and <a class="el" href="../../#l00072">DiffPoseTemporal::executeCB()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00067">Stopwatch::executeCB()</a>, <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00086">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00065">DiffFloatTemporal::executeCB()</a>, and <a class="el" href="../../#l00077">DiffPoseTemporal::executeCB()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ad7f2492738b8b944ceea50f2eba2682c_cgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ad7f2492738b8b944ceea50f2eba2682c_cgraph" alt=""/></div>
 <map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ad7f2492738b8b944ceea50f2eba2682c_cgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ad7f2492738b8b944ceea50f2eba2682c_cgraph">
-<area shape="rect" title="Wait for TRUE on the START port." alt="" coords="5,60,99,87"/>
-<area shape="rect" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="147,53,380,94"/>
+<area shape="rect" title="Wait for TRUE on the START port." alt="" coords="5,100,99,127"/>
+<area shape="rect" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="147,93,380,134"/>
 <area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="428,5,624,61"/>
-<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="428,85,624,141"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9" title="Returns if the port has received at least on message." alt="" coords="428,85,624,141"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="428,165,624,221"/>
 </map>
 </div>
 <div class="dynheader">
@@ -734,23 +773,25 @@ Here is the caller graph for this function:</div>
 
 <p>Wait for TRUE on the STOP port. </p>
 <dl class="section return"><dt>Returns</dt><dd>The msg that set TRUE </dd></dl>
-<div class="fragment"><div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  ambs_msgs::BoolStamped msg = <a class="code" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661">waitForTrueOnPort</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a235c71426244121b8920c836939bebbc">STOP_</a>);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordflow">return</span> msg;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
+<div class="fragment"><div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  ambs_msgs::BoolStamped msg = <a class="code" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661">waitForTrueOnPort</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ad98d6875ee56151d369a122ba10c524b">STOP_</a>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  ROS_INFO_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;: Got Stop&quot;</span>);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordflow">return</span> msg;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00033">AMBSDefaultCalculatorInterface::STOP_</a>, and <a class="el" href="../../#l00063">AMBSBooleanInterface::waitForTrueOnPort()</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00077">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::node_name_</a>, <a class="el" href="../../#l00038">AMBSDefaultCalculatorInterface::STOP_</a>, and <a class="el" href="../../#l00063">AMBSBooleanInterface::waitForTrueOnPort()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00065">Stopwatch::executeCB()</a>, <a class="el" href="../../#l00063">DiffFloatTemporal::executeCB()</a>, and <a class="el" href="../../#l00072">DiffPoseTemporal::executeCB()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00067">Stopwatch::executeCB()</a>, <a class="el" href="../../#l00065">DiffFloatTemporal::executeCB()</a>, and <a class="el" href="../../#l00077">DiffPoseTemporal::executeCB()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ac5ea3fdfe16309af79519349423e0168_cgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ac5ea3fdfe16309af79519349423e0168_cgraph" alt=""/></div>
 <map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ac5ea3fdfe16309af79519349423e0168_cgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ac5ea3fdfe16309af79519349423e0168_cgraph">
-<area shape="rect" title="Wait for TRUE on the STOP port." alt="" coords="5,60,97,87"/>
-<area shape="rect" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="145,53,379,94"/>
+<area shape="rect" title="Wait for TRUE on the STOP port." alt="" coords="5,100,97,127"/>
+<area shape="rect" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="145,93,379,134"/>
 <area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="427,5,623,61"/>
-<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="427,85,623,141"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9" title="Returns if the port has received at least on message." alt="" coords="427,85,623,141"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="427,165,623,221"/>
 </map>
 </div>
 <div class="dynheader">

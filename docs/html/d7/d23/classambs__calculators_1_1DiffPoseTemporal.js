@@ -6,6 +6,7 @@ var classambs__calculators_1_1DiffPoseTemporal =
     [ "executeCB", "d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88", null ],
     [ "init", "d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947", null ],
     [ "printPose", "d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a8dbde0632f95aa0029f70e512b02d672", null ],
+    [ "debug_logger_", "d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a8846a6f77338790d81a75232b4a2d976", null ],
     [ "DIFF_ORIENTATION", "d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a4ac541d32282c2d4cbc9f0a050042827", null ],
     [ "DIFF_POSITION_", "d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a486694ca03d0687c8906fe8218a913df", null ],
     [ "float_interface_", "d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a7d88421a9f9a3b6dd1faf952b39e4fac", null ],
