@@ -71,6 +71,12 @@ if(CATKIN_ENABLE_TESTING)
     target_link_libraries(test_helper ${catkin_LIBRARIES} ${GTEST_LIBRARIES})
     add_dependencies(test_helper ${catkin_EXPORTED_TARGETS})
 
+    add_rostest_gtest(test_signal_repeater
+        test/unit_tests/calculators/utils/test_signal_repeater.test
+        test/unit_tests/calculators/utils/test_signal_repeater.cpp)
+    target_link_libraries(test_signal_repeater ${catkin_LIBRARIES} ${GTEST_LIBRARIES})
+    add_dependencies(test_signal_repeater ${catkin_EXPORTED_TARGETS})
+
 endif()
 
 
