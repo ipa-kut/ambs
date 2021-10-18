@@ -1,6 +1,8 @@
 #ifndef AMBS_CORE_AMBS_HELPER_HELPER_H
 #define AMBS_CORE_AMBS_HELPER_HELPER_H
 
+#include <algorithm>
+#include <vector>
 #include <tf/transform_datatypes.h>
 #include <geometry_msgs/Quaternion.h>
 #include <angles/angles.h>
@@ -56,7 +58,6 @@ double getMean(std::vector<double> data)
  */
 double getStandardDeviation(std::vector<double> data)
 {
-
   double mean = getMean(data);
   double sd = 0;
   for (double val : data)
@@ -75,7 +76,8 @@ double getMaxDeviation(std::vector<double> data)
 {
   double mean = getMean(data);
   double md = 0;
-  for (double val : data) {
+  for (double val : data)
+  {
     md = std::max(md, std::abs(val - mean));
   }
   return md;
