@@ -332,20 +332,21 @@ class ambs_base::AMBSTemplatedInterface&lt; T &gt;</div><p >The base templated c
 <div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_a69e220bdafb7c66b63cee0187bfc8bcb"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">ambs_base::AMBSTemplatedInterface::node_name_</a></div><div class="ttdeci">std::string node_name_</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:77</div></div>
 <div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_adaa2cbf1da15afc4f5683da03e6207b9"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9">ambs_base::AMBSTemplatedInterface::isPortValid</a></div><div class="ttdeci">bool isPortValid(std::string port_name)</div><div class="ttdoc">Returns if the port has received at least on message.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:232</div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../#l00031">CommandVelocityInterpreter::executeCB()</a>, <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00054">Test1Braking::executeCB()</a>, <a class="el" href="../../#l00175">AMBSBaseRunner::timedLoopFallbackOnPorts()</a>, and <a class="el" href="../../#l00206">AMBSBaseRunner::timedLoopSequenceOnPorts()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00031">CommandVelocityInterpreter::executeCB()</a>, <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00078">SignalRepeater::executeCB()</a>, <a class="el" href="../../#l00054">Test1Braking::executeCB()</a>, <a class="el" href="../../#l00175">AMBSBaseRunner::timedLoopFallbackOnPorts()</a>, and <a class="el" href="../../#l00205">AMBSBaseRunner::timedLoopSequenceOnPorts()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface_ada64638f460eb73b2fdec44ef26236b1_icgraph.png" border="0" usemap="#ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_ada64638f460eb73b2fdec44ef26236b1_icgraph" alt=""/></div>
 <map name="ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_ada64638f460eb73b2fdec44ef26236b1_icgraph" id="ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_ada64638f460eb73b2fdec44ef26236b1_icgraph">
-<area shape="rect" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="527,152,616,179"/>
+<area shape="rect" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="527,188,616,215"/>
 <area shape="rect" href="../../d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#af955dafbd2caaf93213592477dd71ce1" title=" " alt="" coords="279,5,467,61"/>
 <area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="267,86,479,127"/>
-<area shape="rect" href="../../d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="17,145,207,186"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#aaa1d167d92a6a76b7e15e89c46808a0b" title="Returns the first port in list that has a true message, or if timer expires." alt="" coords="269,203,476,245"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#abb5bd2798f3e0e6535fe8178525a9d22" title="Returns the first port in list that has a false message, or if timer expires." alt="" coords="269,269,476,310"/>
+<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="289,151,457,193"/>
+<area shape="rect" href="../../d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="17,210,207,251"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#aaa1d167d92a6a76b7e15e89c46808a0b" title="Returns the first port in list that has a true message, or if timer expires." alt="" coords="269,269,476,310"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#abb5bd2798f3e0e6535fe8178525a9d22" title="Returns the first port in list that has a false message, or if timer expires." alt="" coords="269,334,476,375"/>
 <area shape="rect" href="../../d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="5,13,219,54"/>
-<area shape="rect" href="../../d3/d81/classambs__runners_1_1BenchBraking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="15,210,209,251"/>
+<area shape="rect" href="../../d3/d81/classambs__runners_1_1BenchBraking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="15,275,209,317"/>
 </map>
 </div>
 
@@ -436,25 +437,27 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../#l00036">AMBSPort&lt; T &gt;::index_</a>, <a class="el" href="../../#l00035">AMBSPort&lt; T &gt;::pub_</a>, <a class="el" href="../../#l00034">AMBSPort&lt; T &gt;::sub_</a>, and <a class="el" href="../../#l00032">AMBSPort&lt; T &gt;::topic_name_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00013">CommandVelocityInterpreter::init()</a>, <a class="el" href="../../#l00035">TestEdgeDetector::init()</a>, <a class="el" href="../../#l00039">TestDiffFloatTemporal::init()</a>, <a class="el" href="../../#l00044">TestDiffPoseTemporal::init()</a>, <a class="el" href="../../#l00039">TestStopwatch::init()</a>, <a class="el" href="../../#l00049">TestCompFloatParam::init()</a>, <a class="el" href="../../#l00057">EdgeDetector::init()</a>, <a class="el" href="../../#l00059">CompFloatParam::init()</a>, and <a class="el" href="../../#l00122">AMBSBaseRunner::initialiseBaseRunner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00013">CommandVelocityInterpreter::init()</a>, <a class="el" href="../../#l00035">TestEdgeDetector::init()</a>, <a class="el" href="../../#l00039">TestDiffFloatTemporal::init()</a>, <a class="el" href="../../#l00044">TestDiffPoseTemporal::init()</a>, <a class="el" href="../../#l00039">TestStopwatch::init()</a>, <a class="el" href="../../#l00034">TestSignalRepeater::init()</a>, <a class="el" href="../../#l00049">TestCompFloatParam::init()</a>, <a class="el" href="../../#l00057">EdgeDetector::init()</a>, <a class="el" href="../../#l00056">SignalRepeater::init()</a>, <a class="el" href="../../#l00059">CompFloatParam::init()</a>, and <a class="el" href="../../#l00122">AMBSBaseRunner::initialiseBaseRunner()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface_ac55ed2cfd175f6e71ebe460eeb643b40_icgraph.png" border="0" usemap="#ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_ac55ed2cfd175f6e71ebe460eeb643b40_icgraph" alt=""/></div>
 <map name="ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_ac55ed2cfd175f6e71ebe460eeb643b40_icgraph" id="ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_ac55ed2cfd175f6e71ebe460eeb643b40_icgraph">
-<area shape="rect" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="508,254,547,281"/>
+<area shape="rect" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="508,313,547,339"/>
 <area shape="rect" href="../../d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="247,5,460,47"/>
 <area shape="rect" href="../../d4/de5/classTestEdgeDetector.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="277,71,430,98"/>
 <area shape="rect" href="../../df/dd0/classTestDiffFloatTemporal.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="277,123,429,164"/>
 <area shape="rect" href="../../da/d9b/classTestDiffPoseTemporal.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="277,188,430,229"/>
 <area shape="rect" href="../../d1/d43/classTestStopwatch.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="286,254,421,281"/>
-<area shape="rect" href="../../db/dd0/classTestCompFloatParam.html#a2901c089ab1d0565c9e2269b574fa597" title=" " alt="" coords="278,305,429,347"/>
-<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#af4e8c313828e584f6ea0a12abd6e3414" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="247,371,459,412"/>
-<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#ad2496cf9193f5ee5374d5bbbca8d2891" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="255,436,451,477"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a2ce63b7c990f2c030b6cd2afcff95624" title="Actual initialisation function." alt="" coords="250,501,457,543"/>
-<area shape="rect" href="../../d3/d81/classambs__runners_1_1BenchBraking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,436,199,477"/>
-<area shape="rect" href="../../d4/da7/classambs__runners_1_1EmptyRunner.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="6,501,198,543"/>
-<area shape="rect" href="../../d7/d68/classambs__runners_1_1Test1Braking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="7,567,197,608"/>
+<area shape="rect" href="../../da/d3a/classTestSignalRepeater.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="285,305,422,347"/>
+<area shape="rect" href="../../db/dd0/classTestCompFloatParam.html#a2901c089ab1d0565c9e2269b574fa597" title=" " alt="" coords="278,371,429,412"/>
+<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#af4e8c313828e584f6ea0a12abd6e3414" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="247,436,459,477"/>
+<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#a5dbc26aff5f1de3139575c98d38f2cb8" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="269,501,437,543"/>
+<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#ad2496cf9193f5ee5374d5bbbca8d2891" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="255,567,451,608"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a2ce63b7c990f2c030b6cd2afcff95624" title="Actual initialisation function." alt="" coords="250,632,457,673"/>
+<area shape="rect" href="../../d3/d81/classambs__runners_1_1BenchBraking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,567,199,608"/>
+<area shape="rect" href="../../d4/da7/classambs__runners_1_1EmptyRunner.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="6,632,198,673"/>
+<area shape="rect" href="../../d7/d68/classambs__runners_1_1Test1Braking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="7,697,197,739"/>
 </map>
 </div>
 
@@ -496,18 +499,19 @@ Here is the caller graph for this function:</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00175">AMBSBaseRunner::timedLoopFallbackOnPorts()</a>, and <a class="el" href="../../#l00206">AMBSBaseRunner::timedLoopSequenceOnPorts()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00078">SignalRepeater::executeCB()</a>, <a class="el" href="../../#l00175">AMBSBaseRunner::timedLoopFallbackOnPorts()</a>, and <a class="el" href="../../#l00205">AMBSBaseRunner::timedLoopSequenceOnPorts()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface_adaa2cbf1da15afc4f5683da03e6207b9_icgraph.png" border="0" usemap="#ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_adaa2cbf1da15afc4f5683da03e6207b9_icgraph" alt=""/></div>
 <map name="ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_adaa2cbf1da15afc4f5683da03e6207b9_icgraph" id="ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_adaa2cbf1da15afc4f5683da03e6207b9_icgraph">
-<area shape="rect" title="Returns if the port has received at least on message." alt="" coords="507,78,592,105"/>
+<area shape="rect" title="Returns if the port has received at least on message." alt="" coords="507,111,592,138"/>
 <area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="247,5,459,47"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#aaa1d167d92a6a76b7e15e89c46808a0b" title="Returns the first port in list that has a true message, or if timer expires." alt="" coords="249,71,456,112"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#abb5bd2798f3e0e6535fe8178525a9d22" title="Returns the first port in list that has a false message, or if timer expires." alt="" coords="249,136,456,177"/>
-<area shape="rect" href="../../d3/d81/classambs__runners_1_1BenchBraking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="5,39,199,80"/>
-<area shape="rect" href="../../d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="7,104,197,145"/>
+<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="269,71,437,112"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#aaa1d167d92a6a76b7e15e89c46808a0b" title="Returns the first port in list that has a true message, or if timer expires." alt="" coords="249,136,456,177"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#abb5bd2798f3e0e6535fe8178525a9d22" title="Returns the first port in list that has a false message, or if timer expires." alt="" coords="249,201,456,243"/>
+<area shape="rect" href="../../d3/d81/classambs__runners_1_1BenchBraking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="5,104,199,145"/>
+<area shape="rect" href="../../d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="7,169,197,211"/>
 </map>
 </div>
 
@@ -606,7 +610,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>}</div>
 <div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_a720d11b3d464d5603f65300bd4bf4f53"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a720d11b3d464d5603f65300bd4bf4f53">ambs_base::AMBSTemplatedInterface::setPortMsg</a></div><div class="ttdeci">void setPortMsg(std::string port_name, T msg)</div><div class="ttdoc">Sets the internal message value of a port. DOES NOT PUBLISH.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:172</div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00086">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00122">BenchBraking::executeCB()</a>, <a class="el" href="../../#l00041">EmptyRunner::executeCB()</a>, <a class="el" href="../../#l00265">AMBSBaseRunner::startRobot()</a>, <a class="el" href="../../#l00271">AMBSBaseRunner::stopRobot()</a>, <a class="el" href="../../#l00260">AMBSBaseRunner::testCompleted()</a>, <a class="el" href="../../#l00250">AMBSBaseRunner::testFailed()</a>, <a class="el" href="../../#l00241">AMBSBaseRunner::testSucceeded()</a>, and <a class="el" href="../../#l00091">AMBSBaseRunner::waitForStart()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00086">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00121">BenchBraking::executeCB()</a>, <a class="el" href="../../#l00041">EmptyRunner::executeCB()</a>, <a class="el" href="../../#l00263">AMBSBaseRunner::startRobot()</a>, <a class="el" href="../../#l00269">AMBSBaseRunner::stopRobot()</a>, <a class="el" href="../../#l00258">AMBSBaseRunner::testCompleted()</a>, <a class="el" href="../../#l00248">AMBSBaseRunner::testFailed()</a>, <a class="el" href="../../#l00239">AMBSBaseRunner::testSucceeded()</a>, and <a class="el" href="../../#l00091">AMBSBaseRunner::waitForStart()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -661,7 +665,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>}</div>
 <div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_aadd7ecd6a0db64d273c2ba8128419408"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408">ambs_base::AMBSTemplatedInterface::resetPort</a></div><div class="ttdeci">void resetPort(std::string port_name)</div><div class="ttdoc">Reset internal buffer message of a port.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:272</div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../#l00031">CommandVelocityInterpreter::executeCB()</a>, <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00122">BenchBraking::executeCB()</a>, and <a class="el" href="../../#l00106">AMBSBaseRunner::waitForReset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00031">CommandVelocityInterpreter::executeCB()</a>, <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00121">BenchBraking::executeCB()</a>, and <a class="el" href="../../#l00106">AMBSBaseRunner::waitForReset()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

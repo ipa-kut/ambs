@@ -1,0 +1,4 @@
+<map id="SignalRepeater" name="SignalRepeater">
+<area shape="rect" id="node1" title="Boost a signal to a certain frequency." alt="" coords="25,80,135,107"/>
+<area shape="rect" id="node2" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html" title="The VIRTUAL base class for all calculators to inherit from." alt="" coords="5,5,155,32"/>
+</map>

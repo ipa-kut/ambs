@@ -17,6 +17,8 @@ var annotated_dup =
       [ "DiffPoseTemporalNodelet", "df/d4e/classambs__calculators_1_1DiffPoseTemporalNodelet.html", "df/d4e/classambs__calculators_1_1DiffPoseTemporalNodelet" ],
       [ "EdgeDetector", "dd/d7f/classambs__calculators_1_1EdgeDetector.html", "dd/d7f/classambs__calculators_1_1EdgeDetector" ],
       [ "EdgeDetectorNodelet", "db/d89/classambs__calculators_1_1EdgeDetectorNodelet.html", "db/d89/classambs__calculators_1_1EdgeDetectorNodelet" ],
+      [ "SignalRepeater", "d4/d82/classambs__calculators_1_1SignalRepeater.html", "d4/d82/classambs__calculators_1_1SignalRepeater" ],
+      [ "SignalRepeaterNodelet", "d8/d3a/classambs__calculators_1_1SignalRepeaterNodelet.html", "d8/d3a/classambs__calculators_1_1SignalRepeaterNodelet" ],
       [ "Stopwatch", "d0/d7e/classambs__calculators_1_1Stopwatch.html", "d0/d7e/classambs__calculators_1_1Stopwatch" ],
       [ "StopwatchNodelet", "db/d86/classambs__calculators_1_1StopwatchNodelet.html", "db/d86/classambs__calculators_1_1StopwatchNodelet" ]
     ] ],
@@ -55,5 +57,6 @@ var annotated_dup =
     [ "TestDiffPoseTemporal", "da/d9b/classTestDiffPoseTemporal.html", "da/d9b/classTestDiffPoseTemporal" ],
     [ "TestEdgeDetector", "d4/de5/classTestEdgeDetector.html", "d4/de5/classTestEdgeDetector" ],
     [ "TestHelper", "da/dd6/classTestHelper.html", "da/dd6/classTestHelper" ],
+    [ "TestSignalRepeater", "da/d3a/classTestSignalRepeater.html", "da/d3a/classTestSignalRepeater" ],
     [ "TestStopwatch", "d1/d43/classTestStopwatch.html", "d1/d43/classTestStopwatch" ]
 ];

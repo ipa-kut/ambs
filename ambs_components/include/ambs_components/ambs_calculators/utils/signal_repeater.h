@@ -1,5 +1,5 @@
-#ifndef AMBS_COMPONENTS_AMBS_CALCULATORS_COMPARATORS_EDGE_DETECTOR_H
-#define AMBS_COMPONENTS_AMBS_CALCULATORS_COMPARATORS_EDGE_DETECTOR_H
+#ifndef AMBS_COMPONENTS_AMBS_CALCULATORS_UTILS_SIGNAL_REPEATER_H
+#define AMBS_COMPONENTS_AMBS_CALCULATORS_UTILS_SIGNAL_REPEATER_H
 
 #include <string>
 #include <vector>
@@ -91,7 +91,7 @@ void SignalRepeater::executeCB(const ros::TimerEvent& event)
       break;
     }
 
-    if(!bool_interface_.isPortValid(IN_SIGNAL_))
+    if (!bool_interface_.isPortValid(IN_SIGNAL_))
     {
       continue;
     }
@@ -100,7 +100,6 @@ void SignalRepeater::executeCB(const ros::TimerEvent& event)
         publishMsgOnPort(OUT_SIGNAL_,
                         bool_interface_.
                                      constructNewBoolStamped(bool_interface_.getPortMsg(IN_SIGNAL_).data));
-
   }
 
   default_control_.publishDone();
@@ -113,4 +112,4 @@ void SignalRepeater::executeCB(const ros::TimerEvent& event)
 
 }  // namespace ambs_calculators
 
-#endif  // AMBS_COMPONENTS_AMBS_CALCULATORS_COMPARATORS_EDGE_DETECTOR_H
+#endif  // AMBS_COMPONENTS_AMBS_CALCULATORS_UTILS_SIGNAL_REPEATER_H

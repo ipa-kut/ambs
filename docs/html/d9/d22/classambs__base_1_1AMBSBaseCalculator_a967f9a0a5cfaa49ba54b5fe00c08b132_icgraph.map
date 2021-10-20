@@ -1,9 +1,10 @@
 <map id="executeCB" name="executeCB">
-<area shape="rect" id="node1" title=" " alt="" coords="420,143,507,170"/>
-<area shape="rect" id="node2" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ae75e799bea3344778673b0378e7d01a2" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="265,143,372,170"/>
+<area shape="rect" id="node1" title=" " alt="" coords="420,177,507,203"/>
+<area shape="rect" id="node2" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ae75e799bea3344778673b0378e7d01a2" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="265,177,372,203"/>
 <area shape="rect" id="node3" href="$de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="20,5,203,47"/>
 <area shape="rect" id="node4" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="20,71,203,112"/>
 <area shape="rect" id="node5" href="$d0/d7e/classambs__calculators_1_1Stopwatch.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="14,136,209,177"/>
 <area shape="rect" id="node6" href="$dd/d7f/classambs__calculators_1_1EdgeDetector.html#af4e8c313828e584f6ea0a12abd6e3414" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,201,217,243"/>
-<area shape="rect" id="node7" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#ad2496cf9193f5ee5374d5bbbca8d2891" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="13,267,209,308"/>
+<area shape="rect" id="node7" href="$d4/d82/classambs__calculators_1_1SignalRepeater.html#a5dbc26aff5f1de3139575c98d38f2cb8" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="27,267,195,308"/>
+<area shape="rect" id="node8" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#ad2496cf9193f5ee5374d5bbbca8d2891" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="13,332,209,373"/>
 </map>

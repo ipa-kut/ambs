@@ -101,12 +101,13 @@ Inheritance diagram for AMBSBaseCalculator:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../db/d8d/classambs__base_1_1AMBSBaseCalculator__inherit__graph.png" border="0" usemap="#aAMBSBaseCalculator_inherit__map" alt="Inheritance graph"/></div>
 <map name="aAMBSBaseCalculator_inherit__map" id="aAMBSBaseCalculator_inherit__map">
-<area shape="rect" title="The VIRTUAL base class for all calculators to inherit from." alt="" coords="293,5,442,32"/>
-<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html" title="Compare float from topic vs a param and output true when nearly equal." alt="" coords="5,80,129,107"/>
-<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html" title="Compute difference in a float value from a topic between start and stop." alt="" coords="153,80,280,107"/>
-<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html" title="Compute difference in a pose value from a topic between start and stop." alt="" coords="304,80,431,107"/>
-<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html" title="Monitor a boolean input and output detected rising/falling edges. Cannot detec first falling edge." alt="" coords="455,80,557,107"/>
-<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html" title="Compute difference in Time between start and stop, taken from messages directly." alt="" coords="581,80,665,107"/>
+<area shape="rect" title="The VIRTUAL base class for all calculators to inherit from." alt="" coords="5,132,155,159"/>
+<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html" title="Compare float from topic vs a param and output true when nearly equal." alt="" coords="204,5,328,32"/>
+<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html" title="Compute difference in a float value from a topic between start and stop." alt="" coords="203,56,329,83"/>
+<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html" title="Compute difference in a pose value from a topic between start and stop." alt="" coords="203,107,329,133"/>
+<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html" title="Monitor a boolean input and output detected rising/falling edges. Cannot detec first falling edge." alt="" coords="215,157,317,184"/>
+<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html" title="Boost a signal to a certain frequency." alt="" coords="211,208,321,235"/>
+<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html" title="Compute difference in Time between start and stop, taken from messages directly." alt="" coords="224,259,308,285"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -138,10 +139,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a967f9a0a5cfaa49ba54b5fe00c08b132"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a967f9a0a5cfaa49ba54b5fe00c08b132">executeCB</a> (const ros::TimerEvent &amp;event)=0</td></tr>
 <tr class="memdesc:a967f9a0a5cfaa49ba54b5fe00c08b132"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a967f9a0a5cfaa49ba54b5fe00c08b132">More...</a><br /></td></tr>
 <tr class="separator:a967f9a0a5cfaa49ba54b5fe00c08b132"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab677e11cb7da0bae588e0bf9afa10c43"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ab677e11cb7da0bae588e0bf9afa10c43"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ab677e11cb7da0bae588e0bf9afa10c43">getResolvedParam</a> (std::string param_name)</td></tr>
-<tr class="memdesc:ab677e11cb7da0bae588e0bf9afa10c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a specified parameter by resolving to the ambs/calculators namespace.  <a href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ab677e11cb7da0bae588e0bf9afa10c43">More...</a><br /></td></tr>
-<tr class="separator:ab677e11cb7da0bae588e0bf9afa10c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e4a7e33da600c96c8e0eb3fa3c7c08"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a95e4a7e33da600c96c8e0eb3fa3c7c08"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a95e4a7e33da600c96c8e0eb3fa3c7c08">getResolvedParam</a> (std::string param_name, T default_value=T())</td></tr>
+<tr class="memdesc:a95e4a7e33da600c96c8e0eb3fa3c7c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a specified parameter by resolving to the ambs/calculators namespace.  <a href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a95e4a7e33da600c96c8e0eb3fa3c7c08">More...</a><br /></td></tr>
+<tr class="separator:a95e4a7e33da600c96c8e0eb3fa3c7c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae75e799bea3344778673b0378e7d01a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ae75e799bea3344778673b0378e7d01a2">startCalculator</a> ()</td></tr>
 <tr class="memdesc:ae75e799bea3344778673b0378e7d01a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the timer thread. MUST BE EXPLICITLY CALLED.  <a href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ae75e799bea3344778673b0378e7d01a2">More...</a><br /></td></tr>
 <tr class="separator:ae75e799bea3344778673b0378e7d01a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,7 +167,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The VIRTUAL base class for all calculators to inherit from. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000001">Todo:</a></b></dt><dd>Add parameter container + setters/getters</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000002">Todo:</a></b></dt><dd>Add parameter container + setters/getters</dd></dl>
 <p >Creates a standard_control_ interface of type AMBSStandardControlInterface and a threaded timer to execute calculator logic </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad1922a49d59224dc3f9f420aee86f2fb" name="ad1922a49d59224dc3f9f420aee86f2fb"></a>
@@ -314,7 +315,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1">Stopwatch</a>, <a class="el" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88">EdgeDetector</a>, <a class="el" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88">CompFloatParam</a>, <a class="el" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88">DiffFloatTemporal</a>, and <a class="el" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88">DiffPoseTemporal</a>.</p>
+<p>Implemented in <a class="el" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1">Stopwatch</a>, <a class="el" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88">EdgeDetector</a>, <a class="el" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88">CompFloatParam</a>, <a class="el" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88">DiffFloatTemporal</a>, <a class="el" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88">DiffPoseTemporal</a>, and <a class="el" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#acc239077cecc1069d9306ceda27a8e88">SignalRepeater</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../#l00060">AMBSBaseCalculator::startCalculator()</a>.</p>
 <div class="dynheader">
@@ -322,20 +323,21 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/d22/classambs__base_1_1AMBSBaseCalculator_a967f9a0a5cfaa49ba54b5fe00c08b132_icgraph.png" border="0" usemap="#ad9/d22/classambs__base_1_1AMBSBaseCalculator_a967f9a0a5cfaa49ba54b5fe00c08b132_icgraph" alt=""/></div>
 <map name="ad9/d22/classambs__base_1_1AMBSBaseCalculator_a967f9a0a5cfaa49ba54b5fe00c08b132_icgraph" id="ad9/d22/classambs__base_1_1AMBSBaseCalculator_a967f9a0a5cfaa49ba54b5fe00c08b132_icgraph">
-<area shape="rect" title=" " alt="" coords="420,143,507,170"/>
-<area shape="rect" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ae75e799bea3344778673b0378e7d01a2" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="265,143,372,170"/>
+<area shape="rect" title=" " alt="" coords="420,177,507,203"/>
+<area shape="rect" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ae75e799bea3344778673b0378e7d01a2" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="265,177,372,203"/>
 <area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="20,5,203,47"/>
 <area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="20,71,203,112"/>
 <area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="14,136,209,177"/>
 <area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#af4e8c313828e584f6ea0a12abd6e3414" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,201,217,243"/>
-<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#ad2496cf9193f5ee5374d5bbbca8d2891" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="13,267,209,308"/>
+<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#a5dbc26aff5f1de3139575c98d38f2cb8" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="27,267,195,308"/>
+<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#ad2496cf9193f5ee5374d5bbbca8d2891" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="13,332,209,373"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ab677e11cb7da0bae588e0bf9afa10c43" name="ab677e11cb7da0bae588e0bf9afa10c43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab677e11cb7da0bae588e0bf9afa10c43">&#9670;&nbsp;</a></span>getResolvedParam()</h2>
+<a id="a95e4a7e33da600c96c8e0eb3fa3c7c08" name="a95e4a7e33da600c96c8e0eb3fa3c7c08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95e4a7e33da600c96c8e0eb3fa3c7c08">&#9670;&nbsp;</a></span>getResolvedParam()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,8 +349,18 @@ Here is the caller graph for this function:</div>
           <td class="memname">T getResolvedParam </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>param_name</em></td><td>)</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>default_value</em> = <code>T()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -374,17 +386,19 @@ Here is the caller graph for this function:</div>
 <p>example: getResolvedParam&lt;std::vector&lt;double&gt;&gt;("some_param") </p>
 <div class="fragment"><div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  std::string resolved_name = <span class="stringliteral">&quot;/ambs/calculators/&quot;</span> + <a class="code" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> + <span class="stringliteral">&quot;/&quot;</span> + param_name;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  T param_value;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keywordflow">if</span>(<a class="code" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a1300297c252ff1dc5ceea58a274d4db5">nh_</a>.hasParam(resolved_name))</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordflow">if</span>(<a class="code" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a1300297c252ff1dc5ceea58a274d4db5">nh_</a>.hasParam(resolved_name))</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    T param_value;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a1300297c252ff1dc5ceea58a274d4db5">nh_</a>.getParam(resolved_name, param_value);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  }</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    ROS_WARN_STREAM(<a class="code" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;: Could not fetch param - &quot;</span> &lt;&lt; resolved_name);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  }</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordflow">return</span> param_value;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">return</span> param_value;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    ROS_WARN_STREAM(<a class="code" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;: Could not fetch param &quot;</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                    &lt;&lt; resolved_name &lt;&lt; <span class="stringliteral">&quot;, using default &quot;</span> &lt;&lt; default_value);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">return</span> default_value;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../#l00029">AMBSBaseCalculator::nh_</a>, and <a class="el" href="../../#l00028">AMBSBaseCalculator::node_name_</a>.</p>
 
@@ -422,7 +436,7 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../#l00035">AMBSBaseCalculator::execute_timer_</a>, <a class="el" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a967f9a0a5cfaa49ba54b5fe00c08b132">AMBSBaseCalculator::executeCB()</a>, and <a class="el" href="../../#l00029">AMBSBaseCalculator::nh_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00050">DiffFloatTemporal::init()</a>, <a class="el" href="../../#l00057">DiffPoseTemporal::init()</a>, <a class="el" href="../../#l00051">Stopwatch::init()</a>, <a class="el" href="../../#l00057">EdgeDetector::init()</a>, and <a class="el" href="../../#l00059">CompFloatParam::init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00050">DiffFloatTemporal::init()</a>, <a class="el" href="../../#l00057">DiffPoseTemporal::init()</a>, <a class="el" href="../../#l00051">Stopwatch::init()</a>, <a class="el" href="../../#l00057">EdgeDetector::init()</a>, <a class="el" href="../../#l00056">SignalRepeater::init()</a>, and <a class="el" href="../../#l00059">CompFloatParam::init()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -437,12 +451,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/d22/classambs__base_1_1AMBSBaseCalculator_ae75e799bea3344778673b0378e7d01a2_icgraph.png" border="0" usemap="#ad9/d22/classambs__base_1_1AMBSBaseCalculator_ae75e799bea3344778673b0378e7d01a2_icgraph" alt=""/></div>
 <map name="ad9/d22/classambs__base_1_1AMBSBaseCalculator_ae75e799bea3344778673b0378e7d01a2_icgraph" id="ad9/d22/classambs__base_1_1AMBSBaseCalculator_ae75e799bea3344778673b0378e7d01a2_icgraph">
-<area shape="rect" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="265,143,372,170"/>
+<area shape="rect" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="265,177,372,203"/>
 <area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="20,5,203,47"/>
 <area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="20,71,203,112"/>
 <area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="14,136,209,177"/>
 <area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#af4e8c313828e584f6ea0a12abd6e3414" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,201,217,243"/>
-<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#ad2496cf9193f5ee5374d5bbbca8d2891" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="13,267,209,308"/>
+<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#a5dbc26aff5f1de3139575c98d38f2cb8" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="27,267,195,308"/>
+<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#ad2496cf9193f5ee5374d5bbbca8d2891" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="13,332,209,373"/>
 </map>
 </div>
 
