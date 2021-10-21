@@ -48,5 +48,13 @@
         </description>
     </class>
 
+    <class name="ambs_calculators/TimerNodelet"
+    type="ambs_calculators::TimerNodelet"
+    base_class_type="nodelet::Nodelet">
+        <description>
+        Nodelet to start counting down an interruptable timer for a parametrised duration upon trigger
+        </description>
+    </class>
+
 </library>
 

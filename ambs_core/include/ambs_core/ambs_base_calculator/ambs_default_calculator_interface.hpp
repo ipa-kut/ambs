@@ -21,6 +21,7 @@ public:
 
   ambs_msgs::BoolStamped getStopMsg();
   ambs_msgs::BoolStamped getStartMsg();
+  ambs_msgs::BoolStamped getResetMsg();
   ambs_msgs::BoolStamped waitForStart();
   ambs_msgs::BoolStamped waitForStop();
   ambs_msgs::BoolStamped waitForReset();
@@ -148,6 +149,22 @@ inline ambs_msgs::BoolStamped AMBSDefaultCalculatorInterface::getStartMsg()
   if (isPortValid(START_))
   {
     return getPortMsg(START_);
+  }
+  else
+  {
+    return constructNewBoolStamped(false);
+  }
+}
+
+/**
+ * @brief Get the message received by the RESET_ port
+ * @returns msg The message
+ */
+inline ambs_msgs::BoolStamped AMBSDefaultCalculatorInterface::getResetMsg()
+{
+  if (isPortValid(RESET_))
+  {
+    return getPortMsg(RESET_);
   }
   else
   {
