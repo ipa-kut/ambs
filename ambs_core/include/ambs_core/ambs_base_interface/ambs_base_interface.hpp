@@ -158,7 +158,8 @@ T AMBSTemplatedInterface<T>::getPortMsg(std::string port_name)
   }
   else
   {
-    ROS_WARN_STREAM(node_name_ << ": Trying to get msg on port " << port_name << " but it is null!");
+    /// TODO: Keep this warning approach or not? Should this function be changed?
+//    ROS_WARN_STREAM(node_name_ << ": Trying to get msg on port " << port_name << " but it is null!");
     return default_msg;
   }
 }
