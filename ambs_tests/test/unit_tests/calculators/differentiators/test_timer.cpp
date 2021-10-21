@@ -3,29 +3,40 @@
 #include <string>
 #include <vector>
 #include <std_msgs/Float64.h>
+#include <diagnostic_msgs/DiagnosticArray.h>
 
 #include "ambs_msgs/BoolStamped.h"
 #include "ambs_core/ambs_base_interface/ambs_boolean_interface.hpp"
 #include "ambs_core/ambs_base_interface/ambs_base_interface.hpp"
 #include "ambs_core/ambs_helper/helper.h"
 
-class TestStopwatch : public testing::Test
+double GLOBAL_DURATION;
+
+class TestTimer : public testing::Test
 {
 public:
-  TestStopwatch() {}
+  TestTimer() {}
+
+  void diagCB(const diagnostic_msgs::DiagnosticArray::ConstPtr msg);
+  ros::Subscriber debug_sub_;
+  boost::shared_ptr<std::string> log_msg_;
 
   const std::string START_ = "out_start";
   const std::string STOP_ = "out_stop";
   const std::string RESET_ = "out_reset";
+  const std::string ENABLE_ = "out_enable";
+  const std::string DISABLE_ = "out_disable";
   const std::string DONE_ = "in_done";
-  const std::string FLOAT_ = "in_float";
-  const double response_time_ = 0.25;
-  const double spawn_time_ = 1;
-  const double test_sleep_time = 0.5;
+  const std::string ELAPSED_ = "in_elapsed";
+  const std::string INTERRUPTED_ = "in_interrupted";
+  const std::string TIMED_OUT_ = "in_timed_out";
 
-  std::vector<std::string> bool_inputs_{DONE_};
-  std::vector<std::string> bool_outputs_{START_, STOP_, RESET_};
-  std::vector<std::string> float_inputs_{FLOAT_};
+  const double response_time_ = 0.05;
+  const double spawn_time_ = 0.5;
+
+  std::vector<std::string> bool_inputs_{DONE_, INTERRUPTED_, TIMED_OUT_};
+  std::vector<std::string> bool_outputs_{START_, STOP_, RESET_, ENABLE_, DISABLE_};
+  std::vector<std::string> float_inputs_{ELAPSED_};
   std::vector<std::string> float_outputs_;
 
   ambs_base::AMBSBooleanInterface control_iface;
@@ -36,62 +47,193 @@ public:
 };
 
 
-void TestStopwatch::init(ros::NodeHandle nh)
+void TestTimer::diagCB(const diagnostic_msgs::DiagnosticArray::ConstPtr msg)
+{
+  // Specific to this test only. Assuming that the first debug msg is from the tested timer.
+  *log_msg_ = msg->status[0].message;
+}
+
+void TestTimer::init(ros::NodeHandle nh)
 {
   nh_ = nh;
 
   control_iface.init(bool_inputs_, bool_outputs_, nh_, ros::this_node::getName());
   float_interface_.init(float_inputs_, float_outputs_, nh_, ros::this_node::getName());
+  log_msg_.reset(new std::string());
+  debug_sub_ =
+      nh_.subscribe("/ambs/debug_messages",1000,&TestTimer::diagCB, this);
 }
 
-TEST_F(TestStopwatch, test_diff_time_once)
+TEST_F(TestTimer, test_forward_and_disable)
 {
   ros::NodeHandle nh;
   init(nh);
 
   // Waiting for tested nodelet to come up
   ros::Duration(spawn_time_).sleep();
-  ambs_msgs::BoolStamped start = control_iface.constructNewBoolStamped(true);
-  control_iface.publishMsgOnPort(START_, start);
 
-  ros::Duration(test_sleep_time).sleep();
-
-  ambs_msgs::BoolStamped stop = control_iface.constructNewBoolStamped(true);
-  control_iface.publishMsgOnPort(STOP_, stop);
+  // --- PART 1 -- Disable while Idle
+  // 1. DISABLED -> IDLE
+  control_iface.publishMsgOnPort(ENABLE_, control_iface.constructNewBoolStamped(true));
   ros::Duration(response_time_).sleep();
+  EXPECT_EQ("IDLE", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
 
-  EXPECT_FLOAT_EQ(float_interface_.getPortMsg(FLOAT_).data,
-                  (stop.header.stamp - start.header.stamp).toSec());
-  EXPECT_TRUE(control_iface.getPortMsg(DONE_).data);
+  // 1. IDLE -> DISABLED
+  control_iface.publishMsgOnPort(DISABLE_, control_iface.constructNewBoolStamped(true));
+  ros::Duration(response_time_).sleep();
+  EXPECT_EQ("DISABLED", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
+
+  // ------PART2 -- Disable while Running
+  // 2. DISABLED -> IDLE
+  control_iface.publishMsgOnPort(ENABLE_, control_iface.constructNewBoolStamped(true));
+  ros::Duration(response_time_).sleep();
+  EXPECT_EQ("IDLE", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
+
+  // 2. IDLE -> RUNNING
+  control_iface.publishMsgOnPort(START_, control_iface.constructNewBoolStamped(true));
+  ros::Duration(response_time_).sleep();
+  EXPECT_EQ("RUNNING", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
+
+  // 2. RUNNING -> DISABLED
+  control_iface.publishMsgOnPort(DISABLE_, control_iface.constructNewBoolStamped(true));
+  ros::Duration(response_time_).sleep();
+  EXPECT_EQ("DISABLED", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
+
+  // ------PART3 -- Disable while Finished
+  // 3. DISABLED -> IDLE
+  control_iface.publishMsgOnPort(ENABLE_, control_iface.constructNewBoolStamped(true));
+  ros::Duration(response_time_).sleep();
+  EXPECT_EQ("IDLE", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
+
+  // 3. IDLE -> RUNNING
+  control_iface.publishMsgOnPort(START_, control_iface.constructNewBoolStamped(true));
+  ros::Duration(response_time_).sleep();
+  EXPECT_EQ("RUNNING", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
+
+  // 3. RUNNING -> FINISHED
+  control_iface.publishMsgOnPort(STOP_, control_iface.constructNewBoolStamped(true));
+  ros::Duration(response_time_).sleep();
+  EXPECT_EQ("FINISHED", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
+
+  // 3. FINISHED -> DISABLED
+  control_iface.publishMsgOnPort(DISABLE_, control_iface.constructNewBoolStamped(true));
+  ros::Duration(response_time_).sleep();
+  EXPECT_EQ("DISABLED", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
 }
 
-TEST_F(TestStopwatch, test_diff_time_again)
+TEST_F(TestTimer, test_timeout_reset_timeout)
 {
   ros::NodeHandle nh;
   init(nh);
 
-  ros::Duration(spawn_time_/2).sleep();
-  control_iface.publishMsgOnPort(RESET_, control_iface.constructNewBoolStamped(true));
-  ros::Duration(spawn_time_/2).sleep();
+  // Waiting for tested nodelet to come up
+  ros::Duration(spawn_time_).sleep();
 
-  ambs_msgs::BoolStamped start = control_iface.constructNewBoolStamped(true);
-  control_iface.publishMsgOnPort(START_, start);
-
-  ros::Duration(test_sleep_time/2).sleep();
-
-  ambs_msgs::BoolStamped stop = control_iface.constructNewBoolStamped(true);
-  control_iface.publishMsgOnPort(STOP_, stop);
+  // DISABLED -> IDLE
+  control_iface.publishMsgOnPort(ENABLE_, control_iface.constructNewBoolStamped(true));
   ros::Duration(response_time_).sleep();
+  EXPECT_EQ("IDLE", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
 
-  EXPECT_FLOAT_EQ(float_interface_.getPortMsg(FLOAT_).data,
-                  (stop.header.stamp - start.header.stamp).toSec());
+  // IDLE -> RUNNING
+  control_iface.publishMsgOnPort(START_, control_iface.constructNewBoolStamped(true));
+  ros::Duration(response_time_).sleep();
+  EXPECT_EQ("RUNNING", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
+
+  // Wait for and verify FINISHED - Timed out
+  ROS_INFO_STREAM("Wait" << GLOBAL_DURATION << "s for timeout.");
+  ros::Duration(GLOBAL_DURATION).sleep();
+  EXPECT_EQ("FINISHED", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
   EXPECT_TRUE(control_iface.getPortMsg(DONE_).data);
+  EXPECT_TRUE(control_iface.getPortMsg(TIMED_OUT_).data);
+  EXPECT_LE(float_interface_.getPortMsg(ELAPSED_).data, GLOBAL_DURATION + 0.05); // 0.05s delay padding
+
+  // FINISHED -> IDLE
+  control_iface.publishMsgOnPort(RESET_, control_iface.constructNewBoolStamped(true));
+  ros::Duration(response_time_).sleep();
+  EXPECT_EQ("IDLE", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
+
+  // IDLE -> RUNNING
+  control_iface.publishMsgOnPort(START_, control_iface.constructNewBoolStamped(true));
+  ros::Duration(response_time_).sleep();
+  EXPECT_EQ("RUNNING", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
+
+  // Wait for and verify FINISHED - Timed out
+  ROS_INFO_STREAM("Wait" << GLOBAL_DURATION << "s for timeout.");
+  ros::Duration(GLOBAL_DURATION).sleep();
+  EXPECT_EQ("FINISHED", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
+  EXPECT_TRUE(control_iface.getPortMsg(DONE_).data);
+  EXPECT_TRUE(control_iface.getPortMsg(TIMED_OUT_).data);
+  EXPECT_LE(float_interface_.getPortMsg(ELAPSED_).data, GLOBAL_DURATION + 0.05); // 0.05s delay padding
+
+  // FINISHED -> DISABLED
+  control_iface.publishMsgOnPort(DISABLE_, control_iface.constructNewBoolStamped(true));
+  ros::Duration(response_time_).sleep();
+  EXPECT_EQ("DISABLED", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
+}
+
+TEST_F(TestTimer, test_interrupt_timeout)
+{
+  ros::NodeHandle nh;
+  init(nh);
+
+  // Waiting for tested nodelet to come up
+  ros::Duration(spawn_time_).sleep();
+
+  // DISABLED -> IDLE
+  control_iface.publishMsgOnPort(ENABLE_, control_iface.constructNewBoolStamped(true));
+  ros::Duration(response_time_).sleep();
+  EXPECT_EQ("IDLE", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
+
+  // IDLE -> RUNNING
+  control_iface.publishMsgOnPort(START_, control_iface.constructNewBoolStamped(true));
+  ros::Duration(response_time_).sleep();
+  EXPECT_EQ("RUNNING", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
+
+  // RUNNING -> FINISHED - Interrupted
+  // Wait half the timer duration to interrupt
+  ros::Duration(GLOBAL_DURATION/2).sleep();
+  ROS_INFO_STREAM("Interrupt! after " << GLOBAL_DURATION/2 << "s");
+  control_iface.publishMsgOnPort(STOP_, control_iface.constructNewBoolStamped(true));
+  ros::Duration(response_time_).sleep();
+  EXPECT_EQ("FINISHED", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
+  EXPECT_TRUE(control_iface.getPortMsg(DONE_).data);
+  EXPECT_TRUE(control_iface.getPortMsg(INTERRUPTED_).data);
+  // Elapsed time could be a little more than the calculated pause, but never more than time out
+  EXPECT_LE(float_interface_.getPortMsg(ELAPSED_).data, GLOBAL_DURATION);
+  EXPECT_GE(float_interface_.getPortMsg(ELAPSED_).data, GLOBAL_DURATION/2);
+
+  // FINISHED -> IDLE
+  control_iface.publishMsgOnPort(RESET_, control_iface.constructNewBoolStamped(true));
+  ros::Duration(response_time_).sleep();
+  EXPECT_EQ("IDLE", *log_msg_);
+  ROS_INFO_STREAM("Response - " << *log_msg_);
 }
 
 int main(int argc, char** argv)
 {
     testing::InitGoogleTest(&argc, argv);
-    ros::init(argc, argv, "test_POSE_param_comp");
+    ros::init(argc, argv, "test_timer");
+
+    GLOBAL_DURATION = atof(argv[1]);
 
     ros::AsyncSpinner spinner(1);
     spinner.start();
