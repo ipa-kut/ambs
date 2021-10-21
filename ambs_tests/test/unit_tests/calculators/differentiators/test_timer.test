@@ -1,34 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
     <group ns="ambs">
-    <arg name="duration" default="5" />
+    <arg name="duration" default="0.5" />
+    <arg name="debug_states" default="true" />
 
-    <rosparam param="/ambs/calculators/timer_nodelet/duration" subst_value="True">$(arg duration)</rosparam>
+    <rosparam param="/ambs/calculators/test_timer_nodelet/duration" subst_value="True">$(arg duration)</rosparam>
+    <rosparam param="/ambs/calculators/test_timer_nodelet/debug_states" subst_value="True">$(arg debug_states)</rosparam>
 
     <node pkg="nodelet" type="nodelet" name="base_nodelet_manager" args="manager"  output="screen">
         <param name="num_worker_threads" value="32" />
     </node>
 
-    <node pkg="nodelet" type="nodelet" name="timer_nodelet"
+    <node pkg="nodelet" type="nodelet" name="test_timer_nodelet"
         args="load ambs_calculators/TimerNodelet base_nodelet_manager">
-        <remap from="timer_nodelet/in_start" to="start_calc" />
-        <remap from="timer_nodelet/in_stop" to="stop_calc" />
-        <remap from="timer_nodelet/in_reset" to="reset_calc" />
-        <remap from="timer_nodelet/in_enable" to="enable_calc" />
-        <remap from="timer_nodelet/in_disable" to="disable_calc" />
-        <remap from="timer_nodelet/out_timed_out" to="calc_timed_out" />
-        <remap from="timer_nodelet/out_interrupted" to="calc_interrupted" />
-        <remap from="timer_nodelet/out_elapsed" to="elapsed_time" />
+        <remap from="test_timer_nodelet/in_start" to="start_calc" />
+        <remap from="test_timer_nodelet/in_stop" to="stop_calc" />
+        <remap from="test_timer_nodelet/in_reset" to="reset_calc" />
+        <remap from="test_timer_nodelet/out_done" to="calc_done" />
+        <remap from="test_timer_nodelet/in_enable" to="enable_calc" />
+        <remap from="test_timer_nodelet/in_disable" to="disable_calc" />
+        <remap from="test_timer_nodelet/out_timed_out" to="calc_timed_out" />
+        <remap from="test_timer_nodelet/out_interrupted" to="calc_interrupted" />
+        <remap from="test_timer_nodelet/out_elapsed" to="elapsed_time" />
     </node>
 
-<!--    <test test-name="gtest_timer_tester" pkg="ambs_tests"
-        type="test_timer" name="gtest_timer_tester">
+    <test test-name="gtest_timer_tester" pkg="ambs_tests"
+        type="test_timer" name="gtest_timer_tester"
+        args="$(arg duration)">
         <remap from="out_start" to="start_calc" />
         <remap from="out_stop" to="stop_calc" />
         <remap from="out_reset" to="reset_calc" />
         <remap from="in_done" to="calc_done" />
-        <remap from="in_float" to="diff_time" />
-    </test>-->
+        <remap from="out_enable" to="enable_calc" />
+        <remap from="out_disable" to="disable_calc" />
+        <remap from="in_timed_out" to="calc_timed_out" />
+        <remap from="in_interrupted" to="calc_interrupted" />
+        <remap from="in_elapsed" to="elapsed_time" />
+    </test>
 
     </group>
 </launch>
