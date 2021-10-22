@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <arg name="n_inputs" default="3" />
+
+    <rosparam param="/ambs/calculators/test_or_gate/n_inputs" subst_value="True">$(arg n_inputs)</rosparam>
+    <node pkg="nodelet" type="nodelet" name="test_or_gate"
+        args="load ambs_calculators/OrGateNodelet base_nodelet_manager">
+        <remap from="test_or_gate/in_start" to="start_calc" />
+        <remap from="test_or_gate/in_stop" to="stop_calc" />
+        <remap from="test_or_gate/in_reset" to="reset_calc" />
+        <remap from="test_or_gate/out_done" to="calc_done" />
+        <remap from="test_or_gate/out_result" to="calc_result" />
+        <!-- Not remapping dynamically generated inputs. Tester takes hardcoded nodelet/input_topic names. -->
+    </node>
+
+</launch>

@@ -56,5 +56,13 @@
         </description>
     </class>
 
+    <class name="ambs_calculators/OrGateNodelet"
+    type="ambs_calculators::OrGateNodelet"
+    base_class_type="nodelet::Nodelet">
+        <description>
+        Nodelet to output logical OR of N inputs
+        </description>
+    </class>
+
 </library>
 

@@ -82,6 +82,24 @@ if(CATKIN_ENABLE_TESTING)
         test/unit_tests/calculators/differentiators/test_timer.cpp)
     target_link_libraries(test_timer ${catkin_LIBRARIES} ${GTEST_LIBRARIES})
     add_dependencies(test_timer ${catkin_EXPORTED_TARGETS})
+
+    add_rostest_gtest(test_2_input_or_gate
+        test/unit_tests/calculators/utils/test_2_input_or_gate.test
+        test/unit_tests/calculators/utils/test_or_gate.cpp)
+    target_link_libraries(test_2_input_or_gate ${catkin_LIBRARIES} ${GTEST_LIBRARIES})
+    add_dependencies(test_2_input_or_gate ${catkin_EXPORTED_TARGETS})
+
+    add_rostest_gtest(test_10_input_or_gate
+        test/unit_tests/calculators/utils/test_10_input_or_gate.test
+        test/unit_tests/calculators/utils/test_or_gate.cpp)
+    target_link_libraries(test_10_input_or_gate ${catkin_LIBRARIES} ${GTEST_LIBRARIES})
+    add_dependencies(test_10_input_or_gate ${catkin_EXPORTED_TARGETS})
+
+    add_rostest_gtest(test_100_input_or_gate
+        test/unit_tests/calculators/utils/test_100_input_or_gate.test
+        test/unit_tests/calculators/utils/test_or_gate.cpp)
+    target_link_libraries(test_100_input_or_gate ${catkin_LIBRARIES} ${GTEST_LIBRARIES})
+    add_dependencies(test_100_input_or_gate ${catkin_EXPORTED_TARGETS})
 endif()
 
 
