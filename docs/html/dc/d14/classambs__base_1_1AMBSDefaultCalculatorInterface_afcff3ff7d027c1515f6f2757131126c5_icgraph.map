@@ -1,6 +1,8 @@
 <map id="getStopMsg" name="getStopMsg">
-<area shape="rect" id="node1" title="Get the message received by the STOP_ port." alt="" coords="265,78,357,105"/>
-<area shape="rect" id="node2" href="$dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,5,217,47"/>
-<area shape="rect" id="node3" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="13,71,209,112"/>
-<area shape="rect" id="node4" href="$d4/d82/classambs__calculators_1_1SignalRepeater.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="27,136,195,177"/>
+<area shape="rect" id="node1" title="Get the message received by the STOP_ port." alt="" coords="479,111,571,138"/>
+<area shape="rect" id="node2" href="$dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="219,5,431,47"/>
+<area shape="rect" id="node3" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="227,71,423,112"/>
+<area shape="rect" id="node4" href="$d4/d82/classambs__calculators_1_1SignalRepeater.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="241,136,409,177"/>
+<area shape="rect" id="node5" href="$d4/df6/classambs__calculators_1_1Timer.html#ad1e2352a41e28bfe2fb4ffdc88029de3" title="Calculate what the next state should be, given current state and external inputs." alt="" coords="242,201,407,243"/>
+<area shape="rect" id="node6" href="$d4/df6/classambs__calculators_1_1Timer.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,201,171,243"/>
 </map>

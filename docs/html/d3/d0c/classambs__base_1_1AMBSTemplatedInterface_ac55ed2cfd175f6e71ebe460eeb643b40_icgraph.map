@@ -1,17 +1,19 @@
 <map id="init" name="init">
-<area shape="rect" id="node1" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="508,313,547,339"/>
-<area shape="rect" id="node2" href="$d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="247,5,460,47"/>
-<area shape="rect" id="node3" href="$d4/de5/classTestEdgeDetector.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="277,71,430,98"/>
-<area shape="rect" id="node4" href="$df/dd0/classTestDiffFloatTemporal.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="277,123,429,164"/>
-<area shape="rect" id="node5" href="$da/d9b/classTestDiffPoseTemporal.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="277,188,430,229"/>
-<area shape="rect" id="node6" href="$d1/d43/classTestStopwatch.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="286,254,421,281"/>
-<area shape="rect" id="node7" href="$da/d3a/classTestSignalRepeater.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="285,305,422,347"/>
-<area shape="rect" id="node8" href="$db/dd0/classTestCompFloatParam.html#a2901c089ab1d0565c9e2269b574fa597" title=" " alt="" coords="278,371,429,412"/>
-<area shape="rect" id="node9" href="$dd/d7f/classambs__calculators_1_1EdgeDetector.html#af4e8c313828e584f6ea0a12abd6e3414" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="247,436,459,477"/>
-<area shape="rect" id="node10" href="$d4/d82/classambs__calculators_1_1SignalRepeater.html#a5dbc26aff5f1de3139575c98d38f2cb8" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="269,501,437,543"/>
-<area shape="rect" id="node11" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#ad2496cf9193f5ee5374d5bbbca8d2891" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="255,567,451,608"/>
-<area shape="rect" id="node12" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a2ce63b7c990f2c030b6cd2afcff95624" title="Actual initialisation function." alt="" coords="250,632,457,673"/>
-<area shape="rect" id="node13" href="$d3/d81/classambs__runners_1_1BenchBraking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,567,199,608"/>
-<area shape="rect" id="node14" href="$d4/da7/classambs__runners_1_1EmptyRunner.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="6,632,198,673"/>
-<area shape="rect" id="node15" href="$d7/d68/classambs__runners_1_1Test1Braking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="7,697,197,739"/>
+<area shape="rect" id="node1" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="508,370,547,397"/>
+<area shape="rect" id="node2" href="$d4/df6/classambs__calculators_1_1Timer.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="271,5,436,47"/>
+<area shape="rect" id="node3" href="$d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="247,71,460,112"/>
+<area shape="rect" id="node4" href="$d4/de5/classTestEdgeDetector.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="277,137,430,163"/>
+<area shape="rect" id="node5" href="$df/dd0/classTestDiffFloatTemporal.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="277,188,429,229"/>
+<area shape="rect" id="node6" href="$da/d9b/classTestDiffPoseTemporal.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="277,253,430,295"/>
+<area shape="rect" id="node7" href="$d1/d43/classTestStopwatch.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="286,319,421,346"/>
+<area shape="rect" id="node8" href="$df/d1b/classTestTimer.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="300,370,407,397"/>
+<area shape="rect" id="node9" href="$da/d3a/classTestSignalRepeater.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="285,421,422,463"/>
+<area shape="rect" id="node10" href="$db/dd0/classTestCompFloatParam.html#a2901c089ab1d0565c9e2269b574fa597" title=" " alt="" coords="278,487,429,528"/>
+<area shape="rect" id="node11" href="$dd/d7f/classambs__calculators_1_1EdgeDetector.html#af4e8c313828e584f6ea0a12abd6e3414" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="247,552,459,593"/>
+<area shape="rect" id="node12" href="$d4/d82/classambs__calculators_1_1SignalRepeater.html#a5dbc26aff5f1de3139575c98d38f2cb8" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="269,617,437,659"/>
+<area shape="rect" id="node13" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html#ad2496cf9193f5ee5374d5bbbca8d2891" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="255,683,451,724"/>
+<area shape="rect" id="node14" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a2ce63b7c990f2c030b6cd2afcff95624" title="Actual initialisation function." alt="" coords="250,748,457,789"/>
+<area shape="rect" id="node15" href="$d3/d81/classambs__runners_1_1BenchBraking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,683,199,724"/>
+<area shape="rect" id="node16" href="$d4/da7/classambs__runners_1_1EmptyRunner.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="6,748,198,789"/>
+<area shape="rect" id="node17" href="$d7/d68/classambs__runners_1_1Test1Braking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="7,813,197,855"/>
 </map>

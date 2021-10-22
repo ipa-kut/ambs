@@ -20,7 +20,9 @@ var annotated_dup =
       [ "SignalRepeater", "d4/d82/classambs__calculators_1_1SignalRepeater.html", "d4/d82/classambs__calculators_1_1SignalRepeater" ],
       [ "SignalRepeaterNodelet", "d8/d3a/classambs__calculators_1_1SignalRepeaterNodelet.html", "d8/d3a/classambs__calculators_1_1SignalRepeaterNodelet" ],
       [ "Stopwatch", "d0/d7e/classambs__calculators_1_1Stopwatch.html", "d0/d7e/classambs__calculators_1_1Stopwatch" ],
-      [ "StopwatchNodelet", "db/d86/classambs__calculators_1_1StopwatchNodelet.html", "db/d86/classambs__calculators_1_1StopwatchNodelet" ]
+      [ "StopwatchNodelet", "db/d86/classambs__calculators_1_1StopwatchNodelet.html", "db/d86/classambs__calculators_1_1StopwatchNodelet" ],
+      [ "Timer", "d4/df6/classambs__calculators_1_1Timer.html", "d4/df6/classambs__calculators_1_1Timer" ],
+      [ "TimerNodelet", "d6/d82/classambs__calculators_1_1TimerNodelet.html", "d6/d82/classambs__calculators_1_1TimerNodelet" ]
     ] ],
     [ "ambs_interpreters", "d1/d70/namespaceambs__interpreters.html", [
       [ "CommandVelocityInterpreter", "d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html", "d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter" ],
@@ -58,5 +60,6 @@ var annotated_dup =
     [ "TestEdgeDetector", "d4/de5/classTestEdgeDetector.html", "d4/de5/classTestEdgeDetector" ],
     [ "TestHelper", "da/dd6/classTestHelper.html", "da/dd6/classTestHelper" ],
     [ "TestSignalRepeater", "da/d3a/classTestSignalRepeater.html", "da/d3a/classTestSignalRepeater" ],
-    [ "TestStopwatch", "d1/d43/classTestStopwatch.html", "d1/d43/classTestStopwatch" ]
+    [ "TestStopwatch", "d1/d43/classTestStopwatch.html", "d1/d43/classTestStopwatch" ],
+    [ "TestTimer", "df/d1b/classTestTimer.html", "df/d1b/classTestTimer" ]
 ];

@@ -1,9 +1,10 @@
 <map id="resetAllPorts" name="resetAllPorts">
-<area shape="rect" id="node1" title="Reset inernal buffer message of all ports." alt="" coords="527,127,624,153"/>
-<area shape="rect" id="node2" href="$d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#af955dafbd2caaf93213592477dd71ce1" title=" " alt="" coords="279,5,467,61"/>
-<area shape="rect" id="node4" href="$dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="267,86,479,127"/>
-<area shape="rect" id="node5" href="$d3/d81/classambs__runners_1_1BenchBraking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="276,151,469,193"/>
-<area shape="rect" id="node6" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a9daeb45ab1c8723c550216193bc640d4" title="Wait for TRUE on the RESET port." alt="" coords="269,217,476,258"/>
-<area shape="rect" id="node3" href="$d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="5,13,219,54"/>
-<area shape="rect" id="node7" href="$d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="17,217,207,258"/>
+<area shape="rect" id="node1" title="Reset inernal buffer message of all ports." alt="" coords="527,159,624,186"/>
+<area shape="rect" id="node2" href="$d4/df6/classambs__calculators_1_1Timer.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="290,5,455,47"/>
+<area shape="rect" id="node3" href="$d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#af955dafbd2caaf93213592477dd71ce1" title=" " alt="" coords="279,71,467,127"/>
+<area shape="rect" id="node5" href="$dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="267,152,479,193"/>
+<area shape="rect" id="node6" href="$d3/d81/classambs__runners_1_1BenchBraking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="276,217,469,259"/>
+<area shape="rect" id="node7" href="$d6/daa/classambs__base_1_1AMBSBaseRunner.html#a9daeb45ab1c8723c550216193bc640d4" title="Wait for TRUE on the RESET port." alt="" coords="269,283,476,324"/>
+<area shape="rect" id="node4" href="$d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="5,79,219,120"/>
+<area shape="rect" id="node8" href="$d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="17,283,207,324"/>
 </map>

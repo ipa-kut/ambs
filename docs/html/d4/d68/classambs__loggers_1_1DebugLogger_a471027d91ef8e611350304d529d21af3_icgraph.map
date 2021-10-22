@@ -1,6 +1,7 @@
 <map id="init" name="init">
-<area shape="rect" id="node1" title=" " alt="" coords="248,78,287,105"/>
+<area shape="rect" id="node1" title=" " alt="" coords="248,111,287,138"/>
 <area shape="rect" id="node2" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="11,5,194,47"/>
 <area shape="rect" id="node3" href="$d0/d7e/classambs__calculators_1_1Stopwatch.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="5,71,200,112"/>
-<area shape="rect" id="node4" href="$d3/d81/classambs__runners_1_1BenchBraking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="6,136,199,177"/>
+<area shape="rect" id="node4" href="$d4/df6/classambs__calculators_1_1Timer.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="20,136,185,177"/>
+<area shape="rect" id="node5" href="$d3/d81/classambs__runners_1_1BenchBraking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="6,201,199,243"/>
 </map>
