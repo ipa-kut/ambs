@@ -32,6 +32,7 @@ add_library(ambs_calculators
    src/calculators/differentiators/diff_pose_temporal_nodelet.cpp
    src/calculators/differentiators/stopwatch_nodelet.cpp
    src/calculators/differentiators/timer_nodelet.cpp
+   src/calculators/utils/or_gate_nodelet.cpp
  )
 add_dependencies(ambs_calculators ${catkin_EXPORTED_TARGETS})
 target_link_libraries(ambs_calculators ${catkin_LIBRARIES})

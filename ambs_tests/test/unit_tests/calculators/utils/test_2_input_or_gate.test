@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <group ns="ambs">
+
+    <arg name="n_inputs" default="2" />
+
+    <node pkg="nodelet" type="nodelet" name="base_nodelet_manager" args="manager"  output="screen">
+        <param name="num_worker_threads" value="32" />
+    </node>
+
+    <include file="$(find ambs_tests)/test/unit_tests/calculators/utils/bringup_or_gate.xml">
+        <arg name="n_inputs" value="$(arg n_inputs)" />
+    </include>
+
+    <test test-name="gtest_or_gate_tester" pkg="ambs_tests"
+        type="test_$(arg n_inputs)_input_or_gate" name="gtest_$(arg n_inputs)_input_or_gate_tester"
+        args = "$(arg n_inputs)">
+        <remap from="out_start" to="start_calc" />
+        <remap from="out_stop" to="stop_calc" />
+        <remap from="out_reset" to="reset_calc" />
+        <remap from="in_done" to="calc_done" />
+        <remap from="in_result" to="calc_result" />
+    </test>
+
+    </group>
+</launch>
