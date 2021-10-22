@@ -316,6 +316,7 @@ class ambs_base::AMBSTemplatedInterface&lt; T &gt;</div><p >The base templated c
   </table>
   </dd>
 </dl>
+<p >TODO: Keep this warning approach or not? Should this function be changed?</p>
 <div class="fragment"><div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>{</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  T default_msg;</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="keywordflow">if</span>(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9">isPortValid</a>(port_name))</div>
@@ -324,29 +325,30 @@ class ambs_base::AMBSTemplatedInterface&lt; T &gt;</div><p >The base templated c
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  }</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  {</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    ROS_WARN_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;: Trying to get msg on port &quot;</span> &lt;&lt; port_name &lt;&lt; <span class="stringliteral">&quot; but it is null!&quot;</span>);</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordflow">return</span> default_msg;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  }</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>}</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">//    ROS_WARN_STREAM(node_name_ &lt;&lt; &quot;: Trying to get msg on port &quot; &lt;&lt; port_name &lt;&lt; &quot; but it is null!&quot;);</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordflow">return</span> default_msg;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  }</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}</div>
 <div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_a2c7c3372ae2463ed268b6f1cab5c7372"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">ambs_base::AMBSTemplatedInterface::interfaces_</a></div><div class="ttdeci">std::map&lt; std::string, AMBSPort&lt; T &gt; &gt; interfaces_</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:75</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_a69e220bdafb7c66b63cee0187bfc8bcb"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">ambs_base::AMBSTemplatedInterface::node_name_</a></div><div class="ttdeci">std::string node_name_</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:77</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_adaa2cbf1da15afc4f5683da03e6207b9"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9">ambs_base::AMBSTemplatedInterface::isPortValid</a></div><div class="ttdeci">bool isPortValid(std::string port_name)</div><div class="ttdoc">Returns if the port has received at least on message.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:232</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_adaa2cbf1da15afc4f5683da03e6207b9"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9">ambs_base::AMBSTemplatedInterface::isPortValid</a></div><div class="ttdeci">bool isPortValid(std::string port_name)</div><div class="ttdoc">Returns if the port has received at least on message.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:233</div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../#l00031">CommandVelocityInterpreter::executeCB()</a>, <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00078">SignalRepeater::executeCB()</a>, <a class="el" href="../../#l00054">Test1Braking::executeCB()</a>, <a class="el" href="../../#l00175">AMBSBaseRunner::timedLoopFallbackOnPorts()</a>, and <a class="el" href="../../#l00205">AMBSBaseRunner::timedLoopSequenceOnPorts()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00031">CommandVelocityInterpreter::executeCB()</a>, <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00078">SignalRepeater::executeCB()</a>, <a class="el" href="../../#l00054">Test1Braking::executeCB()</a>, <a class="el" href="../../#l00108">Timer::getNextState()</a>, <a class="el" href="../../#l00175">AMBSBaseRunner::timedLoopFallbackOnPorts()</a>, and <a class="el" href="../../#l00205">AMBSBaseRunner::timedLoopSequenceOnPorts()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface_ada64638f460eb73b2fdec44ef26236b1_icgraph.png" border="0" usemap="#ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_ada64638f460eb73b2fdec44ef26236b1_icgraph" alt=""/></div>
 <map name="ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_ada64638f460eb73b2fdec44ef26236b1_icgraph" id="ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_ada64638f460eb73b2fdec44ef26236b1_icgraph">
-<area shape="rect" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="527,188,616,215"/>
+<area shape="rect" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="527,217,616,244"/>
 <area shape="rect" href="../../d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#af955dafbd2caaf93213592477dd71ce1" title=" " alt="" coords="279,5,467,61"/>
 <area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="267,86,479,127"/>
 <area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="289,151,457,193"/>
-<area shape="rect" href="../../d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="17,210,207,251"/>
+<area shape="rect" href="../../d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="17,206,207,247"/>
+<area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#ad1e2352a41e28bfe2fb4ffdc88029de3" title="Calculate what the next state should be, given current state and external inputs." alt="" coords="290,334,455,375"/>
 <area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#aaa1d167d92a6a76b7e15e89c46808a0b" title="Returns the first port in list that has a true message, or if timer expires." alt="" coords="269,269,476,310"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#abb5bd2798f3e0e6535fe8178525a9d22" title="Returns the first port in list that has a false message, or if timer expires." alt="" coords="269,334,476,375"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#abb5bd2798f3e0e6535fe8178525a9d22" title="Returns the first port in list that has a false message, or if timer expires." alt="" coords="269,399,476,441"/>
 <area shape="rect" href="../../d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="5,13,219,54"/>
-<area shape="rect" href="../../d3/d81/classambs__runners_1_1BenchBraking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="15,275,209,317"/>
+<area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="29,337,195,378"/>
+<area shape="rect" href="../../d3/d81/classambs__runners_1_1BenchBraking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="15,271,209,313"/>
 </map>
 </div>
 
@@ -431,33 +433,36 @@ Here is the caller graph for this function:</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  }</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>}</div>
 <div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_a1300297c252ff1dc5ceea58a274d4db5"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a1300297c252ff1dc5ceea58a274d4db5">ambs_base::AMBSTemplatedInterface::nh_</a></div><div class="ttdeci">ros::NodeHandle nh_</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:76</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_ab41f041fcce6f8433fa928cd01d31feb"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ab41f041fcce6f8433fa928cd01d31feb">ambs_base::AMBSTemplatedInterface::templatedCB</a></div><div class="ttdeci">virtual void templatedCB(const boost::shared_ptr&lt; const T &gt; msg, std::string topic)</div><div class="ttdoc">The callback function used by ALL ports.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:254</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_a69e220bdafb7c66b63cee0187bfc8bcb"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">ambs_base::AMBSTemplatedInterface::node_name_</a></div><div class="ttdeci">std::string node_name_</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:77</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_ab41f041fcce6f8433fa928cd01d31feb"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ab41f041fcce6f8433fa928cd01d31feb">ambs_base::AMBSTemplatedInterface::templatedCB</a></div><div class="ttdeci">virtual void templatedCB(const boost::shared_ptr&lt; const T &gt; msg, std::string topic)</div><div class="ttdoc">The callback function used by ALL ports.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:255</div></div>
 <div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_aec1fab4189d62dda038db1943d1517f5"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aec1fab4189d62dda038db1943d1517f5">ambs_base::AMBSTemplatedInterface::subscriber_queue_size_</a></div><div class="ttdeci">const unsigned int subscriber_queue_size_</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:78</div></div>
 <div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_afc10252f2b6986c02afe04f0ab2baf11"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#afc10252f2b6986c02afe04f0ab2baf11">ambs_base::AMBSTemplatedInterface::publisher_queue_size_</a></div><div class="ttdeci">const unsigned int publisher_queue_size_</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:79</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../#l00036">AMBSPort&lt; T &gt;::index_</a>, <a class="el" href="../../#l00035">AMBSPort&lt; T &gt;::pub_</a>, <a class="el" href="../../#l00034">AMBSPort&lt; T &gt;::sub_</a>, and <a class="el" href="../../#l00032">AMBSPort&lt; T &gt;::topic_name_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00013">CommandVelocityInterpreter::init()</a>, <a class="el" href="../../#l00035">TestEdgeDetector::init()</a>, <a class="el" href="../../#l00039">TestDiffFloatTemporal::init()</a>, <a class="el" href="../../#l00044">TestDiffPoseTemporal::init()</a>, <a class="el" href="../../#l00039">TestStopwatch::init()</a>, <a class="el" href="../../#l00034">TestSignalRepeater::init()</a>, <a class="el" href="../../#l00049">TestCompFloatParam::init()</a>, <a class="el" href="../../#l00057">EdgeDetector::init()</a>, <a class="el" href="../../#l00056">SignalRepeater::init()</a>, <a class="el" href="../../#l00059">CompFloatParam::init()</a>, and <a class="el" href="../../#l00122">AMBSBaseRunner::initialiseBaseRunner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00076">Timer::init()</a>, <a class="el" href="../../#l00013">CommandVelocityInterpreter::init()</a>, <a class="el" href="../../#l00035">TestEdgeDetector::init()</a>, <a class="el" href="../../#l00039">TestDiffFloatTemporal::init()</a>, <a class="el" href="../../#l00044">TestDiffPoseTemporal::init()</a>, <a class="el" href="../../#l00039">TestStopwatch::init()</a>, <a class="el" href="../../#l00056">TestTimer::init()</a>, <a class="el" href="../../#l00034">TestSignalRepeater::init()</a>, <a class="el" href="../../#l00049">TestCompFloatParam::init()</a>, <a class="el" href="../../#l00057">EdgeDetector::init()</a>, <a class="el" href="../../#l00056">SignalRepeater::init()</a>, <a class="el" href="../../#l00059">CompFloatParam::init()</a>, and <a class="el" href="../../#l00122">AMBSBaseRunner::initialiseBaseRunner()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface_ac55ed2cfd175f6e71ebe460eeb643b40_icgraph.png" border="0" usemap="#ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_ac55ed2cfd175f6e71ebe460eeb643b40_icgraph" alt=""/></div>
 <map name="ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_ac55ed2cfd175f6e71ebe460eeb643b40_icgraph" id="ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_ac55ed2cfd175f6e71ebe460eeb643b40_icgraph">
-<area shape="rect" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="508,313,547,339"/>
-<area shape="rect" href="../../d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="247,5,460,47"/>
-<area shape="rect" href="../../d4/de5/classTestEdgeDetector.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="277,71,430,98"/>
-<area shape="rect" href="../../df/dd0/classTestDiffFloatTemporal.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="277,123,429,164"/>
-<area shape="rect" href="../../da/d9b/classTestDiffPoseTemporal.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="277,188,430,229"/>
-<area shape="rect" href="../../d1/d43/classTestStopwatch.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="286,254,421,281"/>
-<area shape="rect" href="../../da/d3a/classTestSignalRepeater.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="285,305,422,347"/>
-<area shape="rect" href="../../db/dd0/classTestCompFloatParam.html#a2901c089ab1d0565c9e2269b574fa597" title=" " alt="" coords="278,371,429,412"/>
-<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#af4e8c313828e584f6ea0a12abd6e3414" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="247,436,459,477"/>
-<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#a5dbc26aff5f1de3139575c98d38f2cb8" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="269,501,437,543"/>
-<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#ad2496cf9193f5ee5374d5bbbca8d2891" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="255,567,451,608"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a2ce63b7c990f2c030b6cd2afcff95624" title="Actual initialisation function." alt="" coords="250,632,457,673"/>
-<area shape="rect" href="../../d3/d81/classambs__runners_1_1BenchBraking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,567,199,608"/>
-<area shape="rect" href="../../d4/da7/classambs__runners_1_1EmptyRunner.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="6,632,198,673"/>
-<area shape="rect" href="../../d7/d68/classambs__runners_1_1Test1Braking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="7,697,197,739"/>
+<area shape="rect" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="508,370,547,397"/>
+<area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="271,5,436,47"/>
+<area shape="rect" href="../../d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="247,71,460,112"/>
+<area shape="rect" href="../../d4/de5/classTestEdgeDetector.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="277,137,430,163"/>
+<area shape="rect" href="../../df/dd0/classTestDiffFloatTemporal.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="277,188,429,229"/>
+<area shape="rect" href="../../da/d9b/classTestDiffPoseTemporal.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="277,253,430,295"/>
+<area shape="rect" href="../../d1/d43/classTestStopwatch.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="286,319,421,346"/>
+<area shape="rect" href="../../df/d1b/classTestTimer.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="300,370,407,397"/>
+<area shape="rect" href="../../da/d3a/classTestSignalRepeater.html#ad1e53c9ca9de182e69c6605aa758b9e2" title=" " alt="" coords="285,421,422,463"/>
+<area shape="rect" href="../../db/dd0/classTestCompFloatParam.html#a2901c089ab1d0565c9e2269b574fa597" title=" " alt="" coords="278,487,429,528"/>
+<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#af4e8c313828e584f6ea0a12abd6e3414" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="247,552,459,593"/>
+<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#a5dbc26aff5f1de3139575c98d38f2cb8" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="269,617,437,659"/>
+<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#ad2496cf9193f5ee5374d5bbbca8d2891" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="255,683,451,724"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a2ce63b7c990f2c030b6cd2afcff95624" title="Actual initialisation function." alt="" coords="250,748,457,789"/>
+<area shape="rect" href="../../d3/d81/classambs__runners_1_1BenchBraking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="5,683,199,724"/>
+<area shape="rect" href="../../d4/da7/classambs__runners_1_1EmptyRunner.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="6,748,198,789"/>
+<area shape="rect" href="../../d7/d68/classambs__runners_1_1Test1Braking.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="7,813,197,855"/>
 </map>
 </div>
 
@@ -486,18 +491,18 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>{</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <span class="keywordtype">bool</span> result;</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="keywordflow">try</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  {</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    result = <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>[port_name].msg_ != <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  }</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  <span class="keywordflow">catch</span> (std::exception e)</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  {</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    ROS_ERROR_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;:  isPortValid exception on port &quot;</span> &lt;&lt; port_name &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; e.what());</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  }</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  <span class="keywordflow">return</span> result;</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>}</div>
+<div class="fragment"><div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>{</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="keywordtype">bool</span> result;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  {</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    result = <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>[port_name].msg_ != <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  }</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="keywordflow">catch</span> (std::exception e)</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  {</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    ROS_ERROR_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;:  isPortValid exception on port &quot;</span> &lt;&lt; port_name &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; e.what());</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  }</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>}</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00078">SignalRepeater::executeCB()</a>, <a class="el" href="../../#l00175">AMBSBaseRunner::timedLoopFallbackOnPorts()</a>, and <a class="el" href="../../#l00205">AMBSBaseRunner::timedLoopSequenceOnPorts()</a>.</p>
 <div class="dynheader">
@@ -539,17 +544,17 @@ Here is the caller graph for this function:</div>
 
 <p>Prints the member fields of the AMBSPorts object of all ports. </p>
 <p >Used for debugging only </p>
-<div class="fragment"><div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>{</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>   <span class="keyword">auto</span> iter = <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>.begin();</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>   <span class="keywordflow">while</span>(iter != <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>.end())</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>   {</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>     ROS_INFO_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot; Port: &quot;</span> &lt;&lt; iter-&gt;first &lt;&lt; <span class="stringliteral">&quot; Indx: &quot;</span> &lt;&lt; iter-&gt;second.index_</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                     &lt;&lt; <span class="stringliteral">&quot; Sub: &quot;</span> &lt;&lt; iter-&gt;second.sub_ &lt;&lt; <span class="stringliteral">&quot; Pub: &quot;</span> &lt;&lt; iter-&gt;second.pub_</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                     &lt;&lt; <span class="stringliteral">&quot; Val: &quot;</span> &lt;&lt; iter-&gt;second.msg_);</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>     ++iter;</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>   }</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>   ROS_INFO_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot; Total: &quot;</span> &lt;&lt; <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>.size());</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>}</div>
+<div class="fragment"><div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>{</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>   <span class="keyword">auto</span> iter = <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>.begin();</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>   <span class="keywordflow">while</span>(iter != <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>.end())</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>   {</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>     ROS_INFO_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot; Port: &quot;</span> &lt;&lt; iter-&gt;first &lt;&lt; <span class="stringliteral">&quot; Indx: &quot;</span> &lt;&lt; iter-&gt;second.index_</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                     &lt;&lt; <span class="stringliteral">&quot; Sub: &quot;</span> &lt;&lt; iter-&gt;second.sub_ &lt;&lt; <span class="stringliteral">&quot; Pub: &quot;</span> &lt;&lt; iter-&gt;second.pub_</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                     &lt;&lt; <span class="stringliteral">&quot; Val: &quot;</span> &lt;&lt; iter-&gt;second.msg_);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>     ++iter;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>   }</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>   ROS_INFO_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot; Total: &quot;</span> &lt;&lt; <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>.size());</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -597,37 +602,38 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>{</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="keywordflow">try</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  {</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a720d11b3d464d5603f65300bd4bf4f53">setPortMsg</a>(port_name,msg);</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>[port_name].pub_.publish(boost::make_shared&lt;T&gt;(msg));</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  }</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="keywordflow">catch</span> (std::exception e)</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  {</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    ROS_ERROR_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;:  publishMsgOnPort exception on port &quot;</span> &lt;&lt; port_name &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; e.what());</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  }</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>}</div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_a720d11b3d464d5603f65300bd4bf4f53"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a720d11b3d464d5603f65300bd4bf4f53">ambs_base::AMBSTemplatedInterface::setPortMsg</a></div><div class="ttdeci">void setPortMsg(std::string port_name, T msg)</div><div class="ttdoc">Sets the internal message value of a port. DOES NOT PUBLISH.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:172</div></div>
+<div class="fragment"><div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>{</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  {</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a720d11b3d464d5603f65300bd4bf4f53">setPortMsg</a>(port_name,msg);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>[port_name].pub_.publish(boost::make_shared&lt;T&gt;(msg));</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  }</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <span class="keywordflow">catch</span> (std::exception e)</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  {</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    ROS_ERROR_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;:  publishMsgOnPort exception on port &quot;</span> &lt;&lt; port_name &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; e.what());</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  }</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>}</div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_a720d11b3d464d5603f65300bd4bf4f53"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a720d11b3d464d5603f65300bd4bf4f53">ambs_base::AMBSTemplatedInterface::setPortMsg</a></div><div class="ttdeci">void setPortMsg(std::string port_name, T msg)</div><div class="ttdoc">Sets the internal message value of a port. DOES NOT PUBLISH.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:173</div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00086">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00121">BenchBraking::executeCB()</a>, <a class="el" href="../../#l00041">EmptyRunner::executeCB()</a>, <a class="el" href="../../#l00263">AMBSBaseRunner::startRobot()</a>, <a class="el" href="../../#l00269">AMBSBaseRunner::stopRobot()</a>, <a class="el" href="../../#l00258">AMBSBaseRunner::testCompleted()</a>, <a class="el" href="../../#l00248">AMBSBaseRunner::testFailed()</a>, <a class="el" href="../../#l00239">AMBSBaseRunner::testSucceeded()</a>, and <a class="el" href="../../#l00091">AMBSBaseRunner::waitForStart()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00134">Timer::executeCB()</a>, <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00086">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00121">BenchBraking::executeCB()</a>, <a class="el" href="../../#l00041">EmptyRunner::executeCB()</a>, <a class="el" href="../../#l00263">AMBSBaseRunner::startRobot()</a>, <a class="el" href="../../#l00269">AMBSBaseRunner::stopRobot()</a>, <a class="el" href="../../#l00258">AMBSBaseRunner::testCompleted()</a>, <a class="el" href="../../#l00248">AMBSBaseRunner::testFailed()</a>, <a class="el" href="../../#l00239">AMBSBaseRunner::testSucceeded()</a>, and <a class="el" href="../../#l00091">AMBSBaseRunner::waitForStart()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface_aabf915c783f55403b189d83e619643fd_icgraph.png" border="0" usemap="#ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_aabf915c783f55403b189d83e619643fd_icgraph" alt=""/></div>
 <map name="ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_aabf915c783f55403b189d83e619643fd_icgraph" id="ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_aabf915c783f55403b189d83e619643fd_icgraph">
-<area shape="rect" title="Publish a message on a port." alt="" coords="757,290,887,317"/>
-<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="497,5,709,47"/>
-<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="505,71,701,112"/>
-<area shape="rect" href="../../d3/d81/classambs__runners_1_1BenchBraking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="249,195,443,236"/>
-<area shape="rect" href="../../d4/da7/classambs__runners_1_1EmptyRunner.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="507,539,699,580"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a1c7c141283496076d1689b09c128f390" title=" " alt="" coords="500,136,707,177"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a574496e1966eec1bdd39a5bab7f44117" title=" " alt="" coords="500,253,707,295"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#ad8770edaeff5709344d43ecc25d59818" title="Publish test results." alt="" coords="500,371,707,412"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a911a471d55770719e68bebd652685255" title="Publish test results." alt="" coords="243,377,449,419"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a4d711578fec3cad592d7f66c5419bd50" title="Publish test results." alt="" coords="243,461,449,503"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#ad7f2492738b8b944ceea50f2eba2682c" title="Wait for TRUE on the START port." alt="" coords="243,312,449,353"/>
-<area shape="rect" href="../../d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="5,312,195,353"/>
+<area shape="rect" title="Publish a message on a port." alt="" coords="757,326,887,353"/>
+<area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="521,5,686,47"/>
+<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="497,71,709,112"/>
+<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="505,136,701,177"/>
+<area shape="rect" href="../../d3/d81/classambs__runners_1_1BenchBraking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="249,377,443,419"/>
+<area shape="rect" href="../../d4/da7/classambs__runners_1_1EmptyRunner.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="507,253,699,295"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a1c7c141283496076d1689b09c128f390" title=" " alt="" coords="500,319,707,360"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a574496e1966eec1bdd39a5bab7f44117" title=" " alt="" coords="500,436,707,477"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#ad8770edaeff5709344d43ecc25d59818" title="Publish test results." alt="" coords="500,501,707,543"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a911a471d55770719e68bebd652685255" title="Publish test results." alt="" coords="243,501,449,543"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a4d711578fec3cad592d7f66c5419bd50" title="Publish test results." alt="" coords="243,588,449,629"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#ad7f2492738b8b944ceea50f2eba2682c" title="Wait for TRUE on the START port." alt="" coords="243,228,449,269"/>
+<area shape="rect" href="../../d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="5,436,195,477"/>
 </map>
 </div>
 
@@ -654,30 +660,31 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Reset inernal buffer message of all ports. </p>
-<div class="fragment"><div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>{</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  T default_msg;</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  <span class="keyword">auto</span> iter = <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>.begin();</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  <span class="keywordflow">while</span>(iter != <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>.end())</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  {</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408">resetPort</a>(iter-&gt;first);</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    ++iter;</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  }</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>}</div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_aadd7ecd6a0db64d273c2ba8128419408"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408">ambs_base::AMBSTemplatedInterface::resetPort</a></div><div class="ttdeci">void resetPort(std::string port_name)</div><div class="ttdoc">Reset internal buffer message of a port.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:272</div></div>
+<div class="fragment"><div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>{</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  T default_msg;</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  <span class="keyword">auto</span> iter = <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>.begin();</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  <span class="keywordflow">while</span>(iter != <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>.end())</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  {</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408">resetPort</a>(iter-&gt;first);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    ++iter;</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  }</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>}</div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_aadd7ecd6a0db64d273c2ba8128419408"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408">ambs_base::AMBSTemplatedInterface::resetPort</a></div><div class="ttdeci">void resetPort(std::string port_name)</div><div class="ttdoc">Reset internal buffer message of a port.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:273</div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../#l00031">CommandVelocityInterpreter::executeCB()</a>, <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00121">BenchBraking::executeCB()</a>, and <a class="el" href="../../#l00106">AMBSBaseRunner::waitForReset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00134">Timer::executeCB()</a>, <a class="el" href="../../#l00031">CommandVelocityInterpreter::executeCB()</a>, <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00121">BenchBraking::executeCB()</a>, and <a class="el" href="../../#l00106">AMBSBaseRunner::waitForReset()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface_af8173f556899e5af6e228ced6c0009fb_icgraph.png" border="0" usemap="#ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_af8173f556899e5af6e228ced6c0009fb_icgraph" alt=""/></div>
 <map name="ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_af8173f556899e5af6e228ced6c0009fb_icgraph" id="ad3/d0c/classambs__base_1_1AMBSTemplatedInterface_af8173f556899e5af6e228ced6c0009fb_icgraph">
-<area shape="rect" title="Reset inernal buffer message of all ports." alt="" coords="527,127,624,153"/>
-<area shape="rect" href="../../d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#af955dafbd2caaf93213592477dd71ce1" title=" " alt="" coords="279,5,467,61"/>
-<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="267,86,479,127"/>
-<area shape="rect" href="../../d3/d81/classambs__runners_1_1BenchBraking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="276,151,469,193"/>
-<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a9daeb45ab1c8723c550216193bc640d4" title="Wait for TRUE on the RESET port." alt="" coords="269,217,476,258"/>
-<area shape="rect" href="../../d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="5,13,219,54"/>
-<area shape="rect" href="../../d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="17,217,207,258"/>
+<area shape="rect" title="Reset inernal buffer message of all ports." alt="" coords="527,159,624,186"/>
+<area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="290,5,455,47"/>
+<area shape="rect" href="../../d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#af955dafbd2caaf93213592477dd71ce1" title=" " alt="" coords="279,71,467,127"/>
+<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="267,152,479,193"/>
+<area shape="rect" href="../../d3/d81/classambs__runners_1_1BenchBraking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="276,217,469,259"/>
+<area shape="rect" href="../../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a9daeb45ab1c8723c550216193bc640d4" title="Wait for TRUE on the RESET port." alt="" coords="269,283,476,324"/>
+<area shape="rect" href="../../d4/df1/classambs__interpreters_1_1CommandVelocityInterpreter.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="5,79,219,120"/>
+<area shape="rect" href="../../d7/d68/classambs__runners_1_1Test1Braking.html#acc239077cecc1069d9306ceda27a8e88" title="Main runner logic, called by the timer. Overrides AMBSBaseRunner::executeCB()" alt="" coords="17,283,207,324"/>
 </map>
 </div>
 
@@ -714,16 +721,16 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>{</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  <span class="keywordflow">try</span></div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  {</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>[port_name].msg_.reset();</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>  }</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  <span class="keywordflow">catch</span> (std::exception e)</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  {</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    ROS_ERROR_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;:  resetPort exception on port &quot;</span> &lt;&lt; port_name &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; e.what());</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  }</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>}</div>
+<div class="fragment"><div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>{</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>  {</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>[port_name].msg_.reset();</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  }</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  <span class="keywordflow">catch</span> (std::exception e)</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  {</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    ROS_ERROR_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;:  resetPort exception on port &quot;</span> &lt;&lt; port_name &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; e.what());</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>  }</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -768,16 +775,16 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>{</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  <span class="keywordflow">try</span></div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  {</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>[port_name].msg_ = boost::make_shared&lt;T&gt;(msg);</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>  }</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="keywordflow">catch</span> (std::exception e)</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  {</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    ROS_ERROR_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;:  setPortMsg exception on port &quot;</span> &lt;&lt; port_name &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; e.what());</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  }</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>}</div>
+<div class="fragment"><div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>{</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  {</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>[port_name].msg_ = boost::make_shared&lt;T&gt;(msg);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  <span class="keywordflow">catch</span> (std::exception e)</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    ROS_ERROR_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;:  setPortMsg exception on port &quot;</span> &lt;&lt; port_name &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; e.what());</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  }</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -823,16 +830,16 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>{</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  <span class="keywordflow">try</span></div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>  {</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>[topic].msg_ =  boost::make_shared&lt;T&gt;(*msg);</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>  }</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  <span class="keywordflow">catch</span> (std::exception e)</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>  {</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    ROS_ERROR_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;:  templatedCB exception &quot;</span> &lt;&lt; e.what());</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  }</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>}</div>
+<div class="fragment"><div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>{</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>  <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  {</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a2c7c3372ae2463ed268b6f1cab5c7372">interfaces_</a>[topic].msg_ =  boost::make_shared&lt;T&gt;(*msg);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  }</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>  <span class="keywordflow">catch</span> (std::exception e)</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  {</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    ROS_ERROR_STREAM(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">node_name_</a> &lt;&lt; <span class="stringliteral">&quot;:  templatedCB exception &quot;</span> &lt;&lt; e.what());</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  }</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -2,6 +2,7 @@ var classambs__base_1_1AMBSDefaultCalculatorInterface =
 [
     [ "AMBSDefaultCalculatorInterface", "dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ab13b136605ad0552452556fad13cfd77", null ],
     [ "~AMBSDefaultCalculatorInterface", "dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a0f7cf83b071c722b99344022dd7ca91d", null ],
+    [ "getResetMsg", "dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a3bb9c9f4531c0706ff89da887dd75938", null ],
     [ "getStartMsg", "dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#abe5963a4394632431dd1fb08ea80b08b", null ],
     [ "getStopMsg", "dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#afcff3ff7d027c1515f6f2757131126c5", null ],
     [ "initDefaultInterface", "dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ab0c2214caea3e5818fc59fdbd68f57a8", null ],

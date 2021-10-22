@@ -1,5 +1,7 @@
 <map id="logInfo" name="logInfo">
-<area shape="rect" id="node1" title="Log message with level 0." alt="" coords="248,46,309,73"/>
+<area shape="rect" id="node1" title="Log message with level 0." alt="" coords="248,111,309,138"/>
 <area shape="rect" id="node2" href="$d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,5,200,47"/>
-<area shape="rect" id="node3" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="11,71,194,112"/>
+<area shape="rect" id="node3" href="$d4/df6/classambs__calculators_1_1Timer.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,71,185,112"/>
+<area shape="rect" id="node4" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="11,136,194,177"/>
+<area shape="rect" id="node5" href="$d4/df6/classambs__calculators_1_1Timer.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="20,201,185,243"/>
 </map>

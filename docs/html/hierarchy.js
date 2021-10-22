@@ -6,7 +6,8 @@ var hierarchy =
       [ "DiffPoseTemporal", "d7/d23/classambs__calculators_1_1DiffPoseTemporal.html", null ],
       [ "EdgeDetector", "dd/d7f/classambs__calculators_1_1EdgeDetector.html", null ],
       [ "SignalRepeater", "d4/d82/classambs__calculators_1_1SignalRepeater.html", null ],
-      [ "Stopwatch", "d0/d7e/classambs__calculators_1_1Stopwatch.html", null ]
+      [ "Stopwatch", "d0/d7e/classambs__calculators_1_1Stopwatch.html", null ],
+      [ "Timer", "d4/df6/classambs__calculators_1_1Timer.html", null ]
     ] ],
     [ "AMBSBaseRunner", "d6/daa/classambs__base_1_1AMBSBaseRunner.html", [
       [ "BenchBraking", "d3/d81/classambs__runners_1_1BenchBraking.html", null ],
@@ -30,6 +31,7 @@ var hierarchy =
       [ "EdgeDetectorNodelet", "db/d89/classambs__calculators_1_1EdgeDetectorNodelet.html", null ],
       [ "SignalRepeaterNodelet", "d8/d3a/classambs__calculators_1_1SignalRepeaterNodelet.html", null ],
       [ "StopwatchNodelet", "db/d86/classambs__calculators_1_1StopwatchNodelet.html", null ],
+      [ "TimerNodelet", "d6/d82/classambs__calculators_1_1TimerNodelet.html", null ],
       [ "CommandVelocityInterpreterNodelet", "df/d5e/classambs__interpreters_1_1CommandVelocityInterpreterNodelet.html", null ],
       [ "OdomInterpreterNodelet", "d7/d6d/classambs__interpreters_1_1OdomInterpreterNodelet.html", null ],
       [ "BenchBrakingNodelet", "db/da9/classambs__runners_1_1BenchBrakingNodelet.html", null ],
@@ -48,7 +50,8 @@ var hierarchy =
       [ "TestEdgeDetector", "d4/de5/classTestEdgeDetector.html", null ],
       [ "TestHelper", "da/dd6/classTestHelper.html", null ],
       [ "TestSignalRepeater", "da/d3a/classTestSignalRepeater.html", null ],
-      [ "TestStopwatch", "d1/d43/classTestStopwatch.html", null ]
+      [ "TestStopwatch", "d1/d43/classTestStopwatch.html", null ],
+      [ "TestTimer", "df/d1b/classTestTimer.html", null ]
     ] ],
     [ "TestCase", null, [
       [ "Test1Braking", "d0/d11/classtest1__braking_1_1Test1Braking.html", null ]

@@ -1,9 +1,10 @@
 <map id="AMBSBaseCalculator" name="AMBSBaseCalculator">
-<area shape="rect" id="node1" title="The VIRTUAL base class for all calculators to inherit from." alt="" coords="5,132,155,159"/>
+<area shape="rect" id="node1" title="The VIRTUAL base class for all calculators to inherit from." alt="" coords="5,157,155,184"/>
 <area shape="rect" id="node2" href="$d4/db3/classambs__calculators_1_1CompFloatParam.html" title="Compare float from topic vs a param and output true when nearly equal." alt="" coords="204,5,328,32"/>
 <area shape="rect" id="node3" href="$de/d8d/classambs__calculators_1_1DiffFloatTemporal.html" title="Compute difference in a float value from a topic between start and stop." alt="" coords="203,56,329,83"/>
 <area shape="rect" id="node4" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html" title="Compute difference in a pose value from a topic between start and stop." alt="" coords="203,107,329,133"/>
 <area shape="rect" id="node5" href="$dd/d7f/classambs__calculators_1_1EdgeDetector.html" title="Monitor a boolean input and output detected rising/falling edges. Cannot detec first falling edge." alt="" coords="215,157,317,184"/>
 <area shape="rect" id="node6" href="$d4/d82/classambs__calculators_1_1SignalRepeater.html" title="Boost a signal to a certain frequency." alt="" coords="211,208,321,235"/>
 <area shape="rect" id="node7" href="$d0/d7e/classambs__calculators_1_1Stopwatch.html" title="Compute difference in Time between start and stop, taken from messages directly." alt="" coords="224,259,308,285"/>
+<area shape="rect" id="node8" href="$d4/df6/classambs__calculators_1_1Timer.html" title="Start counting down timer from a parametrized value to 0 when triggered and set timed out unless inte..." alt="" coords="239,309,293,336"/>
 </map>

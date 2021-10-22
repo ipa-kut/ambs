@@ -1,0 +1,4 @@
+<map id="Timer" name="Timer">
+<area shape="rect" id="node1" title="Start counting down timer from a parametrized value to 0 when triggered and set timed out unless inte..." alt="" coords="53,80,107,107"/>
+<area shape="rect" id="node2" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html" title="The VIRTUAL base class for all calculators to inherit from." alt="" coords="5,5,155,32"/>
+</map>
