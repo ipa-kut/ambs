@@ -1,0 +1,55 @@
+opcua_bridge:
+  server: opc.tcp://192.168.11.1:4840
+  interval: 100
+  publishers:
+    robot_home_busy:
+        path: 4:PLC1/3:GlobalVars/4:AMBS_RB1_HOME_BUSY
+        msg: ambs_msgs/BoolStamped
+    robot_pr1_busy:
+        path: 4:PLC1/3:GlobalVars/4:AMBS_RB1_PROG1_BUSY
+        msg: ambs_msgs/BoolStamped
+    robot_pr2_busy:
+        path: 4:PLC1/3:GlobalVars/4:AMBS_RB1_PROG2_BUSY
+        msg: ambs_msgs/BoolStamped
+    robot_gr_open1_busy:
+        path: 4:PLC1/3:GlobalVars/4:AMBS_GR1_OPEN1_BUSY
+        msg: ambs_msgs/BoolStamped
+    robot_gr_open2_busy:
+        path: 4:PLC1/3:GlobalVars/4:AMBS_GR1_OPEN2_BUSY
+        msg: ambs_msgs/BoolStamped
+    robot_gr_close1_busy:
+        path: 4:PLC1/3:GlobalVars/4:AMBS_GR1_CLOSE1_BUSY
+        msg: ambs_msgs/BoolStamped
+    robot_gr_close2_busy:
+        path: 4:PLC1/3:GlobalVars/4:AMBS_GR1_CLOSE2_BUSY
+        msg: ambs_msgs/BoolStamped
+    server_time:
+        path: Server/ServerStatus/CurrentTime
+        msg: std_msgs/Time
+        publish: publish_time
+        lazy: false
+
+calculators:
+  repeater_rb_home:
+    boost_rate: 40
+  repeater_rb_pr1:
+    boost_rate: 40
+  repeater_rb_pr2:
+    boost_rate: 40
+  repeater_gr1_open:
+    boost_rate: 40
+  repeater_gr1_close:
+    boost_rate: 40
+  repeater_gr2_open:
+    boost_rate: 40
+  repeater_gr2_close:
+    boost_rate: 40
+
+sp6mnp1_rosbagger:
+  whitelist:
+  # Default whitelist: ["ambs"]
+  # Any topics which have one of these STRINGS in them will be added to the whitelist for recording,
+    - opcua
+  blacklist:
+  # Any WHITELISTED topics which have one of these STRINGS in them will be rejected for recording
+    - ros

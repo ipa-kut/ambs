@@ -81,7 +81,9 @@ void EdgeDetector::init(std::string in_start = "in_start",
 void EdgeDetector::executeCB(const ros::TimerEvent& event)
 {
   (void) event;
+  ROS_WARN_STREAM(node_name_ << ": EDGEWAITFORSTART");
   default_control_.waitForStart();
+  ROS_WARN_STREAM(node_name_ << ": EDGEGOTSTART");
 
 
   ros::Rate loop(100);

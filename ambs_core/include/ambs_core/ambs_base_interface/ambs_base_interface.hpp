@@ -257,6 +257,10 @@ void AMBSTemplatedInterface<T>::templatedCB(const boost::shared_ptr<const T> msg
   try
   {
     interfaces_[topic].msg_ =  boost::make_shared<T>(*msg);
+    if ( node_name_.find("edge") <= topic.size() && topic.find("start") <= topic.size())
+    {
+      ROS_WARN_STREAM(node_name_ << ": Port " << topic << " got " << msg);
+    }
   }
   catch (std::exception e)
   {
