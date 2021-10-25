@@ -1,6 +1,6 @@
 <map id="TestCompFloatParam" name="TestCompFloatParam">
 <area shape="rect" id="node1" title=" " alt="" coords="5,185,156,212"/>
-<area shape="rect" id="node2" title=" " alt="" coords="35,96,83,123"/>
-<area shape="rect" id="node3" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html" title="A bool specialisation of AMBSTemplatedInterface. Offers two extra functions." alt="" coords="108,96,267,123"/>
-<area shape="rect" id="node4" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html" title=" " alt="" coords="86,5,289,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="57,96,105,123"/>
+<area shape="rect" id="node3" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html" title="A bool specialisation of AMBSTemplatedInterface. Offers two extra functions." alt="" coords="129,96,288,123"/>
+<area shape="rect" id="node4" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html" title=" " alt="" coords="107,5,310,47"/>
 </map>

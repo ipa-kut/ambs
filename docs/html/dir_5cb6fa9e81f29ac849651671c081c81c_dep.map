@@ -1,7 +1,9 @@
 <map id="ambs_tests/test" name="ambs_tests/test">
-<area shape="rect" id="node2" href="dir_e9cfe22aaf83f394455351d8e72d7ff5.html" title="unit_tests" alt="" coords="38,63,117,111"/>
-<area shape="rect" id="node3" href="dir_c02fea82335339ac82b2363e5aa1877d.html" title="ambs_core" alt="" coords="34,159,121,207"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000040_000017.html" title="18" alt="" coords="78,133,93,147"/>
-<area shape="rect" id="clust2" href="dir_5cb6fa9e81f29ac849651671c081c81c.html" alt="" coords="27,52,224,121"/>
-<area shape="rect" id="clust1" href="dir_baa2270f9d9604458752123fdca60082.html" title="ambs_tests" alt="" coords="16,16,235,132"/>
+<area shape="rect" id="node2" href="dir_6a3d73d304afa450e51bbdd40f0c8495.html" title="integration_tests" alt="" coords="141,63,259,111"/>
+<area shape="rect" id="node4" href="dir_c02fea82335339ac82b2363e5aa1877d.html" title="ambs_core" alt="" coords="95,159,182,207"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000040_000017.html" title="2" alt="" coords="167,140,175,155"/>
+<area shape="rect" id="node3" href="dir_e9cfe22aaf83f394455351d8e72d7ff5.html" title="unit_tests" alt="" coords="38,63,117,111"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000042_000017.html" title="18" alt="" coords="113,131,128,146"/>
+<area shape="rect" id="clust2" href="dir_5cb6fa9e81f29ac849651671c081c81c.html" alt="" coords="27,52,367,121"/>
+<area shape="rect" id="clust1" href="dir_baa2270f9d9604458752123fdca60082.html" title="ambs_tests" alt="" coords="16,16,377,132"/>
 </map>
