@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <group ns="ambs">
+
+    <arg name="dest_dir" default="$(env HOME)/ARAIG/integration_tests" />
+    <arg name="bot_name" default="test_sp6mnp1_rb1" />
+    <arg name="bag" default="bag1_good" />
+
+    <!-- Config -->
+    <rosparam command="load"
+    file="$(find ambs_tests)/test/integration_tests/denso_use_case/configs/rosparam_configs.yaml" />
+
+    <rosparam param="/ambs/log_folder_root" subst_value="True">$(arg dest_dir)</rosparam>
+    <rosparam param="/ambs/robot_name" subst_value="True">$(arg bot_name)_$(arg bag)</rosparam>
+
+    <!-- Nodelet manager -->
+    <node pkg="nodelet" type="nodelet" name="base_nodelet_manager" args="manager"  output="screen">
+        <param name="num_worker_threads" value="32" />
+    </node>
+
+    <!-- Runner (which includes debug logger) -->
+    <node pkg="nodelet" type="nodelet" name="sp6_month_np1_runner"
+        args="load sp6_runners/RB1NORunnerNodelet base_nodelet_manager">
+        <remap from="sp6_month_np1_runner/in_start_test" to="event/ui/start_test" />
+        <remap from="sp6_month_np1_runner/in_stop_test" to="event/ui/stop_test" />
+        <remap from="sp6_month_np1_runner/out_start_rosbag" to="event/rosbagger/start" />
+        <remap from="sp6_month_np1_runner/in_rosbag_began" to="event/rosbagger/rosbag_began" />
+        <remap from="sp6_month_np1_runner/out_start_robot" to="event/runner/start_test" />
+        <remap from="sp6_month_np1_runner/out_stop_robot" to="event/runner/stop_test" />
+    </node>
+
+    <!--    Interpreter - Rosbag plays PLC signals -->
+    <node pkg="rosbag" type="play" name="test_bag_player" output="screen"
+            args="$(find ambs_tests)/test/integration_tests/denso_use_case/bags/$(arg bag).bag --pause"/>
+
+    <!-- Orchestration - Start test if rosbag does not -->
+    <node pkg="rostopic" type="rostopic" name="rostopic" args="pub /ambs/event/ui/start_test ambs_msgs/BoolStamped
+    '{header: {seq: 0, stamp: {secs: 0, nsecs: 0}, frame_id: ''}, data: true}'"/>
+
+    <!-- Load the AMBS Components -->
+    <include file="$(find ambs_tests)/test/integration_tests/denso_use_case/ambs_test_setup.xml"/>
+
+    </group>
+</launch>

@@ -35,6 +35,7 @@ include_directories(
 if(CATKIN_ENABLE_TESTING)
     find_package(rostest REQUIRED)
 
+    #--------------------------------UNIT TESTS--------------------------------
     add_rostest_gtest(test_comp_float_param
         test/unit_tests/calculators/comparators/test_comp_float_param.test
         test/unit_tests/calculators/comparators/test_comp_float_param.cpp)
@@ -100,7 +101,16 @@ if(CATKIN_ENABLE_TESTING)
         test/unit_tests/calculators/utils/test_or_gate.cpp)
     target_link_libraries(test_100_input_or_gate ${catkin_LIBRARIES} ${GTEST_LIBRARIES})
     add_dependencies(test_100_input_or_gate ${catkin_EXPORTED_TARGETS})
+
+    #--------------------------------INTEGRATION TESTS--------------------------------
+    add_rostest_gtest(test_sp6mnp1_rb1
+        test/integration_tests/denso_use_case/test_sp6mnp1_auto.test
+        test/integration_tests/denso_use_case/test_sp6mnp1_rb1.cpp)
+    target_link_libraries(test_sp6mnp1_rb1 ${catkin_LIBRARIES} ${GTEST_LIBRARIES})
+    add_dependencies(test_sp6mnp1_rb1 ${catkin_EXPORTED_TARGETS})
+
 endif()
+
 
 
 set(ROSLINT_CPP_OPTS "--filter=-legal/copyright")

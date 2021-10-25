@@ -78,7 +78,9 @@ void SignalRepeater::init(std::string in_start = "in_start",
 void SignalRepeater::executeCB(const ros::TimerEvent& event)
 {
   (void) event;
+  ROS_ERROR_STREAM(node_name_ << ": REPEATERWAITFORSTART");
   default_control_.waitForStart();
+  ROS_ERROR_STREAM(node_name_ << ": REPEATERGOTFORSTART");
 
   ros::Rate loop(getResolvedParam<int>(RATE_, DEFAULT_RATE_));
   while (ros::ok())
