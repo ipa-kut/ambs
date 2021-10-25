@@ -42,7 +42,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ]
       ] ]
     ] ],
@@ -60,11 +60,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d4/d82/classambs__calculators_1_1SignalRepeater.html#ad9f76f0c947925211b300b569d75fc5d",
-"d6/daa/classambs__base_1_1AMBSBaseRunner.html#a3b96c2031d453424957963e4d4825a8a",
-"d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a967f9a0a5cfaa49ba54b5fe00c08b132",
-"de/d0d/classloggers_1_1rosbagger_1_1Rosbagger.html#ab147e704484d485c7cf319dbc3eae6ad",
-""
+"d4/d68/classambs__loggers_1_1DebugLogger.html#a9e5111f6254b0f5feb9ba0df0fee42c6",
+"d6/d72/stopwatch__nodelet_8cpp.html",
+"d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a94d81925dd1b489031708b4e86c7416d",
+"dd/d5c/classambs__runners_1_1Test1BrakingNodelet.html#a85bd42b0caa4c0d33b9d3986b8a8c862",
+"functions_vars_e.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

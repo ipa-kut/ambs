@@ -1,11 +1,12 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,183,53,209"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,208,53,235"/>
 <area shape="rect" id="node2" href="$db/dd0/classTestCompFloatParam.html" title=" " alt="" coords="103,5,253,32"/>
 <area shape="rect" id="node3" href="$df/dd0/classTestDiffFloatTemporal.html" title=" " alt="" coords="102,56,254,83"/>
 <area shape="rect" id="node4" href="$da/d9b/classTestDiffPoseTemporal.html" title=" " alt="" coords="101,107,255,133"/>
 <area shape="rect" id="node5" href="$d4/de5/classTestEdgeDetector.html" title=" " alt="" coords="114,157,242,184"/>
 <area shape="rect" id="node6" href="$da/dd6/classTestHelper.html" title=" " alt="" coords="135,208,221,235"/>
-<area shape="rect" id="node7" href="$da/d3a/classTestSignalRepeater.html" title=" " alt="" coords="109,259,247,285"/>
-<area shape="rect" id="node8" href="$d1/d43/classTestStopwatch.html" title=" " alt="" coords="123,309,233,336"/>
-<area shape="rect" id="node9" href="$df/d1b/classTestTimer.html" title=" " alt="" coords="137,360,219,387"/>
+<area shape="rect" id="node7" href="$d2/dff/classTestOrGate.html" title=" " alt="" coords="133,259,223,285"/>
+<area shape="rect" id="node8" href="$da/d3a/classTestSignalRepeater.html" title=" " alt="" coords="109,309,247,336"/>
+<area shape="rect" id="node9" href="$d1/d43/classTestStopwatch.html" title=" " alt="" coords="123,360,233,387"/>
+<area shape="rect" id="node10" href="$df/d1b/classTestTimer.html" title=" " alt="" coords="137,411,219,437"/>
 </map>
