@@ -5,6 +5,7 @@ var hierarchy =
       [ "DiffFloatTemporal", "de/d8d/classambs__calculators_1_1DiffFloatTemporal.html", null ],
       [ "DiffPoseTemporal", "d7/d23/classambs__calculators_1_1DiffPoseTemporal.html", null ],
       [ "EdgeDetector", "dd/d7f/classambs__calculators_1_1EdgeDetector.html", null ],
+      [ "OrGate", "da/d2c/classambs__calculators_1_1OrGate.html", null ],
       [ "SignalRepeater", "d4/d82/classambs__calculators_1_1SignalRepeater.html", null ],
       [ "Stopwatch", "d0/d7e/classambs__calculators_1_1Stopwatch.html", null ],
       [ "Timer", "d4/df6/classambs__calculators_1_1Timer.html", null ]
@@ -29,6 +30,7 @@ var hierarchy =
       [ "DiffFloatTemporalNodelet", "db/de1/classambs__calculators_1_1DiffFloatTemporalNodelet.html", null ],
       [ "DiffPoseTemporalNodelet", "df/d4e/classambs__calculators_1_1DiffPoseTemporalNodelet.html", null ],
       [ "EdgeDetectorNodelet", "db/d89/classambs__calculators_1_1EdgeDetectorNodelet.html", null ],
+      [ "OrGateNodelet", "d1/dea/classambs__calculators_1_1OrGateNodelet.html", null ],
       [ "SignalRepeaterNodelet", "d8/d3a/classambs__calculators_1_1SignalRepeaterNodelet.html", null ],
       [ "StopwatchNodelet", "db/d86/classambs__calculators_1_1StopwatchNodelet.html", null ],
       [ "TimerNodelet", "d6/d82/classambs__calculators_1_1TimerNodelet.html", null ],
@@ -49,6 +51,7 @@ var hierarchy =
       [ "TestDiffPoseTemporal", "da/d9b/classTestDiffPoseTemporal.html", null ],
       [ "TestEdgeDetector", "d4/de5/classTestEdgeDetector.html", null ],
       [ "TestHelper", "da/dd6/classTestHelper.html", null ],
+      [ "TestOrGate", "d2/dff/classTestOrGate.html", null ],
       [ "TestSignalRepeater", "da/d3a/classTestSignalRepeater.html", null ],
       [ "TestStopwatch", "d1/d43/classTestStopwatch.html", null ],
       [ "TestTimer", "df/d1b/classTestTimer.html", null ]
