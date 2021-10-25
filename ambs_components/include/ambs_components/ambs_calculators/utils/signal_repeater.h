@@ -91,15 +91,8 @@ void SignalRepeater::executeCB(const ros::TimerEvent& event)
       break;
     }
 
-    if (!bool_interface_.isPortValid(IN_SIGNAL_))
-    {
-      continue;
-    }
-
-    bool_interface_.
-        publishMsgOnPort(OUT_SIGNAL_,
-                        bool_interface_.
-                                     constructNewBoolStamped(bool_interface_.getPortMsg(IN_SIGNAL_).data));
+    bool val_to_pub = bool_interface_.isPortValid(IN_SIGNAL_) ? bool_interface_.getPortMsg(IN_SIGNAL_).data : false;
+    bool_interface_.publishMsgOnPort(OUT_SIGNAL_, bool_interface_.constructNewBoolStamped(val_to_pub));
   }
 
   default_control_.publishDone();

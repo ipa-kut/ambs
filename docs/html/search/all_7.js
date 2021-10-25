@@ -8,7 +8,7 @@ var searchData=
   ['getresetmsg_133',['getResetMsg',['../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a3bb9c9f4531c0706ff89da887dd75938',1,'ambs_base::AMBSDefaultCalculatorInterface']]],
   ['getresolvedparam_134',['getResolvedParam',['../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a95e4a7e33da600c96c8e0eb3fa3c7c08',1,'ambs_base::AMBSBaseCalculator::getResolvedParam()'],['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#ab677e11cb7da0bae588e0bf9afa10c43',1,'ambs_base::AMBSBaseRunner::getResolvedParam()']]],
   ['getsafeflag_135',['getSafeFlag',['../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a21485ff7847dfcd1f8948bce26778114',1,'python_base_classes::base_logger::BaseLogger']]],
-  ['getstandarddeviation_136',['getStandardDeviation',['../d3/d81/classambs__runners_1_1BenchBraking.html#a7156c576dc0831e6a8d2716421aa60d1',1,'ambs_runners::BenchBraking::getStandardDeviation()'],['../d2/d9b/namespaceambs__helper.html#a21ad9157629eec9a279bb870c1115dbf',1,'ambs_helper::getStandardDeviation()']]],
+  ['getstandarddeviation_136',['getStandardDeviation',['../d2/d9b/namespaceambs__helper.html#a21ad9157629eec9a279bb870c1115dbf',1,'ambs_helper::getStandardDeviation()'],['../d3/d81/classambs__runners_1_1BenchBraking.html#a7156c576dc0831e6a8d2716421aa60d1',1,'ambs_runners::BenchBraking::getStandardDeviation()']]],
   ['getstartmsg_137',['getStartMsg',['../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#abe5963a4394632431dd1fb08ea80b08b',1,'ambs_base::AMBSDefaultCalculatorInterface']]],
   ['getstopmsg_138',['getStopMsg',['../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#afcff3ff7d027c1515f6f2757131126c5',1,'ambs_base::AMBSDefaultCalculatorInterface']]],
   ['gettranslationdifffromposes_139',['getTranslationDiffFromPoses',['../d2/d9b/namespaceambs__helper.html#a6f280a22d46d2ffb8d296cd972e9fa9b',1,'ambs_helper']]],
@@ -16,6 +16,6 @@ var searchData=
   ['getyawdifffromposes_141',['getYawDiffFromPoses',['../d2/d9b/namespaceambs__helper.html#a0e6c5a124bfe1e7b1886fddac2cc7b58',1,'ambs_helper']]],
   ['global_5fduration_142',['GLOBAL_DURATION',['../da/d6b/test__timer_8cpp.html#a2392b7972000478d624511ea04f5ece4',1,'test_timer.cpp']]],
   ['global_5fn_5finputs_143',['GLOBAL_N_INPUTS',['../dc/d77/test__or__gate_8cpp.html#ad20456871788d6683cc7bf76fa5f0030',1,'test_or_gate.cpp']]],
-  ['global_5fparam_144',['GLOBAL_PARAM',['../db/d3e/test__comp__float__param_8cpp.html#a3391c664b3a4d4eae741c430a48f072e',1,'test_comp_float_param.cpp']]],
-  ['global_5ftolerance_145',['GLOBAL_TOLERANCE',['../db/d3e/test__comp__float__param_8cpp.html#aefa0c39f1b66e9a466071cee07acc49a',1,'test_comp_float_param.cpp']]]
+  ['global_5fparam_144',['GLOBAL_PARAM',['../dd/dd7/test__sp6mnp1__rb1_8cpp.html#a3391c664b3a4d4eae741c430a48f072e',1,'GLOBAL_PARAM():&#160;test_sp6mnp1_rb1.cpp'],['../db/d3e/test__comp__float__param_8cpp.html#a3391c664b3a4d4eae741c430a48f072e',1,'GLOBAL_PARAM():&#160;test_comp_float_param.cpp']]],
+  ['global_5ftolerance_145',['GLOBAL_TOLERANCE',['../dd/dd7/test__sp6mnp1__rb1_8cpp.html#aefa0c39f1b66e9a466071cee07acc49a',1,'GLOBAL_TOLERANCE():&#160;test_sp6mnp1_rb1.cpp'],['../db/d3e/test__comp__float__param_8cpp.html#aefa0c39f1b66e9a466071cee07acc49a',1,'GLOBAL_TOLERANCE():&#160;test_comp_float_param.cpp']]]
 ];

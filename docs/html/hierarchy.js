@@ -47,6 +47,7 @@ var hierarchy =
     ] ],
     [ "Test", null, [
       [ "TestCompFloatParam", "db/dd0/classTestCompFloatParam.html", null ],
+      [ "TestCompFloatParam", "db/dd0/classTestCompFloatParam.html", null ],
       [ "TestDiffFloatTemporal", "df/dd0/classTestDiffFloatTemporal.html", null ],
       [ "TestDiffPoseTemporal", "da/d9b/classTestDiffPoseTemporal.html", null ],
       [ "TestEdgeDetector", "d4/de5/classTestEdgeDetector.html", null ],
