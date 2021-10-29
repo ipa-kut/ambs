@@ -61,7 +61,7 @@ void TestTimer::init(ros::NodeHandle nh)
   float_interface_.init(float_inputs_, float_outputs_, nh_, ros::this_node::getName());
   log_msg_.reset(new std::string());
   debug_sub_ =
-      nh_.subscribe("/ambs/debug_messages",1000,&TestTimer::diagCB, this);
+      nh_.subscribe("/ambs/debug_messages", 1000, &TestTimer::diagCB, this);
 }
 
 TEST_F(TestTimer, test_forward_and_disable)
@@ -157,7 +157,7 @@ TEST_F(TestTimer, test_timeout_reset_timeout)
   ROS_INFO_STREAM("Response - " << *log_msg_);
   EXPECT_TRUE(control_iface.getPortMsg(DONE_).data);
   EXPECT_TRUE(control_iface.getPortMsg(TIMED_OUT_).data);
-  EXPECT_LE(float_interface_.getPortMsg(ELAPSED_).data, GLOBAL_DURATION + 0.05); // 0.05s delay padding
+  EXPECT_LE(float_interface_.getPortMsg(ELAPSED_).data, GLOBAL_DURATION + 0.05);  // 0.05s transmission delay padding
 
   // FINISHED -> IDLE
   control_iface.publishMsgOnPort(RESET_, control_iface.constructNewBoolStamped(true));
@@ -178,7 +178,7 @@ TEST_F(TestTimer, test_timeout_reset_timeout)
   ROS_INFO_STREAM("Response - " << *log_msg_);
   EXPECT_TRUE(control_iface.getPortMsg(DONE_).data);
   EXPECT_TRUE(control_iface.getPortMsg(TIMED_OUT_).data);
-  EXPECT_LE(float_interface_.getPortMsg(ELAPSED_).data, GLOBAL_DURATION + 0.05); // 0.05s delay padding
+  EXPECT_LE(float_interface_.getPortMsg(ELAPSED_).data, GLOBAL_DURATION + 0.05);  // 0.05s transmission delay padding
 
   // FINISHED -> DISABLED
   control_iface.publishMsgOnPort(DISABLE_, control_iface.constructNewBoolStamped(true));

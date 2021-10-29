@@ -60,7 +60,6 @@ void TestSP6MNP1RB1::init(ros::NodeHandle nh)
 {
   nh_ = nh;
   control_iface.init(bool_inputs_, bool_outputs_, nh_, ros::this_node::getName());
-
 }
 
 void TestSP6MNP1RB1::sendPulseOn(std::string port, double on_duration)
@@ -83,13 +82,14 @@ int TestSP6MNP1RB1::getNumberOfRowsInDebugCSV()
   ROS_WARN_STREAM(ros::this_node::getName() << ": Opening file " << csv_name_);
   in.open(csv_name_);
 
-  while(!in.eof()) {
+  while (!in.eof())
+  {
       getline(in, s);
       ROS_WARN_STREAM(ros::this_node::getName() << ": CSV: " << sTotal << " - " << s);
       sTotal++;
       if (sTotal > 20) break;
   }
-  return sTotal-1; // This always reads one extra line
+  return sTotal-1;  // This always reads one extra line
 }
 
 TEST_F(TestSP6MNP1RB1, test_custom_pulse_train)
