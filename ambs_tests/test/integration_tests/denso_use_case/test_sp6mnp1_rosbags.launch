@@ -31,7 +31,7 @@
 
     <!--    Interpreter - Rosbag plays PLC signals -->
     <node pkg="rosbag" type="play" name="test_bag_player" output="screen"
-            args="$(find ambs_tests)/test/integration_tests/denso_use_case/bags/$(arg bag).bag --pause"/>
+            args="$(find ambs_tests)/test/integration_tests/denso_use_case/bags/$(arg bag).bag"/>
 
     <!-- Orchestration - Start test if rosbag does not -->
     <node pkg="rostopic" type="rostopic" name="rostopic" args="pub /ambs/event/ui/start_test ambs_msgs/BoolStamped
