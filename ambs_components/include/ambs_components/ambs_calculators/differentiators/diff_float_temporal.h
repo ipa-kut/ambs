@@ -28,7 +28,7 @@ public:
   void init();
 
 private:
-  void executeCB(const ros::TimerEvent& event) override;
+  void executeCB() override;
   ros::NodeHandle nh_;
   ambs_base::AMBSTemplatedInterface<std_msgs::Float64> float_interface_;
   std_msgs::Float64 result_msg_;
@@ -62,9 +62,8 @@ void DiffFloatTemporal::init()
  * @brief Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()
  * @param event Not used
  */
-void DiffFloatTemporal::executeCB(const ros::TimerEvent& event)
+void DiffFloatTemporal::executeCB()
 {
-  (void) event;
   default_control_.waitForStart();
   double start_float = float_interface_.getPortMsg(IN_FLOAT_).data;
   ROS_INFO_STREAM(node_name_ << ": Starting float stored: " << start_float);

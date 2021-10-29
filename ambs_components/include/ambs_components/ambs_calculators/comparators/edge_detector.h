@@ -34,7 +34,7 @@ public:
             std::string out_falling);
 
 private:
-  void executeCB(const ros::TimerEvent& event) override;
+  void executeCB() override;
   ros::NodeHandle nh_;
   ambs_base::AMBSBooleanInterface bool_interface_;
   std::string OUT_RISING_ = "out_rising";
@@ -78,9 +78,8 @@ void EdgeDetector::init(std::string in_start = "in_start",
  * @brief Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()
  * @param event Not used
  */
-void EdgeDetector::executeCB(const ros::TimerEvent& event)
+void EdgeDetector::executeCB()
 {
-  (void) event;
   ROS_WARN_STREAM(node_name_ << ": EDGEWAITFORSTART");
   default_control_.waitForStart();
   ROS_WARN_STREAM(node_name_ << ": EDGEGOTSTART");

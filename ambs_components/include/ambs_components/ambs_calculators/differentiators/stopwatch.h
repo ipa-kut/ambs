@@ -29,7 +29,7 @@ public:
   void init();
 
 private:
-  void executeCB(const ros::TimerEvent& event);
+  void executeCB();
   ros::NodeHandle nh_;
   ambs_base::AMBSTemplatedInterface<std_msgs::Float64> float_interface_;
   std_msgs::Float64 result_msg_;
@@ -64,7 +64,7 @@ void Stopwatch::init()
  * @brief Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()
  * @param event Not used
  */
-void Stopwatch::executeCB(const ros::TimerEvent& event)
+void Stopwatch::executeCB()
 {
   ros::Time start_time = default_control_.waitForStart().header.stamp;
   ROS_DEBUG_STREAM(node_name_ << ": Got start time: " << start_time);

@@ -80,6 +80,7 @@ Then, to run lint, for example for the `ambs_core` package:
 
 To build tests: `catkin_make tests`   
 To build & run tests: `catkin_make run_tests`   
+To check results after running the above step: `catkin_test_results`
 To run individual tests verbosely: `rostest ambs_tests test_XXX.test --text`   
 
 ## Generating Documentation

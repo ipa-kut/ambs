@@ -34,7 +34,7 @@ public:
             std::string in_float);
 
 private:
-  void executeCB(const ros::TimerEvent& event) override;
+  void executeCB() override;
   ros::NodeHandle nh_;
   ambs_base::AMBSBooleanInterface bool_interface_;
   ambs_base::AMBSTemplatedInterface<std_msgs::Float64> float_interface_;
@@ -83,9 +83,8 @@ void CompFloatParam::init(std::string in_start = "in_start",
  * @brief Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()
  * @param event Not used
  */
-void CompFloatParam::executeCB(const ros::TimerEvent& event)
+void CompFloatParam::executeCB()
 {
-  (void) event;
   default_control_.waitForStart();
 
   float param = getResolvedParam<float>(PARAM_);

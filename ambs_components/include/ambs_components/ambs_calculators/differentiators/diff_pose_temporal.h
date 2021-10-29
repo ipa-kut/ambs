@@ -31,7 +31,7 @@ public:
   void init();
 
 private:
-  void executeCB(const ros::TimerEvent& event) override;
+  void executeCB() override;
   void printPose(geometry_msgs::PoseStamped pose);
 
   ambs_base::AMBSTemplatedInterface<std_msgs::Float64> float_interface_;
@@ -74,10 +74,8 @@ void DiffPoseTemporal::init()
  * @brief Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()
  * @param event Not used
  */
-void DiffPoseTemporal::executeCB(const ros::TimerEvent& event)
+void DiffPoseTemporal::executeCB()
 {
-  (void) event;
-
   std_msgs::Float64 diff_pos_msg;
   std_msgs::Float64 diff_orientation_msg;
 
