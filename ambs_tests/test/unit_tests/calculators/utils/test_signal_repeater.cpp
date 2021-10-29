@@ -18,7 +18,7 @@ public:
   const std::string DONE_ = "in_done";
   const std::string IN_SIGNAL_ = "in_signal";
   const std::string OUT_SIGNAL_ = "out_signal";
-  const double response_time_ = 0.1; // Signal repeater @20Hz = 0.05s delay to change, +0.05s for transmission
+  const double response_time_ = 0.1;  // Signal repeater @20Hz = 0.05s delay to change, +0.05s for transmission
   const double spawn_time_ = 1;
 
   std::vector<std::string> OUT_SIGNAL_inputs_{DONE_, IN_SIGNAL_};

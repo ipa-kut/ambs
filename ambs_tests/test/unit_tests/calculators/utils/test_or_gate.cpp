@@ -20,7 +20,7 @@ public:
   const std::string DONE_ = "in_done";
   const std::string IN_RESULT_ = "in_result";
   const std::string OUT_SIGNAL_ = "out_signal";
-  const double response_time_ = 0.05; // Signal repeater @20Hz = 0.05s delay to change, +0.05s for transmission
+  const double response_time_ = 0.05;  // Signal repeater @20Hz = 0.05s delay to change, +0.05s for transmission
   const double spawn_time_ = 0.5;
 
 

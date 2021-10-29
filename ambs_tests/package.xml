@@ -18,6 +18,7 @@
   <depend>roscpp</depend>
   <depend>std_msgs</depend>
   <depend>roslint</depend>
+  <depend>rqt_multiplot</depend>
 
   <test_depend>rostest</test_depend>
 

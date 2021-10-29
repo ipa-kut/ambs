@@ -76,6 +76,8 @@ Then, to run lint, for example for the `ambs_core` package:
 
 `catkin_make roslint_ambs_core`
 
+Next, run `catkin_lint . --explain` from the root of this package. (i.e. **ws/src/ambs**)
+
 ## Testing
 
 To build tests: `catkin_make tests`   

@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   roslint
   std_msgs
+  rqt_multiplot
 )
 
 catkin_package(
@@ -24,6 +25,7 @@ catkin_package(
     roscpp
     roslint
     std_msgs
+    rqt_multiplot
 )
 
 
