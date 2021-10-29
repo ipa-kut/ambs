@@ -53,8 +53,6 @@ void DiffFloatTemporal::init()
   std::vector<std::string> float_outputs{OUT_FLOAT_};
   float_interface_.init(float_inputs, float_outputs, nh_, node_name_);
 
-  default_control_.initDefaultInterface(nh_, node_name_);
-
   startCalculator();
 }
 

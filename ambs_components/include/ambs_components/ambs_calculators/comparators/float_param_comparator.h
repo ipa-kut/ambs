@@ -74,8 +74,6 @@ void CompFloatParam::init(std::string in_start = "in_start",
   std::vector<std::string> bool_outputs{COMPARISON_};
   bool_interface_.init(bool_inputs, bool_outputs, nh_, node_name_);
 
-  default_control_.initDefaultInterface(nh_, node_name_, in_start, in_stop, in_reset, out_done);
-
   startCalculator();
 }
 

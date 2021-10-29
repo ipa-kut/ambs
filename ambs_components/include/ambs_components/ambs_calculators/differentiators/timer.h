@@ -83,7 +83,6 @@ void Timer::init()
   std::vector<std::string> float_outputs{ELAPSED_};
   float_interface_.init(float_inputs, float_outputs, nh_, node_name_);
 
-  default_control_.initDefaultInterface(nh_, node_name_);
   debug_logger_.init(nh_, node_name_);
   current_state_ = TimerState::DISABLED;  /// Always start from disabled state
   debug_states_ = getResolvedParam<bool>(PARAM_DEBUG_, false);
