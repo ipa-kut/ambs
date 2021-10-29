@@ -65,8 +65,6 @@ void DiffPoseTemporal::init()
   pose_interface_.init(pose_inputs, pose_outputs, nh_, node_name_);
   debug_logger_.init(nh_, node_name_);
 
-  default_control_.initDefaultInterface(nh_, node_name_);
-
   startCalculator();
 }
 
