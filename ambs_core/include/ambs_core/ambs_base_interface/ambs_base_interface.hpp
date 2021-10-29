@@ -32,7 +32,7 @@ struct AMBSPort
           topic_name_(topic_name)
   {}
   std::string topic_name_;
-  boost::shared_ptr<T> msg_;
+  boost::shared_ptr<const T> msg_;
   ros::Subscriber sub_;
   ros::Publisher pub_;
   uint64_t index_;
@@ -264,7 +264,7 @@ void AMBSTemplatedInterface<T>::templatedCB(const boost::shared_ptr<const T> msg
   {
     {
       std::unique_lock<std::mutex> lock(mutexes_[interfaces_[topic].index_]);
-      interfaces_[topic].msg_ =  boost::make_shared<T>(*msg);
+      interfaces_[topic].msg_ =  msg;
     }
     cond_vars_[interfaces_[topic].index_].notify_one();
     if ( node_name_.find("edge") <= topic.size() && topic.find("start") <= topic.size())
