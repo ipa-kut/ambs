@@ -62,25 +62,12 @@ inline ambs_msgs::BoolStamped AMBSBooleanInterface::constructNewBoolStamped(bool
  */
 inline ambs_msgs::BoolStamped AMBSBooleanInterface::waitForTrueOnPort(std::string port)
 {
-  ambs_msgs::BoolStamped msg;
-  ros::Rate loop(wait_loop_rate);
-  while(ros::ok())
-  {
-    ros::spinOnce();
-    loop.sleep();
-    if(isPortValid(port))
-    {
-      msg = getPortMsg(port);
-      if(msg.data)
-      {
-        break;
-      }
-    }
-  }
+  std::unique_lock<std::mutex> lock(mutexes_[interfaces_[port].index_]);
+  cond_vars_[interfaces_[port].index_].wait(lock, [this, port]() -> bool{return getPortMsg(port).data;});
+  ambs_msgs::BoolStamped msg = *interfaces_[port].msg_;
   resetPort(port);
   return msg;
 }
-
 
 }  // namespace ambs_base
 #endif // AMBSBASEBOOLEANINTERFACE_HPP

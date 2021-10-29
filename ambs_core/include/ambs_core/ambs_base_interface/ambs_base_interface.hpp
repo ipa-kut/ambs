@@ -2,8 +2,10 @@
 #define AMBS_BASE_HPP
 
 #include <map>
+#include <thread>
 #include <boost/thread.hpp>
 #include <boost/bind.hpp>
+#include <condition_variable>
 #include <ros/ros.h>
 
 namespace ambs_base {
@@ -77,6 +79,8 @@ protected:
   std::string node_name_;
   const unsigned int subscriber_queue_size_ = 1000;
   const unsigned int publisher_queue_size_ = 1000;
+  std::deque<std::condition_variable> cond_vars_;
+  std::deque<std::mutex> mutexes_;
 
   virtual void templatedCB(const boost::shared_ptr<const T> msg, std::string topic);
 };
@@ -121,9 +125,11 @@ void AMBSTemplatedInterface<T>::init(std::vector<std::string> input_interface,
                                      std::vector<std::string> output_interface,
                                      ros::NodeHandle nh,
                                      std::string node_name)
-{
+{ 
   node_name_ = node_name;
   nh_ = nh;
+  mutexes_.resize(input_interface.size() + output_interface.size());
+  cond_vars_.resize(input_interface.size() + output_interface.size());
   for(unsigned long i=0; i<input_interface.size(); i++)
   {
     AMBSPort<T> port(input_interface[i]);
@@ -256,7 +262,11 @@ void AMBSTemplatedInterface<T>::templatedCB(const boost::shared_ptr<const T> msg
 {
   try
   {
-    interfaces_[topic].msg_ =  boost::make_shared<T>(*msg);
+    {
+      std::unique_lock<std::mutex> lock(mutexes_[interfaces_[topic].index_]);
+      interfaces_[topic].msg_ =  boost::make_shared<T>(*msg);
+    }
+    cond_vars_[interfaces_[topic].index_].notify_one();
     if ( node_name_.find("edge") <= topic.size() && topic.find("start") <= topic.size())
     {
       ROS_WARN_STREAM(node_name_ << ": Port " << topic << " got " << msg);
