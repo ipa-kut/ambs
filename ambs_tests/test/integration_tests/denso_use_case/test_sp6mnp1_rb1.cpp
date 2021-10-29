@@ -65,7 +65,7 @@ void TestSP6MNP1RB1::init(ros::NodeHandle nh)
 void TestSP6MNP1RB1::sendPulseOn(std::string port, double on_duration)
 {
   //  Expecting duration from argv to be in miliseconds
-  ROS_WARN_STREAM(ros::this_node::getName() << ": Pulse " << port << " on for " << on_duration/1000);
+  ROS_INFO_STREAM(ros::this_node::getName() << ": Pulse " << port << " on for " << on_duration/1000);
   ros::Duration(pulse_off_time_/2).sleep();
   control_iface.publishMsgOnPort(port, control_iface.constructNewBoolStamped(true));
   ros::Duration(on_duration/1000).sleep();
@@ -79,13 +79,13 @@ int TestSP6MNP1RB1::getNumberOfRowsInDebugCSV()
   int sTotal = 0;
 
   std::ifstream in;
-  ROS_WARN_STREAM(ros::this_node::getName() << ": Opening file " << csv_name_);
+  ROS_INFO_STREAM(ros::this_node::getName() << ": Opening file " << csv_name_);
   in.open(csv_name_);
 
   while (!in.eof())
   {
       getline(in, s);
-      ROS_WARN_STREAM(ros::this_node::getName() << ": CSV: " << sTotal << " - " << s);
+      ROS_INFO_STREAM(ros::this_node::getName() << ": CSV: " << sTotal << " - " << s);
       sTotal++;
       if (sTotal > 20) break;
   }
@@ -115,7 +115,7 @@ TEST_F(TestSP6MNP1RB1, test_custom_pulse_train)
   sendPulseOn(CLOSE2_, G_CLOSE2_ON);
 
   ///  @todo: Automate this test. i.e. Figure out file write/read for CI.
-  ROS_WARN_STREAM(ros::this_node::getName() << ": CSV had "
+  ROS_INFO_STREAM(ros::this_node::getName() << ": CSV had "
                   << getNumberOfRowsInDebugCSV()-1 << " out of 6 expected result lines");
 }
 

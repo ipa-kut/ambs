@@ -77,8 +77,8 @@ protected:
   std::map<std::string, AMBSPort<T>> interfaces_;
   ros::NodeHandle nh_;
   std::string node_name_;
-  const unsigned int subscriber_queue_size_ = 1000;
-  const unsigned int publisher_queue_size_ = 1000;
+  const unsigned int subscriber_queue_size_ = 10;
+  const unsigned int publisher_queue_size_ = 10;
   std::deque<std::condition_variable> cond_vars_;
   std::deque<std::mutex> mutexes_;
 
@@ -267,10 +267,6 @@ void AMBSTemplatedInterface<T>::templatedCB(const boost::shared_ptr<const T> msg
       interfaces_[topic].msg_ =  msg;
     }
     cond_vars_[interfaces_[topic].index_].notify_one();
-    if ( node_name_.find("edge") <= topic.size() && topic.find("start") <= topic.size())
-    {
-      ROS_WARN_STREAM(node_name_ << ": Port " << topic << " got " << msg);
-    }
   }
   catch (std::exception e)
   {
