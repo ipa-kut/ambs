@@ -38,7 +38,7 @@ public:
   void init();
 
 private:
-  void executeCB(const ros::TimerEvent& event);
+  void executeCB();
   void disableTimer();
   TimerState getNextState(TimerState current_state);
 
@@ -131,7 +131,7 @@ TimerState Timer::getNextState(TimerState current_state)
  * @brief Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()
  * @param event Not used
  */
-void Timer::executeCB(const ros::TimerEvent& event)
+void Timer::executeCB()
 {
   while (ros::ok())
   {

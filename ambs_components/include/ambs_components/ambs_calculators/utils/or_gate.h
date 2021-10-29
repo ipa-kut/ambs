@@ -32,7 +32,7 @@ public:
             std::string out_signal);
 
 private:
-  void executeCB(const ros::TimerEvent& event) override;
+  void executeCB() override;
   ros::NodeHandle nh_;
   ambs_base::AMBSBooleanInterface bool_interface_;
   std::string OUT_RESULT_ = "out_signal";
@@ -83,9 +83,8 @@ void OrGate::init(std::string in_start = "in_start",
  * @brief Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()
  * @param event Not used
  */
-void OrGate::executeCB(const ros::TimerEvent& event)
+void OrGate::executeCB()
 {
-  (void) event;
   default_control_.waitForStart();
 
   ros::Rate loop(100);

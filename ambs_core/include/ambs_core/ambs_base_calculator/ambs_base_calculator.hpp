@@ -1,6 +1,7 @@
 #ifndef AMBS_BASE_CALCULATOR_HPP
 #define AMBS_BASE_CALCULATOR_HPP
 
+#include <thread>
 #include "ambs_core/ambs_base_interface/ambs_base_interface.hpp"
 #include "ambs_core/ambs_base_calculator/ambs_default_calculator_interface.hpp"
 #include "ambs_msgs/BoolStamped.h"
@@ -23,7 +24,8 @@ public:
   AMBSBaseCalculator(ros::NodeHandle nh, std::string node_name);
 
 protected:
-  virtual void executeCB(const ros::TimerEvent& event) = 0;
+  virtual void executeCB() = 0;
+  void threadCB();
   void startCalculator();
   std::string node_name_;
   ros::NodeHandle nh_;
@@ -32,7 +34,8 @@ protected:
   AMBSDefaultCalculatorInterface default_control_;
 
 private:
-  ros::Timer execute_timer_;
+  std::thread calc_thread_;
+  const int thread_loop_rate_ = 100;
 };
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -55,11 +58,24 @@ inline  AMBSBaseCalculator::AMBSBaseCalculator(ros::NodeHandle nh, std::string n
 }
 
 /**
- * @brief Starts the timer thread. MUST BE EXPLICITLY CALLED.
+ * @brief Thread function. Runs calculator logic at @param thread_loop_rate Hz.
+ */
+inline void AMBSBaseCalculator::threadCB()
+{
+  while (ros::ok())
+  {
+    ros::Rate(thread_loop_rate_).sleep();
+    executeCB();
+  }
+
+}
+
+/**
+ * @brief Starts the thread. MUST BE EXPLICITLY CALLED.
  */
 inline void AMBSBaseCalculator::startCalculator()
 {
-  execute_timer_ = nh_.createTimer(ros::Duration(0.01), boost::bind(&AMBSBaseCalculator::executeCB, this, _1));
+  calc_thread_ = std::thread(&AMBSBaseCalculator::threadCB, this);
 }
 
 /**
