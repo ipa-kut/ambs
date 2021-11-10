@@ -43,6 +43,10 @@ class BaseLogger(object):
             self._flag[topic] = Float64Stamped()
             self._flag[topic].data = float("inf")
 
+    def resetPorts(self):
+        for key in self._input_interface:
+            self._flag[key].data = False
+
     def setSafeFlag(self, key, value):
         if not key in self._input_interface.keys() and not key in self.result_list:
             rospy.logerr(rospy.get_name() + ": Retrieving a key that does not exist!: {}".format(key))
