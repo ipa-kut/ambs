@@ -122,4 +122,4 @@ class Rosbagger(BaseLogger):
             self._rate.sleep()
             reset = self.getSafeFlag("reset")
         rospy.loginfo(rospy.get_name() + ": Resetting")
-
+        self.resetPorts()
