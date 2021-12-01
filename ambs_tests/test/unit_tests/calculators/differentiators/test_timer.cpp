@@ -50,6 +50,11 @@ public:
 void TestTimer::diagCB(const diagnostic_msgs::DiagnosticArray::ConstPtr msg)
 {
   // Specific to this test only. Assuming that the first debug msg is from the tested timer.
+  if (msg->status[0].message.find("Elapsed") != std::string::npos)
+  {
+    // Do not keep any log msg with Elapsed in it, since it is result data which is not tested
+    return;
+  }
   *log_msg_ = msg->status[0].message;
 }
 

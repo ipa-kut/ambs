@@ -181,6 +181,7 @@ void Timer::executeCB()
           default_control_.publishDone();
           current_state_ = TimerState::FINISHED;
           if (debug_states_) debug_logger_.logInfo("FINISHED");
+          if (debug_states_) debug_logger_.logInfo("Elapsed " + std::to_string(elapsed_.toSec()));
        }
     }
     // RUNNING -> FINISHED - Interrupted
@@ -195,6 +196,7 @@ void Timer::executeCB()
       default_control_.publishDone();
       current_state_ = TimerState::FINISHED;
       if (debug_states_) debug_logger_.logInfo("FINISHED");
+      if (debug_states_) debug_logger_.logInfo("Elapsed " + std::to_string(elapsed_.toSec()));
     }
     // FINISHED -> IDLE
     else if (current_state_ == TimerState::FINISHED && next_state_ == TimerState::IDLE)
