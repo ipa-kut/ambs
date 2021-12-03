@@ -16,7 +16,7 @@ runners:
     stabilization_timeout: 0.5
     acceleration_timeout: 10
     verification_timeout: 2
-    decceleration_timeout: 2
+    decceleration_timeout: 3
 
 interpreters:
   velocity_interpreter:
