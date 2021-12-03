@@ -4,30 +4,29 @@ import unittest
 import time
 import rostest
 import rospy
-from  araig_msgs.msg import BoolStamped, Float64Stamped
+from  ambs_msgs.msg import BoolStamped
+from std_msgs.msg import Float64
 from geometry_msgs.msg import Twist
 
 class Test1Braking(unittest.TestCase):
 
     def setUp(self):
-        _pub_topic_start = '/signal/ui/start_test'
-        _pub_topic_reset = '/signal/ui/reset_test'
+        _pub_topic_start = '/ambs/event/ui/start_test'
+        _pub_topic_reset = '/ambs/event/ui/reset_test'
         _pub_topic_vel = '/cmd_vel'
-        _pub_topic_interrupt = '/signal/ui/interrupt_test'
 
-        _sub_topic_distance = '/data/calc/braking_distance'
-        _sub_topic_time = '/data/calc/braking_time'
-        _sub_topic_max = '/signal/calc/robot_has_max_vel'
-        _sub_topic_failed = '/signal/runner/test_failed'
+        _sub_topic_distance = '/ambs/data/calc/braking_distance'
+        _sub_topic_time = '/ambs/data/calc/braking_time'
+        _sub_topic_max = '/ambs/event/calc/robot_has_max_vel'
+        _sub_topic_failed = '/event/runner/test_failed'
 
         rospy.init_node('test1', anonymous=True)
         self.pub_start = rospy.Publisher(_pub_topic_start, BoolStamped, latch=True, queue_size=10)
         self.pub_reset = rospy.Publisher(_pub_topic_reset, BoolStamped, latch=True, queue_size=10)
         self.pub_vel = rospy.Publisher(_pub_topic_vel, Twist, latch=True, queue_size=10)
-        self.pub_interrupt = rospy.Publisher(_pub_topic_interrupt, BoolStamped, latch=True, queue_size=10)
 
-        rospy.Subscriber(_sub_topic_distance, Float64Stamped, callback=self.callback_1, queue_size=10)
-        rospy.Subscriber(_sub_topic_time, Float64Stamped, callback=self.callback_2, queue_size=10)
+        rospy.Subscriber(_sub_topic_distance, Float64, callback=self.callback_1, queue_size=10)
+        rospy.Subscriber(_sub_topic_time, Float64, callback=self.callback_2, queue_size=10)
         rospy.Subscriber(_sub_topic_max, BoolStamped, callback=self.callback_3, queue_size=10)
         rospy.Subscriber(_sub_topic_failed, BoolStamped, callback=self.callback_4, queue_size=10)
 
@@ -39,13 +38,13 @@ class Test1Braking(unittest.TestCase):
         self.counter = 0
 
     def test_brake(self):
-        while self.counter < 3:
+        while self.counter < 2:
             self.counter +=1
             pub_msg = BoolStamped()
             pub_msg.data = True
             pub_msg.header.stamp = rospy.Time.now()
 
-            # pub /signal/ui/start_test
+            # pub /event/ui/start_test
             self.pub_start.publish(pub_msg)
 
             # testing if robot did not really reach max speed
@@ -86,8 +85,8 @@ class Test1Braking(unittest.TestCase):
             msg = 'Test{}: braking distance: {}, expect not ZERO'.format(self.counter, self.result_distance), \
             delta= 0.0)
 
-            # pub /signal/ui/reset_test
-            rospy.sleep(10)
+            # pub /event/ui/reset_test
+            rospy.sleep(1)
             pub_msg.data = True
             pub_msg.header.stamp = rospy.Time.now()
             self.pub_reset.publish(pub_msg)
@@ -95,51 +94,6 @@ class Test1Braking(unittest.TestCase):
 
             self.result_distance = None
             self.result_time = None
-    
-    def test_interrupted(self):
-        while self.counter < 3:
-            self.counter +=1
-            pub_msg = BoolStamped()
-            pub_msg.data = True
-
-            pub_msg.header.stamp = rospy.Time.now()
-            # pub /signal/ui/start_test
-            self.pub_start.publish(pub_msg)
-
-            rospy.sleep(3.01)
-
-            if self.counter == 1:
-                pub_msg.data = True
-                pub_msg.header.stamp = rospy.Time.now()
-                self.pub_interrupt.publish(pub_msg)
-            
-            if self.counter == 2:
-                rospy.sleep(0.1)
-                pub_msg.data = True
-                pub_msg.header.stamp = rospy.Time.now()
-                self.pub_interrupt.publish(pub_msg)
-            
-            if self.counter == 3:
-                rospy.sleep(2.1)
-                pub_msg.data = True
-                pub_msg.header.stamp = rospy.Time.now()
-                self.pub_interrupt.publish(pub_msg)
-
-            # wait for result
-            while self.result_failed is None or self.result_failed is False:
-                rospy.sleep(0.01)
-
-            self.assertTrue(self.result_failed, 
-            msg = 'Test{}: Test_Failed should be True, but get {}'.format(self.counter, self.result_failed))
-
-            # pub /signal/ui/reset_test
-            rospy.sleep(10)
-            pub_msg.header.stamp = rospy.Time.now()
-            self.pub_reset.publish(pub_msg)
-            rospy.sleep(1)
-
-            self.result_failed = None
-            rospy.sleep(2)
 
     def callback_1(self, msg):
         self.result_distance = msg.data
