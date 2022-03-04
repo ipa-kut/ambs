@@ -1,4 +1,5 @@
 <map id="startCalculator" name="startCalculator">
-<area shape="rect" id="node1" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="5,5,112,32"/>
-<area shape="rect" id="node2" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a967f9a0a5cfaa49ba54b5fe00c08b132" title=" " alt="" coords="160,5,247,32"/>
+<area shape="rect" id="node1" title="Starts the thread. MUST BE EXPLICITLY CALLED." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a8f6d9fcc2c1df4d20756a16116bfda6f" title="Thread function. Runs calculator logic at." alt="" coords="160,5,237,32"/>
+<area shape="rect" id="node3" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a0e45187e941b87a0700c13055d5c35fa" title=" " alt="" coords="285,5,372,32"/>
 </map>

@@ -1,15 +1,17 @@
 <map id="ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h" name="ambs_components/include/ambs_components/ambs_calculators/comparators/edge_detector.h">
-<area shape="rect" id="node1" title=" " alt="" coords="92,5,269,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,139,60,165"/>
-<area shape="rect" id="node3" title=" " alt="" coords="85,139,143,165"/>
-<area shape="rect" id="node4" href="$dd/ded/ambs__base__calculator_8hpp.html" title=" " alt="" coords="379,124,537,180"/>
-<area shape="rect" id="node5" href="$da/d1c/ambs__base__interface_8hpp.html" title=" " alt="" coords="153,436,310,492"/>
-<area shape="rect" id="node12" title=" " alt="" coords="486,451,673,477"/>
-<area shape="rect" id="node10" href="$d2/dcb/ambs__default__calculator__interface_8hpp.html" title=" " alt="" coords="375,228,541,284"/>
-<area shape="rect" id="node13" title=" " alt="" coords="511,347,647,373"/>
-<area shape="rect" id="node6" title=" " alt="" coords="33,540,80,567"/>
-<area shape="rect" id="node7" title=" " alt="" coords="104,540,223,567"/>
-<area shape="rect" id="node8" title=" " alt="" coords="247,540,354,567"/>
-<area shape="rect" id="node9" title=" " alt="" coords="379,540,452,567"/>
-<area shape="rect" id="node11" href="$da/d76/ambs__boolean__interface_8hpp.html" title=" " alt="" coords="269,332,436,388"/>
+<area shape="rect" id="node1" title=" " alt="" coords="97,5,274,76"/>
+<area shape="rect" id="node2" title=" " alt="" coords="10,139,65,165"/>
+<area shape="rect" id="node3" title=" " alt="" coords="89,139,148,165"/>
+<area shape="rect" id="node4" href="$dd/ded/ambs__base__calculator_8hpp.html" title=" " alt="" coords="365,124,523,180"/>
+<area shape="rect" id="node6" href="$da/d1c/ambs__base__interface_8hpp.html" title=" " alt="" coords="245,436,403,492"/>
+<area shape="rect" id="node14" title=" " alt="" coords="516,451,703,477"/>
+<area shape="rect" id="node5" title=" " alt="" coords="655,540,713,567"/>
+<area shape="rect" id="node12" href="$d2/dcb/ambs__default__calculator__interface_8hpp.html" title=" " alt="" coords="421,228,587,284"/>
+<area shape="rect" id="node15" title=" " alt="" coords="273,347,409,373"/>
+<area shape="rect" id="node7" title=" " alt="" coords="385,540,431,567"/>
+<area shape="rect" id="node8" title=" " alt="" coords="455,540,574,567"/>
+<area shape="rect" id="node9" title=" " alt="" coords="5,540,112,567"/>
+<area shape="rect" id="node10" title=" " alt="" coords="137,540,263,567"/>
+<area shape="rect" id="node11" title=" " alt="" coords="287,540,361,567"/>
+<area shape="rect" id="node13" href="$da/d76/ambs__boolean__interface_8hpp.html" title=" " alt="" coords="434,332,601,388"/>
 </map>

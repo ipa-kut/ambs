@@ -223,9 +223,15 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:ab41f041fcce6f8433fa928cd01d31feb inherit pro_methods_classambs__base_1_1AMBSTemplatedInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback function used by ALL ports.  <a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ab41f041fcce6f8433fa928cd01d31feb">More...</a><br /></td></tr>
 <tr class="separator:ab41f041fcce6f8433fa928cd01d31feb inherit pro_methods_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classambs__base_1_1AMBSTemplatedInterface')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;</a></td></tr>
+<tr class="memitem:a4ef9e0ae06fd23413d8bf63b2586287d inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memItemLeft" align="right" valign="top"><a id="a4ef9e0ae06fd23413d8bf63b2586287d" name="a4ef9e0ae06fd23413d8bf63b2586287d"></a>
+std::deque&lt; std::condition_variable &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cond_vars_</b></td></tr>
+<tr class="separator:a4ef9e0ae06fd23413d8bf63b2586287d inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c7c3372ae2463ed268b6f1cab5c7372 inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memItemLeft" align="right" valign="top"><a id="a2c7c3372ae2463ed268b6f1cab5c7372" name="a2c7c3372ae2463ed268b6f1cab5c7372"></a>
 std::map&lt; std::string, <a class="el" href="../../d7/d71/structambs__base_1_1AMBSPort.html">AMBSPort</a>&lt; ambs_msgs::BoolStamped &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>interfaces_</b></td></tr>
 <tr class="separator:a2c7c3372ae2463ed268b6f1cab5c7372 inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dba2f3e5c300b4e6efa3cc94d167eca inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memItemLeft" align="right" valign="top"><a id="a3dba2f3e5c300b4e6efa3cc94d167eca" name="a3dba2f3e5c300b4e6efa3cc94d167eca"></a>
+std::deque&lt; std::mutex &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mutexes_</b></td></tr>
+<tr class="separator:a3dba2f3e5c300b4e6efa3cc94d167eca inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1300297c252ff1dc5ceea58a274d4db5 inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memItemLeft" align="right" valign="top"><a id="a1300297c252ff1dc5ceea58a274d4db5" name="a1300297c252ff1dc5ceea58a274d4db5"></a>
 ros::NodeHandle&#160;</td><td class="memItemRight" valign="bottom"><b>nh_</b></td></tr>
 <tr class="separator:a1300297c252ff1dc5ceea58a274d4db5 inherit pro_attribs_classambs__base_1_1AMBSTemplatedInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,12 +340,12 @@ const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>subscri
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>}</div>
 <div class="ttc" id="aclassambs__base_1_1AMBSBooleanInterface_html_af9a09dc0577d79c0862457114706c7a3"><div class="ttname"><a href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3">ambs_base::AMBSBooleanInterface::constructNewBoolStamped</a></div><div class="ttdeci">ambs_msgs::BoolStamped constructNewBoolStamped(bool data)</div><div class="ttdoc">Create a new BoolStamped type message.</div><div class="ttdef"><b>Definition:</b> ambs_boolean_interface.hpp:49</div></div>
 <div class="ttc" id="aclassambs__base_1_1AMBSDefaultCalculatorInterface_html_ac3c9711311ec0474931f00621f3d0ace"><div class="ttname"><a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ac3c9711311ec0474931f00621f3d0ace">ambs_base::AMBSDefaultCalculatorInterface::RESET_</a></div><div class="ttdeci">std::string RESET_</div><div class="ttdef"><b>Definition:</b> ambs_default_calculator_interface.hpp:40</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_ada64638f460eb73b2fdec44ef26236b1"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg</a></div><div class="ttdeci">ambs_msgs::BoolStamped getPortMsg(std::string port_name)</div><div class="ttdoc">Gets the latest message received from the port, even if it is not a latched topic.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:152</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_adaa2cbf1da15afc4f5683da03e6207b9"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::isPortValid</a></div><div class="ttdeci">bool isPortValid(std::string port_name)</div><div class="ttdoc">Returns if the port has received at least on message.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:233</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_ada64638f460eb73b2fdec44ef26236b1"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg</a></div><div class="ttdeci">ambs_msgs::BoolStamped getPortMsg(std::string port_name)</div><div class="ttdoc">Gets the latest message received from the port, even if it is not a latched topic.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:158</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_adaa2cbf1da15afc4f5683da03e6207b9"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::isPortValid</a></div><div class="ttdeci">bool isPortValid(std::string port_name)</div><div class="ttdoc">Returns if the port has received at least on message.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:239</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00049">AMBSBooleanInterface::constructNewBoolStamped()</a>, <a class="el" href="../../#l00152">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg()</a>, <a class="el" href="../../#l00233">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::isPortValid()</a>, and <a class="el" href="../../#l00040">AMBSDefaultCalculatorInterface::RESET_</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00049">AMBSBooleanInterface::constructNewBoolStamped()</a>, <a class="el" href="../../#l00158">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg()</a>, <a class="el" href="../../#l00239">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::isPortValid()</a>, and <a class="el" href="../../#l00040">AMBSDefaultCalculatorInterface::RESET_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00108">Timer::getNextState()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00107">Timer::getNextState()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -358,7 +364,7 @@ Here is the caller graph for this function:</div>
 <map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a3bb9c9f4531c0706ff89da887dd75938_icgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a3bb9c9f4531c0706ff89da887dd75938_icgraph">
 <area shape="rect" title="Get the message received by the RESET_ port." alt="" coords="432,13,532,39"/>
 <area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#ad1e2352a41e28bfe2fb4ffdc88029de3" title="Calculate what the next state should be, given current state and external inputs." alt="" coords="219,5,384,47"/>
-<area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,5,171,47"/>
+<area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#a97f7c45545079e4e8b7e98f51b763e2f" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,5,171,47"/>
 </map>
 </div>
 
@@ -401,9 +407,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>}</div>
 <div class="ttc" id="aclassambs__base_1_1AMBSDefaultCalculatorInterface_html_a67e10fa1b1494170aa3dae327076ce0a"><div class="ttname"><a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#a67e10fa1b1494170aa3dae327076ce0a">ambs_base::AMBSDefaultCalculatorInterface::START_</a></div><div class="ttdeci">std::string START_</div><div class="ttdef"><b>Definition:</b> ambs_default_calculator_interface.hpp:38</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00049">AMBSBooleanInterface::constructNewBoolStamped()</a>, <a class="el" href="../../#l00152">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg()</a>, <a class="el" href="../../#l00233">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::isPortValid()</a>, and <a class="el" href="../../#l00038">AMBSDefaultCalculatorInterface::START_</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00049">AMBSBooleanInterface::constructNewBoolStamped()</a>, <a class="el" href="../../#l00158">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg()</a>, <a class="el" href="../../#l00239">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::isPortValid()</a>, and <a class="el" href="../../#l00038">AMBSDefaultCalculatorInterface::START_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00108">Timer::getNextState()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00107">Timer::getNextState()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -422,7 +428,7 @@ Here is the caller graph for this function:</div>
 <map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_abe5963a4394632431dd1fb08ea80b08b_icgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_abe5963a4394632431dd1fb08ea80b08b_icgraph">
 <area shape="rect" title="Get the message received by the START_ port." alt="" coords="432,13,525,39"/>
 <area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#ad1e2352a41e28bfe2fb4ffdc88029de3" title="Calculate what the next state should be, given current state and external inputs." alt="" coords="219,5,384,47"/>
-<area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,5,171,47"/>
+<area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#a97f7c45545079e4e8b7e98f51b763e2f" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,5,171,47"/>
 </map>
 </div>
 
@@ -465,9 +471,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>}</div>
 <div class="ttc" id="aclassambs__base_1_1AMBSDefaultCalculatorInterface_html_ad98d6875ee56151d369a122ba10c524b"><div class="ttname"><a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ad98d6875ee56151d369a122ba10c524b">ambs_base::AMBSDefaultCalculatorInterface::STOP_</a></div><div class="ttdeci">std::string STOP_</div><div class="ttdef"><b>Definition:</b> ambs_default_calculator_interface.hpp:39</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00049">AMBSBooleanInterface::constructNewBoolStamped()</a>, <a class="el" href="../../#l00152">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg()</a>, <a class="el" href="../../#l00233">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::isPortValid()</a>, and <a class="el" href="../../#l00039">AMBSDefaultCalculatorInterface::STOP_</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00049">AMBSBooleanInterface::constructNewBoolStamped()</a>, <a class="el" href="../../#l00158">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg()</a>, <a class="el" href="../../#l00239">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::isPortValid()</a>, and <a class="el" href="../../#l00039">AMBSDefaultCalculatorInterface::STOP_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00086">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00086">OrGate::executeCB()</a>, <a class="el" href="../../#l00078">SignalRepeater::executeCB()</a>, and <a class="el" href="../../#l00108">Timer::getNextState()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00080">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00084">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00085">OrGate::executeCB()</a>, <a class="el" href="../../#l00077">SignalRepeater::executeCB()</a>, and <a class="el" href="../../#l00107">Timer::getNextState()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -485,12 +491,12 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_afcff3ff7d027c1515f6f2757131126c5_icgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_afcff3ff7d027c1515f6f2757131126c5_icgraph" alt=""/></div>
 <map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_afcff3ff7d027c1515f6f2757131126c5_icgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_afcff3ff7d027c1515f6f2757131126c5_icgraph">
 <area shape="rect" title="Get the message received by the STOP_ port." alt="" coords="479,143,571,170"/>
-<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="219,5,431,47"/>
-<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="227,71,423,112"/>
-<area shape="rect" href="../../da/d2c/classambs__calculators_1_1OrGate.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="237,136,412,177"/>
-<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="241,201,409,243"/>
+<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="219,5,431,47"/>
+<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="227,71,423,112"/>
+<area shape="rect" href="../../da/d2c/classambs__calculators_1_1OrGate.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="237,136,412,177"/>
+<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="241,201,409,243"/>
 <area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#ad1e2352a41e28bfe2fb4ffdc88029de3" title="Calculate what the next state should be, given current state and external inputs." alt="" coords="242,267,407,308"/>
-<area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,267,171,308"/>
+<area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#a97f7c45545079e4e8b7e98f51b763e2f" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,267,171,308"/>
 </map>
 </div>
 
@@ -565,11 +571,11 @@ Here is the caller graph for this function:</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40">init</a>(default_inputs, default_outputs, nh, node_name);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 <div class="ttc" id="aclassambs__base_1_1AMBSDefaultCalculatorInterface_html_abde39091d4e4ce0b149b31f2686fa7f8"><div class="ttname"><a href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#abde39091d4e4ce0b149b31f2686fa7f8">ambs_base::AMBSDefaultCalculatorInterface::DONE_</a></div><div class="ttdeci">std::string DONE_</div><div class="ttdef"><b>Definition:</b> ambs_default_calculator_interface.hpp:41</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_ac55ed2cfd175f6e71ebe460eeb643b40"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::init</a></div><div class="ttdeci">void init(std::vector&lt; std::string &gt; input_interface, std::vector&lt; std::string &gt; output_interface, ros::NodeHandle nh, std::string node_name)</div><div class="ttdoc">Initialisation function, decoupled from constructor for convenience.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:120</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_ac55ed2cfd175f6e71ebe460eeb643b40"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::init</a></div><div class="ttdeci">void init(std::vector&lt; std::string &gt; input_interface, std::vector&lt; std::string &gt; output_interface, ros::NodeHandle nh, std::string node_name)</div><div class="ttdoc">Initialisation function, decoupled from constructor for convenience.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:124</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00041">AMBSDefaultCalculatorInterface::DONE_</a>, <a class="el" href="../../#l00120">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::init()</a>, <a class="el" href="../../#l00040">AMBSDefaultCalculatorInterface::RESET_</a>, <a class="el" href="../../#l00038">AMBSDefaultCalculatorInterface::START_</a>, and <a class="el" href="../../#l00039">AMBSDefaultCalculatorInterface::STOP_</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00041">AMBSDefaultCalculatorInterface::DONE_</a>, <a class="el" href="../../#l00124">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::init()</a>, <a class="el" href="../../#l00040">AMBSDefaultCalculatorInterface::RESET_</a>, <a class="el" href="../../#l00038">AMBSDefaultCalculatorInterface::START_</a>, and <a class="el" href="../../#l00039">AMBSDefaultCalculatorInterface::STOP_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00050">AMBSBaseCalculator::AMBSBaseCalculator()</a>, <a class="el" href="../../#l00050">DiffFloatTemporal::init()</a>, <a class="el" href="../../#l00057">DiffPoseTemporal::init()</a>, <a class="el" href="../../#l00051">Stopwatch::init()</a>, <a class="el" href="../../#l00076">Timer::init()</a>, <a class="el" href="../../#l00057">EdgeDetector::init()</a>, <a class="el" href="../../#l00056">SignalRepeater::init()</a>, <a class="el" href="../../#l00059">CompFloatParam::init()</a>, and <a class="el" href="../../#l00055">OrGate::init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00053">AMBSBaseCalculator::AMBSBaseCalculator()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -584,16 +590,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ab0c2214caea3e5818fc59fdbd68f57a8_icgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ab0c2214caea3e5818fc59fdbd68f57a8_icgraph" alt=""/></div>
 <map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ab0c2214caea3e5818fc59fdbd68f57a8_icgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ab0c2214caea3e5818fc59fdbd68f57a8_icgraph">
-<area shape="rect" title="Initialisation decoupled from constructor for convenince." alt="" coords="277,274,409,301"/>
+<area shape="rect" title="Initialisation decoupled from constructor for convenince." alt="" coords="277,13,409,39"/>
 <area shape="rect" href="../../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a9bd5d1229a90f907a1f5fd27020a0f0e" title="Constructor." alt="" coords="5,5,229,47"/>
-<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="26,71,209,112"/>
-<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="26,136,209,177"/>
-<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="20,201,215,243"/>
-<area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="35,267,200,308"/>
-<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#af4e8c313828e584f6ea0a12abd6e3414" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="11,332,223,373"/>
-<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#a5dbc26aff5f1de3139575c98d38f2cb8" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="33,397,201,439"/>
-<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#ad2496cf9193f5ee5374d5bbbca8d2891" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="19,463,215,504"/>
-<area shape="rect" href="../../da/d2c/classambs__calculators_1_1OrGate.html#ae7370eb8c40d28defb3d18859f27e6f2" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="30,528,205,569"/>
 </map>
 </div>
 
@@ -631,7 +629,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                  &lt;&lt; <span class="stringliteral">&quot; Done : &quot;</span> &lt;&lt; std::to_string(<a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1">getPortMsg</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#abde39091d4e4ce0b149b31f2686fa7f8">DONE_</a>).data));</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00041">AMBSDefaultCalculatorInterface::DONE_</a>, <a class="el" href="../../#l00152">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg()</a>, <a class="el" href="../../#l00040">AMBSDefaultCalculatorInterface::RESET_</a>, <a class="el" href="../../#l00038">AMBSDefaultCalculatorInterface::START_</a>, and <a class="el" href="../../#l00039">AMBSDefaultCalculatorInterface::STOP_</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00041">AMBSDefaultCalculatorInterface::DONE_</a>, <a class="el" href="../../#l00158">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::getPortMsg()</a>, <a class="el" href="../../#l00040">AMBSDefaultCalculatorInterface::RESET_</a>, <a class="el" href="../../#l00038">AMBSDefaultCalculatorInterface::START_</a>, and <a class="el" href="../../#l00039">AMBSDefaultCalculatorInterface::STOP_</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -671,11 +669,11 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>{</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <a class="code" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aabf915c783f55403b189d83e619643fd">publishMsgOnPort</a>(<a class="code" href="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#abde39091d4e4ce0b149b31f2686fa7f8">DONE_</a>, <a class="code" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3">constructNewBoolStamped</a>(<span class="keyword">true</span>));</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}</div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_aabf915c783f55403b189d83e619643fd"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aabf915c783f55403b189d83e619643fd">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::publishMsgOnPort</a></div><div class="ttdeci">void publishMsgOnPort(std::string port_name, ambs_msgs::BoolStamped msg)</div><div class="ttdoc">Publish a message on a port.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:195</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_aabf915c783f55403b189d83e619643fd"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aabf915c783f55403b189d83e619643fd">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::publishMsgOnPort</a></div><div class="ttdeci">void publishMsgOnPort(std::string port_name, ambs_msgs::BoolStamped msg)</div><div class="ttdoc">Publish a message on a port.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:201</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00049">AMBSBooleanInterface::constructNewBoolStamped()</a>, <a class="el" href="../../#l00041">AMBSDefaultCalculatorInterface::DONE_</a>, and <a class="el" href="../../#l00195">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::publishMsgOnPort()</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00049">AMBSBooleanInterface::constructNewBoolStamped()</a>, <a class="el" href="../../#l00041">AMBSDefaultCalculatorInterface::DONE_</a>, and <a class="el" href="../../#l00201">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::publishMsgOnPort()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00067">Stopwatch::executeCB()</a>, <a class="el" href="../../#l00134">Timer::executeCB()</a>, <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00086">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00065">DiffFloatTemporal::executeCB()</a>, <a class="el" href="../../#l00077">DiffPoseTemporal::executeCB()</a>, <a class="el" href="../../#l00086">OrGate::executeCB()</a>, and <a class="el" href="../../#l00078">SignalRepeater::executeCB()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00065">Stopwatch::executeCB()</a>, <a class="el" href="../../#l00133">Timer::executeCB()</a>, <a class="el" href="../../#l00080">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00084">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00063">DiffFloatTemporal::executeCB()</a>, <a class="el" href="../../#l00075">DiffPoseTemporal::executeCB()</a>, <a class="el" href="../../#l00085">OrGate::executeCB()</a>, and <a class="el" href="../../#l00077">SignalRepeater::executeCB()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -692,14 +690,14 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a45924180e9991c17c1ec7264500c1878_icgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a45924180e9991c17c1ec7264500c1878_icgraph" alt=""/></div>
 <map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a45924180e9991c17c1ec7264500c1878_icgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a45924180e9991c17c1ec7264500c1878_icgraph">
 <area shape="rect" title="Publish TRUE on the DONE port." alt="" coords="265,242,360,269"/>
-<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="14,5,209,47"/>
-<area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="29,71,194,112"/>
-<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,136,217,177"/>
-<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="13,201,209,243"/>
-<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,267,203,308"/>
-<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,332,203,373"/>
-<area shape="rect" href="../../da/d2c/classambs__calculators_1_1OrGate.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="24,397,199,439"/>
-<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="27,463,195,504"/>
+<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#a97f7c45545079e4e8b7e98f51b763e2f" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="14,5,209,47"/>
+<area shape="rect" href="../../d4/df6/classambs__calculators_1_1Timer.html#a97f7c45545079e4e8b7e98f51b763e2f" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="29,71,194,112"/>
+<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,136,217,177"/>
+<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="13,201,209,243"/>
+<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,267,203,308"/>
+<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,332,203,373"/>
+<area shape="rect" href="../../da/d2c/classambs__calculators_1_1OrGate.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="24,397,199,439"/>
+<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="27,463,195,504"/>
 </map>
 </div>
 
@@ -738,23 +736,22 @@ Here is the caller graph for this function:</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordflow">return</span> msg;</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
 <div class="ttc" id="aclassambs__base_1_1AMBSBooleanInterface_html_a5e470849543126cf4d89bae2a635c661"><div class="ttname"><a href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661">ambs_base::AMBSBooleanInterface::waitForTrueOnPort</a></div><div class="ttdeci">ambs_msgs::BoolStamped waitForTrueOnPort(std::string port)</div><div class="ttdoc">Wait for TRUE on a port.</div><div class="ttdef"><b>Definition:</b> ambs_boolean_interface.hpp:63</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_a69e220bdafb7c66b63cee0187bfc8bcb"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::node_name_</a></div><div class="ttdeci">std::string node_name_</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:77</div></div>
-<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_af8173f556899e5af6e228ced6c0009fb"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#af8173f556899e5af6e228ced6c0009fb">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::resetAllPorts</a></div><div class="ttdeci">void resetAllPorts()</div><div class="ttdoc">Reset inernal buffer message of all ports.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:289</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_a69e220bdafb7c66b63cee0187bfc8bcb"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#a69e220bdafb7c66b63cee0187bfc8bcb">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::node_name_</a></div><div class="ttdeci">std::string node_name_</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:79</div></div>
+<div class="ttc" id="aclassambs__base_1_1AMBSTemplatedInterface_html_af8173f556899e5af6e228ced6c0009fb"><div class="ttname"><a href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#af8173f556899e5af6e228ced6c0009fb">ambs_base::AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::resetAllPorts</a></div><div class="ttdeci">void resetAllPorts()</div><div class="ttdoc">Reset inernal buffer message of all ports.</div><div class="ttdef"><b>Definition:</b> ambs_base_interface.hpp:299</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00077">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::node_name_</a>, <a class="el" href="../../#l00040">AMBSDefaultCalculatorInterface::RESET_</a>, <a class="el" href="../../#l00289">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::resetAllPorts()</a>, and <a class="el" href="../../#l00063">AMBSBooleanInterface::waitForTrueOnPort()</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00079">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::node_name_</a>, <a class="el" href="../../#l00040">AMBSDefaultCalculatorInterface::RESET_</a>, <a class="el" href="../../#l00299">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::resetAllPorts()</a>, and <a class="el" href="../../#l00063">AMBSBooleanInterface::waitForTrueOnPort()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00067">Stopwatch::executeCB()</a>, <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00086">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00065">DiffFloatTemporal::executeCB()</a>, <a class="el" href="../../#l00077">DiffPoseTemporal::executeCB()</a>, <a class="el" href="../../#l00086">OrGate::executeCB()</a>, and <a class="el" href="../../#l00078">SignalRepeater::executeCB()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00065">Stopwatch::executeCB()</a>, <a class="el" href="../../#l00080">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00084">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00063">DiffFloatTemporal::executeCB()</a>, <a class="el" href="../../#l00075">DiffPoseTemporal::executeCB()</a>, <a class="el" href="../../#l00085">OrGate::executeCB()</a>, and <a class="el" href="../../#l00077">SignalRepeater::executeCB()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9daeb45ab1c8723c550216193bc640d4_cgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9daeb45ab1c8723c550216193bc640d4_cgraph" alt=""/></div>
 <map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9daeb45ab1c8723c550216193bc640d4_cgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9daeb45ab1c8723c550216193bc640d4_cgraph">
-<area shape="rect" title="Wait for TRUE on the RESET port." alt="" coords="5,64,105,91"/>
-<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#af8173f556899e5af6e228ced6c0009fb" title="Reset inernal buffer message of all ports." alt="" coords="172,12,368,68"/>
-<area shape="rect" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="153,93,387,134"/>
-<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="435,5,631,61"/>
-<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9" title="Returns if the port has received at least on message." alt="" coords="435,85,631,141"/>
-<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="435,165,631,221"/>
+<area shape="rect" title="Wait for TRUE on the RESET port." alt="" coords="5,57,105,84"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#af8173f556899e5af6e228ced6c0009fb" title="Reset inernal buffer message of all ports." alt="" coords="172,5,368,61"/>
+<area shape="rect" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="153,86,387,127"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="435,39,631,95"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="435,119,631,175"/>
 </map>
 </div>
 <div class="dynheader">
@@ -763,13 +760,13 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9daeb45ab1c8723c550216193bc640d4_icgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9daeb45ab1c8723c550216193bc640d4_icgraph" alt=""/></div>
 <map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9daeb45ab1c8723c550216193bc640d4_icgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_a9daeb45ab1c8723c550216193bc640d4_icgraph">
 <area shape="rect" title="Wait for TRUE on the RESET port." alt="" coords="265,209,365,235"/>
-<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="14,5,209,47"/>
-<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,71,217,112"/>
-<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="13,136,209,177"/>
-<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,201,203,243"/>
-<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,267,203,308"/>
-<area shape="rect" href="../../da/d2c/classambs__calculators_1_1OrGate.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="24,332,199,373"/>
-<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="27,397,195,439"/>
+<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#a97f7c45545079e4e8b7e98f51b763e2f" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="14,5,209,47"/>
+<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,71,217,112"/>
+<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="13,136,209,177"/>
+<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,201,203,243"/>
+<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,267,203,308"/>
+<area shape="rect" href="../../da/d2c/classambs__calculators_1_1OrGate.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="24,332,199,373"/>
+<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="27,397,195,439"/>
 </map>
 </div>
 
@@ -807,19 +804,18 @@ Here is the caller graph for this function:</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keywordflow">return</span> msg;</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00077">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::node_name_</a>, <a class="el" href="../../#l00038">AMBSDefaultCalculatorInterface::START_</a>, and <a class="el" href="../../#l00063">AMBSBooleanInterface::waitForTrueOnPort()</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00079">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::node_name_</a>, <a class="el" href="../../#l00038">AMBSDefaultCalculatorInterface::START_</a>, and <a class="el" href="../../#l00063">AMBSBooleanInterface::waitForTrueOnPort()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00067">Stopwatch::executeCB()</a>, <a class="el" href="../../#l00081">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00086">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00065">DiffFloatTemporal::executeCB()</a>, <a class="el" href="../../#l00077">DiffPoseTemporal::executeCB()</a>, <a class="el" href="../../#l00086">OrGate::executeCB()</a>, and <a class="el" href="../../#l00078">SignalRepeater::executeCB()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00065">Stopwatch::executeCB()</a>, <a class="el" href="../../#l00080">EdgeDetector::executeCB()</a>, <a class="el" href="../../#l00084">CompFloatParam::executeCB()</a>, <a class="el" href="../../#l00063">DiffFloatTemporal::executeCB()</a>, <a class="el" href="../../#l00075">DiffPoseTemporal::executeCB()</a>, <a class="el" href="../../#l00085">OrGate::executeCB()</a>, and <a class="el" href="../../#l00077">SignalRepeater::executeCB()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ad7f2492738b8b944ceea50f2eba2682c_cgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ad7f2492738b8b944ceea50f2eba2682c_cgraph" alt=""/></div>
 <map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ad7f2492738b8b944ceea50f2eba2682c_cgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ad7f2492738b8b944ceea50f2eba2682c_cgraph">
-<area shape="rect" title="Wait for TRUE on the START port." alt="" coords="5,100,99,127"/>
-<area shape="rect" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="147,93,380,134"/>
+<area shape="rect" title="Wait for TRUE on the START port." alt="" coords="5,60,99,87"/>
+<area shape="rect" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="147,53,380,94"/>
 <area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="428,5,624,61"/>
-<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9" title="Returns if the port has received at least on message." alt="" coords="428,85,624,141"/>
-<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="428,165,624,221"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="428,85,624,141"/>
 </map>
 </div>
 <div class="dynheader">
@@ -828,13 +824,13 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ad7f2492738b8b944ceea50f2eba2682c_icgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ad7f2492738b8b944ceea50f2eba2682c_icgraph" alt=""/></div>
 <map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ad7f2492738b8b944ceea50f2eba2682c_icgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ad7f2492738b8b944ceea50f2eba2682c_icgraph">
 <area shape="rect" title="Wait for TRUE on the START port." alt="" coords="265,209,359,235"/>
-<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="14,5,209,47"/>
-<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,71,217,112"/>
-<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="13,136,209,177"/>
-<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,201,203,243"/>
-<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,267,203,308"/>
-<area shape="rect" href="../../da/d2c/classambs__calculators_1_1OrGate.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="24,332,199,373"/>
-<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="27,397,195,439"/>
+<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#a97f7c45545079e4e8b7e98f51b763e2f" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="14,5,209,47"/>
+<area shape="rect" href="../../dd/d7f/classambs__calculators_1_1EdgeDetector.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,71,217,112"/>
+<area shape="rect" href="../../d4/db3/classambs__calculators_1_1CompFloatParam.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="13,136,209,177"/>
+<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,201,203,243"/>
+<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="20,267,203,308"/>
+<area shape="rect" href="../../da/d2c/classambs__calculators_1_1OrGate.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="24,332,199,373"/>
+<area shape="rect" href="../../d4/d82/classambs__calculators_1_1SignalRepeater.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="27,397,195,439"/>
 </map>
 </div>
 
@@ -871,19 +867,18 @@ Here is the caller graph for this function:</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordflow">return</span> msg;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00077">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::node_name_</a>, <a class="el" href="../../#l00039">AMBSDefaultCalculatorInterface::STOP_</a>, and <a class="el" href="../../#l00063">AMBSBooleanInterface::waitForTrueOnPort()</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00079">AMBSTemplatedInterface&lt; ambs_msgs::BoolStamped &gt;::node_name_</a>, <a class="el" href="../../#l00039">AMBSDefaultCalculatorInterface::STOP_</a>, and <a class="el" href="../../#l00063">AMBSBooleanInterface::waitForTrueOnPort()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00067">Stopwatch::executeCB()</a>, <a class="el" href="../../#l00065">DiffFloatTemporal::executeCB()</a>, and <a class="el" href="../../#l00077">DiffPoseTemporal::executeCB()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00065">Stopwatch::executeCB()</a>, <a class="el" href="../../#l00063">DiffFloatTemporal::executeCB()</a>, and <a class="el" href="../../#l00075">DiffPoseTemporal::executeCB()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ac5ea3fdfe16309af79519349423e0168_cgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ac5ea3fdfe16309af79519349423e0168_cgraph" alt=""/></div>
 <map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ac5ea3fdfe16309af79519349423e0168_cgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ac5ea3fdfe16309af79519349423e0168_cgraph">
-<area shape="rect" title="Wait for TRUE on the STOP port." alt="" coords="5,100,97,127"/>
-<area shape="rect" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="145,93,379,134"/>
+<area shape="rect" title="Wait for TRUE on the STOP port." alt="" coords="5,60,97,87"/>
+<area shape="rect" href="../../d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#a5e470849543126cf4d89bae2a635c661" title="Wait for TRUE on a port." alt="" coords="145,53,379,94"/>
 <area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ada64638f460eb73b2fdec44ef26236b1" title="Gets the latest message received from the port, even if it is not a latched topic." alt="" coords="427,5,623,61"/>
-<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#adaa2cbf1da15afc4f5683da03e6207b9" title="Returns if the port has received at least on message." alt="" coords="427,85,623,141"/>
-<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="427,165,623,221"/>
+<area shape="rect" href="../../d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aadd7ecd6a0db64d273c2ba8128419408" title="Reset internal buffer message of a port." alt="" coords="427,85,623,141"/>
 </map>
 </div>
 <div class="dynheader">
@@ -892,9 +887,9 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="../../dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ac5ea3fdfe16309af79519349423e0168_icgraph.png" border="0" usemap="#adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ac5ea3fdfe16309af79519349423e0168_icgraph" alt=""/></div>
 <map name="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ac5ea3fdfe16309af79519349423e0168_icgraph" id="adc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface_ac5ea3fdfe16309af79519349423e0168_icgraph">
 <area shape="rect" title="Wait for TRUE on the STOP port." alt="" coords="248,78,340,105"/>
-<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,5,200,47"/>
-<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="11,71,194,112"/>
-<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#acc239077cecc1069d9306ceda27a8e88" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="11,136,194,177"/>
+<area shape="rect" href="../../d0/d7e/classambs__calculators_1_1Stopwatch.html#a97f7c45545079e4e8b7e98f51b763e2f" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,5,200,47"/>
+<area shape="rect" href="../../de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="11,71,194,112"/>
+<area shape="rect" href="../../d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#afbfce7196c0055638afb502af0936e8d" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="11,136,194,177"/>
 </map>
 </div>
 

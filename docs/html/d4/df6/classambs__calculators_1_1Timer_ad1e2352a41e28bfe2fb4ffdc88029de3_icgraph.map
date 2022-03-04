@@ -1,4 +1,4 @@
 <map id="getNextState" name="getNextState">
 <area shape="rect" id="node1" title="Calculate what the next state should be, given current state and external inputs." alt="" coords="140,5,239,32"/>
-<area shape="rect" id="node2" href="$d4/df6/classambs__calculators_1_1Timer.html#af955dafbd2caaf93213592477dd71ce1" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node2" href="$d4/df6/classambs__calculators_1_1Timer.html#a97f7c45545079e4e8b7e98f51b763e2f" title="Main calculator logic, called by the timer. Overrides AMBSBaseCalculator::executeCB()" alt="" coords="5,5,92,32"/>
 </map>

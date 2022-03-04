@@ -2,18 +2,20 @@
 <area shape="rect" id="node1" title=" " alt="" coords="163,5,369,61"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,124,127,151"/>
 <area shape="rect" id="node3" title=" " alt="" coords="151,117,279,158"/>
-<area shape="rect" id="node4" title=" " alt="" coords="287,228,341,255"/>
-<area shape="rect" id="node5" href="$d9/d25/diff__float__temporal_8h.html" title=" " alt="" coords="415,109,589,165"/>
-<area shape="rect" id="node6" title=" " alt="" coords="761,228,819,255"/>
-<area shape="rect" id="node7" href="$dd/ded/ambs__base__calculator_8hpp.html" title=" " alt="" coords="366,213,523,269"/>
-<area shape="rect" id="node8" href="$da/d1c/ambs__base__interface_8hpp.html" title=" " alt="" coords="431,525,589,581"/>
-<area shape="rect" id="node17" title=" " alt="" coords="599,228,736,255"/>
-<area shape="rect" id="node13" href="$d2/dcb/ambs__default__calculator__interface_8hpp.html" title=" " alt="" coords="253,317,420,373"/>
-<area shape="rect" id="node15" title=" " alt="" coords="174,540,361,567"/>
-<area shape="rect" id="node16" title=" " alt="" coords="94,436,230,463"/>
-<area shape="rect" id="node9" title=" " alt="" coords="311,629,357,656"/>
-<area shape="rect" id="node10" title=" " alt="" coords="381,629,500,656"/>
-<area shape="rect" id="node11" title=" " alt="" coords="525,629,631,656"/>
-<area shape="rect" id="node12" title=" " alt="" coords="656,629,729,656"/>
-<area shape="rect" id="node14" href="$da/d76/ambs__boolean__interface_8hpp.html" title=" " alt="" coords="305,421,472,477"/>
+<area shape="rect" id="node4" title=" " alt="" coords="268,228,323,255"/>
+<area shape="rect" id="node5" href="$d9/d25/diff__float__temporal_8h.html" title=" " alt="" coords="396,109,571,165"/>
+<area shape="rect" id="node6" title=" " alt="" coords="770,228,829,255"/>
+<area shape="rect" id="node7" href="$dd/ded/ambs__base__calculator_8hpp.html" title=" " alt="" coords="426,213,583,269"/>
+<area shape="rect" id="node9" href="$da/d1c/ambs__base__interface_8hpp.html" title=" " alt="" coords="355,525,513,581"/>
+<area shape="rect" id="node19" title=" " alt="" coords="608,228,745,255"/>
+<area shape="rect" id="node8" title=" " alt="" coords="823,629,882,656"/>
+<area shape="rect" id="node15" href="$d2/dcb/ambs__default__calculator__interface_8hpp.html" title=" " alt="" coords="476,317,643,373"/>
+<area shape="rect" id="node17" title=" " alt="" coords="561,540,747,567"/>
+<area shape="rect" id="node18" title=" " alt="" coords="691,436,827,463"/>
+<area shape="rect" id="node10" title=" " alt="" coords="167,629,213,656"/>
+<area shape="rect" id="node11" title=" " alt="" coords="237,629,356,656"/>
+<area shape="rect" id="node12" title=" " alt="" coords="381,629,487,656"/>
+<area shape="rect" id="node13" title=" " alt="" coords="512,629,639,656"/>
+<area shape="rect" id="node14" title=" " alt="" coords="663,629,736,656"/>
+<area shape="rect" id="node16" href="$da/d76/ambs__boolean__interface_8hpp.html" title=" " alt="" coords="449,421,616,477"/>
 </map>

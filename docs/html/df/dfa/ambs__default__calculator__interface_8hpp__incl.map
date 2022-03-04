@@ -1,11 +1,13 @@
 <map id="ambs_core/include/ambs_core/ambs_base_calculator/ambs_default_calculator_interface.hpp" name="ambs_core/include/ambs_core/ambs_base_calculator/ambs_default_calculator_interface.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="305,5,493,76"/>
-<area shape="rect" id="node2" href="$da/d76/ambs__boolean__interface_8hpp.html" title=" " alt="" coords="195,124,361,180"/>
-<area shape="rect" id="node8" title=" " alt="" coords="306,243,493,269"/>
-<area shape="rect" id="node9" title=" " alt="" coords="437,139,573,165"/>
-<area shape="rect" id="node3" href="$da/d1c/ambs__base__interface_8hpp.html" title=" " alt="" coords="125,228,282,284"/>
+<area shape="rect" id="node1" title=" " alt="" coords="389,5,577,76"/>
+<area shape="rect" id="node2" href="$da/d76/ambs__boolean__interface_8hpp.html" title=" " alt="" coords="279,124,445,180"/>
+<area shape="rect" id="node10" title=" " alt="" coords="390,243,577,269"/>
+<area shape="rect" id="node11" title=" " alt="" coords="521,139,657,165"/>
+<area shape="rect" id="node3" href="$da/d1c/ambs__base__interface_8hpp.html" title=" " alt="" coords="209,228,366,284"/>
 <area shape="rect" id="node4" title=" " alt="" coords="5,332,52,359"/>
-<area shape="rect" id="node5" title=" " alt="" coords="76,332,195,359"/>
-<area shape="rect" id="node6" title=" " alt="" coords="219,332,326,359"/>
-<area shape="rect" id="node7" title=" " alt="" coords="351,332,424,359"/>
+<area shape="rect" id="node5" title=" " alt="" coords="77,332,135,359"/>
+<area shape="rect" id="node6" title=" " alt="" coords="160,332,279,359"/>
+<area shape="rect" id="node7" title=" " alt="" coords="303,332,410,359"/>
+<area shape="rect" id="node8" title=" " alt="" coords="435,332,561,359"/>
+<area shape="rect" id="node9" title=" " alt="" coords="585,332,659,359"/>
 </map>

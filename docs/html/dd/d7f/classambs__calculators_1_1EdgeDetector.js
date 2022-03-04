@@ -3,7 +3,7 @@ var classambs__calculators_1_1EdgeDetector =
     [ "EdgeDetector", "dd/d7f/classambs__calculators_1_1EdgeDetector.html#a2bced11dc4d0b738832d52b128ae224e", null ],
     [ "~EdgeDetector", "dd/d7f/classambs__calculators_1_1EdgeDetector.html#a2bc2bbb3288d4207be9d8c5c43560800", null ],
     [ "EdgeDetector", "dd/d7f/classambs__calculators_1_1EdgeDetector.html#a353415d756e628d1452ea029adf5627a", null ],
-    [ "executeCB", "dd/d7f/classambs__calculators_1_1EdgeDetector.html#acc239077cecc1069d9306ceda27a8e88", null ],
+    [ "executeCB", "dd/d7f/classambs__calculators_1_1EdgeDetector.html#afbfce7196c0055638afb502af0936e8d", null ],
     [ "init", "dd/d7f/classambs__calculators_1_1EdgeDetector.html#af4e8c313828e584f6ea0a12abd6e3414", null ],
     [ "bool_interface_", "dd/d7f/classambs__calculators_1_1EdgeDetector.html#a74a08d2b7318dbb1a7a60dd24bbc2c91", null ],
     [ "IN_BOOL_", "dd/d7f/classambs__calculators_1_1EdgeDetector.html#a0ca66d4010a98faa8ba2330371869445", null ],

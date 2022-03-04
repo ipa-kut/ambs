@@ -1,13 +1,14 @@
 var searchData=
 [
-  ['test_5fcompleted_5f_813',['TEST_COMPLETED_',['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#ac61767211902f2e6474299e7543fba46',1,'ambs_base::AMBSBaseRunner']]],
-  ['test_5ffailed_5f_814',['TEST_FAILED_',['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a3b96c2031d453424957963e4d4825a8a',1,'ambs_base::AMBSBaseRunner']]],
-  ['test_5fsleep_5ftime_815',['test_sleep_time',['../d1/d43/classTestStopwatch.html#af3fcada95824a94bfb7d3cbbacc9c9f9',1,'TestStopwatch']]],
-  ['test_5fsucceeded_5f_816',['TEST_SUCCEEDED_',['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a11697a4bb55728ca215a948b71de95db',1,'ambs_base::AMBSBaseRunner']]],
-  ['timed_5fout_5f_817',['TIMED_OUT_',['../d4/df6/classambs__calculators_1_1Timer.html#afde70bad2a689ec4b8216e3abb33a3c6',1,'ambs_calculators::Timer::TIMED_OUT_()'],['../df/d1b/classTestTimer.html#afde70bad2a689ec4b8216e3abb33a3c6',1,'TestTimer::TIMED_OUT_()']]],
-  ['tolerance_5f_818',['TOLERANCE_',['../d4/db3/classambs__calculators_1_1CompFloatParam.html#aaf5c2a15f1652f59766d7ac1913a74a6',1,'ambs_calculators::CompFloatParam::TOLERANCE_()'],['../db/dd0/classTestCompFloatParam.html#ac4072fd6b6bb5b7bbaf24a451da7a893',1,'TestCompFloatParam::TOLERANCE_()']]],
-  ['tolerance_5f_819',['tolerance_',['../db/dd0/classTestCompFloatParam.html#aaf0e20e7183662254959fa56809a4261',1,'TestCompFloatParam']]],
-  ['topic_5fname_5f_820',['topic_name_',['../d7/d71/structambs__base_1_1AMBSPort.html#a9f014b4e188b7a3e3033ce3eefb44414',1,'ambs_base::AMBSPort']]],
-  ['translation_5f_821',['TRANSLATION_',['../da/d9b/classTestDiffPoseTemporal.html#af33650252014c5322a33935970f5352c',1,'TestDiffPoseTemporal']]],
-  ['twist_5flinearx_5f_822',['TWIST_LINEARX_',['../d5/daa/classambs__interpreters_1_1OdomInterpreter.html#ab5d9e9812c1befc43adf7af33e29d05b',1,'ambs_interpreters::OdomInterpreter']]]
+  ['test_5fcompleted_5f_863',['TEST_COMPLETED_',['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#ac61767211902f2e6474299e7543fba46',1,'ambs_base::AMBSBaseRunner']]],
+  ['test_5ffailed_5f_864',['TEST_FAILED_',['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a3b96c2031d453424957963e4d4825a8a',1,'ambs_base::AMBSBaseRunner']]],
+  ['test_5fsleep_5ftime_865',['test_sleep_time',['../d1/d43/classTestStopwatch.html#af3fcada95824a94bfb7d3cbbacc9c9f9',1,'TestStopwatch']]],
+  ['test_5fsucceeded_5f_866',['TEST_SUCCEEDED_',['../d6/daa/classambs__base_1_1AMBSBaseRunner.html#a11697a4bb55728ca215a948b71de95db',1,'ambs_base::AMBSBaseRunner']]],
+  ['thread_5floop_5frate_5f_867',['thread_loop_rate_',['../d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a5352199e0c38c67870f6f570fd31331b',1,'ambs_base::AMBSBaseCalculator']]],
+  ['timed_5fout_5f_868',['TIMED_OUT_',['../d4/df6/classambs__calculators_1_1Timer.html#afde70bad2a689ec4b8216e3abb33a3c6',1,'ambs_calculators::Timer::TIMED_OUT_()'],['../df/d1b/classTestTimer.html#afde70bad2a689ec4b8216e3abb33a3c6',1,'TestTimer::TIMED_OUT_()']]],
+  ['tolerance_5f_869',['TOLERANCE_',['../d4/db3/classambs__calculators_1_1CompFloatParam.html#aaf5c2a15f1652f59766d7ac1913a74a6',1,'ambs_calculators::CompFloatParam::TOLERANCE_()'],['../db/dd0/classTestCompFloatParam.html#ac4072fd6b6bb5b7bbaf24a451da7a893',1,'TestCompFloatParam::TOLERANCE_()']]],
+  ['tolerance_5f_870',['tolerance_',['../d0/d58/classTestSP6MNP1RB1.html#aaf0e20e7183662254959fa56809a4261',1,'TestSP6MNP1RB1::tolerance_()'],['../db/dd0/classTestCompFloatParam.html#aaf0e20e7183662254959fa56809a4261',1,'TestCompFloatParam::tolerance_()']]],
+  ['topic_5fname_5f_871',['topic_name_',['../d7/d71/structambs__base_1_1AMBSPort.html#a9f014b4e188b7a3e3033ce3eefb44414',1,'ambs_base::AMBSPort']]],
+  ['translation_5f_872',['TRANSLATION_',['../da/d9b/classTestDiffPoseTemporal.html#af33650252014c5322a33935970f5352c',1,'TestDiffPoseTemporal']]],
+  ['twist_5flinearx_5f_873',['TWIST_LINEARX_',['../d5/daa/classambs__interpreters_1_1OdomInterpreter.html#ab5d9e9812c1befc43adf7af33e29d05b',1,'ambs_interpreters::OdomInterpreter']]]
 ];

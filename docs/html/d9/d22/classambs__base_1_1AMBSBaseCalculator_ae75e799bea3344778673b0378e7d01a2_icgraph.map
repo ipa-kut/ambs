@@ -1,5 +1,5 @@
 <map id="startCalculator" name="startCalculator">
-<area shape="rect" id="node1" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="265,242,372,269"/>
+<area shape="rect" id="node1" title="Starts the thread. MUST BE EXPLICITLY CALLED." alt="" coords="265,242,372,269"/>
 <area shape="rect" id="node2" href="$de/d8d/classambs__calculators_1_1DiffFloatTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="20,5,203,47"/>
 <area shape="rect" id="node3" href="$d7/d23/classambs__calculators_1_1DiffPoseTemporal.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet, so it is not called anywhere from within class" alt="" coords="20,71,203,112"/>
 <area shape="rect" id="node4" href="$d0/d7e/classambs__calculators_1_1Stopwatch.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="14,136,209,177"/>
