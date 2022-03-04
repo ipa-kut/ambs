@@ -6,6 +6,7 @@ var classpython__base__classes_1_1base__logger_1_1BaseLogger =
     [ "getSafeFlag", "d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a21485ff7847dfcd1f8948bce26778114", null ],
     [ "killCommandProc", "d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#ac388a7e52181fdccdf7019d1f693531c", null ],
     [ "logScreenFile", "d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a5c220a707c817caeb98d2d8fe74d97ef", null ],
+    [ "resetPorts", "d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#aa195db43a507182aa105ed855a97f890", null ],
     [ "setSafeFlag", "d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a9cbc65c7819882efeacd2a7c511ba8c1", null ],
     [ "startCommandProc", "d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#ab35f2d30ed89d9e0996a55321711e9fe", null ],
     [ "_config_param", "d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a8cc260b3aa3548914a9690a6c30c2881", null ],

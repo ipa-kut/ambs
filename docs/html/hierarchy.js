@@ -47,12 +47,12 @@ var hierarchy =
     ] ],
     [ "Test", null, [
       [ "TestCompFloatParam", "db/dd0/classTestCompFloatParam.html", null ],
-      [ "TestCompFloatParam", "db/dd0/classTestCompFloatParam.html", null ],
       [ "TestDiffFloatTemporal", "df/dd0/classTestDiffFloatTemporal.html", null ],
       [ "TestDiffPoseTemporal", "da/d9b/classTestDiffPoseTemporal.html", null ],
       [ "TestEdgeDetector", "d4/de5/classTestEdgeDetector.html", null ],
       [ "TestHelper", "da/dd6/classTestHelper.html", null ],
       [ "TestOrGate", "d2/dff/classTestOrGate.html", null ],
+      [ "TestSP6MNP1RB1", "d0/d58/classTestSP6MNP1RB1.html", null ],
       [ "TestSignalRepeater", "da/d3a/classTestSignalRepeater.html", null ],
       [ "TestStopwatch", "d1/d43/classTestStopwatch.html", null ],
       [ "TestTimer", "df/d1b/classTestTimer.html", null ]

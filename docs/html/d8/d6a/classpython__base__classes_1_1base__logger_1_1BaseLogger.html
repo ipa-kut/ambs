@@ -130,6 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5c220a707c817caeb98d2d8fe74d97ef"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a5c220a707c817caeb98d2d8fe74d97ef">logScreenFile</a> (self, log_msg)</td></tr>
 <tr class="memdesc:a5c220a707c817caeb98d2d8fe74d97ef"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a5c220a707c817caeb98d2d8fe74d97ef">More...</a><br /></td></tr>
 <tr class="separator:a5c220a707c817caeb98d2d8fe74d97ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa195db43a507182aa105ed855a97f890"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#aa195db43a507182aa105ed855a97f890">resetPorts</a> (self)</td></tr>
+<tr class="memdesc:aa195db43a507182aa105ed855a97f890"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#aa195db43a507182aa105ed855a97f890">More...</a><br /></td></tr>
+<tr class="separator:aa195db43a507182aa105ed855a97f890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cbc65c7819882efeacd2a7c511ba8c1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a9cbc65c7819882efeacd2a7c511ba8c1">setSafeFlag</a> (self, key, value)</td></tr>
 <tr class="memdesc:a9cbc65c7819882efeacd2a7c511ba8c1"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a9cbc65c7819882efeacd2a7c511ba8c1">More...</a><br /></td></tr>
 <tr class="separator:a9cbc65c7819882efeacd2a7c511ba8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -301,13 +304,13 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">def </span>callback(self, msg, key):</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        self.setSafeFlag(key,msg)</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="fragment"><div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">def </span>callback(self, msg, key):</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        self.setSafeFlag(key,msg)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00053">BaseLogger.callback()</a>, and <a class="el" href="../../#l00046">BaseLogger.setSafeFlag()</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00057">BaseLogger.callback()</a>, and <a class="el" href="../../#l00050">BaseLogger.setSafeFlag()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00053">BaseLogger.callback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00057">BaseLogger.callback()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -353,19 +356,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">def </span>getConfig(self, param_list):</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">for</span> arg <span class="keywordflow">in</span> param_list:</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">if</span> rospy.has_param(arg):</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <span class="keywordflow">if</span> arg <span class="keywordflow">not</span> <span class="keywordflow">in</span> self.config_param:</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                    self.config_param[arg] = rospy.get_param(arg)</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordflow">else</span>:</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                rospy.logerr(<span class="stringliteral">&quot;{} param not set!!&quot;</span>.format(arg))</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                rospy.signal_shutdown(<span class="stringliteral">&quot;param not set&quot;</span>)</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="fragment"><div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">def </span>getConfig(self, param_list):</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">for</span> arg <span class="keywordflow">in</span> param_list:</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">if</span> rospy.has_param(arg):</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <span class="keywordflow">if</span> arg <span class="keywordflow">not</span> <span class="keywordflow">in</span> self.config_param:</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                    self.config_param[arg] = rospy.get_param(arg)</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">else</span>:</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                rospy.logerr(<span class="stringliteral">&quot;{} param not set!!&quot;</span>.format(arg))</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                rospy.signal_shutdown(<span class="stringliteral">&quot;param not set&quot;</span>)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00027">BaseLogger.config_param</a>, and <a class="el" href="../../#l00074">BaseLogger.getConfig()</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00027">BaseLogger.config_param</a>, and <a class="el" href="../../#l00078">BaseLogger.getConfig()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00074">BaseLogger.getConfig()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00078">BaseLogger.getConfig()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -410,18 +413,18 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">def </span>getSafeFlag(self, key):</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> key <span class="keywordflow">in</span> self._input_interface.keys() <span class="keywordflow">and</span> <span class="keywordflow">not</span> key <span class="keywordflow">in</span> self.result_list:</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            rospy.logerr(rospy.get_name() + <span class="stringliteral">&quot;: Retrieving a key that does not exist!: {}&quot;</span>.format(key))</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">return</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">else</span>:</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keyword">with</span> self._locks[key]:</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <span class="keywordflow">return</span> self._flag[key].data</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="fragment"><div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">def </span>getSafeFlag(self, key):</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> key <span class="keywordflow">in</span> self._input_interface.keys() <span class="keywordflow">and</span> <span class="keywordflow">not</span> key <span class="keywordflow">in</span> self.result_list:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            rospy.logerr(rospy.get_name() + <span class="stringliteral">&quot;: Retrieving a key that does not exist!: {}&quot;</span>.format(key))</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">return</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keyword">with</span> self._locks[key]:</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="keywordflow">return</span> self._flag[key].data</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00031">BaseLogger._flag</a>, <a class="el" href="../../#l00017">BaseLogger._input_interface</a>, <a class="el" href="../../#l00030">BaseLogger._locks</a>, <a class="el" href="../../#l00056">BaseLogger.getSafeFlag()</a>, and <a class="el" href="../../#l00039">BaseLogger.result_list</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00031">BaseLogger._flag</a>, <a class="el" href="../../#l00017">BaseLogger._input_interface</a>, <a class="el" href="../../#l00030">BaseLogger._locks</a>, <a class="el" href="../../#l00060">BaseLogger.getSafeFlag()</a>, and <a class="el" href="../../#l00039">BaseLogger.result_list</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00056">BaseLogger.getSafeFlag()</a>, and <a class="el" href="../../#l00080">Rosbagger.main_loop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00060">BaseLogger.getSafeFlag()</a>, and <a class="el" href="../../#l00080">Rosbagger.main_loop()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -457,14 +460,14 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">def </span>killCommandProc(self):</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        self.command_proc.send_signal(subprocess.signal.SIGINT)</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        rospy.loginfo(rospy.get_name() + <span class="stringliteral">&quot;: Killing process {}&quot;</span>.format(self.command_proc))</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    </div>
+<div class="fragment"><div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">def </span>killCommandProc(self):</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        self.command_proc.send_signal(subprocess.signal.SIGINT)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        rospy.loginfo(rospy.get_name() + <span class="stringliteral">&quot;: Killing process {}&quot;</span>.format(self.command_proc))</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00067">BaseLogger.command_proc</a>, and <a class="el" href="../../#l00070">BaseLogger.killCommandProc()</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00071">BaseLogger.command_proc</a>, and <a class="el" href="../../#l00074">BaseLogger.killCommandProc()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00045">Rosbagger.__del__()</a>, <a class="el" href="../../#l00070">BaseLogger.killCommandProc()</a>, and <a class="el" href="../../#l00080">Rosbagger.main_loop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00045">Rosbagger.__del__()</a>, <a class="el" href="../../#l00074">BaseLogger.killCommandProc()</a>, and <a class="el" href="../../#l00080">Rosbagger.main_loop()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -511,16 +514,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">def </span>logScreenFile(self, log_msg):</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">if</span> self.config_param[rospy.get_name() + <span class="stringliteral">&quot;/screen&quot;</span>]:</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            rospy.logwarn(rospy.get_name() + <span class="stringliteral">&quot;: &quot;</span> + log_msg)</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            rospy.loginfo(rospy.get_name() + <span class="stringliteral">&quot;: &quot;</span> + log_msg)</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">else</span>:</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            rospy.loginfo(rospy.get_name() + <span class="stringliteral">&quot;: &quot;</span> + log_msg)</div>
+<div class="fragment"><div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">def </span>logScreenFile(self, log_msg):</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">if</span> self.config_param[rospy.get_name() + <span class="stringliteral">&quot;/screen&quot;</span>]:</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            rospy.logwarn(rospy.get_name() + <span class="stringliteral">&quot;: &quot;</span> + log_msg)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            rospy.loginfo(rospy.get_name() + <span class="stringliteral">&quot;: &quot;</span> + log_msg)</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            rospy.loginfo(rospy.get_name() + <span class="stringliteral">&quot;: &quot;</span> + log_msg)</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00027">BaseLogger.config_param</a>, and <a class="el" href="../../#l00083">BaseLogger.logScreenFile()</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00027">BaseLogger.config_param</a>, and <a class="el" href="../../#l00087">BaseLogger.logScreenFile()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00083">BaseLogger.logScreenFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00087">BaseLogger.logScreenFile()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -535,6 +538,49 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_a5c220a707c817caeb98d2d8fe74d97ef_icgraph.png" border="0" usemap="#ad8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_a5c220a707c817caeb98d2d8fe74d97ef_icgraph" alt=""/></div>
 <map name="ad8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_a5c220a707c817caeb98d2d8fe74d97ef_icgraph" id="ad8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_a5c220a707c817caeb98d2d8fe74d97ef_icgraph">
 <area shape="rect" title=" " alt="" coords="5,29,107,56"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa195db43a507182aa105ed855a97f890" name="aa195db43a507182aa105ed855a97f890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa195db43a507182aa105ed855a97f890">&#9670;&nbsp;</a></span>resetPorts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def resetPorts </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">def </span>resetPorts(self):</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">for</span> key <span class="keywordflow">in</span> self._input_interface:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            self._flag[key].data = <span class="keyword">False</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../#l00031">BaseLogger._flag</a>, <a class="el" href="../../#l00017">BaseLogger._input_interface</a>, and <a class="el" href="../../#l00046">BaseLogger.resetPorts()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../#l00080">Rosbagger.main_loop()</a>, and <a class="el" href="../../#l00046">BaseLogger.resetPorts()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_aa195db43a507182aa105ed855a97f890_cgraph.png" border="0" usemap="#ad8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_aa195db43a507182aa105ed855a97f890_cgraph" alt=""/></div>
+<map name="ad8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_aa195db43a507182aa105ed855a97f890_cgraph" id="ad8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_aa195db43a507182aa105ed855a97f890_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,88,56"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_aa195db43a507182aa105ed855a97f890_icgraph.png" border="0" usemap="#ad8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_aa195db43a507182aa105ed855a97f890_icgraph" alt=""/></div>
+<map name="ad8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_aa195db43a507182aa105ed855a97f890_icgraph" id="ad8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger_aa195db43a507182aa105ed855a97f890_icgraph">
+<area shape="rect" title=" " alt="" coords="308,29,391,56"/>
+<area shape="rect" href="../../de/d0d/classloggers_1_1rosbagger_1_1Rosbagger.html#a36032efd3fb76bdc99c51ac549db4090" title=" " alt="" coords="5,29,260,56"/>
 </map>
 </div>
 
@@ -571,17 +617,17 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">def </span>setSafeFlag(self, key, value):</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> key <span class="keywordflow">in</span> self._input_interface.keys() <span class="keywordflow">and</span> <span class="keywordflow">not</span> key <span class="keywordflow">in</span> self.result_list:</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            rospy.logerr(rospy.get_name() + <span class="stringliteral">&quot;: Retrieving a key that does not exist!: {}&quot;</span>.format(key))</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordflow">return</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keyword">with</span> self._locks[key]:</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            self._flag[key] = value</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    </div>
+<div class="fragment"><div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">def </span>setSafeFlag(self, key, value):</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> key <span class="keywordflow">in</span> self._input_interface.keys() <span class="keywordflow">and</span> <span class="keywordflow">not</span> key <span class="keywordflow">in</span> self.result_list:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            rospy.logerr(rospy.get_name() + <span class="stringliteral">&quot;: Retrieving a key that does not exist!: {}&quot;</span>.format(key))</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordflow">return</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keyword">with</span> self._locks[key]:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            self._flag[key] = value</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00031">BaseLogger._flag</a>, <a class="el" href="../../#l00017">BaseLogger._input_interface</a>, <a class="el" href="../../#l00030">BaseLogger._locks</a>, <a class="el" href="../../#l00039">BaseLogger.result_list</a>, and <a class="el" href="../../#l00046">BaseLogger.setSafeFlag()</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00031">BaseLogger._flag</a>, <a class="el" href="../../#l00017">BaseLogger._input_interface</a>, <a class="el" href="../../#l00030">BaseLogger._locks</a>, <a class="el" href="../../#l00039">BaseLogger.result_list</a>, and <a class="el" href="../../#l00050">BaseLogger.setSafeFlag()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00053">BaseLogger.callback()</a>, and <a class="el" href="../../#l00046">BaseLogger.setSafeFlag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00057">BaseLogger.callback()</a>, and <a class="el" href="../../#l00050">BaseLogger.setSafeFlag()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -627,16 +673,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">def </span>startCommandProc(self, command):</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="comment"># Prepare command</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        _command = shlex.split(command)</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        self.command_proc = subprocess.Popen(_command)</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        rospy.loginfo(rospy.get_name() + <span class="stringliteral">&quot;: Starting process {}&quot;</span>.format(self.command_proc))</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="fragment"><div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">def </span>startCommandProc(self, command):</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="comment"># Prepare command</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        _command = shlex.split(command)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        self.command_proc = subprocess.Popen(_command)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        rospy.loginfo(rospy.get_name() + <span class="stringliteral">&quot;: Starting process {}&quot;</span>.format(self.command_proc))</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00064">BaseLogger.startCommandProc()</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00068">BaseLogger.startCommandProc()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../#l00080">Rosbagger.main_loop()</a>, and <a class="el" href="../../#l00064">BaseLogger.startCommandProc()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../#l00080">Rosbagger.main_loop()</a>, and <a class="el" href="../../#l00068">BaseLogger.startCommandProc()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

@@ -1,0 +1,28 @@
+var classTestSP6MNP1RB1 =
+[
+    [ "TestSP6MNP1RB1", "d0/d58/classTestSP6MNP1RB1.html#ae9c7ff27bd228ab4d1cb26d50d33172e", null ],
+    [ "TestSP6MNP1RB1", "d0/d58/classTestSP6MNP1RB1.html#ae99011cac89d92cff58271624d3bcb09", null ],
+    [ "getNumberOfRowsInDebugCSV", "d0/d58/classTestSP6MNP1RB1.html#acd76eba8317e869129c1ab43497cd8ec", null ],
+    [ "init", "d0/d58/classTestSP6MNP1RB1.html#ad1e53c9ca9de182e69c6605aa758b9e2", null ],
+    [ "sendPulseOn", "d0/d58/classTestSP6MNP1RB1.html#a8507669bc0ec22b2c746ff2994dd8953", null ],
+    [ "BAG_STARTED_", "d0/d58/classTestSP6MNP1RB1.html#a759d911819079568bc081e58afb622f3", null ],
+    [ "bool_inputs_", "d0/d58/classTestSP6MNP1RB1.html#a6ba7c018b569d85c311b2c1fbc8088bf", null ],
+    [ "bool_outputs_", "d0/d58/classTestSP6MNP1RB1.html#a0720b9c54f3f98123c2309d844d8db29", null ],
+    [ "CLOSE1_", "d0/d58/classTestSP6MNP1RB1.html#afacaba576206d86d501bceac2addfc1a", null ],
+    [ "CLOSE2_", "d0/d58/classTestSP6MNP1RB1.html#a77d7da24bd68ca742d5e70c890718760", null ],
+    [ "control_iface", "d0/d58/classTestSP6MNP1RB1.html#a3653effd5e2ff77d9d741c403b8be7dc", null ],
+    [ "csv_name_", "d0/d58/classTestSP6MNP1RB1.html#aaa6ed3d843cd186bf3ce96f109ece185", null ],
+    [ "float_interface_", "d0/d58/classTestSP6MNP1RB1.html#a7d88421a9f9a3b6dd1faf952b39e4fac", null ],
+    [ "log_folder_", "d0/d58/classTestSP6MNP1RB1.html#a15cb349c8343cd156bb02e0b653a76ed", null ],
+    [ "nh_", "d0/d58/classTestSP6MNP1RB1.html#a1300297c252ff1dc5ceea58a274d4db5", null ],
+    [ "OPEN1_", "d0/d58/classTestSP6MNP1RB1.html#adf9455ba39c56caaf0603987c949da73", null ],
+    [ "OPEN2_", "d0/d58/classTestSP6MNP1RB1.html#ab68ddd4c6629fdf9a61201a37beba1de", null ],
+    [ "param_", "d0/d58/classTestSP6MNP1RB1.html#acd70b7d1e9b8dbe3e1d85156b6262d46", null ],
+    [ "PR1_", "d0/d58/classTestSP6MNP1RB1.html#a4b5adaf70e7700ef175984e0acd280ba", null ],
+    [ "PR2_", "d0/d58/classTestSP6MNP1RB1.html#ae79fee814898b74273e8c88bb076bda1", null ],
+    [ "pulse_off_time_", "d0/d58/classTestSP6MNP1RB1.html#a7c7ebcc83434d4199a3b656da5ef6c30", null ],
+    [ "response_time", "d0/d58/classTestSP6MNP1RB1.html#a1b35eba9633ca1c6e7585be5eb566f0d", null ],
+    [ "START_ROBOT_", "d0/d58/classTestSP6MNP1RB1.html#a4c63945b6a95163d6197e88e3a27f7bd", null ],
+    [ "STOP_ROBOT_", "d0/d58/classTestSP6MNP1RB1.html#abe4df9f0f7103f35f7e347dd20f7af51", null ],
+    [ "tolerance_", "d0/d58/classTestSP6MNP1RB1.html#aaf0e20e7183662254959fa56809a4261", null ]
+];

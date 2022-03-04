@@ -1,10 +1,10 @@
 <map id="init" name="init">
-<area shape="rect" id="node1" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="5,130,44,157"/>
-<area shape="rect" id="node2" href="$d4/d68/classambs__loggers_1_1DebugLogger.html#a471027d91ef8e611350304d529d21af3" title=" " alt="" coords="116,5,304,47"/>
-<area shape="rect" id="node3" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="390,93,586,135"/>
-<area shape="rect" id="node4" href="$dc/d14/classambs__base_1_1AMBSDefaultCalculatorInterface.html#ab0c2214caea3e5818fc59fdbd68f57a8" title="Initialisation decoupled from constructor for convenince." alt="" coords="92,123,328,164"/>
-<area shape="rect" id="node5" href="$d4/d68/classambs__loggers_1_1DebugLogger.html#ad7e431c5f91d44c145cb99ece9bfca21" title="Log message with level 0." alt="" coords="116,188,304,229"/>
-<area shape="rect" id="node7" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ae75e799bea3344778673b0378e7d01a2" title="Starts the timer thread. MUST BE EXPLICITLY CALLED." alt="" coords="98,253,322,295"/>
-<area shape="rect" id="node6" href="$d4/d68/classambs__loggers_1_1DebugLogger.html#afa1149c9fdc4ced4d60c0ec9ef56c4bb" title=" " alt="" coords="394,188,582,229"/>
-<area shape="rect" id="node8" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a967f9a0a5cfaa49ba54b5fe00c08b132" title=" " alt="" coords="376,253,600,295"/>
+<area shape="rect" id="node1" title="init function will be called by nodelet manager, so it is not called anywhere from within class" alt="" coords="5,111,44,138"/>
+<area shape="rect" id="node2" href="$d4/d68/classambs__loggers_1_1DebugLogger.html#a471027d91ef8e611350304d529d21af3" title=" " alt="" coords="110,5,298,47"/>
+<area shape="rect" id="node3" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#ac55ed2cfd175f6e71ebe460eeb643b40" title="Initialisation function, decoupled from constructor for convenience." alt="" coords="106,71,302,112"/>
+<area shape="rect" id="node4" href="$d4/d68/classambs__loggers_1_1DebugLogger.html#ad7e431c5f91d44c145cb99ece9bfca21" title="Log message with level 0." alt="" coords="110,136,298,177"/>
+<area shape="rect" id="node6" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#ae75e799bea3344778673b0378e7d01a2" title="Starts the thread. MUST BE EXPLICITLY CALLED." alt="" coords="92,201,316,243"/>
+<area shape="rect" id="node5" href="$d4/d68/classambs__loggers_1_1DebugLogger.html#afa1149c9fdc4ced4d60c0ec9ef56c4bb" title=" " alt="" coords="382,136,570,177"/>
+<area shape="rect" id="node7" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a8f6d9fcc2c1df4d20756a16116bfda6f" title="Thread function. Runs calculator logic at." alt="" coords="364,201,588,243"/>
+<area shape="rect" id="node8" href="$d9/d22/classambs__base_1_1AMBSBaseCalculator.html#a0e45187e941b87a0700c13055d5c35fa" title=" " alt="" coords="636,201,860,243"/>
 </map>

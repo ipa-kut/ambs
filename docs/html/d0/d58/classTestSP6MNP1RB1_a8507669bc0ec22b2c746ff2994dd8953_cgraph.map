@@ -1,0 +1,5 @@
+<map id="sendPulseOn" name="sendPulseOn">
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,105,73"/>
+<area shape="rect" id="node2" href="$d6/dc2/classambs__base_1_1AMBSBooleanInterface.html#af9a09dc0577d79c0862457114706c7a3" title="Create a new BoolStamped type message." alt="" coords="153,5,387,47"/>
+<area shape="rect" id="node3" href="$d3/d0c/classambs__base_1_1AMBSTemplatedInterface.html#aabf915c783f55403b189d83e619643fd" title="Publish a message on a port." alt="" coords="172,71,368,112"/>
+</map>

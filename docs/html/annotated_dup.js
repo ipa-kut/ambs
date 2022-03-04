@@ -63,6 +63,7 @@ var annotated_dup =
     [ "TestHelper", "da/dd6/classTestHelper.html", "da/dd6/classTestHelper" ],
     [ "TestOrGate", "d2/dff/classTestOrGate.html", "d2/dff/classTestOrGate" ],
     [ "TestSignalRepeater", "da/d3a/classTestSignalRepeater.html", "da/d3a/classTestSignalRepeater" ],
+    [ "TestSP6MNP1RB1", "d0/d58/classTestSP6MNP1RB1.html", "d0/d58/classTestSP6MNP1RB1" ],
     [ "TestStopwatch", "d1/d43/classTestStopwatch.html", "d1/d43/classTestStopwatch" ],
     [ "TestTimer", "df/d1b/classTestTimer.html", "df/d1b/classTestTimer" ]
 ];

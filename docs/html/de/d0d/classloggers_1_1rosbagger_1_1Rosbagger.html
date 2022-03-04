@@ -147,6 +147,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5c220a707c817caeb98d2d8fe74d97ef inherit pub_methods_classpython__base__classes_1_1base__logger_1_1BaseLogger"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a5c220a707c817caeb98d2d8fe74d97ef">logScreenFile</a> (self, log_msg)</td></tr>
 <tr class="memdesc:a5c220a707c817caeb98d2d8fe74d97ef inherit pub_methods_classpython__base__classes_1_1base__logger_1_1BaseLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a5c220a707c817caeb98d2d8fe74d97ef">More...</a><br /></td></tr>
 <tr class="separator:a5c220a707c817caeb98d2d8fe74d97ef inherit pub_methods_classpython__base__classes_1_1base__logger_1_1BaseLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa195db43a507182aa105ed855a97f890 inherit pub_methods_classpython__base__classes_1_1base__logger_1_1BaseLogger"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#aa195db43a507182aa105ed855a97f890">resetPorts</a> (self)</td></tr>
+<tr class="memdesc:aa195db43a507182aa105ed855a97f890 inherit pub_methods_classpython__base__classes_1_1base__logger_1_1BaseLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#aa195db43a507182aa105ed855a97f890">More...</a><br /></td></tr>
+<tr class="separator:aa195db43a507182aa105ed855a97f890 inherit pub_methods_classpython__base__classes_1_1base__logger_1_1BaseLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cbc65c7819882efeacd2a7c511ba8c1 inherit pub_methods_classpython__base__classes_1_1base__logger_1_1BaseLogger"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a9cbc65c7819882efeacd2a7c511ba8c1">setSafeFlag</a> (self, key, value)</td></tr>
 <tr class="memdesc:a9cbc65c7819882efeacd2a7c511ba8c1 inherit pub_methods_classpython__base__classes_1_1base__logger_1_1BaseLogger"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a9cbc65c7819882efeacd2a7c511ba8c1">More...</a><br /></td></tr>
 <tr class="separator:a9cbc65c7819882efeacd2a7c511ba8c1 inherit pub_methods_classpython__base__classes_1_1base__logger_1_1BaseLogger"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,7 +277,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            self.killCommandProc()</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00045">Rosbagger.__del__()</a>, <a class="el" href="../../#l00070">BaseLogger.killCommandProc()</a>, and <a class="el" href="../../#l00037">Rosbagger.started</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00045">Rosbagger.__del__()</a>, <a class="el" href="../../#l00074">BaseLogger.killCommandProc()</a>, and <a class="el" href="../../#l00037">Rosbagger.started</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../#l00045">Rosbagger.__del__()</a>.</p>
 <div class="dynheader">
@@ -414,9 +417,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            self._rate.sleep()</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            reset = self.getSafeFlag(<span class="stringliteral">&quot;reset&quot;</span>)</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        rospy.loginfo(rospy.get_name() + <span class="stringliteral">&quot;: Resetting&quot;</span>)</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        self.resetPorts()</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00058">Rosbagger._published_once</a>, <a class="el" href="../../#l00015">BaseLogger._rate</a>, <a class="el" href="../../#l00036">Rosbagger.begin_write_pub</a>, <a class="el" href="../../#l00049">Rosbagger.buildNewBoolStamped()</a>, <a class="el" href="../../#l00056">BaseLogger.getSafeFlag()</a>, <a class="el" href="../../#l00070">BaseLogger.killCommandProc()</a>, <a class="el" href="../../#l00080">Rosbagger.main_loop()</a>, <a class="el" href="../../#l00060">Rosbagger.prepare_topics()</a>, <a class="el" href="../../#l00055">Rosbagger.rosbag_begin_cb()</a>, <a class="el" href="../../#l00064">BaseLogger.startCommandProc()</a>, and <a class="el" href="../../#l00037">Rosbagger.started</a>.</p>
+<p class="reference">References <a class="el" href="../../#l00058">Rosbagger._published_once</a>, <a class="el" href="../../#l00015">BaseLogger._rate</a>, <a class="el" href="../../#l00036">Rosbagger.begin_write_pub</a>, <a class="el" href="../../#l00049">Rosbagger.buildNewBoolStamped()</a>, <a class="el" href="../../#l00060">BaseLogger.getSafeFlag()</a>, <a class="el" href="../../#l00074">BaseLogger.killCommandProc()</a>, <a class="el" href="../../#l00080">Rosbagger.main_loop()</a>, <a class="el" href="../../#l00060">Rosbagger.prepare_topics()</a>, <a class="el" href="../../#l00046">BaseLogger.resetPorts()</a>, <a class="el" href="../../#l00055">Rosbagger.rosbag_begin_cb()</a>, <a class="el" href="../../#l00068">BaseLogger.startCommandProc()</a>, and <a class="el" href="../../#l00037">Rosbagger.started</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../#l00080">Rosbagger.main_loop()</a>.</p>
 <div class="dynheader">
@@ -424,13 +427,14 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../de/d0d/classloggers_1_1rosbagger_1_1Rosbagger_a36032efd3fb76bdc99c51ac549db4090_cgraph.png" border="0" usemap="#ade/d0d/classloggers_1_1rosbagger_1_1Rosbagger_a36032efd3fb76bdc99c51ac549db4090_cgraph" alt=""/></div>
 <map name="ade/d0d/classloggers_1_1rosbagger_1_1Rosbagger_a36032efd3fb76bdc99c51ac549db4090_cgraph" id="ade/d0d/classloggers_1_1rosbagger_1_1Rosbagger_a36032efd3fb76bdc99c51ac549db4090_cgraph">
-<area shape="rect" title=" " alt="" coords="6,220,87,247"/>
-<area shape="rect" href="../../de/d0d/classloggers_1_1rosbagger_1_1Rosbagger.html#a5544fbb9394b5c03513982ae883baaa4" title=" " alt="" coords="438,172,592,199"/>
-<area shape="rect" href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a21485ff7847dfcd1f8948bce26778114" title=" " alt="" coords="157,82,368,124"/>
-<area shape="rect" href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#ac388a7e52181fdccdf7019d1f693531c" title=" " alt="" coords="140,172,384,213"/>
-<area shape="rect" href="../../de/d0d/classloggers_1_1rosbagger_1_1Rosbagger.html#ab147e704484d485c7cf319dbc3eae6ad" title=" " alt="" coords="209,262,316,288"/>
-<area shape="rect" href="../../de/d0d/classloggers_1_1rosbagger_1_1Rosbagger.html#a22085c5b2ddd4c59830c5afe8f02d45f" title=" " alt="" coords="202,336,322,363"/>
-<area shape="rect" href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#ab35f2d30ed89d9e0996a55321711e9fe" title=" " alt="" coords="135,412,390,453"/>
+<area shape="rect" title=" " alt="" coords="6,266,87,292"/>
+<area shape="rect" href="../../de/d0d/classloggers_1_1rosbagger_1_1Rosbagger.html#a5544fbb9394b5c03513982ae883baaa4" title=" " alt="" coords="438,222,592,248"/>
+<area shape="rect" href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#a21485ff7847dfcd1f8948bce26778114" title=" " alt="" coords="157,86,368,128"/>
+<area shape="rect" href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#ac388a7e52181fdccdf7019d1f693531c" title=" " alt="" coords="140,176,384,217"/>
+<area shape="rect" href="../../de/d0d/classloggers_1_1rosbagger_1_1Rosbagger.html#ab147e704484d485c7cf319dbc3eae6ad" title=" " alt="" coords="209,266,316,292"/>
+<area shape="rect" href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#aa195db43a507182aa105ed855a97f890" title=" " alt="" coords="162,341,363,382"/>
+<area shape="rect" href="../../de/d0d/classloggers_1_1rosbagger_1_1Rosbagger.html#a22085c5b2ddd4c59830c5afe8f02d45f" title=" " alt="" coords="202,431,322,458"/>
+<area shape="rect" href="../../d8/d6a/classpython__base__classes_1_1base__logger_1_1BaseLogger.html#ab35f2d30ed89d9e0996a55321711e9fe" title=" " alt="" coords="135,506,390,548"/>
 </map>
 </div>
 <div class="dynheader">

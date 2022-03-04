@@ -1,12 +1,14 @@
 <map id="ambs_core/include/ambs_core/ambs_base_calculator/ambs_base_calculator.hpp" name="ambs_core/include/ambs_core/ambs_base_calculator/ambs_base_calculator.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="380,5,568,61"/>
-<area shape="rect" id="node2" href="$da/d1c/ambs__base__interface_8hpp.html" title=" " alt="" coords="125,317,282,373"/>
-<area shape="rect" id="node7" href="$d2/dcb/ambs__default__calculator__interface_8hpp.html" title=" " alt="" coords="331,109,497,165"/>
-<area shape="rect" id="node9" title=" " alt="" coords="329,332,515,359"/>
-<area shape="rect" id="node10" title=" " alt="" coords="459,228,595,255"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,421,52,448"/>
-<area shape="rect" id="node4" title=" " alt="" coords="76,421,195,448"/>
-<area shape="rect" id="node5" title=" " alt="" coords="219,421,326,448"/>
-<area shape="rect" id="node6" title=" " alt="" coords="351,421,424,448"/>
-<area shape="rect" id="node8" href="$da/d76/ambs__boolean__interface_8hpp.html" title=" " alt="" coords="217,213,384,269"/>
+<area shape="rect" id="node1" title=" " alt="" coords="263,5,451,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,421,64,448"/>
+<area shape="rect" id="node3" href="$da/d1c/ambs__base__interface_8hpp.html" title=" " alt="" coords="140,317,297,373"/>
+<area shape="rect" id="node9" href="$d2/dcb/ambs__default__calculator__interface_8hpp.html" title=" " alt="" coords="274,109,441,165"/>
+<area shape="rect" id="node11" title=" " alt="" coords="321,332,508,359"/>
+<area shape="rect" id="node12" title=" " alt="" coords="411,228,547,255"/>
+<area shape="rect" id="node4" title=" " alt="" coords="89,421,135,448"/>
+<area shape="rect" id="node5" title=" " alt="" coords="159,421,278,448"/>
+<area shape="rect" id="node6" title=" " alt="" coords="303,421,409,448"/>
+<area shape="rect" id="node7" title=" " alt="" coords="434,421,561,448"/>
+<area shape="rect" id="node8" title=" " alt="" coords="585,421,658,448"/>
+<area shape="rect" id="node10" href="$da/d76/ambs__boolean__interface_8hpp.html" title=" " alt="" coords="169,213,335,269"/>
 </map>
